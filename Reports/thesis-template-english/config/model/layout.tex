@@ -1,0 +1,118 @@
+\documentclass[11pt,a4paper]{report}
+% sostituire con report/book per il formato elettronico
+
+\usepackage[nottoc,notlof,notbib,notindex]{tocbibind} % include l'elenco delle figure e la bibliografia nell'indice.
+
+\usepackage{appendix}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage[english]{babel}
+\usepackage{ucs} %unicode sistema gli accenti
+\usepackage[utf8x]{inputenc} %unicode sistema gli accenti utf8x
+\usepackage[bottom]{footmisc} % posiziona le note in footer sempre in basso
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{subfigure} % per figure affiancate
+\usepackage{supertabular} % used to break tables
+\usepackage{float} % per far bene le figures
+%\usepackage{indentfirst}
+\usepackage[Lenny]{fncychap} % per cambiare i capitoli
+\usepackage{longtable} % piazza le note nelle tabelle fuori dalla tabella e permette tabelle che spannano su più pagine
+\usepackage{lastpage} % total page count
+\usepackage[hyphens]{url}
+%\usepackage{breakurl}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{comment}
+\usepackage{amsthm}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage[colorlinks=true, pdfstartview=FitV, linkcolor=blue, citecolor=blue, urlcolor=blue,breaklinks=true]{hyperref}
+
+% To be able to use argmax
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+% colori e variabili
+\input{./config/model/colors.tex}
+\input{./config/model/variables.tex}
+
+\graphicspath{{./pics/}} % cartella di salvataggio immagini
+
+\pagestyle{fancy}
+
+\lhead{\nouppercase{\rightmark}}
+\rhead{\nouppercase{\leftmark}}
+
+\fancypagestyle{plain}{
+	\lhead{}
+	\chead{}
+	\rhead{}
+	\lfoot{}
+	\cfoot{\thepage}
+	\rfoot{}
+	\renewcommand{\headrulewidth}{0.0pt}% this command should not be add to variables.tex
+	\renewcommand{\footrulewidth}{0.1pt}% this command should not be add to variables.tex
+}
+
+\fancypagestyle{blank}{
+	\lhead{}
+	\chead{}
+	\rhead{\nouppercase{\rightmark}}
+	\lfoot{}
+	\cfoot{\thepage}
+	\rfoot{}
+	\renewcommand{\headrulewidth}{0.1pt}% this command should not be add to variables.tex
+	\renewcommand{\footrulewidth}{0.1pt}% this command should not be add to variables.tex
+}
+
+
+
+% parte per il report
+ %	\lhead{}
+% 	\chead{}
+% 	\rhead{\nouppercase{\rightmark}}
+% 	\lfoot{}
+% 	\cfoot{\thepage}
+% 	\rfoot{}
+% 	\renewcommand{\headrulewidth}{0.1pt}% this command should not be add to variables.tex
+% 	\renewcommand{\footrulewidth}{0.1pt}% this command should not be add to variables.tex
+ 
+ %\hypersetup{
+ %	colorlinks=true,% false: boxed links; true: colored links
+% 	linkcolor=blue,% color of internal links
+% 	urlcolor=blue,% color of external links
+% 	anchorcolor = blue,
+% 	citecolor = blue
+ %}
+%parte per il report
+
+
+
+% parte per il book
+\fancyhead{}
+%\fancyhead[EL]{\nouppercase{\leftmark}}
+\fancyhead[OR]{\nouppercase{\rightmark}}
+%\fancyfoot[EC,OC]{\thepage}
+
+	\renewcommand{\headrulewidth}{0.1pt}% this command should not be add to variables.tex
+	\renewcommand{\footrulewidth}{0.1pt}% this command should not be add to variables.tex
+\hypersetup{
+	colorlinks=true,% false: boxed links; true: colored links
+	linkcolor=black,% color of internal links
+	urlcolor=black,% color of external links
+	anchorcolor = black,
+	citecolor = black
+}
+%parte per il book
+
+% indice analitico
+\usepackage{makeidx}
+\makeindex 
+
+\let\textquotedbl=" % use to print also " in the code
+
+\bibliographystyle{plain}%bibliografia stile inglese
+
+\pagenumbering{Roman}
+% fine layout

@@ -1,0 +1,95 @@
+
+\input{./config/model/layout.tex}% layout
+\begin{document}
+
+\input{./config/model/hyphenation.tex}%word division
+\input{./coverpage.tex}%for the cover title
+
+%If want to write a dedication, modify the following.
+%\dedication{Zitat, kluger Spruch oder Widmung}
+
+%
+\newpage
+%\pagestyle{empty}
+
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+In silico evolution is an area of active research in the field of bioinformatics. This method seeks to simulate organisms and their evolution in software, allowing for greater control of the environment, mutation rates, and other variables. In this thesis we use the in silico tool aevol to study reductive evolution. 
+
+
+
+% Old Abstract
+%\newpage
+%\blankpage
+%\premise{
+%\noindent{\textbf{\begin{huge}Abstract\end{huge}}}\\
+%\\
+%Abstract 
+%}
+\linespread{1.25}\selectfont
+
+\tableofcontents
+\addcontentsline{toc}{chapter}{\listfigurename}
+\listoffigures  
+\listoftables
+\blankpage
+\input{Chapter1-Intro.tex}
+\input{Chapter2.tex}
+\input{Chapter3.tex}
+\input{Chapter4.tex}
+\input{Chapter5.tex}
+%\input{Chapter6.tex}
+
+\blankpage
+
+% usare questo invece di usare \appendix perchè l'altro dà un ref sbagliato sul primo link dell'indice
+\begin{appendices}
+	%\input{AppendixA-Glossary.tex}\blankpage
+	%\input{AppendixB.tex}
+	%\input{AppendixC.tex}
+	%\input{AppendixD.tex}
+\end{appendices}
+
+%Declaration
+\pagestyle{empty}
+
+% Esempio
+%\index{Esempio |see{Esempio 2}}
+
+\blankpage
+
+%Indice analitico per il momento non verra' messo.
+%\printindex %indice analitico
+
+\bibliography{references}
+\end{document}
+
+%comandi utilizzati nel template:
+%\texttt{} %per scrivere con carattere diverso
+%\textbf{} %per scrivere con carattere diverso
+%\href{http://www.blob.com/}{testo}
+%\index{} %per indice analitico
+%\footnote{} %note
+%\noindent 
+%\label{} 
+%\ref{}
+%\cite{PdfReference}
+%\bibitem{PdfReference}
+%®
+%
+%per inserire una figura:
+%\begin{figure}[H]
+%\begin{center}
+%\includegraphics[width=12cm]{problematiche-del-ciclo-passivo.eps}\\
+%\caption{Ciclo attivo e passivo in un'azienda}
+%\label{fig:cicliAziendali}
+%\end{center}
+%\end{figure}
+%
+%per inserire una tabella:
+%\begin{longtable}{p{3cm}p{9cm}}
+%\textbf{Titolo} & Descrizione.\\
+%\\
+%\textbf{Titolo} & Descrizione.\\
+%\\
+%\end{longtable}

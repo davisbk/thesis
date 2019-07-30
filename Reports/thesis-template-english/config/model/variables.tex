@@ -1,0 +1,150 @@
+%layout legacy commands
+\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{}}
+
+%user defined commands
+
+% defnisce una pagina bianca con stile plain (migliore delle pagine bianche inserite in automatico dal model book)
+\newcommand{\blankpage}{
+	\newpage
+	% toglie la barra alta dalla pagina vuota
+	\thispagestyle{plain}
+	% forza una pagina vuota
+	\mbox{}
+	\newpage
+}
+
+%comando per inserire la premessa nel documento (fuori indice)
+\newcommand{\premise}[1][]{
+	\renewcommand{\theenumi}{#1\roman{enumi}}
+	\renewcommand{\labelenumi}{(\theenumi)}
+	\thispagestyle{plain}
+}
+
+
+%comandi creati per le convenzioni del documento:
+\newcommand{\istage}{\textit{stage}}
+\newcommand{\iStage}{\textit{Stage}}
+\newcommand{\idfda}{\textit{D.F.D. Assessment System}}
+\newcommand{\idfd}{\textit{D.F.D. Consulting}}
+\newcommand{\iIT}{\textit{IT}}
+\newcommand{\iICT}{\textit{ICT}}
+\newcommand{\ibusiness}{\textit{business}}
+
+
+
+
+
+% indice analitico (comandi con la 'i' scrivono e aggiungono, quelli con 'ii' aggiungono solo, quelli senza niente scrivono solo)
+\newcommand{\iASI}{ASI\index{ASI}} %scrive C sharp
+
+%tecnologie
+\newcommand{\CSharp}{C♯} %scrive C sharp
+\newcommand{\iCSharp}{C♯\index{C♯}} % scrive C sharp e aggiunge l'indice %\unichar{9839}
+\newcommand{\idotNET}{.NET\index{.NET}} % scrive .NEt e aggiunge l'indice
+\newcommand{\iiWPF}{\index{WPF}} % aggiunge solo l'indice a WPF
+\newcommand{\iWPF}{WPF\index{WPF}} % scrive WPF e aggiunge l'indice
+\newcommand{\iiWF}{\index{WinForms}}
+\newcommand{\iAW}{ANTLRWorks\index{ANTLRWorks}}
+\newcommand{\iA}{ANTLR\index{ANTLR}}
+\newcommand{\iU}{Unicode\index{Unicode}}
+\newcommand{\iPSharp}{\texttt{PdfSharp}\index{PdfSharp@\texttt{PdfSharp}}}
+\newcommand{\iTSharp}{\texttt{iTextSharp}\index{iTextSharp@\texttt{iTextSharp}}}
+
+%grammatica
+\newcommand{\iiCFG}{\index{CFG (context-free grammar)}}
+
+%programmi
+\newcommand{\iVS}{Visual Studio\index{Visual Studio}}
+\newcommand{\iVSS}{Visual SourceSafe\index{Visual SourceSafe}}
+\newcommand{\iSS}{SQL Server\index{SQL Server}}
+
+% ciclo attivo e passivo
+\newcommand{\iCA}{ciclo attivo\index{ciclo!attivo}} % scrive ciclo attivo e aggiunge l'indice
+\newcommand{\iCP}{ciclo passivo\index{ciclo!passivo}} % scrive ciclo passivo e aggiunge l'indice
+\newcommand{\iiCA}{\index{ciclo!attivo}} % aggiunge l'indice
+\newcommand{\iiCP}{\index{ciclo!passivo}} % aggiunge l'indice
+\newcommand{\iDCA}{ciclo attivo\index{documento!ciclo attivo}} % scrive ciclo attivo agigunge l'indice al ciclo attivo del documento
+\newcommand{\iDCP}{ciclo passivo\index{documento!ciclo passivo}} % scrive ciclo passivo aggiunge l'indice al ciclo passivo del documento
+\newcommand{\iiDCA}{\index{documento!ciclo attivo}} % aggiunge l'indice al ciclo attivo del documento
+\newcommand{\iiDCP}{\index{documento!ciclo passivo}} % aggiunge l'indice al ciclo passivo del documento
+\newcommand{\iGCA}{ciclo attivo\index{gestione!ciclo attivo}} % scrive ciclo attivo e aggiunge l'indice a gestione
+\newcommand{\iGCP}{ciclo passivo\index{gestione!ciclo passivo}} % scrive ciclo passivo e aggiunge l'indice a gestione
+\newcommand{\iiGCP}{\index{gestione!ciclo passivo}} % aggiunge l'indice a gestione
+
+%componenti
+\newcommand{\icMM}{\texttt{MapManager}\index{MapManager@\texttt{MapManager}}}
+\newcommand{\iicMM}{\index{MapManager@\texttt{MapManager}}}
+\newcommand{\icMF}{\texttt{MapFinder}\index{MapFinder@\texttt{MapFinder}}}
+\newcommand{\iicMF}{\index{MapFinder@\texttt{MapFinder}}}
+\newcommand{\icPA}{\texttt{PdfAnalyzer}\index{PdfAnalyzer (componente)@\texttt{PdfAnalyzer} (componente)}}
+
+%package e classi
+\newcommand{\iPFE}{\texttt{Plain.File.Extraction}\index{Plain.File.Extraction@\texttt{Plain.File.Extraction}}}
+\newcommand{\iiPFE}{\index{Plain.File.Extraction@\texttt{Plain.File.Extraction}}}
+\newcommand{\iPA}{\texttt{PdfAnalyzer}\index{Plain.File.Extraction@\texttt{Plain.File.Extraction}!PdfAnalyzer (classe)@\texttt{PdfAnalyzer} (classe)}}
+\newcommand{\iPP}{\texttt{PdfPage}\index{Plain.File.Extraction@\texttt{Plain.File.Extraction}!PdfPage@\texttt{PdfPage}}}
+\newcommand{\iPPar}{\texttt{PdfTextStreamParser}\index{Plain.File.Extraction@\texttt{Plain.File.Extraction}!PdfTextStreamParser@\texttt{PdfTextStreamParser}}}
+\newcommand{\iPLex}{\texttt{PdfTextStreamLexer}\index{Plain.File.Extraction@\texttt{Plain.File.Extraction}!PdfTextStreamLexer@\texttt{PdfTextStreamLexer}}}
+\newcommand{\iPF}{\texttt{PdfFont}\index{Plain.File.Extraction@\texttt{Plain.File.Extraction}!PdfFont@\texttt{PdfFont}}}
+\newcommand{\iPT}{\texttt{PdfText}\index{Plain.File.Extraction@\texttt{Plain.File.Extraction}!PdfText@\texttt{PdfText}}}
+\newcommand{\iPC}{\texttt{PdfChar}\index{Plain.File.Extraction@\texttt{Plain.File.Extraction}!PdfChar@\texttt{PdfChar}}}
+
+%parti di un PDF
+\newcommand{\iH}{\texttt{Header}\index{PDF!Header@\texttt{Header}}}
+\newcommand{\iFT}{\texttt{File Trailer}\index{PDF!File Trailer@\texttt{File Trailer}}}
+\newcommand{\iCRTable}{\texttt{Cross Reference Table}\index{PDF!Cross Reference Table@\texttt{Cross Reference Table}}}
+\newcommand{\iB}{\texttt{Body}\index{PDF!Body@\texttt{Body}}}
+
+% stream
+\newcommand{\iS}{stream\index{stream}}
+\newcommand{\iiS}{\index{stream}}
+\newcommand{\iCS}{stream\index{content stream}}
+\newcommand{\iiCS}{\index{content stream}}
+
+%fasi dello stage
+\newcommand{\iifS}{\index{studio del dominio!fase di}}
+\newcommand{\iifA}{\index{analisi!fase di}}
+\newcommand{\iifP}{\index{progettazione!fase di}}
+\newcommand{\iifC}{\index{codifica!fase di}}
+\newcommand{\iifV}{\index{verifica e validazione!fase di}}
+\newcommand{\iifD}{\index{documentazione!fase di}}
+
+%attività dello stage
+\newcommand{\iiaS}{\index{studio del dominio!attività di}}
+\newcommand{\iiaA}{\index{analisi!attività di}}
+\newcommand{\iiaP}{\index{progettazione!attività di}}
+\newcommand{\iiaC}{\index{codifica!attività di}}
+\newcommand{\iiaV}{\index{verifica e validazione!attività di}}
+\newcommand{\iiaD}{\index{documentazione!attività di}}
+
+%matrici
+\newcommand{\Tm}{$T_{m}$}
+\newcommand{\Tlm}{$T_{lm}$}
+
+%peratori
+\newcommand{\Tc}{\texttt{Tc}\index{operatore!di stato}}
+\newcommand{\Tw}{\texttt{Tw}\index{operatore!di stato}}
+\newcommand{\Tz}{\texttt{Tz}\index{operatore!di stato}}
+\newcommand{\TL}{\texttt{TL}\index{operatore!di stato}}
+\newcommand{\Tf}{\texttt{Tf}\index{operatore!di stato}}
+\newcommand{\Tr}{\texttt{Tr}\index{operatore!di stato}}
+\newcommand{\Ts}{\texttt{Ts}\index{operatore!di stato}}
+
+\newcommand{\Td}{\texttt{Td}\index{operatore!di posizionamento}}
+\newcommand{\Tmm}{\texttt{Tm}\index{operatore!di posizionamento}}
+\newcommand{\Tstar}{\texttt{T*}\index{operatore!di posizionamento}}
+
+\newcommand{\Tj}{\texttt{Tj}\index{operatore!di stampa}}
+\newcommand{\Tquote}{\texttt{'}\index{operatore!di stampa}}
+\newcommand{\Tdblquote}{\texttt{\textquotedbl}\index{operatore!di stampa}}
+\newcommand{\TJ}{\texttt{TJ}\index{operatore!di stampa}}
+
+
+
+
+
+
+
+
+
