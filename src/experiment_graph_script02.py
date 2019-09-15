@@ -128,6 +128,8 @@ print("done.")
 ########### GRAPHING ###########
 print("Graphing results...")
 
+### PLOT GENOME SIZE OVER TIME, BY SEED ###
+
 # For each seed, create a figure
 fig_seed01_genome_size_best = plt.figure(figsize=(30,20))
 ax_seed01_genome_size_best = fig_seed01_genome_size_best.add_subplot(111)
@@ -256,5 +258,128 @@ for df in seed05_result_dict:
 # Save and close the figure
 fig_seed05_genome_size_best.savefig(OUTPUT_ROOT_DIR + "seed05_genome_size.png")
 plt.close(fig_seed05_genome_size_best)
+
+### PERCENT CHANGE FROM CONTROL ###
+
+## SEED01 ##
+
+# Create a new figure
+fig_seed01_genome_size_perc_change = plt.figure(figsize=(30,20))
+ax_seed01_genome_size_perc_change = fig_seed01_genome_size_perc_change.add_subplot(111)
+ax_seed01_genome_size_perc_change.set_title("Genome Size Percent Change - Seed 1", fontsize=32)
+ax_seed01_genome_size_perc_change.set_xlabel("Generation", fontsize=20)
+ax_seed01_genome_size_perc_change.set_ylabel("Percent Change", fontsize=20)
+
+# Create dictionary for the results
+seed01_perc_change_result_dict = {}
+
+# For each condition, calculate the percent change from the control
+for df in seed01_result_dict:
+    df_tmp = pd.DataFrame(seed01_result_dict[df]['generation'])
+    df_tmp['perc_change'] = ((seed01_result_dict[df]['genome_size'] - seed01_result_dict['control']['genome_size'])/ seed01_result_dict['control']['genome_size'])
+    seed01_perc_change_result_dict[df] = df_tmp
+    
+for df in seed01_perc_change_result_dict:
+    seed01_perc_change_result_dict[df].plot(x='generation', y='perc_change', label=df, ax=ax_seed01_genome_size_perc_change)
+    
+fig_seed01_genome_size_perc_change.savefig(OUTPUT_ROOT_DIR + "seed01_genome_size_perc_change.png")
+plt.close(fig_seed01_genome_size_perc_change)
+
+## SEED02 ##
+
+# Create a new figure
+fig_seed02_genome_size_perc_change = plt.figure(figsize=(30,20))
+ax_seed02_genome_size_perc_change = fig_seed02_genome_size_perc_change.add_subplot(111)
+ax_seed02_genome_size_perc_change.set_title("Genome Size Percent Change - Seed 2", fontsize=32)
+ax_seed02_genome_size_perc_change.set_xlabel("Generation", fontsize=20)
+ax_seed02_genome_size_perc_change.set_ylabel("Percent Change", fontsize=20)
+
+# Create dictionary for the results
+seed02_perc_change_result_dict = {}
+
+# For each condition, calculate the percent change from the control
+for df in seed02_result_dict:
+    df_tmp = pd.DataFrame(seed02_result_dict[df]['generation'])
+    df_tmp['perc_change'] = ((seed02_result_dict[df]['genome_size'] - seed02_result_dict['control']['genome_size'])/ seed02_result_dict['control']['genome_size'])
+    seed02_perc_change_result_dict[df] = df_tmp
+    
+for df in seed02_perc_change_result_dict:
+    seed02_perc_change_result_dict[df].plot(x='generation', y='perc_change', label=df, ax=ax_seed02_genome_size_perc_change)
+    
+fig_seed02_genome_size_perc_change.savefig(OUTPUT_ROOT_DIR + "seed02_genome_size_perc_change.png")
+plt.close(fig_seed02_genome_size_perc_change)
+
+## SEED03 ##
+
+# Create a new figure
+fig_seed03_genome_size_perc_change = plt.figure(figsize=(30,20))
+ax_seed03_genome_size_perc_change = fig_seed03_genome_size_perc_change.add_subplot(111)
+ax_seed03_genome_size_perc_change.set_title("Genome Size Percent Change - Seed 3", fontsize=32)
+ax_seed03_genome_size_perc_change.set_xlabel("Generation", fontsize=20)
+ax_seed03_genome_size_perc_change.set_ylabel("Percent Change", fontsize=20)
+
+# Create dictionary for the results
+seed03_perc_change_result_dict = {}
+
+# For each condition, calculate the percent change from the control
+for df in seed03_result_dict:
+    df_tmp = pd.DataFrame(seed03_result_dict[df]['generation'])
+    df_tmp['perc_change'] = ((seed03_result_dict[df]['genome_size'] - seed03_result_dict['control']['genome_size'])/ seed03_result_dict['control']['genome_size'])
+    seed03_perc_change_result_dict[df] = df_tmp
+    
+for df in seed03_perc_change_result_dict:
+    seed03_perc_change_result_dict[df].plot(x='generation', y='perc_change', label=df, ax=ax_seed03_genome_size_perc_change)
+    
+fig_seed03_genome_size_perc_change.savefig(OUTPUT_ROOT_DIR + "seed03_genome_size_perc_change.png")
+plt.close(fig_seed03_genome_size_perc_change)
+
+## SEED04 ##
+
+# Create a new figure
+fig_seed04_genome_size_perc_change = plt.figure(figsize=(30,20))
+ax_seed04_genome_size_perc_change = fig_seed04_genome_size_perc_change.add_subplot(111)
+ax_seed04_genome_size_perc_change.set_title("Genome Size Percent Change - Seed 4", fontsize=32)
+ax_seed04_genome_size_perc_change.set_xlabel("Generation", fontsize=20)
+ax_seed04_genome_size_perc_change.set_ylabel("Percent Change", fontsize=20)
+
+# Create dictionary for the results
+seed04_perc_change_result_dict = {}
+
+# For each condition, calculate the percent change from the control
+for df in seed04_result_dict:
+    df_tmp = pd.DataFrame(seed04_result_dict[df]['generation'])
+    df_tmp['perc_change'] = ((seed04_result_dict[df]['genome_size'] - seed04_result_dict['control']['genome_size'])/ seed04_result_dict['control']['genome_size'])
+    seed04_perc_change_result_dict[df] = df_tmp
+    
+for df in seed04_perc_change_result_dict:
+    seed04_perc_change_result_dict[df].plot(x='generation', y='perc_change', label=df, ax=ax_seed04_genome_size_perc_change)
+    
+fig_seed04_genome_size_perc_change.savefig(OUTPUT_ROOT_DIR + "seed04_genome_size_perc_change.png")
+plt.close(fig_seed04_genome_size_perc_change)
+
+## SEED05 ##
+
+# Create a new figure
+fig_seed05_genome_size_perc_change = plt.figure(figsize=(30,20))
+ax_seed05_genome_size_perc_change = fig_seed05_genome_size_perc_change.add_subplot(111)
+ax_seed05_genome_size_perc_change.set_title("Genome Size Percent Change - Seed 5", fontsize=32)
+ax_seed05_genome_size_perc_change.set_xlabel("Generation", fontsize=20)
+ax_seed05_genome_size_perc_change.set_ylabel("Percent Change", fontsize=20)
+
+# Create dictionary for the results
+seed05_perc_change_result_dict = {}
+
+# For each condition, calculate the percent change from the control
+for df in seed05_result_dict:
+    df_tmp = pd.DataFrame(seed05_result_dict[df]['generation'])
+    df_tmp['perc_change'] = ((seed05_result_dict[df]['genome_size'] - seed05_result_dict['control']['genome_size'])/ seed05_result_dict['control']['genome_size'])
+    seed05_perc_change_result_dict[df] = df_tmp
+    
+for df in seed05_perc_change_result_dict:
+    seed05_perc_change_result_dict[df].plot(x='generation', y='perc_change', label=df, ax=ax_seed05_genome_size_perc_change)
+    
+fig_seed05_genome_size_perc_change.savefig(OUTPUT_ROOT_DIR + "seed05_genome_size_perc_change.png")
+plt.close(fig_seed05_genome_size_perc_change)
+
 
 print("Graphing complete!")
