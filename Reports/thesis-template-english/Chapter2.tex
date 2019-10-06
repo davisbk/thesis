@@ -1,15 +1,16 @@
 \chapter{Background}\label{ch:background}
 
 \section{In Silico Evolution}
-In vivo experiments, although sometimes more realistic, have their own set of difficulties, including challenging environmental conditions (e.g. simulating the open ocean in a lab) and multiple selection pressures acting on genomes in the real world \cite{Batut.2013}, sometimes making it difficult or impossible to tell which factor(s) lead to which outcome. 
+In addition to the difficulties discussed in Section \ref{problem_statement}, in vivo experiments, although sometimes more realistic, have their own set of difficulties, including challenging environmental conditions (e.g. simulating the open ocean in a lab) and simulating the multiple selection pressures acting on genomes in the real world \cite{Batut.2013}, sometimes making it difficult or impossible to tell which factor(s) lead to which outcome. 
 
 In silico evolution simulates organisms in software, thus allowing for far greater control and analysis of the environment and other experimental conditions. Varying strategies can be used to create the organisms (e.g. random genes, explicitly providing a previously-evolved genome, etc.) and then the organisms may interact, reproduce, and evolve, with the fittest individuals surviving to produce the next generation. 
 
 Factors such as the mutation rates or selection pressure are then parameters for the model and may be kept constant or allowed to vary over time. Given that these are parameters of the system, they may be tightly controlled, leading to a clearer picture of the factors influencing different outcomes. An underlying deterministic model can also allow for a reconstruction of the system from any given point, allowing one to easily create a record of events, including phylogenetic trees. 
 
 \subsubsection{Why use aevol}
-TODO - Comparison with AEGIS\cite{Bradshaw646877}, etc. 
+%TODO - Add comparison with AEGIS\cite{Bradshaw646877}, etc. AEGIS is used to study aging. Relevant?
 
+%TODO Add some examples of research aspects studied by using Aevol
 In the following sections, each of the three steps of aevol will be examined in greater detail.
 
 \section{aevol}
@@ -167,6 +168,14 @@ Calculates replication statistics for a given individual (specified by either ID
 	\item Mutant genome size – The genome size of the mutant.
 	\item Mutant number of functional genes – The number of functional genes in the mutant.
 \end{enumerate}
+
+\section{Changeable Factors}
+\subsection{Fitness}
+\subsection{Evolvability}
+\subsection{Robustness}
+\subsection{Structure}
+\subsubsection{Percent Coding vs. Non-Coding DNA}
+\subsubsection{Number of Genes}
 
 
 \section{Related Work}\label{related_work}

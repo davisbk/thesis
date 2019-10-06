@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.11)  4 OCT 2019 23:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.11)  6 OCT 2019 22:09
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -514,7 +514,7 @@ LaTeX Info: Redefining \nameref on input line 3.
 \openout5 = `Thesis.out'.
 
  (config/model/hyphenation.tex) (coverpage.tex
-<./pics/unifr-logo.jpg, id=115, 139.9629pt x 165.0165pt>
+<./pics/unifr-logo.jpg, id=135, 139.9629pt x 165.0165pt>
 File: ./pics/unifr-logo.jpg Graphic file (type jpg)
 <use ./pics/unifr-logo.jpg>
 Package pdftex.def Info: ./pics/unifr-logo.jpg  used on input line 15.
@@ -577,20 +577,20 @@ LaTeX Font Info:    Try loading font information for OT1+ptm on input line 2.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-<./pics/phylogeny03.png, id=183, 316.18124pt x 185.69376pt>
+) [1
+
+]
+<./pics/phylogeny03.png, id=215, 316.18124pt x 239.89626pt>
 File: ./pics/phylogeny03.png Graphic file (type png)
 <use ./pics/phylogeny03.png>
-Package pdftex.def Info: ./pics/phylogeny03.png  used on input line 9.
-(pdftex.def)             Requested size: 237.13535pt x 139.26997pt.
- [1
-
-] [2 <./pics/phylogeny03.png>]) (Chapter2.tex [3]
+Package pdftex.def Info: ./pics/phylogeny03.png  used on input line 10.
+(pdftex.def)             Requested size: 237.13535pt x 179.92174pt.
+ [2 <./pics/phylogeny03.png>]) (Chapter2.tex [3]
 Chapter 2.
 [4
 
 ] [5] [6]
-Overfull \hbox (17.13266pt too wide) in paragraph at lines 71--72
+Overfull \hbox (17.13266pt too wide) in paragraph at lines 72--73
 []\OT1/cmr/m/n/10.95 mutation statis-tics (e.g. an-ces-tor[]stats[]mutation-b00
 0000000-e000010000-
  []
@@ -598,19 +598,19 @@ Overfull \hbox (17.13266pt too wide) in paragraph at lines 71--72
 ("C:\Program Files\MiKTeX 2.9\tex/latex/ucs\uni-32.def"
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 ) [7]
-Overfull \hbox (21.96889pt too wide) in paragraph at lines 104--105
+Overfull \hbox (21.96889pt too wide) in paragraph at lines 105--106
 []\OT1/cmr/m/n/10.95 Rearrangement statis-tics (e.g. an-ces-tor[]stats[]rear-b0
 00000000-e000010000-
  []
 
 [8]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 122.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 123.
 
  ("C:\Program Files\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 122.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 123.
  [9]) (Chapter3.tex [10] [11]
 Chapter 3.
 ) (Chapter4.tex [12
@@ -634,17 +634,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: A09DFAE16F76FA9B4FA0FB5E5E38F9E7;1765.
+(rerunfilecheck)             Checksum: 0AAEC9D153C4241FD4ACE53E55F530A2;2067.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
  ) 
 Here is how much of TeX's memory you used:
- 8968 strings out of 492895
- 125120 string characters out of 3133459
- 234376 words of memory out of 3000000
- 12519 multiletter control sequences out of 15000+200000
+ 8981 strings out of 492895
+ 125311 string characters out of 3133459
+ 234405 words of memory out of 3000000
+ 12525 multiletter control sequences out of 15000+200000
  15004 words of font info for 47 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
- 30i,12n,43p,1173b,601s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,11n,43p,1263b,601s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
@@ -656,9 +656,9 @@ cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/urw/times/utmr8a.pfb>
-Output written on Thesis.pdf (24 pages, 420783 bytes).
+Output written on Thesis.pdf (24 pages, 426608 bytes).
 PDF statistics:
- 433 PDF objects out of 1000 (max. 8388607)
- 149 named destinations out of 1000 (max. 500000)
- 235 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 462 PDF objects out of 1000 (max. 8388607)
+ 156 named destinations out of 1000 (max. 500000)
+ 275 words of extra memory for PDF output out of 10000 (max. 10000000)
 
