@@ -16,13 +16,25 @@ In the following sections, each of the three steps of aevol will be examined in 
 \section{aevol}
 The in silico tool \textit{aevol} was developed to "study the evolution of the size and organization of bacterial genomes in various scenarios"\cite{Batut.2013}. Organisms are simulated with a binary genome which can either be generated at random or input as a previously-generated sequence. aevol essentially consists of three steps: 1) decoding the genome of these organisms to produce artificial proteins, 2) selecting the most fit individuals and 3) reproduction of these fittest individuals with possible variations (mutations, rearrangements, etc.). The population size $N$ is kept constant and a record of each generation is kept so that the phylogenetic lineages can be recreated.
 
-\subsection{aevol's Architecture}
+\subsection{Aevol's Architecture}
+Aevol essentially consists of three steps: decoding the genome, selection, and reproduction. These steps are illustrated in Figure \ref{fig:aevol_overview01} and described in more detail below. 
 
+\begin{figure}[H]\label{fig:aevol_overview01}
+	\includegraphics[scale=0.65]{aevol_overview01}
+	\centering
+	\caption[Overview of Aevol's architecture.]{Overview of Aevol's architecture, from \cite{Batut.2013}}
+\end{figure}
 \subsubsection{Decoding the Genome}
-As mentioned above, in aevol a genome consists of a string of binary characters where 0 is complementary to 1. Each organism in the clonal population has a double-stranded circular genome which is either generated randomly or which was specified as input. Transcribed regions are denoted by promoter and terminator sequences. The promoter sequence is a sequence whose Hamming distance $d$ is within $d_{max} = 4$ mismatches of the predefined consensus sequence 0101011001110010010110. Terminators are sequences which can form a stem-loop structure with a stem size of 4 bases and a loop length of 3 bases. 
+In aevol a genome consists of a string of binary characters where 0 is complementary to 1. Each organism in the clonal population has a double-stranded circular genome which is either generated randomly or which was provided as input. To decode the genome and produce the phenotype, the sequence is searched for transcribed regions. Transcribed regions are denoted by promoter and terminator sequences. The promoter sequence is a sequence whose Hamming distance $d$ is within $d_{max} = 4$ mismatches of the predefined consensus sequence $0101011001110010010110$. Terminators are sequences which can form a stem-loop structure with a stem size of 4 bases and a loop length of 3 bases. Lastly, the initiation and termination signals are sought, which are simply Shine-Dalgarno-like signals (i.e. $011011****000$ to start and $011011****001$ to stop). 
+
+Once an initiation sequence is found, the following bases are read three at a time according to the genetic code given in Figure \ref{fig:aevol_overview01} until a stop codon (by default $001$) is found. These codons encode for three parameters, $M$ (mean), $W$ (half-width), and $H$ (height), which together define a triangle representing a "cellular process".
+
+A cellular process is simply an abstract representation of some phenotypic function and is represented by the ordered set $\Omega = \left[0,1\right] \subset \mathbb{R}$. \textit{Fuzzy logic} is used to find the overall contribution of each cellular process. The mean $M$, then, gives us the specific cellular process, and is in the range $\left[0,1\right]$ The width describes the "scope" of the process, i.e. the \textit{pleiotropy} of the process. Lastly, the height determines the degree of possibility of the process, i.e. its relative strength. Since a transcribed region may have multiple initiation signals, codons are allowed.  
 
 \subsubsection{Selection}
-After the genome is decoded, the organisms are tested for their fitness. Fitness is roughly defined as their ability to fulfill a target function. 
+After the genome is decoded, the organisms are tested for their fitness. Fitness in Aevol is defined as the gap between the phenotype of a sequence and the environmental function $f_E$, as illustrated in Figure \ref{fig:aevol_overview01}. This environmental target function $f_E$ is a user-determined set of Gaussians which are specified in a parameter file. The difference between the phenotype (as calculated above) and the environmental function is the "metabolic error", labeled $g$ in the Figure. 
+
+Aevol contains several selection schemes but here we will only consider the \texttt{fitness\_proportionate} scheme, since this was the only selection scheme employed in our experiments. In this scheme, the probability of reproduction for each organism is proportionate to its fitness, which is to say $exp(-k * g)$, where $k$ is a user-definable parameter which determines the selection intensity and $g$ is the metabolic error.
 \subsubsection{Reproduction}
 
 \subsection{aevol's Post-Treatments}\label{aevol_post-treatments}

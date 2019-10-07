@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.11)  6 OCT 2019 22:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.6.3)  7 OCT 2019 16:13
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -53,10 +53,10 @@ Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \bigstrutjot=\dimen105
 )
 ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.sty"
-Package: babel 2019/06/03 3.32 The Babel package
+Package: babel 2019/05/04 3.31 The Babel package
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\switch.def"
-File: switch.def 2019/06/03 3.32 Babel switching mechanism
+File: switch.def 2019/05/04 3.31 Babel switching mechanism
 )
 *************************************
 * Local config file bblopts.cfg used
@@ -69,7 +69,7 @@ File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
 Language: english 2017/06/06 v3.3r English support from the babel system
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.def"
-File: babel.def 2019/06/03 3.32 Babel common definitions
+File: babel.def 2019/05/04 3.31 Babel common definitions
 \babel@savecnt=\count93
 \U@D=\dimen106
 
@@ -524,9 +524,9 @@ Package pdftex.def Info: ./pics/unifr-logo.jpg  used on input line 15.
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 ) [1
 
-{C:/Users/Brian Davis/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./pic
-s/unifr-logo.jpg>])pdfTeX warning (ext4): destination with the same identifier 
-(name{page.I}) has been already used, duplicate ignored
+{C:/Users/davis/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./pics/unif
+r-logo.jpg>])pdfTeX warning (ext4): destination with the same identifier (name{
+page.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.31 \tableofcontents
@@ -580,7 +580,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) [1
 
 ]
-<./pics/phylogeny03.png, id=215, 316.18124pt x 239.89626pt>
+<./pics/phylogeny03.png, id=217, 316.18124pt x 239.89626pt>
 File: ./pics/phylogeny03.png Graphic file (type png)
 <use ./pics/phylogeny03.png>
 Package pdftex.def Info: ./pics/phylogeny03.png  used on input line 10.
@@ -589,43 +589,55 @@ Package pdftex.def Info: ./pics/phylogeny03.png  used on input line 10.
 Chapter 2.
 [4
 
-] [5] [6]
-Overfull \hbox (17.13266pt too wide) in paragraph at lines 72--73
+]
+<./pics/aevol_overview01.png, id=242, 684.30656pt x 717.43031pt>
+File: ./pics/aevol_overview01.png Graphic file (type png)
+<use ./pics/aevol_overview01.png>
+Package pdftex.def Info: ./pics/aevol_overview01.png  used on input line 23.
+(pdftex.def)             Requested size: 444.79399pt x 466.32417pt.
+
+Overfull \hbox (84.79399pt too wide) in paragraph at lines 23--25
+ [][] 
+ []
+
+[5] [6 <./pics/aevol_overview01.png>] [7] [8]
+Overfull \hbox (17.13266pt too wide) in paragraph at lines 84--85
 []\OT1/cmr/m/n/10.95 mutation statis-tics (e.g. an-ces-tor[]stats[]mutation-b00
 0000000-e000010000-
  []
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/ucs\uni-32.def"
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-) [7]
-Overfull \hbox (21.96889pt too wide) in paragraph at lines 105--106
+) [9]
+Overfull \hbox (21.96889pt too wide) in paragraph at lines 117--118
 []\OT1/cmr/m/n/10.95 Rearrangement statis-tics (e.g. an-ces-tor[]stats[]rear-b0
 00000000-e000010000-
  []
 
-[8]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 123.
+[10]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 135.
 
  ("C:\Program Files\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 123.
- [9]) (Chapter3.tex [10] [11]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 135.
+ [11] [12])
+(Chapter3.tex [13]
 Chapter 3.
-) (Chapter4.tex [12
+) (Chapter4.tex [14
 
 ]
 Chapter 4.
-) (Chapter5.tex [13
+) (Chapter5.tex [15
 
 ]
 Chapter 5.
-) [14
+) [16
 
-] [15] [16] (Thesis.bbl) 
+] [17] [18] (Thesis.bbl) 
 AED: lastpage setting LastPage
-[17
+[19
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
@@ -634,15 +646,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 0AAEC9D153C4241FD4ACE53E55F530A2;2067.
+(rerunfilecheck)             Checksum: ED8803A44AB1F850F301A398DBF751C9;2067.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
  ) 
 Here is how much of TeX's memory you used:
- 8981 strings out of 492895
- 125311 string characters out of 3133459
- 234405 words of memory out of 3000000
- 12525 multiletter control sequences out of 15000+200000
- 15004 words of font info for 47 fonts, out of 3000000 for 9000
+ 8989 strings out of 492895
+ 125920 string characters out of 3133480
+ 234294 words of memory out of 3000000
+ 12529 multiletter control sequences out of 15000+200000
+ 15172 words of font info for 48 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
  30i,11n,43p,1263b,601s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
@@ -654,11 +666,13 @@ fonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/urw/times/utmr8a.pfb>
-Output written on Thesis.pdf (24 pages, 426608 bytes).
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/urw/times/utmr8a.pfb>
+Output written on Thesis.pdf (26 pages, 766452 bytes).
 PDF statistics:
- 462 PDF objects out of 1000 (max. 8388607)
- 156 named destinations out of 1000 (max. 500000)
- 275 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 486 PDF objects out of 1000 (max. 8388607)
+ 158 named destinations out of 1000 (max. 500000)
+ 280 words of extra memory for PDF output out of 10000 (max. 10000000)
 
