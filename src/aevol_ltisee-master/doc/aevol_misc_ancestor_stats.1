@@ -1,0 +1,38 @@
+./"test with man -l <file>
+.TH AEVOL "1" "June 2016" "aevol 5.0 beta8" "User Manual"
+.SH NAME
+Aevol \- an in silico experimental evolution platform
+.SH SYNOPSIS
+.B aevol_misc_ancestor_stats \-h
+|
+.B \-\-help
+.br
+.B aevol_misc_ancestor_stats \-V
+|
+.B \-\-version
+.br
+.B aevol_misc_ancestor_stats \fILINEAGE_FILE \fR[\fB\-FMv\fR]
+.SH DESCRIPTION
+.B Aevol
+is a simulation platform that allows one to let populations of digital organisms evolve in different conditions and study experimentally the mechanisms responsible for the structuration of the genome and the transcriptome.
+.TP
+.B aevol_misc_ancestor_stats
+issues statistics for the line of descent described in LINEAGE_FILE.
+.SH OPTIONS
+.TP
+.B \-h, \-\-help
+print help, then exit
+.TP
+.B \-V, \-\-version
+print version number, then exit
+.TP
+.B \-F, \-\-full-check
+perform genome checks whenever possible
+.TP
+.B \-M, \-\-trace-mutations
+outputs the fixed mutations (in a separate file)
+.TP
+.B \-v, \-\-verbose
+be verbose
+.SH "SEE ALSO"
+.B ae_misc_lineage, aevol_create, aevol_modify, aevol_propagate, aevol_run

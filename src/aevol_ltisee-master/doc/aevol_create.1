@@ -1,0 +1,46 @@
+./"test with man -l <file>
+.TH AEVOL "1" "June 2016" "aevol 5.0 beta8" "User Manual"
+.SH NAME
+Aevol \- an in silico experimental evolution platform
+.SH SYNOPSIS
+.B aevol_create \-h
+or
+.B \-\-help
+.br
+.B aevol_create \-V
+or
+.B \-\-version
+.br
+.B aevol_create \fR[\fB\-f\fI PARAM_FILE\fR] \fR[\fB\-C\fI CHROM_FILE\fR] \fR[\fB\-p\fI PLASMID_FILE\fR]
+.SH DESCRIPTION
+.B Aevol
+is a simulation platform that allows one to let populations of digital organisms evolve in different conditions and study experimentally the mechanisms responsible for the structuration of the genome and the transcriptome.
+.TP
+.B aevol_create
+create an experiment with setup as specified in
+.I PARAM_FILE
+.SH OPTIONS
+.TP
+.B \-h, \-\-help
+print help, then exit
+.TP
+.B \-V, \-\-version
+print version number, then exit
+.HP
+.B \-f, \-\-file
+.I PARAM_FILE
+.br
+specify parameter file (default: param.in)
+.HP
+.HP
+.B \-C, \-\-chromosome
+.I CHROM_FILE
+.br
+load chromosome from given text file instead of generating it
+.HP
+.B \-P, \-\-plasmid
+.I PLASMID_FILE
+.br
+load plasmid from given text file instead of generating it
+.SH "SEE ALSO"
+.B aevol_run, aevol_modify, aevol_propagate
