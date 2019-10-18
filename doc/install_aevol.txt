@@ -5,7 +5,8 @@
 5. (optional, for graphical outputs) apt install libx11-dev
 6. sudo apt install automake
 7. aclocal
-8. automake
-9. ./configure --without-x
-10. make
-11. sudo make install
+8. autoconf
+9. automake
+10. ./configure --without-x
+11. make
+12. sudo make install
