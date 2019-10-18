@@ -1,10 +1,11 @@
 1. Copy code to server
-2. apt install build-essential
-3. apt install zlib1g-dev
-4. apt install libboost-filesystem-dev
+2. sudo apt install build-essential
+3. sudo apt install zlib1g-dev
+4. sudo apt install libboost-filesystem-dev
 5. (optional, for graphical outputs) apt install libx11-dev
-6. aclocal
-7. automake
-8. ./configure --without-x
-9. make
-10. sudo make install
+6. sudo apt install automake
+7. aclocal
+8. automake
+9. ./configure --without-x
+10. make
+11. sudo make install
