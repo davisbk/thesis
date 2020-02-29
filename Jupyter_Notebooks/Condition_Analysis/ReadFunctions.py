@@ -10,7 +10,7 @@ def read_bp(fileLoc):
     df_ = pd.read_csv(fileLoc, skiprows=17, delim_whitespace=True, header=0, names=bp_best_names)
     return df_
 	
-def read_genes(fileLoc):
+def read_noncoding_bp(fileLoc):
 	genes_best_names = ['generation', 'num_coding_RNAs', 'num_non-coding_RNAs', 'avg_size_of_coding_RNAs', 'avg_size_of_non-coding_RNAs', 'num_functional_genes', 'num_non-functional_genes', 'avg_size_of_functional_genes', 'avg_size_of_non-functional_genes']
 	df_ = pd.read_csv(fileLoc, skiprows=14, delim_whitespace=True,header=0, names=genes_best_names)
 	return df_
