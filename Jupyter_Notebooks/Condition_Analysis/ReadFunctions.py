@@ -16,6 +16,6 @@ def read_genes(fileLoc):
 	return df_genes
     
 def read_robustness(fileLoc):
-    robustness_names = []
-    df_robustness = pd.read_csv(fileLoc, skiprows= x, delim_whitespace=True, header=0, names=robustness_names)
-    return robustness_names
+    robustness_names = ['generation', 'frac_positive_offspring', 'frac_neutral_offspring', 'frac_neutral_mutants', 'frac_negative_offspring', 'cumul_delta-gap_positive_offspring', 'cumul_delta-gap_negative_offspring', 'delta-gap_best_offspring', 'delta-gap_worst_offspring', 'cumul_delta-fitness_positive_offspring', 'cumul_delta-fitness_negative_offspring', 'delta-fitness_best_offspring', 'delta-fitness_worst_offspring']
+    df_robustness = pd.read_csv(fileLoc, na_values='-nan', skiprows= 19, delim_whitespace=True, header=0, names=robustness_names)
+    return df_robustness
