@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.11)  2 APR 2020 12:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.11)  4 APR 2020 14:48
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -600,28 +600,27 @@ Overfull \hbox (84.79399pt too wide) in paragraph at lines 23--25
  [][] 
  []
 
-[5] [6 <./pics/aevol_overview01.png>] [7] [8]
-Overfull \hbox (17.13266pt too wide) in paragraph at lines 84--85
+[5] [6 <./pics/aevol_overview01.png>] [7] [8] [9]
+Overfull \hbox (17.13266pt too wide) in paragraph at lines 90--91
 []\OT1/cmr/m/n/10.95 mutation statis-tics (e.g. an-ces-tor[]stats[]mutation-b00
 0000000-e000010000-
  []
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/ucs\uni-32.def"
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-) [9]
-Overfull \hbox (21.96889pt too wide) in paragraph at lines 117--118
+) [10]
+Overfull \hbox (21.96889pt too wide) in paragraph at lines 123--124
 []\OT1/cmr/m/n/10.95 Rearrangement statis-tics (e.g. an-ces-tor[]stats[]rear-b0
 00000000-e000010000-
  []
 
-[10]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 135.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 141.
 
- ("C:\Program Files\MiKTeX 2.9\tex/latex/base\omscmr.fd"
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 135.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 141.
  [11] [12])
 (Chapter3.tex [13]
 Chapter 3.
@@ -656,23 +655,25 @@ Here is how much of TeX's memory you used:
  12531 multiletter control sequences out of 15000+200000
  15172 words of font info for 48 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
- 30i,11n,43p,1263b,601s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,11n,43p,1406b,601s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/urw/times/utmr8a.pfb>
-Output written on Thesis.pdf (26 pages, 766567 bytes).
+fonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/
+helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.p
+fb>
+Output written on Thesis.pdf (26 pages, 785925 bytes).
 PDF statistics:
- 486 PDF objects out of 1000 (max. 8388607)
+ 494 PDF objects out of 1000 (max. 8388607)
  158 named destinations out of 1000 (max. 500000)
  280 words of extra memory for PDF output out of 10000 (max. 10000000)
 
