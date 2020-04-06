@@ -1,46 +1,5 @@
-This is BibTeX, Version 0.99d (MiKTeX 2.9.7380 64-bit)
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: Thesis.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Thesis.aux
 The style file: plain.bst
 Database file #1: references.bib
-You've used 1 entry,
-            2118 wiz_defined-function locations,
-            505 strings with 4229 characters,
-and the built_in function-call counts, 392 in all, are:
-= -- 33
-> -- 28
-< -- 0
-+ -- 11
-- -- 10
-* -- 33
-:= -- 77
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 8
-chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 11
-empty$ -- 23
-format.name$ -- 10
-if$ -- 73
-int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 8
-num.names$ -- 2
-pop$ -- 6
-preamble$ -- 1
-purify$ -- 7
-quote$ -- 0
-skip$ -- 7
-stack$ -- 0
-substring$ -- 14
-swap$ -- 1
-text.length$ -- 0
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 4
-warning$ -- 0
-while$ -- 3
-width$ -- 2
-write$ -- 13
+Warning--there's a number but no volume in doi:10.1162/978-0-262-33936-0-ch057
+(There was 1 warning)

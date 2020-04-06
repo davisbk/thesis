@@ -7,4 +7,49 @@ B{\'e}r{\'e}nice Batut, David~P. Parsons, Stephan Fischer, Guillaume Beslon,
   scenarios.
 \newblock {\em BMC bioinformatics}, 14 Suppl 15:S11, 2013.
 
+\bibitem{beslon:hal-01577115}
+Guillaume Beslon, Vincent~F Liard, and Santiago~F Elena.
+\newblock {Testing evolution predictability using the aevol software}.
+\newblock {16th international meeting of the European Society of Evolutionary
+  Biology (ESEB 2017) }, August 2017.
+\newblock Poster.
+
+\bibitem{doi:10.1162}
+Vincent Liard, David Parsons, Jonathan Rouzaud-Cornabas, and Guillaume Beslon.
+\newblock The complexity ratchet: Stronger than selection, weaker than
+  robustness.
+\newblock {\em Artificial Life Conference Proceedings}, 1(30):250--257, 2018.
+
+\bibitem{doi:10.1162/978-0-262-33936-0-ch057}
+Octavio Miramontes, Franois Taddei, Ariel~B. Lindner, Antoine Frenoy, and Dusan
+  Misevic.
+\newblock Shape matters in cooperation.
+\newblock {\em Artificial Life Conference Proceedings}, (28):340--341, 2016.
+
+\bibitem{doi:10.1186/s12862-019-1507-z}
+Jacob Rutten, Paulien Hogeweg, and Guillaume Beslon.
+\newblock Adapting the engine to the fuel: mutator populations can reduce the
+  mutational load by reorganizing their genome structure.
+\newblock {\em BMC Evolutionary Biology}, 19, 12 2019.
+
+\bibitem{sanchezdehesa:hal-01502737}
+Yolanda Sanchez-Dehesa, Lo{\"i}c Cerf, Jose~Maria Pena, Jean-Fran{\c c}ois
+  Boulicaut, and Guillaume Beslon.
+\newblock {Artificial Regulatory Networks Evolution}.
+\newblock In {\em {Proc 1st Int Workshop on Machine Learning for Systems
+  Biology MLSB 07}}, pages 47--52, Evry, France, September 2007.
+
+\bibitem{sun_zhiyi_blanchard}
+Zhiyi Sun and Jeffrey Blanchard.
+\newblock Strong genome-wide selection early in the evolution of
+  prochlorococcus resulted in a reduced genome through the loss of a large
+  number of small effect genes.
+\newblock {\em PloS one}, 9:e88837, 03 2014.
+
+\bibitem{doi:10.1098/rspb.2007.1137}
+Andreas Wagner.
+\newblock Robustness and evolvability: a paradox resolved.
+\newblock {\em Proceedings of the Royal Society B: Biological Sciences},
+  275(1630):91--100, 2008.
+
 \end{thebibliography}
