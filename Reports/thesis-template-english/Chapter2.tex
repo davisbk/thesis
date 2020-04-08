@@ -1,8 +1,8 @@
 \chapter{Background}\label{ch:background}
-As discussed in Chapter 1, reductive evolution is a  
+As discussed in Chapter~1, reductive evolution is a  
 
 \section{Experimental Evolution}
-As discussed in Section \ref{problem_statement}, in vivo experiments, although sometimes more realistic, have their own set of difficulties. Some examples of these difficulties include recreating challenging environmental conditions (e.g. simulating the open ocean in a lab) and identifying and/or simulating the multiple selection pressures acting on genomes in the real world \cite{Batut.2013}. These challenges add enormous difficulty and complexity to conducting proper experiments and isolating the specific factors which lead to particular outcomes. 
+As discussed in Section~\ref{problem_statement}, in vivo experiments, although sometimes more realistic, have their own set of difficulties. Some examples of these difficulties include recreating challenging environmental conditions (e.g. simulating the open ocean in a lab) and identifying and/or simulating the multiple selection pressures acting on genomes in the real world \cite{Batut.2013}. These challenges add enormous difficulty and complexity to conducting proper experiments and isolating the specific factors which lead to particular outcomes. 
 
 In silico evolution simulates organisms in software, thus allowing for far greater control and analysis of the environment and other experimental conditions. In contrast to in vivo experiments, a greater amount of control is also available with regard to the way organisms may interact, reproduce, and evolve. For example, a genome may be created completely from scratch or an existing genome may be fed into the simulation. Reproduction rates can depend on overall fitness, on relative fitness, or some other criterion.
 
@@ -34,13 +34,13 @@ A cellular process is simply an abstract representation of some phenotypic funct
 
 The codons are read one after the other and their Gray codes\footnote{A binary encoding such that two successive values (e.g. 2, 3) only differ by at most one bit (e.g. 0011, 0010). See \url{https://en.wikipedia.org/wiki/Gray_code}} are used to compute the real numbers $m$, $w$, and $h$ as follows. Each parameter ($m$, $w$, $h$) is assigned two codons in the genetic code (see Figure \ref{fig:aevol_overview01}), for example $w_0 = 010$ and $w_1 = 011$. Any $w_0$ codons become a $0$ in the Gray code, and vice versa with $1$s. So if, for example, when reading the coding sequence, the codons $w_1$, $w_0$, $w_1$, $w_0$ are read, the Gray code becomes $1010$, which is 12 in decimal. This is done for $m$, $w$, and $h$, and the resulting values are then normalized to be in the proper range. $w$'s range is specified in the parameter file (\texttt{MAX\_TRIANGLE\_WIDTH}), $h$ must be in the range $\left[-1,+1\right]$ (indicating that both activating and inhibitive processes are allowed) and $m$ must be in the range $\left[0,1\right]$ (the range of $\Omega$). 
 
-Given multiple coding sequences in a genome, several triangles are translated from the genome, each parameterized by its own $m$, $w$, and $h$. These triangles form the phenotypic function $f_P$. \textit{Fuzzy logic} is used to find the overall contribution of each cellular process, using the Lukasiewicz fuzzy operators\footnote{See \url{https://en.wikipedia.org/wiki/Lukasiewicz\_logic} for an introduction.}. Roughly speaking, the activating proteins are added up, as are the inhibiting proteins, and the difference between these two totals represents the final function $f_P$. More formally, if $f_i$ is the possibility distribution of the $i$-th activator protein and $f_j$ is the possibility distribution of the $j$-th inhibitor protein, then the phenotype of the individual is defined as:
+Given the fact that there are likely multiple coding sequences in a genome, several triangles (cellular processes) are translated from the genome, each parameterized by its own $m$, $w$, and $h$. These triangles form the phenotypic function $f_P$. \textit{Fuzzy logic} is used to find the overall contribution of each cellular process, using the Lukasiewicz fuzzy operators\footnote{See \url{https://en.wikipedia.org/wiki/Lukasiewicz\_logic} for an introduction.}. Roughly speaking, the activating proteins are added up, as are the inhibiting proteins, and the difference between these two totals represents the final function $f_P$. More formally, if $f_i$ is the possibility distribution of the $i$-th activator protein and $f_j$ is the possibility distribution of the $j$-th inhibitor protein, then the phenotype of the individual is defined as:
 \begin{equation*}
 f_P = max\left(min\left(\sum_{i}^{}f_i(x),1 \right) - min\left(\sum_{j}^{}f_j(x),1 \right) ,0\right)
 \end{equation*}
 
 \subsubsection{Selection}\label{subsec:aevol_selection}
-After the genome is decoded, the organisms are tested for their fitness. Fitness in Aevol is defined as the gap between the phenotype of a sequence $f_P$ and the environmental  target function $f_E$, as illustrated in Figure \ref{fig:aevol_overview01}. This environmental target function $f_E$ is a user-determined set of Gaussians which are specified in a parameter file, with each Gaussian being identified by three parameters: its height, its location along the axis, and its width. The difference between the phenotype (as calculated above) and the environmental function is the ``metabolic error'', labeled $g$ in the Figure and is more formally defined as:  $g = \int_{a}^{b} f_E(x) - f_P(x) dx$. The idea is illustrated in Figure \ref{fig:aevol_fitness01}
+After the genome is decoded, the organisms are tested for their fitness. Fitness in Aevol is related to the gap between the phenotype of a sequence $f_P$ and the environmental  target function $f_E$, as illustrated in Figure \ref{fig:aevol_overview01}. This environmental target function $f_E$ is a user-defined set of Gaussians which are specified in a parameter file, with each Gaussian being identified by three parameters: its height, its location along the axis, and its width. The difference between the phenotype (as calculated above) and the environmental function is the ``metabolic error'', labeled $g$ in the Figure and is more formally defined as:  $g = \int_{a}^{b} f_E(x) - f_P(x) dx$. The idea is illustrated in Figure \ref{fig:aevol_fitness01}
 
 \begin{figure}[h]
 	\includegraphics[scale=0.5]{aevol_fitness_description01}
@@ -49,20 +49,24 @@ After the genome is decoded, the organisms are tested for their fitness. Fitness
 	\label{fig:aevol_fitness01}
 \end{figure}
 
-Aevol contains several selection schemes but here we will only consider the \texttt{fitness\_proportionate} scheme, since this was the only selection scheme employed in our experiments. In this scheme, the probability of reproduction for each organism is proportionate to its fitness, namely $P(\text{reproduction}) = exp(-k * g)$, where $k$ is a user-definable parameter which determines the selection intensity and $g$ is the metabolic error.
+Aevol contains several selection schemes but here we will only consider the \texttt{fitness\_proportionate} scheme, since this was the only selection scheme employed in our experiments. In this scheme, the probability of reproduction for each organism $i$ is proportionate to its fitness, namely:
+\begin{equation*}
+P(\text{reproduction}) = \frac{e^{-k * g}}{\sum_{i=1}^{N} e^{-k * g_i}}
+\end{equation*} 
+where $k$ is a user-definable parameter which determines the selection intensity and $g$ is the metabolic error.
 \subsubsection{Reproduction}\label{subsec:aevol_reproduction}
-Once the fittest organisms in the population are found and their probabilities of reproducing are calculated as described in the previous Section, new organisms are produced by drawing from a multinomial distribution. Since the population size is held constant, this implies that a single organism with a high probability of reproduction may produce multiple offspring and an organism with low probability of reproduction may produce none.
+Once the fittest organisms in the population are found and their probabilities of reproducing are calculated as described in the previous Section, new organisms are produced. This is done for each potential parent organism by drawing from a multinomial distribution with the probability of reproduction given above. Since the population size is held constant, this implies that a single organism with a high probability of reproduction may produce multiple offspring and an organism with low probability of reproduction may produce none.
 
-When new organisms are created and their genomes are copied from their parent organisms, it is at this stage that the driving force in evolution occurs, namely the possibility for mutation, indels, and frameshifts. Mutation rates are set in the parameter file and include point mutations, insertions and deletions (indels), and rearrangements (duplication, deletions, translocations, and inversions).
+When new organisms are created and their genomes are copied from their parent organisms, it is at this stage that some of the driving forces in evolution occur, namely the possibility for variation through mutation, indels, and frameshifts. Offspring will receive their parents' genome but their genome may be subject to perturbations due to stochastic effects. Mutation rates are set in the parameter file and include point mutations, insertions and deletions (indels), and rearrangements (duplication, deletions, translocations, and inversions).
 
-The mutation, indels, rearrangement, etc. events are carried out by first determining the number $\mu$ of such events which will occur, based on the mutation rate specified in the parameter file and drawing from a binomial distribution (e.g. $B(L, \mu_\text{point})$ for point mutations, $B(L, \mu_\text{large deletions})$ for large deletions, etc. where $L$ is the size of the genome). Then a random point (or points, in the case of e.g. rearrangement) is chosen and the event is carried out, with the order of events shuffled randomly. 
+The mutation, indels, rearrangement, etc. events are carried out by first determining the number $\mu$ of such events which will occur, based on the mutation rate specified in the parameter file and drawing from a binomial distribution (e.g. $B(L, \mu_\text{point})$ for point mutations, $B(L, \mu_\text{large deletions})$ for large deletions, etc. where $L$ is the size of the genome). Then a random point (or points, in the case of e.g. rearrangement) is chosen and the event is carried out, with the order of these events shuffled randomly. 
 
 
-\section{Changeable Factors}\label{aevol_post-treatments}
+\section{Analyzing with Aevol}\label{aevol_post-treatments}
 
-Once the experiments have completed, Aevol by default produces several statistics files which include information about genome size, the percentage of coding DNA, number of genes, average metabolic error, and many other factors.  It further includes a number of post-treatments that allow one to analyze specific individuals or the population at large, including tools for determining robustness, evolvability, coalescence, and the lineages. 
+Once the experiments have completed, Aevol by default produces several statistics files which include information about genome size, the percentage of coding DNA, number of genes, average metabolic error, and many other statistics. It further includes a number of post-treatments that allow one to analyze specific individuals or the population at large, including tools for determining robustness, evolvability, coalescence, and the lineages. 
 
-One of the key features of Aevol is the ability to look back in time at the ''archaeological record'' of previous organisms, which is stored on disk, in order to perform varied analyses. This is primarily done with various ``post-treatments'', i.e. supplementary programs. These post-treatments generally require a \texttt{lineage} file, which shows a record back in time of the line of descent for an individual. One may specify either the best-ranked individual (i.e. the fittest) or a specific individual by their unique identification number. The basic idea is illustrated below in Figure~\ref{fig:lineage01}. 
+One of the key features of Aevol is the ability to look back in time at the ''archaeological record'' of previous organisms, which is stored on disk, in order to perform various analyses. This is primarily done with a myriad of post-treatments'', i.e. supplementary programs. These post-treatments generally require a \texttt{lineage} file, which shows a record back in time of the line of descent for an individual. One may specify either the best-ranked individual (i.e. the fittest) or a specific individual by their unique identification number. The basic idea is illustrated below in Figure~\ref{fig:lineage01}. 
 
 \begin{figure}[H]
 	\includegraphics[scale=0.65]{lineage01}
@@ -92,16 +96,41 @@ Aevol calculates statistics for both reproductive and mutational robustness stat
 It is, then, a seeming trade-off between robustness and evolvability. The more robust a system is, the less phenotypic variation is generated by random mutation events, and thus less evolvability. However, a key factor is to distinguish between genomic and phenotypic robustness; a strong phenotypic robustness promotes structural evolvability, as the likelihood that a mutation is deleterious is smaller in populations with more robust phenotypes. For a full discussion, see \cite{doi:10.1098/rspb.2007.1137}.
 
 \subsection{Fitness}\label{subsec:fitness}
-As described in Section \ref{subsec:aevol_selection} and illustrated in Figure \ref{fig:aevol_fitness01}, fitness in Aevol is measured as the gap $g$ between the environment and the phenotype, i.e.  $g = \int_{a}^{b} f_E(x) - f_P(x) dx$. Aevol provides many statistics about fitness, including the population size (for cases when it is not fixed), overall fitness, genome size, metabolic error	  
+As mentioned above, fitness in Aevol is closely tied in to the ``metabolic error''. This error, $g$, is calculated as the gap between the environmental function $f_E$ and the phenotype of the organism, $f_P$. Once $g$ is determined as described above in Section \ref{subsec:aevol_selection}, it may be used to calculate the actual fitness of the organism according to the equation:
+\begin{equation*}
+\text{fitness} = exp(-k*g)
+\end{equation*} 
+where k is the \textit{selection coefficient} variable set by the user in a parameter file. Aevol provides fitness statistics both for the fittest individual and for the population at large.
 
 \subsection{Structure}
-Another strength of Aevol is its ability to analyze changes in the structure of DNA. As mentioned above, Aevol produces statistics about individuals and the population at large, including the percentage of coding vs. non-coding DNA, the number of genes,  In the following subsections we will examine 
-\subsubsection{Percent Coding vs. Non-Coding DNA}
-\subsubsection{Number of Genes}
+Another strength of Aevol is its ability to analyze changes in the structure of DNA. As with fitness, Aevol produces statistics about individuals and the population at large for many aspects of genome structure, including: the number of coding vs. non-coding RNAs (i.e. they have at least one gene), the average size of coding and non-coding RNAs, the number of genes, the number of ``essential'' base pairs (i.e. those that are part of a functional coding sequence), etc. The table below summarizes where these aspects are to be found in Aevol's myriad statistics files. 
 
-
- 
-
+\begin{center}
+	\begin{tabular}{ |c|c| }
+		\hline
+		\textbf{stat\_genes\_$\langle$best/global$\rangle$} & \textbf{stat\_bp\_$\langle$best/global$\rangle$} \\
+		\hline
+		number of coding RNAs & number of bp not in any CDS \\
+		\hline
+		number of non-coding RNAs & number of bp not included in any functional CDS \\
+		\hline
+		average size of coding RNAs & number of bp not included in any non-functional CDS \\
+		\hline
+		average size of non-coding RNAs & number of bp not included in any RNA \\
+		\hline
+		number of functional genes & number of bp not included in any coding RNA \\
+		\hline
+		number of non-functional genes & number of bp not included in any non-coding RNA \\
+		\hline
+		average size of functional genes & number of non-essential bp \\
+		\hline
+		average size of non-functional genes & number of non-essential bp including non-functional genes \\
+		\hline
+	\end{tabular}
+\end{center}
 
 
 \section{Related Work}\label{related_work}
+
+%TODO Mention "Evolvability drives innovation in viral genomes (2016) 
+

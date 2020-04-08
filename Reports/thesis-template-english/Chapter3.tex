@@ -1,10 +1,45 @@
-\chapter{Methods}\label{ch:approach}
-With an understanding of the basics behind us, in this chapter we provide an overview of the problem and our proposed solution.
+\chapter{Methods}\label{ch:methods}
+With an understanding of the basics behind us, in this chapter we provide an overview of our contributions and proposed solution.
 
 \section{Contributions}
 
-
 \section{Experimental Designs} \label{experimental_design}
+To test the conditions under which reductive evolution might occur, we conducted a series of experiments in which a ``wild type'' genome with 13,237 base pairs comprising 132 genes was cloned and each clone was allowed to evolve for 500,000 generations under a total of 7 different conditions. To control for experimental bias, we performed five runs of each condition, leading to a total of 35 experiments. 
+
+\subsection{Inputs}
+In Table \ref{table:parameters}, our parameter values for all input parameters may be found. Please note that for $\mu$, this represents the rates for point mutations, small insertions, and small deletions. The rearrangement rates were not changed under any condition and were always $1e-6$ for duplications, deletions, translocations, and inversions. 
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|c||c|c|c|}
+		\hline
+		 & \multicolumn{3}{c|}{\textbf{Parameter}} \\
+		\cline{2-4}
+		\textbf{Condition} &$\mu$ & $k$ & $N$ \\
+		\hline
+		control & $1.00E{-7}$ & $1000$ & $1024$ \\
+		\hline
+		mutation up & $4.00E{-7}$ & $1000$ & $1024$ \\
+		\hline
+		mutation down & $2.50E{-8}$ & $1000$ & $1024$ \\
+		\hline
+		selection up & $1.00E{-7}$ & $4000$ & $1024$ \\
+		\hline
+		selection down & $1.00E{-7}$ & $250$ & $1024$ \\
+		\hline
+		population up & $1.00E{-7}$ & $1000$ & $4096$ \\
+		\hline
+		population down & $1.00E{-7}$ & $1000$ & $256$ \\		
+		\hline
+	\end{tabular}
+	\caption[Table of parameters]{Table of input parameters. $\mu$ is the mutation rate, $k$ is the selection strength, and $N$ is the population size.}
+	\label{table:parameters}
+\end{table}
+
+\subsection{Evaluation Strategy}
+\subsubsection{Robustness}
+\subsubsection{Evolvability}
+\subsubsection{Time to Coalescence}
 
 \section{Expected Results}
 %TODO Generate table of expected results similar to one in Berenice's thesis

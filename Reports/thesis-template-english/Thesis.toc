@@ -13,27 +13,28 @@
 \contentsline {subsubsection}{Decoding the Genome}{6}{section*.6}% 
 \contentsline {subsubsection}{Selection}{8}{section*.7}% 
 \contentsline {subsubsection}{Reproduction}{9}{section*.8}% 
-\contentsline {section}{\numberline {2.3}Changeable Factors}{10}{section.2.3}% 
+\contentsline {section}{\numberline {2.3}Analyzing with Aevol}{10}{section.2.3}% 
 \contentsline {subsection}{\numberline {2.3.1}Evolvability}{11}{subsection.2.3.1}% 
-\contentsline {subsection}{\numberline {2.3.2}Robustness and Antirobustness}{11}{subsection.2.3.2}% 
-\contentsline {subsection}{\numberline {2.3.3}Fitness}{12}{subsection.2.3.3}% 
-\contentsline {subsection}{\numberline {2.3.4}Structure}{12}{subsection.2.3.4}% 
-\contentsline {subsubsection}{Percent Coding vs. Non-Coding DNA}{13}{section*.9}% 
-\contentsline {subsubsection}{Number of Genes}{13}{section*.10}% 
+\contentsline {subsection}{\numberline {2.3.2}Robustness and Antirobustness}{12}{subsection.2.3.2}% 
+\contentsline {subsection}{\numberline {2.3.3}Fitness}{13}{subsection.2.3.3}% 
+\contentsline {subsection}{\numberline {2.3.4}Structure}{13}{subsection.2.3.4}% 
 \contentsline {section}{\numberline {2.4}Related Work}{13}{section.2.4}% 
 \contentsline {chapter}{\numberline {3}Methods}{14}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}Contributions}{14}{section.3.1}% 
 \contentsline {section}{\numberline {3.2}Experimental Designs}{14}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}Expected Results}{14}{section.3.3}% 
-\contentsline {chapter}{\numberline {4}Experiments, Results, and Discussion}{15}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Experiments}{15}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Evaluation Strategy}{15}{section.4.2}% 
-\contentsline {subsection}{\numberline {4.2.1}Robustness}{15}{subsection.4.2.1}% 
-\contentsline {subsection}{\numberline {4.2.2}Evolvability}{15}{subsection.4.2.2}% 
-\contentsline {subsection}{\numberline {4.2.3}Coalescing Time}{15}{subsection.4.2.3}% 
-\contentsline {section}{\numberline {4.3}Experiment Results}{15}{section.4.3}% 
-\contentsline {subsection}{\numberline {4.3.1}Discussion}{15}{subsection.4.3.1}% 
-\contentsline {subsection}{\numberline {4.3.2}Relation to Real-World Biological Entities}{15}{subsection.4.3.2}% 
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{16}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Conclusion}{16}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Future work}{16}{section.5.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Inputs}{14}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Evaluation Strategy}{15}{subsection.3.2.2}% 
+\contentsline {subsubsection}{Robustness}{15}{section*.9}% 
+\contentsline {subsubsection}{Evolvability}{15}{section*.10}% 
+\contentsline {subsubsection}{Time to Coalescence}{15}{section*.11}% 
+\contentsline {section}{\numberline {3.3}Expected Results}{15}{section.3.3}% 
+\contentsline {chapter}{\numberline {4}Results and Discussion}{16}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Results}{16}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Condition Analysis}{16}{subsection.4.1.1}% 
+\contentsline {subsubsection}{Mutation Up}{16}{section*.12}% 
+\contentsline {section}{\numberline {4.2}Discussion}{16}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}Relation to Real-World Biological Entities}{16}{subsection.4.2.1}% 
+\contentsline {subsection}{\numberline {4.2.2}Limitations of Results}{16}{subsection.4.2.2}% 
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{17}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Conclusion}{17}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Future work}{17}{section.5.2}% 
