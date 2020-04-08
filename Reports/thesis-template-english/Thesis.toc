@@ -13,26 +13,13 @@
 \contentsline {subsubsection}{Decoding the Genome}{6}{section*.6}% 
 \contentsline {subsubsection}{Selection}{8}{section*.7}% 
 \contentsline {subsubsection}{Reproduction}{9}{section*.8}% 
-\contentsline {subsection}{\numberline {2.2.2}Aevol's Statistics and Post-Treatments}{9}{subsection.2.2.2}% 
-\contentsline {subsubsection}{Evolvability}{10}{section*.9}% 
-\contentsline {subsubsection}{Robustness and Antirobustness}{11}{section*.10}% 
-\contentsline {subsubsection}{aevol\_misc\_ancestor\_mutagenesis}{11}{section*.11}% 
-\contentsline {subsubsection}{aevol\_misc\_ancestor\_robustness}{12}{section*.12}% 
-\contentsline {subsubsection}{aevol\_misc\_ancestor\_stats}{12}{section*.13}% 
-\contentsline {subsubsection}{aevol\_misc\_coalescence}{12}{section*.14}% 
-\contentsline {subsubsection}{aevol\_misc\_create\_eps}{12}{section*.15}% 
-\contentsline {subsubsection}{aevol\_misc\_extract}{12}{section*.16}% 
-\contentsline {subsubsection}{aevol\_misc\_lineage}{12}{section*.17}% 
-\contentsline {subsubsection}{aevol\_misc\_mutagenisis}{12}{section*.18}% 
-\contentsline {subsubsection}{aevol\_misc\_protein\_map}{13}{section*.19}% 
-\contentsline {subsubsection}{aevol\_misc\_robustness}{13}{section*.20}% 
-\contentsline {section}{\numberline {2.3}Changeable Factors}{13}{section.2.3}% 
-\contentsline {subsection}{\numberline {2.3.1}Fitness}{13}{subsection.2.3.1}% 
-\contentsline {subsection}{\numberline {2.3.2}Evolvability}{13}{subsection.2.3.2}% 
-\contentsline {subsection}{\numberline {2.3.3}Robustness}{13}{subsection.2.3.3}% 
-\contentsline {subsection}{\numberline {2.3.4}Structure}{13}{subsection.2.3.4}% 
-\contentsline {subsubsection}{Percent Coding vs. Non-Coding DNA}{13}{section*.21}% 
-\contentsline {subsubsection}{Number of Genes}{13}{section*.22}% 
+\contentsline {section}{\numberline {2.3}Changeable Factors}{10}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}Evolvability}{11}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.3.2}Robustness and Antirobustness}{11}{subsection.2.3.2}% 
+\contentsline {subsection}{\numberline {2.3.3}Fitness}{12}{subsection.2.3.3}% 
+\contentsline {subsection}{\numberline {2.3.4}Structure}{12}{subsection.2.3.4}% 
+\contentsline {subsubsection}{Percent Coding vs. Non-Coding DNA}{13}{section*.9}% 
+\contentsline {subsubsection}{Number of Genes}{13}{section*.10}% 
 \contentsline {section}{\numberline {2.4}Related Work}{13}{section.2.4}% 
 \contentsline {chapter}{\numberline {3}Methods}{14}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}Contributions}{14}{section.3.1}% 

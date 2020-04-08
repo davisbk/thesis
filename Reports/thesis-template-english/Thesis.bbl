@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{Batut.2013}
 B{\'e}r{\'e}nice Batut, David~P. Parsons, Stephan Fischer, Guillaume Beslon,
@@ -18,6 +18,12 @@ Guillaume Beslon, Vincent~F Liard, and Santiago~F Elena.
 Isabel Gordo and Brian Charlesworth.
 \newblock On the speed of muller{\textquoteright}s ratchet.
 \newblock {\em Genetics}, 156(4):2137--2140, 2000.
+
+\bibitem{knibbe:tel-00482375}
+Carole Knibbe.
+\newblock {\em {Evolution of genome structure by indirect selection of the
+  mutational variability: a computational approach}}.
+\newblock Theses, {INSA de Lyon}, December 2006.
 
 \bibitem{doi:10.1162}
 Vincent Liard, David Parsons, Jonathan Rouzaud-Cornabas, and Guillaume Beslon.

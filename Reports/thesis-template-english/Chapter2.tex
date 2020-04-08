@@ -25,7 +25,7 @@ Aevol's three steps\textemdash decoding the genome, selection, and reproduction\
 	\caption[Overview of Aevol's architecture.]{Overview of Aevol's architecture, from \cite{Batut.2013}}
 	\label{fig:aevol_overview01}
 \end{figure}
-\subsubsection{Decoding the Genome}
+\subsubsection{Decoding the Genome}\label{subsec:aevol_decoding}
 In Aevol, a genome consists of a string of binary characters where 0 is complementary to 1. Each organism in the (initially clonal) population has a double-stranded circular genome which is either generated randomly or which was provided as input. To decode the genome and produce the phenotype, the sequence is searched for transcribed regions. Transcribed regions are denoted by promoter and terminator sequences. The promoter sequence is a sequence whose Hamming distance $d$ is within $d_{max} = 4$ mismatches of the predefined consensus sequence $0101011001110010010110$. Terminators are sequences which can form a stem-loop structure with a stem size of 4 bases and a loop length of 3 bases (i.e. $abcd$***$\overline{dcba}$ where a is complementary to $\overline{a}$, b is complementary to $\overline{b}$, etc.). Lastly, the initiation and termination signals are sought, which are simply Shine-Dalgarno-like signals (i.e. $011011****000$ to start and $011011****001$ to stop). Lastly, an expression level $e$ is assigned to each coding region, following the formula $e = 1 - \frac{d}{d_{max} + 1}$ where $d$ is again the Hamming distance between the coding region and the consensus sequence given above and $d_{max}$ is the maximum allowable distance (i.e. 4). 
 
 Once an initiation sequence is found, the following bases are read three at a time (codon by codon) until a stop codon (by default $001$) is found. If a stop codon is not found, then no protein is produced. Since a transcribed region may have multiple initiation signals, operons are therefore allowed. The codons following an initiation signal encode for three parameters according to the genetic code given in Figure \ref{fig:aevol_overview01}: $m$ (mean), $w$ (half-width), and $h$ (height), which together define a triangle representing a ``cellular process''.
@@ -34,97 +34,74 @@ A cellular process is simply an abstract representation of some phenotypic funct
 
 The codons are read one after the other and their Gray codes\footnote{A binary encoding such that two successive values (e.g. 2, 3) only differ by at most one bit (e.g. 0011, 0010). See \url{https://en.wikipedia.org/wiki/Gray_code}} are used to compute the real numbers $m$, $w$, and $h$ as follows. Each parameter ($m$, $w$, $h$) is assigned two codons in the genetic code (see Figure \ref{fig:aevol_overview01}), for example $w_0 = 010$ and $w_1 = 011$. Any $w_0$ codons become a $0$ in the Gray code, and vice versa with $1$s. So if, for example, when reading the coding sequence, the codons $w_1$, $w_0$, $w_1$, $w_0$ are read, the Gray code becomes $1010$, which is 12 in decimal. This is done for $m$, $w$, and $h$, and the resulting values are then normalized to be in the proper range. $w$'s range is specified in the parameter file (\texttt{MAX\_TRIANGLE\_WIDTH}), $h$ must be in the range $\left[-1,+1\right]$ (indicating that both activating and inhibitive processes are allowed) and $m$ must be in the range $\left[0,1\right]$ (the range of $\Omega$). 
 
-Given multiple coding sequences in a genome, several triangles are translated from the genome, each parameterized by its own $m$, $w$, and $h$. These triangles form the phenotypic function $f_P$. \textit{Fuzzy logic} is used to find the overall contribution of each cellular process, using the Lukasiewicz fuzzy operators\footnote{See \url{https://en.wikipedia.org/wiki/Lukasiewicz\_logic} for an introduction.}. In short, the activating proteins are added up, as are the inhibiting proteins, and the difference between these two totals represents the final function $f_P$. 
+Given multiple coding sequences in a genome, several triangles are translated from the genome, each parameterized by its own $m$, $w$, and $h$. These triangles form the phenotypic function $f_P$. \textit{Fuzzy logic} is used to find the overall contribution of each cellular process, using the Lukasiewicz fuzzy operators\footnote{See \url{https://en.wikipedia.org/wiki/Lukasiewicz\_logic} for an introduction.}. Roughly speaking, the activating proteins are added up, as are the inhibiting proteins, and the difference between these two totals represents the final function $f_P$. More formally, if $f_i$ is the possibility distribution of the $i$-th activator protein and $f_j$ is the possibility distribution of the $j$-th inhibitor protein, then the phenotype of the individual is defined as:
+\begin{equation*}
+f_P = max\left(min\left(\sum_{i}^{}f_i(x),1 \right) - min\left(\sum_{j}^{}f_j(x),1 \right) ,0\right)
+\end{equation*}
 
-\subsubsection{Selection}
-After the genome is decoded, the organisms are tested for their fitness. Fitness in Aevol is defined as the gap between the phenotype of a sequence $f_P$ and the environmental  target function $f_E$, as illustrated in Figure \ref{fig:aevol_overview01}. This environmental target function $f_E$ is a user-determined set of Gaussians which are specified in a parameter file. The difference between the phenotype (as calculated above) and the environmental function is the ``metabolic error'', labeled $g$ in the Figure and is more formally defined as:  $g = \int_{a}^{b} f_E(x) - f_P(x) dx$.
+\subsubsection{Selection}\label{subsec:aevol_selection}
+After the genome is decoded, the organisms are tested for their fitness. Fitness in Aevol is defined as the gap between the phenotype of a sequence $f_P$ and the environmental  target function $f_E$, as illustrated in Figure \ref{fig:aevol_overview01}. This environmental target function $f_E$ is a user-determined set of Gaussians which are specified in a parameter file, with each Gaussian being identified by three parameters: its height, its location along the axis, and its width. The difference between the phenotype (as calculated above) and the environmental function is the ``metabolic error'', labeled $g$ in the Figure and is more formally defined as:  $g = \int_{a}^{b} f_E(x) - f_P(x) dx$. The idea is illustrated in Figure \ref{fig:aevol_fitness01}
+
+\begin{figure}[h]
+	\includegraphics[scale=0.5]{aevol_fitness_description01}
+	\centering
+	\caption[Overview of Aevol's concept of fitness.]{Overview of Aevol's conception of fitness, from \cite{knibbe:tel-00482375}}
+	\label{fig:aevol_fitness01}
+\end{figure}
 
 Aevol contains several selection schemes but here we will only consider the \texttt{fitness\_proportionate} scheme, since this was the only selection scheme employed in our experiments. In this scheme, the probability of reproduction for each organism is proportionate to its fitness, namely $P(\text{reproduction}) = exp(-k * g)$, where $k$ is a user-definable parameter which determines the selection intensity and $g$ is the metabolic error.
-\subsubsection{Reproduction}
+\subsubsection{Reproduction}\label{subsec:aevol_reproduction}
 Once the fittest organisms in the population are found and their probabilities of reproducing are calculated as described in the previous Section, new organisms are produced by drawing from a multinomial distribution. Since the population size is held constant, this implies that a single organism with a high probability of reproduction may produce multiple offspring and an organism with low probability of reproduction may produce none.
 
 When new organisms are created and their genomes are copied from their parent organisms, it is at this stage that the driving force in evolution occurs, namely the possibility for mutation, indels, and frameshifts. Mutation rates are set in the parameter file and include point mutations, insertions and deletions (indels), and rearrangements (duplication, deletions, translocations, and inversions).
 
 The mutation, indels, rearrangement, etc. events are carried out by first determining the number $\mu$ of such events which will occur, based on the mutation rate specified in the parameter file and drawing from a binomial distribution (e.g. $B(L, \mu_\text{point})$ for point mutations, $B(L, \mu_\text{large deletions})$ for large deletions, etc. where $L$ is the size of the genome). Then a random point (or points, in the case of e.g. rearrangement) is chosen and the event is carried out, with the order of events shuffled randomly. 
-\subsection{Aevol's Statistics and Post-Treatments}\label{aevol_post-treatments}
-Aevol by default produces several statistics files which include information about genome size, the percentage of coding DNA, number of genes, average metabolic error, and many other factors.  It further includes a number of post-treatments that allow one to analyze specific individuals or the population at large, including tools for determining robustness, evolvability, coalescence, and the lineages. 
 
-%TODO Add explanation of lineages
-One of the key features of Aevol is the ability to look back in time at the ''archaeological record'' of previous organisms which is stored on disk, in order to perform varied analyses. This is primarily done with various ``post-treatments'', i.e. supplementary programs. These post-treatments generally require a \texttt{lineage} file, which shows a record back in time of the line of descent for an individual. One may specify either the best-ranked individual (i.e. the fittest) or a specific individual by identification number. The basic idea is illustrated below in Figure~\ref{fig:lineage01}.
+
+\section{Changeable Factors}\label{aevol_post-treatments}
+
+Once the experiments have completed, Aevol by default produces several statistics files which include information about genome size, the percentage of coding DNA, number of genes, average metabolic error, and many other factors.  It further includes a number of post-treatments that allow one to analyze specific individuals or the population at large, including tools for determining robustness, evolvability, coalescence, and the lineages. 
+
+One of the key features of Aevol is the ability to look back in time at the ''archaeological record'' of previous organisms, which is stored on disk, in order to perform varied analyses. This is primarily done with various ``post-treatments'', i.e. supplementary programs. These post-treatments generally require a \texttt{lineage} file, which shows a record back in time of the line of descent for an individual. One may specify either the best-ranked individual (i.e. the fittest) or a specific individual by their unique identification number. The basic idea is illustrated below in Figure~\ref{fig:lineage01}. 
 
 \begin{figure}[H]
 	\includegraphics[scale=0.65]{lineage01}
 	\centering
-	\caption[Lineage basic illustration.]{A basic illustration of a lineage. The ancestors of the individual (labeled `A') can be traced back through the previous generations for all of its ancestors.}
+	\caption[Lineage basic illustration.]{A basic illustration of a lineage. The ancestors of the individual (labeled `A') can be traced back through the previous generations for all of its ancestors (all in orange).}
 	\label{fig:lineage01}
 \end{figure}
 
- In the following two subsections we will examine evolvability and robustness, as these two factors play a major role in reductive evolution. 
+In the following subsections we will examine other factors that Aevol calculates, as these factors play a major role in reductive evolution. 
 
-\subsubsection{Evolvability}
+\subsection{Evolvability}\label{subsec:evolvability}
 Evolvability is usually defined as the ability of a system (in this case an organism) to evolve. In other words, a system has evolvability ``if mutations in it can produce heritable phenotypic variation''\cite{doi:10.1098/rspb.2007.1137}. However, of critical importance is that this is not simply having a large amount of genetic diversity, but rather \textit{adaptive} diversity which provides some benefit. 
 
-In Aevol, evolvability is calculated by generating a large set of offspring for a specific individual (one whose \texttt{lineage} was generated) and then testing the number of ``positive offspring''. Positive offspring are defined as those whose fitness is greater than their parent's. The evolvability of an individual is then the sum total of all improvement of all of the beneficial offspring. Thus, evolvability in Aevol accounts for both the likelihood of a positive mutation and the average improvement provided by said mutation. Practically speaking, to find an organisms evolvability in Aevol one must give the post-treatment \texttt{misc\_ancestor\_robustness} a lineage file and then multiply the fraction of the number of positive offspring (column 2) by the cumulative total of the fitness gap $g$ of the positive offspring (column 10). 
+In Aevol, evolvability is calculated by generating a large set of offspring for a specific individual (one whose \texttt{lineage} was generated) at regular periods along their lineage and then determining the number of ``positive offspring''. Positive offspring are defined as those whose fitness is greater than their parent's. The evolvability of an individual is then the sum total of all improvement of all of the beneficial offspring, i.e.:
 
-\subsubsection{Robustness and Antirobustness}
-Robustness is broadly defined as the ability of an organism to withstand disruptions or perturbations without affecting its phenotype. One may speak of robustness in terms of mutational robustness\textendash which describes the extent to which an organism's phenotype is not affected by stochastic mutational events\textendash or one may speak of environmental robustness, which describes the ability of an organism to maintain its phenotype in diverse environments with little or no loss in fitness. 
+\begin{equation*}
+\text{evolvability} = \frac{|\text{positive offspring of }i|}{|\text{total offspring of }i|}*\sum \Delta^{\text{positive offspring}}_{fitness}
+\end{equation*}  where $\Delta^{\text{positive offspring}}_{fitness}$ is the cumulative sum of the fitness increase for the positive offspring. Thus, evolvability in Aevol accounts for both the likelihood of a positive mutation and the average improvement provided by said mutation. Practically speaking, to find an organisms evolvability in Aevol one must give the post-treatment \texttt{misc\_ancestor\_robustness} a lineage file and then multiply the fraction of the number of positive offspring (column 2) by the cumulative total of the fitness gap $g$ of the positive offspring (column 10). 
 
-One may also speak of antirobustness, wherein an organism may actually \textit{thrive} on such perturbations. This has been suggested as a possible method of minimizing the effects of \textit{Muller's ratchet}, wherein deleterious mutations accumulate in a population as a result of genetic drift\cite{Gordo2137}. A large number of deleterious mutations may provide fodder for selection to fix more beneficial mutations in the population\cite{doi:10.1186/s12862-019-1507-z}.
+\subsection{Robustness and Antirobustness}\label{subsec:robustness_antirobustness}
+Robustness is broadly defined as the ability of an organism to withstand disruptions or perturbations without affecting its phenotype. One may describe robustness in terms of mutational robustness\textendash which describes the extent to which an organism's phenotype is not affected by stochastic mutational events\textendash or one may speak of environmental robustness, which describes the ability of an organism to maintain its phenotype in diverse environments with little or no loss in fitness. 
 
-Aevol calculates both reproductive and mutational robustness statistics. Robustness in Aevol is calculated similarly to evolvability: a \texttt{lineage} file for an individual is fed to the post-treatment \texttt{misc\_ancestor\_robustness}, which generates a large number (specifiable by the user) of offspring, whose fitness is then measured. The percentages of positive, neutral, and negative offspring determine the antirobustness, 
+Also important is the idea of antirobustness, wherein an organism may actually \textit{thrive} on such perturbations. This has been suggested as a possible method of minimizing the effects of \textit{Muller's ratchet}, wherein deleterious mutations accumulate in a population as a result of genetic drift\cite{Gordo2137}. A large number of deleterious mutations may provide fodder for selection to fix more beneficial mutations in the population\cite{doi:10.1186/s12862-019-1507-z}.
 
-It is, then, a seeming trade-off between robustness and evolvability. The more robust a system is, the less phenotypic variation is generated by random mutation events, and thus less evolvability. However, a key factor is to distinguish between genomic and phenotypic robustness; a strong phenotypic robustness promotes structural evolvability, as the likelihood that a mutation is deleterious is smaller in populations with more robust phenotypes. For a full discussion, see \cite{doi:10.1098/rspb.2007.1137}. 
-\subsubsection{aevol\_misc\_ancestor\_mutagenesis}
-This post-treatment generates and analyses mutants for the provided lineage. Specifically, this program generates evolvability, robustness, and antirobustness statistics for the mutants. 
+Aevol calculates statistics for both reproductive and mutational robustness statistics, as well as antirobustness. Robustness in Aevol is calculated similarly to evolvability: a \texttt{lineage} file for an individual is fed to the post-treatment \texttt{misc\_ancestor\_robustness}, which generates a large number (specifiable by the user) of offspring, whose fitness is then measured. The percentages of positive, neutral, and negative offspring determine the robustness and antirobustness. 
 
-\subsubsection{aevol\_misc\_ancestor\_robustness}
-Generates mutants for a given lineage and analyzes their robustness, providing several statistics:
+It is, then, a seeming trade-off between robustness and evolvability. The more robust a system is, the less phenotypic variation is generated by random mutation events, and thus less evolvability. However, a key factor is to distinguish between genomic and phenotypic robustness; a strong phenotypic robustness promotes structural evolvability, as the likelihood that a mutation is deleterious is smaller in populations with more robust phenotypes. For a full discussion, see \cite{doi:10.1098/rspb.2007.1137}.
 
+\subsection{Fitness}\label{subsec:fitness}
+As described in Section \ref{subsec:aevol_selection} and illustrated in Figure \ref{fig:aevol_fitness01}, fitness in Aevol is measured as the gap $g$ between the environment and the phenotype, i.e.  $g = \int_{a}^{b} f_E(x) - f_P(x) dx$. Aevol provides many statistics about fitness, including the population size (for cases when it is not fixed), overall fitness, genome size, metabolic error	  
 
-
-\subsubsection{aevol\_misc\_ancestor\_stats}
-
-Analyzes a lineage and produces the following outputs:
-
-
-
-\subsubsection{aevol\_misc\_coalescence}
-Prints coalescence statistics for a given lineage.
-
-\subsubsection{aevol\_misc\_create\_eps}
-Creates a directory, analysis-generation\_XXXXX with several EPS files.The EPS files are as follows:
-
-
-\subsubsection{aevol\_misc\_extract}
-
-Extracts the genotype and/or data about the phenotype of individuals in the provided population and write them into text files for easy parsing by programs such as MATLAB. The program lets you specify whether you want the sequence, the triangle data, or both. By default (i.e. with no parameters) gives just the sequence, into a file called “sequence”.
-
-\subsubsection{aevol\_misc\_lineage}
-
-Using the tree files, recreates the lineage of an individual. By default, this is done for the best individual, but another individual can be specified by ID number or rank (-i or -r, respectively). 
-
-\subsubsection{aevol\_misc\_mutagenisis}
-
-This generates and analyzes mutations for an individual from a population backup (as opposed to a lineage file for ancestor\_mutagenesis). One can specify point mutations, small indels, duplications, large deletion, translocations, or inversions. 
-
-\subsubsection{aevol\_misc\_protein\_map}
-
-Creates a CSV file which analyzes the proteins generated by the specified lineage. The CSV file specifies:
-
-
-
-\subsubsection{aevol\_misc\_robustness}
-
-Calculates replication statistics for a given individual (specified by either ID or rank) at a given time.  Specifically, the following information is saved in a new directory (analysis-generation\_XXXXXXXXXX):
-
-
-\section{Changeable Factors}
-\subsection{Fitness}
-\subsection{Evolvability}
-\subsection{Robustness}
 \subsection{Structure}
+Another strength of Aevol is its ability to analyze changes in the structure of DNA. As mentioned above, Aevol produces statistics about individuals and the population at large, including the percentage of coding vs. non-coding DNA, the number of genes,  In the following subsections we will examine 
 \subsubsection{Percent Coding vs. Non-Coding DNA}
 \subsubsection{Number of Genes}
+
+
+ 
+
 
 
 \section{Related Work}\label{related_work}
