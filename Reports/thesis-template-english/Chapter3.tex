@@ -4,7 +4,7 @@ With an understanding of the basics behind us, in this chapter we provide an ove
 \section{Contributions}
 
 \section{Experimental Designs} \label{experimental_design}
-To test the conditions under which reductive evolution might occur, we conducted a series of experiments in which a ``wild type'' genome with 13,237 base pairs comprising 132 genes was cloned and each clone was allowed to evolve for 500,000 generations under a total of 7 different conditions. To control for experimental bias, we performed five runs of each condition, leading to a total of 35 experiments. 
+To test the conditions under which reductive evolution might occur, we conducted a series of experiments in which a ``wild type'' genome was allowed to evolve in differing conditions for 500,000 generations. To first create the wild type, it was originally generated randomly and allowed to evolve for 10 million generations. By the beginning of its use in our experiments, it comprises 13,237 base pairs with 132 functional genes (i.e. genes which produce a gene product, or ``cellular process'').  A total of 7 different conditions were used to test the wild type's response, and to control for experimental bias we performed five runs of each condition, leading to a total of 35 experiments. 
 
 \subsection{Inputs}
 In Table \ref{table:parameters}, our parameter values for all input parameters may be found. Please note that for $\mu$, this represents the rates for point mutations, small insertions, and small deletions. The rearrangement rates were not changed under any condition and were always $1e-6$ for duplications, deletions, translocations, and inversions. 
@@ -35,7 +35,7 @@ In Table \ref{table:parameters}, our parameter values for all input parameters m
 	\caption[Table of parameters]{Table of input parameters. $\mu$ is the mutation rate, $k$ is the selection strength, and $N$ is the population size.}
 	\label{table:parameters}
 \end{table}
-
+As can be seen in Table \ref{table:parameters}, only one parameter varied per condition. This was a critical starting point in order to isolate potential causes of reductive evolution.
 \subsection{Evaluation Strategy}
 \subsubsection{Robustness}
 \subsubsection{Evolvability}
