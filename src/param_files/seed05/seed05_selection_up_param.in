@@ -3,7 +3,7 @@
 ###################################
 
 ##### 1. Initial setup ############
-STRAIN_NAME             basic_example
+STRAIN_NAME             seed05_selection_up
 SEED                    719
 INIT_POP_SIZE           1024
 WORLD_SIZE              32 32
