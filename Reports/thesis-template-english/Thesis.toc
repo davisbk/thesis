@@ -9,31 +9,37 @@
 \contentsline {section}{\numberline {2.1}Experimental Evolution}{4}{section.2.1}% 
 \contentsline {subsubsection}{Why use Aevol}{5}{section*.5}% 
 \contentsline {section}{\numberline {2.2}Aevol}{5}{section.2.2}% 
-\contentsline {subsection}{\numberline {2.2.1}Aevol's Architecture}{5}{subsection.2.2.1}% 
-\contentsline {subsubsection}{Decoding the Genome}{6}{section*.6}% 
+\contentsline {subsection}{\numberline {2.2.1}Aevol's Architecture}{6}{subsection.2.2.1}% 
+\contentsline {subsubsection}{Decoding the Genome}{7}{section*.6}% 
 \contentsline {subsubsection}{Selection}{8}{section*.7}% 
 \contentsline {subsubsection}{Reproduction}{9}{section*.8}% 
+\contentsline {subsection}{\numberline {2.2.2}Advantages of Aevol}{10}{subsection.2.2.2}% 
 \contentsline {section}{\numberline {2.3}Analyzing with Aevol}{10}{section.2.3}% 
 \contentsline {subsection}{\numberline {2.3.1}Evolvability}{11}{subsection.2.3.1}% 
 \contentsline {subsection}{\numberline {2.3.2}Robustness and Antirobustness}{12}{subsection.2.3.2}% 
 \contentsline {subsection}{\numberline {2.3.3}Fitness}{13}{subsection.2.3.3}% 
 \contentsline {subsection}{\numberline {2.3.4}Structure}{13}{subsection.2.3.4}% 
-\contentsline {section}{\numberline {2.4}Related Work}{14}{section.2.4}% 
-\contentsline {chapter}{\numberline {3}Methods}{15}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Contributions}{15}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}Experimental Designs}{15}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}Inputs}{16}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Evaluation Strategy}{16}{subsection.3.2.2}% 
-\contentsline {subsubsection}{Robustness}{17}{section*.9}% 
-\contentsline {subsubsection}{Evolvability}{17}{section*.10}% 
-\contentsline {subsubsection}{Time to Coalescence}{17}{section*.11}% 
-\contentsline {section}{\numberline {3.3}Expected Results}{17}{section.3.3}% 
-\contentsline {chapter}{\numberline {4}Results and Discussion}{18}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Results}{18}{section.4.1}% 
-\contentsline {subsection}{\numberline {4.1.1}Condition Analysis}{18}{subsection.4.1.1}% 
-\contentsline {section}{\numberline {4.2}Discussion}{18}{section.4.2}% 
-\contentsline {subsection}{\numberline {4.2.1}Relation to Real-World Biological Entities}{18}{subsection.4.2.1}% 
-\contentsline {subsection}{\numberline {4.2.2}Limitations of Results}{18}{subsection.4.2.2}% 
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{20}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Conclusion}{20}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Future work}{20}{section.5.2}% 
+\contentsline {section}{\numberline {2.4}Related Work}{15}{section.2.4}% 
+\contentsline {chapter}{\numberline {3}Methods}{16}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Contributions}{16}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}Experimental Designs}{16}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Inputs}{17}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Evaluation Strategy}{17}{subsection.3.2.2}% 
+\contentsline {subsubsection}{Robustness}{18}{section*.9}% 
+\contentsline {subsubsection}{Evolvability}{18}{section*.10}% 
+\contentsline {subsubsection}{Time to Coalescence}{18}{section*.11}% 
+\contentsline {section}{\numberline {3.3}Expected Results}{18}{section.3.3}% 
+\contentsline {chapter}{\numberline {4}Results and Discussion}{19}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Results}{19}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Genome Size}{19}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}Genome Structure}{21}{subsection.4.1.2}% 
+\contentsline {subsubsection}{Noncoding DNA}{21}{section*.12}% 
+\contentsline {subsubsection}{Number of Genes}{21}{section*.13}% 
+\contentsline {subsection}{\numberline {4.1.3}Evolvability}{21}{subsection.4.1.3}% 
+\contentsline {subsection}{\numberline {4.1.4}Robustness}{21}{subsection.4.1.4}% 
+\contentsline {section}{\numberline {4.2}Discussion}{21}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}Relation to Real-World Biological Entities}{21}{subsection.4.2.1}% 
+\contentsline {subsection}{\numberline {4.2.2}Limitations of Results}{21}{subsection.4.2.2}% 
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{22}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Conclusion}{22}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Future work}{22}{section.5.2}% 

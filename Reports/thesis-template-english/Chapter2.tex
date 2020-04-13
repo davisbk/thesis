@@ -14,7 +14,7 @@ The in silico tool \textit{Aevol} was developed in the early 2000s to ``study th
 In the following sections, the in silico experimental evolution tool Aevol will be examined in greater detail. 
 
 \section{Aevol}
-Organisms are simulated with a binary genome which can either be generated at random or input as a previously-generated sequence. Aevol essentially consists of three steps: 1) decoding the genome of these organisms to produce artificial proteins, 2) selecting the most fit individuals and 3) reproduction of these fittest individuals with possible variations (mutations, rearrangements, etc.). The population size $N$ is kept constant and a record of each generation is kept so that the phylogenetic lineages can be recreated.
+Aevol follows a ``sequence-of-nucleotides'' model~\cite{Hindre.2012} in which organisms are simulated with a binary genome which can either be generated at random or input as a previously-generated sequence. Aevol essentially consists of three steps: 1) decoding the genome of these organisms to produce artificial proteins, 2) selecting the most fit individuals and 3) reproduction of these fittest individuals with possible variations (mutations, rearrangements, etc.). The population size $N$ is kept constant and a record of each generation is kept so that the phylogenetic lineages can be recreated.
 
 \subsection{Aevol's Architecture}
 Aevol's three steps\textemdash decoding the genome, selection, and reproduction\textemdash will be examined in more detail in this section. These steps are illustrated in Figure \ref{fig:aevol_overview01}. 
@@ -107,7 +107,7 @@ where k is the \textit{selection coefficient} variable set by the user in a para
 \subsection{Structure}
 Another strength of Aevol is its ability to analyze changes in the structure of DNA. As with fitness, Aevol produces statistics about individuals and the population at large for many aspects of genome structure, including: the number of coding vs. non-coding RNAs (i.e. they have at least one gene), the average size of coding and non-coding RNAs, the number of genes, the number of ``essential'' base pairs (i.e. those that are part of a functional coding sequence), etc. Tables~\ref{table:aevol_stats_genes_and_bp} and Table~\ref{table:aevol_stats_fitness_and_mutation} summarize where different statistics are to be found Aevol's output files. 
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \begin{tabular}{ |c|c| }
 	\hline
@@ -136,7 +136,7 @@ Another strength of Aevol is its ability to analyze changes in the structure of 
 \label{table:aevol_stats_genes_and_bp}
 \end{table}
 ``Essential'' base pairs are those whose mutation would change the phenotype of the organism.
-\begin{table}[h]
+\begin{table}[H]
 	\centering
 	\begin{tabular}{ |c|c| }
 		\hline
@@ -166,15 +166,23 @@ Another strength of Aevol is its ability to analyze changes in the structure of 
 Much work has already been done in the field of reductive evolution, and in this section we will look at the current state of the literature. 
 %Batut et al. focused primarily on examining the differing hypotheses 
 
-Liard et al. showed in \cite{doi:10.1162} that selection for fitness is not necessarily enough to overcome the tendency of organisms to become more and more complex. Selecting for \textit{robustness}, however, (rather than fitness) can overcome the tendency of organisms to become more and more complex, what they describe as a ``complexity ratchet''. They describe the problem:
+Liard et al. showed in \cite{doi:10.1162} that selection for fitness is not necessarily enough to overcome the tendency of organisms to become more and more complex. They describe the problem of a ``complexity ratchet,'' that is, that the tendency of organisms becoming more and more complex as irreversible once the organisms had reached a certain complexity level. In their words:
 \begin{quote}
-	``Since gene deletion is obviously deleterious, the only available evolutionary path for already complex organisms is a headlong rush toward increasing complexity by acquiring new genes. Hence the ratchet clicks, further widening the fitness valley that separates the current genome from a simple one, soon making it so wide it is very unlikely to be crossed."
+	``Since gene deletion is obviously deleterious $\left[\text{in this scenario}\right]$, the only available evolutionary path for already complex organisms is a headlong rush toward increasing complexity by acquiring new genes. Hence the ratchet clicks, further widening the fitness valley that separates the current genome from a simple one, soon making it so wide it is very unlikely to be crossed."
 \end{quote} 
-They found that one solution to this problem was to select for robustness
+Echoing the findings of Knibbe et al.~\cite{Knibbe2007} they found, however, that limiting \textit{robustness} can overcome the tendency of organisms to become more and more complex, because this places an upper bound on the amount of information that an organism can transmit in its genome. Increasing the mutation rate forced gene elimination despite the fitness loss because it lowered the information content of the genome. A mutation rate of even $\mu = 10^{-4}$ resulted in nearly 40\% of their organisms developing a simpler genome. 
+
+Knibbe et al. also found, via in silico experimentation, that the accumulation of noncoding DNA strongly depends on the mutation rate. This in turn affects the selection tradeoff between reliably passing on the existing genome and having the mutational variability to adapt to new challenges.  Under higher mutation rates, their organisms closely resembled viral genomes in that they had almost no noncoding sequences. When the selection strength was larger, genomes were larger. 
+
+Koskiniemi et al.~\cite{koskiniemi2012} performed in vivo experiments on the bacterium \textit{Salmonella enterica} in which the effects on fitness of random deletions was measured. Some 25\% of the deletions actually caused an increase in fitness under some conditions, suggesting that there is a certain cost associated with having superfluous genes and thus gene loss may be selected for under certain conditions.
+
+
+
+
 %TODO Mention "Reductive evolution at both ends of the...."
 %TODO Mention "Evolvability drives innovation in viral genomes (2016) 
 %TODO Mention "Testing evolution predictability using the aevol software"
-%TODO Mention "The Complexity Ratchet: Stronger than Selection, Weaker Than Robustness"
+
 %TODO Mention "New Insights into Bacterial Adaptation Through in Vivo and in Silico Experimental Evolution"
 %TODO Mention "Adapting the engine to the fuel: mutator populations can reduce the mutational load by reogranizing their genome structure"
 

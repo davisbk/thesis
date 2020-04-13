@@ -8,24 +8,28 @@
 \BOOKMARK [1][-]{section.2.1}{Experimental Evolution}{chapter.2}% 8
 \BOOKMARK [1][-]{section.2.2}{Aevol}{chapter.2}% 9
 \BOOKMARK [2][-]{subsection.2.2.1}{Aevol's Architecture}{section.2.2}% 10
-\BOOKMARK [1][-]{section.2.3}{Analyzing with Aevol}{chapter.2}% 11
-\BOOKMARK [2][-]{subsection.2.3.1}{Evolvability}{section.2.3}% 12
-\BOOKMARK [2][-]{subsection.2.3.2}{Robustness and Antirobustness}{section.2.3}% 13
-\BOOKMARK [2][-]{subsection.2.3.3}{Fitness}{section.2.3}% 14
-\BOOKMARK [2][-]{subsection.2.3.4}{Structure}{section.2.3}% 15
-\BOOKMARK [1][-]{section.2.4}{Related Work}{chapter.2}% 16
-\BOOKMARK [0][-]{chapter.3}{Methods}{}% 17
-\BOOKMARK [1][-]{section.3.1}{Contributions}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.2}{Experimental Designs}{chapter.3}% 19
-\BOOKMARK [2][-]{subsection.3.2.1}{Inputs}{section.3.2}% 20
-\BOOKMARK [2][-]{subsection.3.2.2}{Evaluation Strategy}{section.3.2}% 21
-\BOOKMARK [1][-]{section.3.3}{Expected Results}{chapter.3}% 22
-\BOOKMARK [0][-]{chapter.4}{Results and Discussion}{}% 23
-\BOOKMARK [1][-]{section.4.1}{Results}{chapter.4}% 24
-\BOOKMARK [2][-]{subsection.4.1.1}{Condition Analysis}{section.4.1}% 25
-\BOOKMARK [1][-]{section.4.2}{Discussion}{chapter.4}% 26
-\BOOKMARK [2][-]{subsection.4.2.1}{Relation to Real-World Biological Entities}{section.4.2}% 27
-\BOOKMARK [2][-]{subsection.4.2.2}{Limitations of Results}{section.4.2}% 28
-\BOOKMARK [0][-]{chapter.5}{Conclusion and Future Work}{}% 29
-\BOOKMARK [1][-]{section.5.1}{Conclusion}{chapter.5}% 30
-\BOOKMARK [1][-]{section.5.2}{Future work}{chapter.5}% 31
+\BOOKMARK [2][-]{subsection.2.2.2}{Advantages of Aevol}{section.2.2}% 11
+\BOOKMARK [1][-]{section.2.3}{Analyzing with Aevol}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.3.1}{Evolvability}{section.2.3}% 13
+\BOOKMARK [2][-]{subsection.2.3.2}{Robustness and Antirobustness}{section.2.3}% 14
+\BOOKMARK [2][-]{subsection.2.3.3}{Fitness}{section.2.3}% 15
+\BOOKMARK [2][-]{subsection.2.3.4}{Structure}{section.2.3}% 16
+\BOOKMARK [1][-]{section.2.4}{Related Work}{chapter.2}% 17
+\BOOKMARK [0][-]{chapter.3}{Methods}{}% 18
+\BOOKMARK [1][-]{section.3.1}{Contributions}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.2}{Experimental Designs}{chapter.3}% 20
+\BOOKMARK [2][-]{subsection.3.2.1}{Inputs}{section.3.2}% 21
+\BOOKMARK [2][-]{subsection.3.2.2}{Evaluation Strategy}{section.3.2}% 22
+\BOOKMARK [1][-]{section.3.3}{Expected Results}{chapter.3}% 23
+\BOOKMARK [0][-]{chapter.4}{Results and Discussion}{}% 24
+\BOOKMARK [1][-]{section.4.1}{Results}{chapter.4}% 25
+\BOOKMARK [2][-]{subsection.4.1.1}{Genome Size}{section.4.1}% 26
+\BOOKMARK [2][-]{subsection.4.1.2}{Genome Structure}{section.4.1}% 27
+\BOOKMARK [2][-]{subsection.4.1.3}{Evolvability}{section.4.1}% 28
+\BOOKMARK [2][-]{subsection.4.1.4}{Robustness}{section.4.1}% 29
+\BOOKMARK [1][-]{section.4.2}{Discussion}{chapter.4}% 30
+\BOOKMARK [2][-]{subsection.4.2.1}{Relation to Real-World Biological Entities}{section.4.2}% 31
+\BOOKMARK [2][-]{subsection.4.2.2}{Limitations of Results}{section.4.2}% 32
+\BOOKMARK [0][-]{chapter.5}{Conclusion and Future Work}{}% 33
+\BOOKMARK [1][-]{section.5.1}{Conclusion}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.2}{Future work}{chapter.5}% 35

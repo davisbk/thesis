@@ -19,11 +19,28 @@ Isabel Gordo and Brian Charlesworth.
 \newblock On the speed of muller{\textquoteright}s ratchet.
 \newblock {\em Genetics}, 156(4):2137--2140, 2000.
 
+\bibitem{Hindre.2012}
+Thomas Hindr{\'e}, Carole Knibbe, Guillaume Beslon, and Dominique Schneider.
+\newblock New insights into bacterial adaptation through in vivo and in silico
+  experimental evolution.
+\newblock {\em Nature reviews. Microbiology}, 10(5):352--365, 2012.
+
 \bibitem{knibbe:tel-00482375}
 Carole Knibbe.
 \newblock {\em {Evolution of genome structure by indirect selection of the
   mutational variability: a computational approach}}.
 \newblock Theses, {INSA de Lyon}, December 2006.
+
+\bibitem{Knibbe2007}
+Carole Knibbe, Antoine Coulon, Olivier Mazet, Jean-Michel Fayard, and Guillaume
+  Beslon.
+\newblock A long-term evolutionary pressure on the amount of noncoding dna.
+\newblock {\em Molecular Biology and Evolution}, 24(10):2344--2353, 08 2007.
+
+\bibitem{koskiniemi2012}
+Sanna Koskiniemi, Song Sun, Otto~G Berg, and Dan~I Andersson.
+\newblock Selection-driven gene loss in bacteria.
+\newblock {\em PLoS genetics}, 8(6), 2012.
 
 \bibitem{doi:10.1162}
 Vincent Liard, David Parsons, Jonathan Rouzaud-Cornabas, and Guillaume Beslon.
@@ -35,7 +52,7 @@ Vincent Liard, David Parsons, Jonathan Rouzaud-Cornabas, and Guillaume Beslon.
 Octavio Miramontes, Franois Taddei, Ariel~B. Lindner, Antoine Frenoy, and Dusan
   Misevic.
 \newblock Shape matters in cooperation.
-\newblock {\em Artificial Life Conference Proceedings}, (28):340--341, 2016.
+\newblock {\em Artificial Life Conference Proceedings}, 1(28):340--341, 2016.
 
 \bibitem{doi:10.1186/s12862-019-1507-z}
 Jacob Rutten, Paulien Hogeweg, and Guillaume Beslon.

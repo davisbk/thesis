@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.11)  12 APR 2020 16:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.11)  13 APR 2020 01:08
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -514,7 +514,7 @@ LaTeX Info: Redefining \nameref on input line 3.
 \openout5 = `Thesis.out'.
 
  (config/model/hyphenation.tex) (coverpage.tex
-<./pics/unifr-logo.jpg, id=127, 139.9629pt x 165.0165pt>
+<./pics/unifr-logo.jpg, id=143, 139.9629pt x 165.0165pt>
 File: ./pics/unifr-logo.jpg Graphic file (type jpg)
 <use ./pics/unifr-logo.jpg>
 Package pdftex.def Info: ./pics/unifr-logo.jpg  used on input line 15.
@@ -580,7 +580,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) [1
 
 ]
-<./pics/phylogeny03.png, id=217, 316.18124pt x 239.89626pt>
+<./pics/phylogeny03.png, id=239, 316.18124pt x 239.89626pt>
 File: ./pics/phylogeny03.png Graphic file (type png)
 <use ./pics/phylogeny03.png>
 Package pdftex.def Info: ./pics/phylogeny03.png  used on input line 10.
@@ -589,8 +589,8 @@ Package pdftex.def Info: ./pics/phylogeny03.png  used on input line 10.
 Chapter 2.
 [4
 
-]
-<./pics/aevol_overview01.png, id=247, 684.30656pt x 717.43031pt>
+] [5]
+<./pics/aevol_overview01.png, id=282, 684.30656pt x 717.43031pt>
 File: ./pics/aevol_overview01.png Graphic file (type png)
 <use ./pics/aevol_overview01.png>
 Package pdftex.def Info: ./pics/aevol_overview01.png  used on input line 23.
@@ -600,79 +600,83 @@ Overfull \hbox (84.79399pt too wide) in paragraph at lines 23--25
  [][] 
  []
 
-[5] [6 <./pics/aevol_overview01.png>] [7]
+[6 <./pics/aevol_overview01.png>] [7]
 Overfull \hbox (1.8798pt too wide) in paragraph at lines 37--38
 []\OT1/cmr/m/n/10.95 Given the fact that there are likely mul-ti-ple cod-ing se
 -quences in a genome,
  []
 
-<./pics/aevol_fitness_description01.png, id=287, 377.91188pt x 294.34969pt>
+[8]
+<./pics/aevol_fitness_description01.png, id=319, 377.91188pt x 294.34969pt>
 File: ./pics/aevol_fitness_description01.png Graphic file (type png)
 <use ./pics/aevol_fitness_description01.png>
 Package pdftex.def Info: ./pics/aevol_fitness_description01.png  used on input 
 line 46.
 (pdftex.def)             Requested size: 188.95547pt x 147.17447pt.
+ [9 <./pics/aevol_fitness_description01.png>]
+Overfull \hbox (6.1563pt too wide) in paragraph at lines 65--66
+\OT1/cmr/m/n/10.95 The en-cod-ing/decoding strat-egy of Aevol fol-lows a bi-o-l
+og-i-cally re-al-is-tic model,
+ []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[8] [9 <./pics/aevol_fitness_description01.png>]
-<./pics/lineage01.png, id=305, 660.96938pt x 195.73125pt>
+[10]
+<./pics/lineage01.png, id=333, 660.96938pt x 195.73125pt>
 File: ./pics/lineage01.png Graphic file (type png)
 <use ./pics/lineage01.png>
-Package pdftex.def Info: ./pics/lineage01.png  used on input line 72.
+Package pdftex.def Info: ./pics/lineage01.png  used on input line 74.
 (pdftex.def)             Requested size: 429.625pt x 127.22379pt.
 
-Overfull \hbox (69.625pt too wide) in paragraph at lines 72--74
+Overfull \hbox (69.625pt too wide) in paragraph at lines 74--76
  [][] 
  []
 
-[10] [11 <./pics/lineage01.png>] [12]
-Overfull \hbox (114.81956pt too wide) in paragraph at lines 110--133
- [][] 
- []
-
-
-Overfull \hbox (51.2791pt too wide) in paragraph at lines 139--158
+[11 <./pics/lineage01.png>] [12]
+Overfull \hbox (114.81956pt too wide) in paragraph at lines 112--135
  [][] 
  []
 
 [13]
-Overfull \hbox (1.55322pt too wide) in paragraph at lines 169--170
-\OT1/cmr/m/n/10.95 rush to-ward in-creas-ing com-plex-ity by ac-quir-ing new ge
-nes. Hence
+Overfull \hbox (51.2791pt too wide) in paragraph at lines 141--160
+ [][] 
  []
 
-) (Chapter3.tex [14]
+[14]) (Chapter3.tex [15]
 Chapter 3.
-[15
+[16
 
-]) (Chapter4.tex [16] [17]
+]) (Chapter4.tex [17] [18]
 Chapter 4.
-) (Chapter5.tex [18
+<./pics/stat_fitness_mean_genome_size.png, id=388, 2168.1pt x 1445.4pt>
+File: ./pics/stat_fitness_mean_genome_size.png Graphic file (type png)
+<use ./pics/stat_fitness_mean_genome_size.png>
+Package pdftex.def Info: ./pics/stat_fitness_mean_genome_size.png  used on inpu
+t line 12.
+(pdftex.def)             Requested size: 360.0pt x 239.98045pt.
+[19
 
-] [19]
+] [20 <./pics/stat_fitness_mean_genome_size.png>]) (Chapter5.tex [21]
 Chapter 5.
-) [20
+) [22
 
-] [21] [22] (Thesis.bbl [23
+] [23] [24] (Thesis.bbl [25
 
 ]) 
 AED: lastpage setting LastPage
-[24]
+[26]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
  (Thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: FD05EDEED108E96C4ABA282D9E454A6D;1939.
+(rerunfilecheck)             Checksum: 6135656AD7C44783C94FD9695154FC90;2209.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
  ) 
 Here is how much of TeX's memory you used:
- 8701 strings out of 492895
- 122991 string characters out of 3133459
- 236351 words of memory out of 3000000
- 12306 multiletter control sequences out of 15000+200000
+ 8727 strings out of 492895
+ 123502 string characters out of 3133459
+ 234493 words of memory out of 3000000
+ 12319 multiletter control sequences out of 15000+200000
  17529 words of font info for 58 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
  30i,12n,43p,1406b,601s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -695,9 +699,9 @@ i10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on Thesis.pdf (31 pages, 918500 bytes).
+Output written on Thesis.pdf (33 pages, 1064370 bytes).
 PDF statistics:
- 470 PDF objects out of 1000 (max. 8388607)
- 90 named destinations out of 1000 (max. 500000)
- 274 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 512 PDF objects out of 1000 (max. 8388607)
+ 102 named destinations out of 1000 (max. 500000)
+ 311 words of extra memory for PDF output out of 10000 (max. 10000000)
 
