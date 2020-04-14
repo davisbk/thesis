@@ -22,13 +22,28 @@ The next obvious observation is that of the remaining conditions, only the \text
 \subsection{Genome Structure}
 
 \subsubsection{Noncoding DNA}
+One important factor in genome structure is the amount of noncoding DNA, i.e. the number of bases which are part of a genome but which do not encode protein sequences. In the case of aevol, this means 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{stat_bp_mean_num_bp_not_in_any_CDS}
+	\caption[Noncoding DNA]{Plot of noncoding DNA over time for all conditions, average of all seeds.}
+	\label{fig:noncoding_DNA}
+\end{figure}
 
 \subsubsection{Number of Genes}
 
 \subsection{Evolvability}
 
 \subsection{Robustness}
+Recall that robustness is measured by the fraction of neutral mutants of an individual. In the following figure, we see a bar plot showing the spread of neutral mutants for the best individual for the control condition as well as the six variations. 
 
+%TODO update graphic with more conditions once experiments are completed
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{stat_robustness_mean_frac_neutral_mutants}
+	\caption[Robustness bar graph]{Bar graph showing the spread of neutral mutants for the best individual at generation 500,000, all conditions.}
+	\label{fig:robustness_all_conditions}
+\end{figure}
 
 \section{Discussion}\label{discussion}
 
