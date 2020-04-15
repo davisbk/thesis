@@ -4,11 +4,14 @@ With an understanding of the basics behind us, in this chapter we provide an ove
 \section{Contributions}
 
 \section{Experimental Designs} \label{experimental_design}
-To assist in determining which conditions might lead to reductive evolution, we need to isolate individual variables and change just one thing at a time in order to see what effect, if any, it has on the final genome. To that end, we designed and conducted a series of experiments in which a ``wild type'' genome was allowed to evolve in differing conditions for 500,000 generations before analyzing the results. To first create the wild type, a genome was generated randomly and allowed to evolve for 10 million generations, %TODO find out if the environment varied
-and by the beginning of its use in our experiments, the wild type comprised 13,237 base pairs with 132 functional genes (i.e. genes which produce a gene product). We allowed the wild types to continue to evolve in the same environment in a total of 6 different conditions: with an increased/decreased selection strength, an increased/decreased mutation rate, and an increased/decreased population size. Additionally, a control condition was performed in which the wild type was simply allowed to continue to evolve for the 500,000 generations with no change in any of the above conditions. To minimize bias, for each condition we performed five runs each (i.e. 5 rounds of mutation up, 5 rounds of mutation down, etc.) each with a differing random seed to control for the deterministic effects of the pseudorandom nature of Aevol's stochastic processes. This lead to a total of 35 experiments. 
+To assist in determining which conditions might lead to reductive evolution, we need to isolate individual variables and change just one thing at a time in order to see what effect, if any, it has on the final genome. To that end, we designed and conducted a series of experiments in which a ``wild type'' genome was allowed to evolve in differing conditions for 500,000 generations before analyzing the results. To first create the wild type, a genome was generated randomly in Aevol which had at least one coding gene and which was allowed to evolve for 10 million generations in a non-varying environment. By the beginning of its use in our experiments, the wild type comprised 13,237 base pairs with 132 functional genes (i.e. genes which produce a gene product). We allowed the wild types to continue to evolve in the same environment in a total of 6 different conditions: with an increased/decreased selection strength, an increased/decreased mutation rate, and an increased/decreased population size. 
+
+Additionally, a control condition was performed in which the wild type was simply allowed to continue to evolve for the 500,000 generations with no change in any of the above conditions. To minimize bias, for each condition we performed five runs each (i.e. 5 rounds of mutation up, 5 rounds of mutation down, etc.) each with a differing random seed to control for the deterministic effects of the pseudorandom nature of Aevol's stochastic processes. This lead to a total of 35 experiments, all of which were carried out on a cluster from bwCloud\footnote{\url{https://www.bw-cloud.org/}}. 
+
+The resulting data was processed using a combination of Python\footnote{\url{https://www.python.org/}}, Pandas\footnote{\url{https://pandas.pydata.org/}}, and Jupyter Notebook\footnote{\url{https://jupyter.org/}}.  
 
 \subsection{Inputs}
-In Table \ref{table:parameters}, our parameter values for all input parameters may be found. Please note that for $\mu$, this represents the rates for point mutations, small insertions, and small deletions. The rearrangement rates were not changed under any condition and were always $1e-6$ for duplications, deletions, translocations, and inversions. 
+In Table \ref{table:parameters}, our parameter values for all input parameters may be found. Please note that for $\mu$, this represents the mutation rates for point mutations, small insertions, and small deletions. The rearrangement rates were not changed under any condition and were always $1e-6$ for duplications, deletions, translocations, and inversions. 
 
 \begin{table}[h]
 	\centering
@@ -36,12 +39,25 @@ In Table \ref{table:parameters}, our parameter values for all input parameters m
 	\caption[Table of parameters]{Table of input parameters. $\mu$ is the mutation rate, $k$ is the selection strength, and $N$ is the population size.}
 	\label{table:parameters}
 \end{table}
-As can be seen in Table \ref{table:parameters}, only one parameter varied per condition. This was a critical starting point in order to isolate potential influencers of reductive evolution. In all conditions, the environment did not vary, and once the experiment was begun, the conditions did not change either. 
+As can be seen in Table \ref{table:parameters}, only one parameter varied per condition in order to isolate potential influences. A multiplier of $4$ was chosen for the differing conditions relative to the control condition (e.g. $N_\text{population up} = 4096$ because $N_\text{control} = 1024$). In all conditions, the environment did not vary, and once the experiment was begun, the above parameters were held steady as well. 
 \subsection{Evaluation Strategy}
 In this section, we will examine what criteria we will be using to evaluate the results. The primary criteria will be examining the evolved genome's evolvability, robustness, and structure. 
 \subsubsection{Robustness}
 \subsubsection{Evolvability}
 \subsubsection{Time to Coalescence}
+
+\subsubsection{Statistical Significance of the Conditions}
+Lastly, we need to determine whether the results of the condition (mutation up, selection down, etc.) were significantly different from the control condition, statistically speaking. To do this, we will evaluate the means of all seeds of the control condition for some test (e.g. robustness, evolvability, etc.) vs. the same for a different condition (e.g. mutation up) using the Wilcoxon signed-rank test. This is similar to a paired Student's t-test but is used when the distribution of the two samples cannot be assumed to be normally distributed. More precisely, we will use the Mann-Whitney U test, a nonparametric version of the Wilcoxon test which can be used when the sample sizes are different. The Mann-Whitney U test checks whether two independent samples were selected from populations having the same distribution. The test consists of the following steps:
+\begin{enumerate}
+	\item Assign numeric ranks to all observations
+	\item Add up the ranks for the observations from the first sample
+	\item The statistic $U_1$ for the first sample is given by:
+	\begin{equation*}
+	U_1 = R_1 - \frac{n_1*(n_1 + 1)}{2}
+	\end{equation*}
+	where $n_1$ is the sample size for the first sample and $R_1$ is the sum of the ranks from the first sample.
+\end{enumerate}
+The $U$ statistic for the second sample is computed analogously. We used the \texttt{Scipi.stats.mannwhitneyu} function to calculate this statistic as needed, which also calculated the p-value. 
 
 \section{Expected Results}
 %TODO Generate table of expected results similar to one in Berenice's thesis

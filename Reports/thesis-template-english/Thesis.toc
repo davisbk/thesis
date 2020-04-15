@@ -25,22 +25,23 @@
 \contentsline {section}{\numberline {3.1}Contributions}{16}{section.3.1}% 
 \contentsline {section}{\numberline {3.2}Experimental Designs}{16}{section.3.2}% 
 \contentsline {subsection}{\numberline {3.2.1}Inputs}{17}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Evaluation Strategy}{17}{subsection.3.2.2}% 
+\contentsline {subsection}{\numberline {3.2.2}Evaluation Strategy}{18}{subsection.3.2.2}% 
 \contentsline {subsubsection}{Robustness}{18}{section*.10}% 
 \contentsline {subsubsection}{Evolvability}{18}{section*.11}% 
 \contentsline {subsubsection}{Time to Coalescence}{18}{section*.12}% 
-\contentsline {section}{\numberline {3.3}Expected Results}{18}{section.3.3}% 
-\contentsline {chapter}{\numberline {4}Results and Discussion}{19}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Results}{19}{section.4.1}% 
-\contentsline {subsection}{\numberline {4.1.1}Genome Size}{19}{subsection.4.1.1}% 
-\contentsline {subsection}{\numberline {4.1.2}Genome Structure}{20}{subsection.4.1.2}% 
-\contentsline {subsubsection}{Noncoding DNA}{20}{section*.13}% 
-\contentsline {subsubsection}{Number of Genes}{21}{section*.14}% 
-\contentsline {subsection}{\numberline {4.1.3}Evolvability}{21}{subsection.4.1.3}% 
-\contentsline {subsection}{\numberline {4.1.4}Robustness}{21}{subsection.4.1.4}% 
-\contentsline {section}{\numberline {4.2}Discussion}{22}{section.4.2}% 
-\contentsline {subsection}{\numberline {4.2.1}Relation to Real-World Biological Entities}{22}{subsection.4.2.1}% 
-\contentsline {subsection}{\numberline {4.2.2}Limitations of Results}{22}{subsection.4.2.2}% 
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{23}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Conclusion}{23}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Future work}{23}{section.5.2}% 
+\contentsline {subsubsection}{Statistical Significance of the Conditions}{18}{section*.13}% 
+\contentsline {section}{\numberline {3.3}Expected Results}{19}{section.3.3}% 
+\contentsline {chapter}{\numberline {4}Results and Discussion}{20}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Results}{20}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Genome Size}{20}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}Genome Structure}{21}{subsection.4.1.2}% 
+\contentsline {subsubsection}{Noncoding DNA}{21}{section*.14}% 
+\contentsline {subsubsection}{Number of Genes}{22}{section*.15}% 
+\contentsline {subsection}{\numberline {4.1.3}Evolvability}{22}{subsection.4.1.3}% 
+\contentsline {subsection}{\numberline {4.1.4}Robustness}{22}{subsection.4.1.4}% 
+\contentsline {section}{\numberline {4.2}Discussion}{23}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}Relation to Real-World Biological Entities}{23}{subsection.4.2.1}% 
+\contentsline {subsection}{\numberline {4.2.2}Limitations of Results}{23}{subsection.4.2.2}% 
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{24}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Conclusion}{24}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Future work}{24}{section.5.2}% 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.11)  13 APR 2020 17:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.11)  14 APR 2020 17:34
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -651,25 +651,25 @@ Overfull \hbox (51.2791pt too wide) in paragraph at lines 141--160
 Chapter 3.
 [16
 
-]) (Chapter4.tex [17] [18]
+] [17] [18]) (Chapter4.tex [19]
 Chapter 4.
-<./pics/stat_fitness_mean_genome_size.png, id=393, 2168.1pt x 1445.4pt>
+<./pics/stat_fitness_mean_genome_size.png, id=413, 2168.1pt x 1445.4pt>
 File: ./pics/stat_fitness_mean_genome_size.png Graphic file (type png)
 <use ./pics/stat_fitness_mean_genome_size.png>
 Package pdftex.def Info: ./pics/stat_fitness_mean_genome_size.png  used on inpu
 t line 12.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
-[19
+[20
 
 ]
-<./pics/stat_bp_mean_num_bp_not_in_any_CDS.png, id=398, 2168.1pt x 1445.4pt>
+<./pics/stat_bp_mean_num_bp_not_in_any_CDS.png, id=418, 2168.1pt x 1445.4pt>
 File: ./pics/stat_bp_mean_num_bp_not_in_any_CDS.png Graphic file (type png)
 <use ./pics/stat_bp_mean_num_bp_not_in_any_CDS.png>
 Package pdftex.def Info: ./pics/stat_bp_mean_num_bp_not_in_any_CDS.png  used on
  input line 28.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
- [20 <./pics/stat_fitness_mean_genome_size.png>]
-<./pics/stat_robustness_mean_frac_neutral_mutants.png, id=405, 2168.1pt x 1445.
+ [21 <./pics/stat_fitness_mean_genome_size.png>]
+<./pics/stat_robustness_mean_frac_neutral_mutants.png, id=425, 2168.1pt x 1445.
 4pt>
 File: ./pics/stat_robustness_mean_frac_neutral_mutants.png Graphic file (type p
 ng)
@@ -677,16 +677,16 @@ ng)
 Package pdftex.def Info: ./pics/stat_robustness_mean_frac_neutral_mutants.png  
 used on input line 43.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
- [21 <./pics/stat_bp_mean_num_bp_not_in_any_CDS.png>]) (Chapter5.tex [22 <./pic
+ [22 <./pics/stat_bp_mean_num_bp_not_in_any_CDS.png>]) (Chapter5.tex [23 <./pic
 s/stat_robustness_mean_frac_neutral_mutants.png>]
 Chapter 5.
-) [23
+) [24
 
-] [24] [25] (Thesis.bbl [26
+] [25] [26] (Thesis.bbl [27
 
 ]) 
 AED: lastpage setting LastPage
-[27]
+[28]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
  (Thesis.aux)
@@ -697,9 +697,9 @@ Package rerunfilecheck Info: File `Thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
  ) 
 Here is how much of TeX's memory you used:
- 8743 strings out of 492895
- 124099 string characters out of 3133459
- 234580 words of memory out of 3000000
+ 8752 strings out of 492895
+ 124176 string characters out of 3133459
+ 235580 words of memory out of 3000000
  12329 multiletter control sequences out of 15000+200000
  17529 words of font info for 58 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
@@ -723,9 +723,9 @@ i10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on Thesis.pdf (34 pages, 1251561 bytes).
+Output written on Thesis.pdf (35 pages, 1259773 bytes).
 PDF statistics:
- 526 PDF objects out of 1000 (max. 8388607)
- 106 named destinations out of 1000 (max. 500000)
+ 549 PDF objects out of 1000 (max. 8388607)
+ 115 named destinations out of 1000 (max. 500000)
  321 words of extra memory for PDF output out of 10000 (max. 10000000)
 
