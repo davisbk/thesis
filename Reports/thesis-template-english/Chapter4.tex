@@ -1,8 +1,10 @@
 \chapter{Results and Discussion}\label{ch:results_discussion}
-
+This chapter presents the results of our experiments as described in Chapter~\ref{ch:methods}. 
 
 \section{Results}\label{results}
-In this section we present the results of our experiments. In the first part we will examine the overall results regarding reductive evolution before examining some other interesting findings in more detail.
+In this section we present the results of our experiments, beginning with genome size. 
+
+It is of minor note that in many of the figures, a rolling window was used to smooth the values, resulting in many of the plots only showing data starting after a few thousand generations (often 10,000). The data are complete, however. 
 
 \subsection{Genome Size}
 In this section we will examine the results of the different conditions, focusing on which, if any, lead to a reduced genome. Figure~%TODO add figure showing genome size
@@ -18,19 +20,40 @@ The most conspicuous observation is that none of the conditions resulted in a re
 
 The next obvious observation is that of the remaining conditions, only the \textit{selection up} condition seems to have made much of a significant change with its 11\% increase. All of the remaining conditions had a mild increase in genome size. 
 
+Also noteworthy is that the mutation down condition appears to have had a steady increase in the number of base pairs until a maximum of just over 14,000 around generation 350,000 before having a fairly sharp decline back to nearly the original size. 
 
+\subsection{Metabolic Error}
+\begin{figure}[H]
+	\includegraphics[width=\linewidth]{stat_fitness_mean_metabolic_error}
+	\caption[Metabolic error]{Plot of the metabolic error over time for all conditions, average of all seeds}
+	\label{fig:mean_metabolic_error}
+\end{figure}
 \subsection{Genome Structure}
-
-\subsubsection{Noncoding DNA}
-One important factor in genome structure is the amount of noncoding DNA, i.e. the number of bases which are part of a genome but which do not encode protein sequences. In the case of aevol, this means 
+In this section we examine the effects of the differing conditions on the structure of the genome as measured by the criteria in Tables~\ref{table:aevol_stats_genes_and_bp} and~\ref{table:aevol_stats_fitness_and_mutation}. 
+\subsubsection{Non-coding DNA}
+One important factor in genome structure is the amount of non-coding DNA, i.e. the number of bases which are part of a genome but which do not encode protein sequences. In the case of aevol, this means 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{stat_bp_mean_num_bp_not_in_any_CDS}
-	\caption[Noncoding DNA]{Plot of noncoding DNA over time for all conditions, average of all seeds.}
-	\label{fig:noncoding_DNA}
+	\caption[Non-coding DNA]{Plot of non-coding DNA over time for all conditions, average of all seeds.}
+	\label{fig:mean_non-coding_DNA}
 \end{figure}
 
 \subsubsection{Number of Genes}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{stat_genes_mean_num_functional_genes}
+	\caption[Mean number of functional genes]{Plot showing the mean number of functional genes over time across all seeds.}
+	\label{fig:mean_num_functional_genes}
+\end{figure}
+Interesting that so many of the lines are so flat and the mutation up line is so wiggly. Clearly the increased mutation rate was creating and destroying genes, whereas in the other cases it was a pretty even rate. 
+\subsubsection{Average Size of Functional Genes}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{stat_genes_mean_avg_size_of_functional_genes}
+	\caption[Average size of functional genes]{Plot showing the average size of functional genes over time for all seeds.}
+	\label{fig:mean_functional_gene_size}
+\end{figure}
 
 \subsection{Evolvability}
 
@@ -42,13 +65,13 @@ Recall that robustness is measured by the fraction of neutral mutants of an indi
 	\centering
 	\includegraphics[width=\linewidth]{stat_robustness_mean_frac_neutral_mutants}
 	\caption[Robustness bar graph]{Bar graph showing the spread of neutral mutants for the best individual at generation 500,000, all conditions.}
-	\label{fig:robustness_all_conditions}
+	\label{fig:mean_robustness_all_conditions}
 \end{figure}
 
 \section{Discussion}\label{discussion}
 
 \subsection{Relation to Real-World Biological Entities}
-
+%TODO Complete this section
 \subsection{Limitations of Results}\label{limitations}
 One limitation to consider is that only one parameter varied per condition. It may be possible that it is only under a combination of conditions (e.g. low selection \textit{and} high mutation rates) does reductive evolution occur. 
 

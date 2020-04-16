@@ -37,17 +37,16 @@ In Table \ref{table:parameters}, our parameter values for all input parameters m
 		\hline
 	\end{tabular}
 	\caption[Table of parameters]{Table of input parameters. $\mu$ is the mutation rate, $k$ is the selection strength, and $N$ is the population size.}
-	\label{table:parameters}
+	\label{table:input_parameters}
 \end{table}
-As can be seen in Table \ref{table:parameters}, only one parameter varied per condition in order to isolate potential influences. A multiplier of $4$ was chosen for the differing conditions relative to the control condition (e.g. $N_\text{population up} = 4096$ because $N_\text{control} = 1024$). In all conditions, the environment did not vary, and once the experiment was begun, the above parameters were held steady as well. 
-\subsection{Evaluation Strategy}
-In this section, we will examine what criteria we will be using to evaluate the results. The primary criteria will be examining the evolved genome's evolvability, robustness, and structure. 
-\subsubsection{Robustness}
-\subsubsection{Evolvability}
-\subsubsection{Time to Coalescence}
+As can be seen in Table \ref{table:input_parameters}, only one parameter varied per condition in order to isolate potential influences. A multiplier of $4$ was chosen for the differing conditions relative to the control condition (e.g. $N_\text{population up} = 4096 = 4*N_\text{control} = 4*1024$). In all conditions, the environment did not vary, and once the experiment was begun, the above parameters were held steady as well. 
 
-\subsubsection{Statistical Significance of the Conditions}
-Lastly, we need to determine whether the results of the condition (mutation up, selection down, etc.) were significantly different from the control condition, statistically speaking. To do this, we will evaluate the means of all seeds of the control condition for some test (e.g. robustness, evolvability, etc.) vs. the same for a different condition (e.g. mutation up) using the Wilcoxon signed-rank test. This is similar to a paired Student's t-test but is used when the distribution of the two samples cannot be assumed to be normally distributed. More precisely, we will use the Mann-Whitney U test, a nonparametric version of the Wilcoxon test which can be used when the sample sizes are different. The Mann-Whitney U test checks whether two independent samples were selected from populations having the same distribution. The test consists of the following steps:
+
+\subsection{Evaluation Strategy}
+In this section, we will examine the criteria we will be using to evaluate the results. The primary criteria will be examining the evolved genome's evolvability, robustness, and structure. 
+
+\subsubsection{Statistical Analysis of the Conditions}
+We must first determine how to tell whether the results of the condition (mutation up, selection down, etc.) were significantly different from the control condition, statistically speaking. To do this, we will evaluate the means of all seeds of the control condition for some test variable (e.g. robustness, evolvability, etc.) vs. the same for a different condition (e.g. mutation up) using the Wilcoxon signed-rank test. This is similar to a paired Student's t-test but is used when the distribution of the two samples cannot be assumed to be normally distributed. More precisely, we will use the ``Mann-Whitney U'' test, another nonparametric version of the Wilcoxon test which can be used when the sample sizes are different. The Mann-Whitney U test checks whether two independent samples were selected from populations having the same distribution. The test consists of the following steps:
 \begin{enumerate}
 	\item Assign numeric ranks to all observations
 	\item Add up the ranks for the observations from the first sample
@@ -57,10 +56,126 @@ Lastly, we need to determine whether the results of the condition (mutation up, 
 	\end{equation*}
 	where $n_1$ is the sample size for the first sample and $R_1$ is the sum of the ranks from the first sample.
 \end{enumerate}
-The $U$ statistic for the second sample is computed analogously. We used the \texttt{Scipi.stats.mannwhitneyu} function to calculate this statistic as needed, which also calculated the p-value. 
+The $U$ statistic for the second sample (i.e. $U_2$) is computed analogously. We used the \texttt{Scipi.stats.mannwhitneyu} function to calculate this statistic as needed, which also calculates the p-value. 
+
+If the p-value is below $0.05$, we may reject the null hypothesis $H_o$ that the two samples (i.e. the control and the condition) are from the same distribution.
+
+\subsubsection{Fitness}
+Fitness in Aevol is closely tied in to the ``metabolic error''. This error, $g$, is calculated as the gap between the environmental function $f_E$ and the phenotype of the organism, $f_P$. Once $g$ is determined as described above in Section \ref{subsec:aevol_selection}, it may be used to calculate the actual fitness of the organism according to the equation:
+\begin{equation*}
+\text{fitness} = exp(-k*g)
+\end{equation*} 
+where k is the \textit{selection coefficient} variable set by the user in a parameter file. Aevol provides fitness statistics both for the fittest individual and for the population at large.
+\subsubsection{Robustness}
+Aevol calculates statistics for both mutational robustness as well as antirobustness. Robustness in Aevol is calculated similarly to evolvability: a \texttt{lineage} file for an individual is fed to the post-treatment \texttt{misc\_ancestor\_robustness}, which generates a large number (specifiable by the user) of offspring, whose fitness is then measured. The percentage of these offspring which are neutral (i.e. whose phenotype is not affected by the mutations) is the robustness, and the percentage of positive offspring determines the antirobustness.
+
+In our experiments, at the end of the run of 500,000 generations we generated a lineage file for the best individual at generation 500,000, i.e. the individual whose metabolic error was smallest. This lineage file is then fed in to the post-treatment ``\texttt{aevol\_misc\_ancestor\_robustness}'' and robustness statistics are generated for each generation in the lineage file. The statistics given are summarized in Table~\ref{table:robustness} below.
+\begin{table}[H]
+	\centering
+	\begin{tabular}{||c||}
+		\hline
+		\textbf{Statistic} \\
+		\hline \hline
+		Fraction of positive offspring \\
+		\hline
+		Fraction of neutral offspring (aka reproductive robustness) \\
+		\hline
+		Fraction of neutral mutants (aka mutational robustness) \\
+		\hline
+		Fraction of negative offspring \\
+		\hline
+		Cumulative delta-gaps of positive offspring \\
+		\hline
+		Cumulative delta-gaps of negative offspring \\
+		\hline
+		Delta-gap for the best offspring \\
+		\hline
+		Delta-gap for the worst offspring \\
+		\hline
+		Cumulative delta-fitness of positive offspring \\
+		\hline
+		Cumulative delta-fitness of negative offspring \\
+		\hline
+		Delta-fitness for the best offspring \\
+		\hline
+		Delta-fitness for the worst offspring \\
+		\hline
+		
+	\end{tabular}
+	\caption[Aevol robustness statistics]{Table of robustness statistics calculated by Aevol for the best individual with the provided lineage.}
+	\label{table:robustness}
+\end{table}
+We may then compare these statistics for both the control and specific condition we wish to compare (e.g. mutation up). Because this data is somewhat noisy (i.e. the values for these statistics jumps up and down) we will use box and whisker plots to show the overall spread. 
+\subsubsection{Evolvability}
+In Aevol, evolvability is calculated by generating a large set of offspring for a specific individual (one whose \texttt{lineage} was generated) at regular periods along their lineage and then determining the number of ``positive offspring''. Positive offspring are defined as those whose fitness is greater than their parent's. The evolvability of an individual is then the sum total of all improvement of all of the beneficial offspring, i.e.:
+
+\begin{equation*}
+\text{evolvability} = \frac{|\text{positive offspring of }i|}{|\text{total offspring of }i|}*\sum \Delta^{\text{positive offspring}}_{fitness}
+\end{equation*}  where $\Delta^{\text{positive offspring}}_{fitness}$ is the cumulative sum of the fitness increase for the positive offspring. Thus, evolvability in Aevol accounts for both the likelihood of a positive mutation and the average improvement provided by said mutation. Practically speaking, to find an organisms evolvability in Aevol one must give the post-treatment \texttt{misc\_ancestor\_robustness} a lineage file and then multiply the fraction of the number of positive offspring (column 2) by the cumulative total of the fitness gap $g$ of the positive offspring (column 10).
+
+%\subsubsection{Time to Coalescence}
+
+ 
+\subsection{Structure}\label{methods:structure}
+Another strength of Aevol is its ability to analyze changes in the structure of DNA. As with fitness, Aevol produces statistics about individuals and the population at large for many aspects of genome structure, including: the number of coding vs. non-coding bases (i.e. they respectively do or do not code for at least one protein), the average size of coding and non-coding DNAs, the number of genes, the number of ``essential'' base pairs (i.e. those that are part of a functional coding sequence), etc. Tables~\ref{table:aevol_stats_genes_and_bp} and Table~\ref{table:aevol_stats_fitness_and_mutation} summarize where different statistics are to be found Aevol's output files. 
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ |c|c| }
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Stat File}} \\
+		\hline
+		\texttt{stat\_genes\_}$\langle$\texttt{best/global}$\rangle$ & \texttt{stat\_bp\_}$\langle$\texttt{best/global}$\rangle$ \\
+		\hline \hline
+		number of coding RNAs & number of bp not in any CDS \\
+		\hline
+		number of non-coding RNAs & number of bp not included in any functional CDS \\
+		\hline
+		average size of coding RNAs & number of bp not included in any non-functional CDS \\
+		\hline
+		average size of non-coding RNAs & number of bp not included in any RNA \\
+		\hline
+		number of functional genes & number of bp not included in any coding RNA \\
+		\hline
+		number of non-functional genes & number of bp not included in any non-coding RNA \\
+		\hline
+		average size of functional genes & number of non-essential bp \\
+		\hline
+		average size of non-functional genes & number of non-essential bp including non-functional genes \\
+		\hline
+	\end{tabular}
+	\caption[Aevol's stats: genes and base pairs]{Statistics found in \texttt{stat\_genes} and \texttt{stat\_bp} output files from Aevol}
+	\label{table:aevol_stats_genes_and_bp}
+\end{table}
+``Essential'' base pairs are those whose mutation would change the phenotype of the organism.
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ |c|c| }
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Stat File}} \\
+		\hline
+		\textbf{stat\_fitness\_$\langle$best/global$\rangle$} &
+		\textbf{stat\_mutation\_$\langle$best/global$\rangle$} \\
+		\hline \hline
+		population size & number of local mutations \\
+		fitness & number of chromosomic rearrangements \\
+		genome size & number of switches \\
+		metabolic error & number of indels \\
+		parent's metabolic error & number of duplications \\
+		metabolic fitness & number of deletions \\
+		secretion error & number of translocations \\
+		parent's secretion error & number of inversions \\
+		secretion fitness & \\ 
+		amount of compound present in grid-cell & \\
+		\hline
+	\end{tabular}	
+	\caption[Aevol's stats: fitness and mutation]{Statistics found in \texttt{stat\_fitness} and \texttt{stat\_mutation} files from Aevol.}
+	\label{table:aevol_stats_fitness_and_mutation}
+\end{table}
 
 \section{Expected Results}
-%TODO Generate table of expected results similar to one in Berenice's thesis
+Given the state of the literature and other experiments, as partially described in Section~\ref{related_work}, the table below summarizes our expected results. 
+%TODO Generate table of expected results similar to one in Berenice's thesis - copy over from my source/expectation grid
 
 
 

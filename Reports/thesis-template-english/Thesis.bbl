@@ -14,16 +14,17 @@ Guillaume Beslon, Vincent~F Liard, and Santiago~F Elena.
   Biology (ESEB 2017) }, August 2017.
 \newblock Poster.
 
+\bibitem{Castillo-DOSE}
+Clarence~FG Castillo and Maurice~HT Ling.
+\newblock Digital organism simulation environment (dose): A library for
+  ecologically-based in silico experimental evolution.
+\newblock {\em Advances in Computer Science : an International Journal},
+  3(1):44--50, 2014.
+
 \bibitem{Gordo2137}
 Isabel Gordo and Brian Charlesworth.
 \newblock On the speed of muller{\textquoteright}s ratchet.
 \newblock {\em Genetics}, 156(4):2137--2140, 2000.
-
-\bibitem{Hindre.2012}
-Thomas Hindr{\'e}, Carole Knibbe, Guillaume Beslon, and Dominique Schneider.
-\newblock New insights into bacterial adaptation through in vivo and in silico
-  experimental evolution.
-\newblock {\em Nature reviews. Microbiology}, 10(5):352--365, 2012.
 
 \bibitem{knibbe:tel-00482375}
 Carole Knibbe.
@@ -53,6 +54,26 @@ Octavio Miramontes, Franois Taddei, Ariel~B. Lindner, Antoine Frenoy, and Dusan
   Misevic.
 \newblock Shape matters in cooperation.
 \newblock {\em Artificial Life Conference Proceedings}, 1(28):340--341, 2016.
+
+\bibitem{Mozhayskiy-In-Silico-Review}
+Vadim Mozhayskiy and Ilias Tagkopoulos.
+\newblock {Microbial evolution in vivo and in silico: methods and
+  applications}.
+\newblock {\em Integrative Biology}, 5(2):262--277, 10 2012.
+
+\bibitem{Avida-Ofria}
+C.~{Ofria} and C.~O. {Wilke}.
+\newblock Avida: A software platform for research in computational evolutionary
+  biology.
+\newblock {\em Artificial Life}, 10(2):191--229, 2004.
+
+\bibitem{Tierra-Ray}
+T.~S. {Ray} and J.~{Hart}.
+\newblock Evolution of differentiated multi-threaded digital organisms.
+\newblock In {\em Proceedings 1999 IEEE/RSJ International Conference on
+  Intelligent Robots and Systems. Human and Environment Friendly Robots with
+  High Intelligence and Emotional Quotients (Cat. No.99CH36289)}, volume~1,
+  pages 1--10 vol.1, 1999.
 
 \bibitem{doi:10.1186/s12862-019-1507-z}
 Jacob Rutten, Paulien Hogeweg, and Guillaume Beslon.
