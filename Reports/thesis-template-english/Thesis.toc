@@ -32,14 +32,15 @@
 \contentsline {section}{\numberline {3.3}Expected Results}{21}{section.3.3}% 
 \contentsline {chapter}{\numberline {4}Results and Discussion}{22}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Results}{22}{section.4.1}% 
-\contentsline {subsection}{\numberline {4.1.1}Genome Size}{22}{subsection.4.1.1}% 
-\contentsline {subsection}{\numberline {4.1.2}Metabolic Error}{24}{subsection.4.1.2}% 
-\contentsline {subsection}{\numberline {4.1.3}Genome Structure}{24}{subsection.4.1.3}% 
+\contentsline {subsection}{\numberline {4.1.1}Statistical Analysis}{22}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}Genome Size}{22}{subsection.4.1.2}% 
+\contentsline {subsection}{\numberline {4.1.3}Metabolic Error}{24}{subsection.4.1.3}% 
+\contentsline {subsection}{\numberline {4.1.4}Genome Structure}{24}{subsection.4.1.4}% 
 \contentsline {subsubsection}{Non-coding DNA}{24}{section*.14}% 
 \contentsline {subsubsection}{Number of Genes}{26}{section*.15}% 
 \contentsline {subsubsection}{Average Size of Functional Genes}{27}{section*.16}% 
-\contentsline {subsection}{\numberline {4.1.4}Evolvability}{27}{subsection.4.1.4}% 
-\contentsline {subsection}{\numberline {4.1.5}Robustness}{27}{subsection.4.1.5}% 
+\contentsline {subsection}{\numberline {4.1.5}Evolvability}{27}{subsection.4.1.5}% 
+\contentsline {subsection}{\numberline {4.1.6}Robustness}{27}{subsection.4.1.6}% 
 \contentsline {section}{\numberline {4.2}Discussion}{28}{section.4.2}% 
 \contentsline {subsection}{\numberline {4.2.1}Relation to Real-World Biological Entities}{28}{subsection.4.2.1}% 
 \contentsline {subsection}{\numberline {4.2.2}Limitations of Results}{28}{subsection.4.2.2}% 
