@@ -8,16 +8,15 @@ In this section we present the results of our experiments. We begin by presentin
 Below in Table~ we see the results of our p-value calculations for testing whether the results are significant.   
 
 \subsection{Genome Size}
-In this section we will examine the results of the different conditions, focusing on which, if any, lead to a reduced genome. Figure~%TODO add figure showing genome size
-presents the main findings regarding genome size. In the Figure, the blue line %TODO make sure the line is actually the blue one
-represents the control condition and the other colors show the changed conditions: mutation up/down, selection up/down, and population up/down. As can be seen from the figure, 
+In this section we will examine the results of the different conditions, focusing on which, if any, lead to a reduced genome. Figure~\ref{fig:genome_size}
+presents the main findings regarding genome size. In the figure, the blue line represents the control condition and the other colors show the changed conditions: mutation up/down, selection up/down, and population up/down. As can be seen from the figure,the results did not actually vary all that much across the conditions with regard to genome size.  
 \begin{figure}[H]
-	\includegraphics[width=\linewidth]{stat_fitness_mean_genome_size}
+	\includegraphics[width=\linewidth]{stat_fitness_global_mean_genome_size}
 	\centering
 	\caption[Genome size]{Genome size in number of bases of all conditions. Average taken across all five seeds for each condition.}
 	\label{fig:genome_size}
 \end{figure}
-The most conspicuous observation is that none of the conditions resulted in a reduced genome size, and in fact the \textit{population down} condition had a runaway increase in the number of bases, reaching as high as 16,500 bases, a 25\% increase over the original wild type's roughly 13,200. Surprisingly, even after 500,000 generations it seems that the upper limit may still not have been reached. 
+In fact the \textit{population down} condition had a runaway increase in the number of bases, reaching over 16,500 bases, at least a 25\% increase over the original wild type's roughly 13,200. Surprisingly, even after 500,000 generations it seems that the upper limit may still not have been reached. 
 
 The next obvious observation is that of the remaining conditions, only the \textit{selection up} condition seems to have made much of a significant change with its 11\% increase. All of the remaining conditions had a mild increase in genome size. 
 
@@ -25,7 +24,7 @@ Also noteworthy is that the mutation down condition appears to have had a steady
 
 \subsection{Metabolic Error}
 \begin{figure}[H]
-	\includegraphics[width=\linewidth]{stat_fitness_mean_metabolic_error}
+	\includegraphics[width=\linewidth]{stat_fitness_global_mean_metabolic_error}
 	\caption[Metabolic error]{Plot of the metabolic error over time for all conditions, average of all seeds}
 	\label{fig:mean_metabolic_error}
 \end{figure}
@@ -43,7 +42,7 @@ One important factor in genome structure is the amount of non-coding DNA, i.e. t
 \subsubsection{Number of Genes}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\linewidth]{stat_genes_mean_num_functional_genes}
+	\includegraphics[width=\linewidth]{stat_genes_global_mean_num_functional_genes}
 	\caption[Mean number of functional genes]{Plot showing the mean number of functional genes over time across all seeds.}
 	\label{fig:mean_num_functional_genes}
 \end{figure}
@@ -51,13 +50,44 @@ Interesting that so many of the lines are so flat and the mutation up line is so
 \subsubsection{Average Size of Functional Genes}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\linewidth]{stat_genes_mean_avg_size_of_functional_genes}
+	\includegraphics[width=\linewidth]{stat_genes_global_mean_avg_size_of_functional_genes}
 	\caption[Average size of functional genes]{Plot showing the average size of functional genes over time for all seeds.}
 	\label{fig:mean_functional_gene_size}
 \end{figure}
 
 \subsection{Evolvability}
+In Figure~\ref{fig:evolvability_mean} below, we see the results of the experiments on evolvability for the best individual's (at generation 500,000) lineage. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{evolvability_boxplot_all_seeds_avg}
+	\caption[Evolvability boxplot]{A box plot showing the mean evolvability spread of all seeds and all conditions. Higher numbers are more evolvable.}
+	\label{fig:evolvability_mean}	
+\end{figure}
+The figure illustrates that, overall, for each condition the best individual still had close to zero evolvability. For the selection up condition, however, the deviation from zero was even smaller. Table~\ref{table:mean_std_dev_evolvability} below provides the mean and standard deviation for the evolvability. 
 
+\begin{table}
+	\centering
+	\begin{tabular}{| c | c | c |}
+		\hline
+		 & $\sigma$ & std dev \\
+		 \hline
+		 \hline
+		 control & 2.035523813975702e-11 & 3.2787490312081233e-10\\
+		 \hline
+		 $\mu_\text{up}$ & 9.97655150597127e-11 & 8.41749150634588e-10 \\
+		 \hline
+		 $\mu_\text{down}$ & 6.064697990806935e-12 & 1.2471674281540128e-10 \\
+		 \hline
+		 $k_\text{up}$ & 1.9498939718794653e-15 & 6.394659146405824e-14 \\
+		 \hline
+		 $k_\text{down}$ & & \\
+		 \hline
+		 $N_\text{up}$ & 8.837632116681012e-11 & 1.0799303682398726e-09 \\
+		 \hline	 		 
+	\end{tabular}
+	\caption[Evolvability mean and standard deviation]{Table illustrating the mean and standard deviation of the evolvability for each condition.}
+	\label{table:mean_std_dev_evolvability}
+\end{table}
 \subsection{Robustness}
 Recall that robustness is measured by the fraction of neutral mutants of an individual. In the following figure, we see a bar plot showing the spread of neutral mutants for the best individual for the control condition as well as the six variations. 
 

@@ -40,10 +40,10 @@
 \contentsline {subsubsection}{Number of Genes}{26}{section*.15}% 
 \contentsline {subsubsection}{Average Size of Functional Genes}{27}{section*.16}% 
 \contentsline {subsection}{\numberline {4.1.5}Evolvability}{27}{subsection.4.1.5}% 
-\contentsline {subsection}{\numberline {4.1.6}Robustness}{27}{subsection.4.1.6}% 
-\contentsline {section}{\numberline {4.2}Discussion}{28}{section.4.2}% 
-\contentsline {subsection}{\numberline {4.2.1}Relation to Real-World Biological Entities}{28}{subsection.4.2.1}% 
-\contentsline {subsection}{\numberline {4.2.2}Limitations of Results}{28}{subsection.4.2.2}% 
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{29}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Conclusion}{29}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Future work}{29}{section.5.2}% 
+\contentsline {subsection}{\numberline {4.1.6}Robustness}{29}{subsection.4.1.6}% 
+\contentsline {section}{\numberline {4.2}Discussion}{29}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}Relation to Real-World Biological Entities}{29}{subsection.4.2.1}% 
+\contentsline {subsection}{\numberline {4.2.2}Limitations of Results}{29}{subsection.4.2.2}% 
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{31}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Conclusion}{31}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Future work}{31}{section.5.2}% 
