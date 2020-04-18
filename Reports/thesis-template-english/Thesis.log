@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.11)  17 APR 2020 16:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.11)  17 APR 2020 17:09
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -701,7 +701,7 @@ Package pdftex.def Info: ./pics/evolvability_boxplot_all_seeds_avg.png  used on
 
 [27 <./pics/stat_genes_global_mean_avg_size_of_functional_genes.png>] [28 <./pi
 cs/evolvability_boxplot_all_seeds_avg.png>]
-<./pics/stat_robustness_best_mean_frac_neutral_mutants.png, id=499, 2168.1pt x 
+<./pics/stat_robustness_best_mean_frac_neutral_mutants.png, id=500, 2168.1pt x 
 1445.4pt>
 File: ./pics/stat_robustness_best_mean_frac_neutral_mutants.png Graphic file (t
 ype png)
@@ -709,8 +709,8 @@ ype png)
 Package pdftex.def Info: ./pics/stat_robustness_best_mean_frac_neutral_mutants.
 png  used on input line 109.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
-) (Chapter5.tex [29 <./pics/stat_robustness_best_mean_frac_neutral_mutants.png>
-] [30]
+ [29 <./pics/stat_robustness_best_mean_frac_neutral_mutants.png>]) (Chapter5.te
+x [30]
 Chapter 5.
 ) [31
 
@@ -759,9 +759,9 @@ i10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on Thesis.pdf (43 pages, 1737261 bytes).
+Output written on Thesis.pdf (43 pages, 1737572 bytes).
 PDF statistics:
- 631 PDF objects out of 1000 (max. 8388607)
+ 632 PDF objects out of 1000 (max. 8388607)
  134 named destinations out of 1000 (max. 500000)
  349 words of extra memory for PDF output out of 10000 (max. 10000000)
 
