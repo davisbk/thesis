@@ -1,10 +1,10 @@
 \begin{thebibliography}{10}
 
-\bibitem{Alberts.2015}
-Bruce Alberts.
-\newblock {\em Molecular biology of the cell}.
-\newblock {Garland Science Taylor and Francis Group}, New York NY, sixth
-  edition edition, 2015.
+\bibitem{bataillon2000estimation}
+Thomas Bataillon.
+\newblock Estimation of spontaneous genome-wide mutation rate parameters:
+  whither beneficial mutations?
+\newblock {\em Heredity}, 84(5):497--501, 2000.
 
 \bibitem{Batut.2014}
 B{\'e}r{\'e}nice Batut, Carole Knibbe, Gabriel Marais, and Vincent Daubin.
@@ -26,12 +26,29 @@ Guillaume Beslon, Vincent~F Liard, and Santiago~F Elena.
   Biology (ESEB 2017) }, August 2017.
 \newblock Poster.
 
+\bibitem{bradwell2013correlation}
+Katie Bradwell, Marine Combe, Pilar Domingo-Calap, and Rafael Sanju{\'a}n.
+\newblock Correlation between mutation rate and genome size in riboviruses:
+  mutation rate of bacteriophage q$\beta$.
+\newblock {\em Genetics}, 195(1):243--251, 2013.
+
 \bibitem{Castillo-DOSE}
 Clarence~FG Castillo and Maurice~HT Ling.
 \newblock Digital organism simulation environment (dose): A library for
   ecologically-based in silico experimental evolution.
 \newblock {\em Advances in Computer Science : an International Journal},
   3(1):44--50, 2014.
+
+\bibitem{cutter2019primer}
+A.D. Cutter.
+\newblock {\em A Primer of Molecular Population Genetics}.
+\newblock Oxford University Press, 2019.
+
+\bibitem{drake1991constant}
+John~W Drake.
+\newblock A constant rate of spontaneous mutation in dna-based microbes.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  88(16):7160--7164, 1991.
 
 \bibitem{Gordo2137}
 Isabel Gordo and Brian Charlesworth.
@@ -67,6 +84,12 @@ Vincent Liard, David Parsons, Jonathan Rouzaud-Cornabas, and Guillaume Beslon.
 \newblock The complexity ratchet: Stronger than selection, weaker than
   robustness.
 \newblock {\em Artificial Life Conference Proceedings}, 1(30):250--257, 2018.
+
+\bibitem{marais2008mutation}
+Gabriel~AB Marais, Alexandra Calteau, and Olivier Tenaillon.
+\newblock Mutation rate and genome reduction in endosymbiotic and free-living
+  bacteria.
+\newblock {\em Genetica}, 134(2):205--210, 2008.
 
 \bibitem{doi:10.1162/978-0-262-33936-0-ch057}
 Octavio Miramontes, Franois Taddei, Ariel~B. Lindner, Antoine Frenoy, and Dusan
@@ -113,6 +136,12 @@ Zhiyi Sun and Jeffrey Blanchard.
   prochlorococcus resulted in a reduced genome through the loss of a large
   number of small effect genes.
 \newblock {\em PloS one}, 9:e88837, 03 2014.
+
+\bibitem{vahdati2017effect}
+Ali~R Vahdati, Kathleen Sprouffske, and Andreas Wagner.
+\newblock Effect of population size and mutation rate on the evolution of rna
+  sequences on an adaptive landscape determined by rna folding.
+\newblock {\em International journal of biological sciences}, 13(9):1138, 2017.
 
 \bibitem{doi:10.1098/rspb.2007.1137}
 Andreas Wagner.
