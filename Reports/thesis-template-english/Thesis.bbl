@@ -72,13 +72,6 @@ Sanna Koskiniemi, Song Sun, Otto~G Berg, and Dan~I Andersson.
 \newblock Selection-driven gene loss in bacteria.
 \newblock {\em PLoS genetics}, 8(6), 2012.
 
-\bibitem{lefebure2017less}
-Tristan Lef{\'e}bure, Claire Morvan, Florian Malard, Cl{\'e}mentine
-  Fran{\c{c}}ois, Lara Konecny-Dupr{\'e}, Laurent Gu{\'e}guen, Mich{\`e}le
-  Weiss-Gayet, Andaine Seguin-Orlando, Luca Ermini, Clio Der~Sarkissian, et~al.
-\newblock Less effective selection leads to larger genomes.
-\newblock {\em Genome research}, 27(6):1016--1028, 2017.
-
 \bibitem{doi:10.1162}
 Vincent Liard, David Parsons, Jonathan Rouzaud-Cornabas, and Guillaume Beslon.
 \newblock The complexity ratchet: Stronger than selection, weaker than
@@ -148,5 +141,11 @@ Andreas Wagner.
 \newblock Robustness and evolvability: a paradox resolved.
 \newblock {\em Proceedings of the Royal Society B: Biological Sciences},
   275(1630):91--100, 2008.
+
+\bibitem{wein2019effect}
+Tanita Wein and Tal Dagan.
+\newblock The effect of population bottleneck size and selective regime on
+  genetic diversity and evolvability in bacteria.
+\newblock {\em Genome biology and evolution}, 11(11):3283--3290, 2019.
 
 \end{thebibliography}
