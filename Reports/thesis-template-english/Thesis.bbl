@@ -1,5 +1,17 @@
 \begin{thebibliography}{10}
 
+\bibitem{Alberts.2015}
+Bruce Alberts.
+\newblock {\em Molecular biology of the cell}.
+\newblock {Garland Science Taylor and Francis Group}, New York NY, sixth
+  edition edition, 2015.
+
+\bibitem{Batut.2014}
+B{\'e}r{\'e}nice Batut, Carole Knibbe, Gabriel Marais, and Vincent Daubin.
+\newblock Reductive genome evolution at both ends of the bacterial population
+  size spectrum.
+\newblock {\em Nature reviews. Microbiology}, 12(12):841--850, 2014.
+
 \bibitem{Batut.2013}
 B{\'e}r{\'e}nice Batut, David~P. Parsons, Stephan Fischer, Guillaume Beslon,
   and Carole Knibbe.
@@ -42,6 +54,13 @@ Carole Knibbe, Antoine Coulon, Olivier Mazet, Jean-Michel Fayard, and Guillaume
 Sanna Koskiniemi, Song Sun, Otto~G Berg, and Dan~I Andersson.
 \newblock Selection-driven gene loss in bacteria.
 \newblock {\em PLoS genetics}, 8(6), 2012.
+
+\bibitem{lefebure2017less}
+Tristan Lef{\'e}bure, Claire Morvan, Florian Malard, Cl{\'e}mentine
+  Fran{\c{c}}ois, Lara Konecny-Dupr{\'e}, Laurent Gu{\'e}guen, Mich{\`e}le
+  Weiss-Gayet, Andaine Seguin-Orlando, Luca Ermini, Clio Der~Sarkissian, et~al.
+\newblock Less effective selection leads to larger genomes.
+\newblock {\em Genome research}, 27(6):1016--1028, 2017.
 
 \bibitem{doi:10.1162}
 Vincent Liard, David Parsons, Jonathan Rouzaud-Cornabas, and Guillaume Beslon.
