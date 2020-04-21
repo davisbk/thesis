@@ -76,10 +76,10 @@ Table~\ref{table:fitness_means_std_dev} below gives the mean fitness scores for 
 In this section we examine the effects of the differing conditions on the structure of the genome as measured by the criteria in Tables~\ref{table:aevol_stats_genes_and_bp} and~\ref{table:aevol_stats_fitness_and_mutation}. 
 
 \subsubsection{Non-coding DNA}
-One important factor in genome structure is the amount of non-coding DNA, i.e. the number of bases which are part of a genome but which do not encode protein sequences. In the case of aevol, this means 
+One important factor in genome structure is the amount of non-coding DNA, i.e. the number of bases which are part of a genome but which do not encode protein sequences. Aevol gives the number of bases which are not in any coding sequence, as well as the total genome size, so one may easily calculate this percentage. The results from our experiments are shown in Figure~\ref{fig:mean_non-coding_DNA}. Confirming previous suspicions, it seems that as the genome size of the population down condition rapidly expanded, most of those expansions were non-coding. 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\linewidth]{stat_bp_best-mean_num_bp_not_in_any_CDS}
+	\includegraphics[width=\linewidth]{percent_noncoding}
 	\caption[Non-coding DNA]{Plot of non-coding DNA over time for all conditions, average of all seeds.}
 	\label{fig:mean_non-coding_DNA}
 \end{figure}

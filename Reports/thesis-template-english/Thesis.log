@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.11)  20 APR 2020 16:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.11)  20 APR 2020 19:38
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -686,17 +686,14 @@ Package pdftex.def Info: ./pics/stat_fitness_global_mean_metabolic_error.png  u
 sed on input line 45.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
  [27 <./pics/global_fitness_histogram.png>]
-<./pics/stat_bp_best-mean_num_bp_not_in_any_CDS.png, id=557, 2168.1pt x 1445.4p
-t>
-File: ./pics/stat_bp_best-mean_num_bp_not_in_any_CDS.png Graphic file (type png
-)
-<use ./pics/stat_bp_best-mean_num_bp_not_in_any_CDS.png>
-Package pdftex.def Info: ./pics/stat_bp_best-mean_num_bp_not_in_any_CDS.png  us
-ed on input line 82.
+<./pics/percent_noncoding.png, id=558, 2168.1pt x 1445.4pt>
+File: ./pics/percent_noncoding.png Graphic file (type png)
+<use ./pics/percent_noncoding.png>
+Package pdftex.def Info: ./pics/percent_noncoding.png  used on input line 82.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
 
 [28 <./pics/stat_fitness_global_mean_metabolic_error.png>]
-<./pics/stat_genes_global_mean_num_functional_genes.png, id=564, 2168.1pt x 144
+<./pics/stat_genes_global_mean_num_functional_genes.png, id=565, 2168.1pt x 144
 5.4pt>
 File: ./pics/stat_genes_global_mean_num_functional_genes.png Graphic file (type
  png)
@@ -704,8 +701,8 @@ File: ./pics/stat_genes_global_mean_num_functional_genes.png Graphic file (type
 Package pdftex.def Info: ./pics/stat_genes_global_mean_num_functional_genes.png
   used on input line 91.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
- [29 <./pics/stat_bp_best-mean_num_bp_not_in_any_CDS.png>]
-<./pics/stat_genes_global_mean_avg_size_of_functional_genes.png, id=573, 2168.1
+ [29 <./pics/percent_noncoding.png>]
+<./pics/stat_genes_global_mean_avg_size_of_functional_genes.png, id=574, 2168.1
 pt x 1445.4pt>
 File: ./pics/stat_genes_global_mean_avg_size_of_functional_genes.png Graphic fi
 le (type png)
@@ -714,15 +711,16 @@ Package pdftex.def Info: ./pics/stat_genes_global_mean_avg_size_of_functional_g
 enes.png  used on input line 101.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
  [30 <./pics/stat_genes_global_mean_num_functional_genes.png>]
-<./pics/evolvability_boxplot_all_seeds_avg.png, id=582, 2168.1pt x 1445.4pt>
+<./pics/evolvability_boxplot_all_seeds_avg.png, id=583, 2168.1pt x 1445.4pt>
 File: ./pics/evolvability_boxplot_all_seeds_avg.png Graphic file (type png)
 <use ./pics/evolvability_boxplot_all_seeds_avg.png>
 Package pdftex.def Info: ./pics/evolvability_boxplot_all_seeds_avg.png  used on
  input line 111.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
- [31 <./pics/stat_genes_global_mean_avg_size_of_functional_genes.png>] [32 <./p
-ics/evolvability_boxplot_all_seeds_avg.png>]
-<./pics/stat_robustness_best_mean_frac_neutral_mutants.png, id=595, 2168.1pt x 
+
+[31 <./pics/stat_genes_global_mean_avg_size_of_functional_genes.png>] [32 <./pi
+cs/evolvability_boxplot_all_seeds_avg.png>]
+<./pics/stat_robustness_best_mean_frac_neutral_mutants.png, id=596, 2168.1pt x 
 1445.4pt>
 File: ./pics/stat_robustness_best_mean_frac_neutral_mutants.png Graphic file (t
 ype png)
@@ -751,7 +749,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
  ) 
 Here is how much of TeX's memory you used:
  8866 strings out of 492895
- 127294 string characters out of 3133459
+ 127184 string characters out of 3133459
  240873 words of memory out of 3000000
  12397 multiletter control sequences out of 15000+200000
  19830 words of font info for 68 fonts, out of 3000000 for 9000
@@ -777,9 +775,9 @@ ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/urw/times/utmr8a.pfb>
-Output written on Thesis.pdf (48 pages, 2015903 bytes).
+Output written on Thesis.pdf (48 pages, 2012498 bytes).
 PDF statistics:
- 737 PDF objects out of 1000 (max. 8388607)
+ 738 PDF objects out of 1000 (max. 8388607)
  153 named destinations out of 1000 (max. 500000)
  364 words of extra memory for PDF output out of 10000 (max. 10000000)
 
