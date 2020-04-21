@@ -81,6 +81,8 @@ Table~\ref{table:fitness_means_std_dev} below gives the mean fitness scores for 
 	\centering
 	\begin{tabular}{|c||c|c|}
 		\hline
+		\multicolumn{3}{|c|}{\Large \textbf{Fitness}} \\
+		\hline
 		& \textbf{mean} & \textbf{standard deviation} \\
 		\hline \hline
 		control & 0.022725416617759595 & 2.3443283583311204e-05 \\
@@ -111,10 +113,35 @@ One important factor in genome structure is the amount of non-coding DNA, i.e. t
 	\caption[Non-coding DNA]{Plot of non-coding DNA over time for all conditions, average of all seeds.}
 	\label{fig:mean_non-coding_DNA}
 \end{figure}
-By comparison, the 
+By comparison, despite the \textit{selection up} condition's rapid decline in fitness, it did not acquire more than 1\% non-coding DNA. 
+
+The average percentages of non-coding DNA are given in Table~\ref{table:non-coding_DNA_mean_and_standard_deviation} below. 
+\begin{table}[H]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\multicolumn{3}{|c|}{\Large \textbf{\% non-coding DNA}} \\
+		\hline
+		& \textbf{mean} & \textbf{standard deviation} \\
+		\hline \hline
+		Control & 38.63423466698755	& 0.6082140361213884 \\
+		\hline
+		Mutation Up & 38.671613712955356 & 0.7101004314162586 \\
+		\hline
+		Mutation down & 37.45404807887061 & 0.6975468467601527 \\
+		\hline
+		Selection up & 39.33999462052945 & 1.135781531861679 \\
+		\hline
+		Selection down & 38.01289386160514 & 0.704172791027157 \\
+		\hline
+		Population down & 45.46747213756932 & 3.5462787275316896 \\
+		\hline
+	\end{tabular}
+	\caption[Non-coding DNA mean and standard deviation]{Mean and standard deviation of non-coding percentages of DNA across all seeds.}
+	\label{table:non-coding_DNA_mean_and_standard_deviation}
+\end{table}
 
 \subsubsection{Number of Genes}\label{sec:number_of_functional_genes}
-Figure~\ref{fig:mean_num_functional_genes} below illustrates the mean number of genes across the population for each condition.  
+Figure~\ref{fig:mean_num_functional_genes} below illustrates the mean number of functional genes across the population for each condition.  
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{stat_genes_global_mean_num_functional_genes}
@@ -183,6 +210,8 @@ Recall from Section~\ref{subsec:robustness_antirobustness} that robustness is me
 The mutation up condition clearly had the largest percentage of neutral mutants, at 0.5\%. 
 \section{Discussion}\label{discussion}
 Overall, the mean fitness of our digital organisms was nearly unchanged from generation 1 to 500,000. One explanation for this might be that the organisms were allowed to continue to evolve in the same environment in which their wild types were generated. 
+
+%TODO Generate table showing results vs. what we expected
 \subsection{Relation to Real-World Biological Entities}
 %TODO Complete this section
 \subsection{Limitations of Results}\label{limitations}
