@@ -23,7 +23,7 @@ The next obvious observation is that of the remaining conditions, only the \text
 Also noteworthy is that the mutation down condition appears to have had a steady increase in the number of base pairs until a maximum of just over 14,000 around generation 350,000 before having a fairly sharp decline back to nearly the original size. 
 
 \subsection{Metabolic Error and Fitness}
-Figures ~\ref{fig:mean_fitness_plot} shows the mean fitness of the population for the control, mutation up/down, and population down conditions. Selection up/down were excluded from this graph because they were significantly outside of the range of the other conditions, but they are included in Figure~\ref{fig:mean_fitness_barchart}, a histogram of the results.
+Figures ~\ref{fig:mean_fitness_plot} shows the mean fitness of the population for the control, mutation up/down, and population down conditions. Selection up/down were excluded from this graph because they were significantly outside of the range of the other conditions, but they are included in Figure~\ref{fig:global_fitness_histogram}, a histogram of the results.
 
 \begin{figure}[H]
 	\includegraphics[width=\linewidth]{population_mean_fitness_chart}
@@ -33,12 +33,12 @@ Figures ~\ref{fig:mean_fitness_plot} shows the mean fitness of the population fo
 
 We can see in the figure that the fitness of the control condition (in blue) pretty consistently stayed at the same level, likely owing to the fact that the wild genotype had already been allowed to evolve for 10 million generations in this environment, so the phenotype closely lines up with the target before the simulations even began. Small fluctuations occurred due to mutations, insertions, etc. but the average fitness remained steady. 
 
-More interesting is the population down condition, where the average fitness in the whole population pretty sharply declined. 
+More interesting is the population down condition, where the average fitness in the whole population pretty sharply declined. It seems that with the smaller population size, genetic drift may be more strongly at work in continually increasing the gap between the phenotype and environmental function, as the lack of variety inherent in a smaller population causes a cascade of increasingly deleterious consequences. 
 
 \begin{figure}[H]
-	\includegraphics[width=\linewidth]{fitness_barchart}
-	\caption[Mean fitness bar chart]{Bar chart of all conditions' fitness.}
-	\label{fig:mean_fitness_barchart}
+	\includegraphics[width=\linewidth]{global_fitness_histogram}
+	\caption[Mean fitness histogram]{Histogram of all conditions' fitness. Note that for the selection up condition, the scale is 1e-7. }
+	\label{fig:global_fitness_histogram}
 \end{figure}
 Figure~\ref{fig:mean_metabolic_error} shows the mean metabolic error across all seeds for the whole population over time with respect to each condition. 
 \begin{figure}[H]
@@ -47,9 +47,6 @@ Figure~\ref{fig:mean_metabolic_error} shows the mean metabolic error across all 
 	\label{fig:mean_metabolic_error}
 \end{figure}
 
-
-
-It seems that with the smaller population size, genetic drift may be more strongly at work in continually increasing the gap between the phenotype and environmental function, as the lack of variety inherent in a smaller population causes a cascade of increasingly deleterious consequences. 
 
 Table~\ref{table:fitness_means_std_dev} below gives the mean fitness scores for differing conditions. The selection up/down conditions seem to be somewhat anomalous.
 \begin{table}[H]

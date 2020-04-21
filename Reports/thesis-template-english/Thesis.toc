@@ -35,7 +35,7 @@
 \contentsline {subsection}{\numberline {4.1.1}Statistical Analysis}{24}{subsection.4.1.1}% 
 \contentsline {subsection}{\numberline {4.1.2}Genome Size}{24}{subsection.4.1.2}% 
 \contentsline {subsection}{\numberline {4.1.3}Metabolic Error and Fitness}{26}{subsection.4.1.3}% 
-\contentsline {subsection}{\numberline {4.1.4}Genome Structure}{29}{subsection.4.1.4}% 
+\contentsline {subsection}{\numberline {4.1.4}Genome Structure}{28}{subsection.4.1.4}% 
 \contentsline {subsubsection}{Non-coding DNA}{29}{section*.14}% 
 \contentsline {subsubsection}{Number of Genes}{29}{section*.15}% 
 \contentsline {subsubsection}{Average Size of Functional Genes}{30}{section*.16}% 
