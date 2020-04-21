@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.11)  21 APR 2020 00:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.11)  21 APR 2020 01:52
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -580,7 +580,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) [1
 
 ]
-<./pics/phylogeny03.png, id=284, 316.18124pt x 239.89626pt>
+<./pics/phylogeny03.png, id=286, 316.18124pt x 239.89626pt>
 File: ./pics/phylogeny03.png Graphic file (type png)
 <use ./pics/phylogeny03.png>
 Package pdftex.def Info: ./pics/phylogeny03.png  used on input line 10.
@@ -590,7 +590,7 @@ Chapter 2.
 [4
 
 ] [5]
-<./pics/aevol_overview01.png, id=333, 684.30656pt x 717.43031pt>
+<./pics/aevol_overview01.png, id=335, 684.30656pt x 717.43031pt>
 File: ./pics/aevol_overview01.png Graphic file (type png)
 <use ./pics/aevol_overview01.png>
 Package pdftex.def Info: ./pics/aevol_overview01.png  used on input line 27.
@@ -601,7 +601,7 @@ Overfull \hbox (1.8798pt too wide) in paragraph at lines 41--42
 -quences in a genome,
  []
 
-<./pics/aevol_fitness_description01.png, id=367, 377.91188pt x 294.34969pt>
+<./pics/aevol_fitness_description01.png, id=369, 377.91188pt x 294.34969pt>
 File: ./pics/aevol_fitness_description01.png Graphic file (type png)
 <use ./pics/aevol_fitness_description01.png>
 Package pdftex.def Info: ./pics/aevol_fitness_description01.png  used on input 
@@ -611,7 +611,7 @@ line 50.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [9] [10 <./pics/aevol_fitness_description01.png>]
-<./pics/lineage01.png, id=385, 660.96938pt x 195.73125pt>
+<./pics/lineage01.png, id=387, 660.96938pt x 195.73125pt>
 File: ./pics/lineage01.png Graphic file (type png)
 <use ./pics/lineage01.png>
 Package pdftex.def Info: ./pics/lineage01.png  used on input line 75.
@@ -626,7 +626,7 @@ Chapter 3.
 [15
 
 ]
-<./pics/environmental_target_function01.png, id=421, 328.1058pt x 345.4506pt>
+<./pics/environmental_target_function01.png, id=423, 328.1058pt x 345.4506pt>
 File: ./pics/environmental_target_function01.png Graphic file (type png)
 <use ./pics/environmental_target_function01.png>
 Package pdftex.def Info: ./pics/environmental_target_function01.png  used on in
@@ -660,7 +660,7 @@ Overfull \hbox (54.31831pt too wide) in paragraph at lines 220--243
 
 [22]) (Chapter4.tex [23]
 Chapter 4.
-<./pics/stat_fitness_global_mean_genome_size.png, id=542, 2168.1pt x 1445.4pt>
+<./pics/stat_fitness_global_mean_genome_size.png, id=545, 2168.1pt x 1445.4pt>
 File: ./pics/stat_fitness_global_mean_genome_size.png Graphic file (type png)
 <use ./pics/stat_fitness_global_mean_genome_size.png>
 Package pdftex.def Info: ./pics/stat_fitness_global_mean_genome_size.png  used 
@@ -669,80 +669,85 @@ on input line 11.
 [24
 
 ] [25 <./pics/stat_fitness_global_mean_genome_size.png>]
-<./pics/population_mean_fitness_chart.png, id=557, 2168.1pt x 1445.4pt>
+<./pics/stat_fitness_perc_change_genome_size.png, id=559, 2168.1pt x 1445.4pt>
+File: ./pics/stat_fitness_perc_change_genome_size.png Graphic file (type png)
+<use ./pics/stat_fitness_perc_change_genome_size.png>
+Package pdftex.def Info: ./pics/stat_fitness_perc_change_genome_size.png  used 
+on input line 47.
+(pdftex.def)             Requested size: 360.0pt x 239.98045pt.
+<./pics/population_mean_fitness_chart.png, id=562, 2168.1pt x 1445.4pt>
 File: ./pics/population_mean_fitness_chart.png Graphic file (type png)
 <use ./pics/population_mean_fitness_chart.png>
 Package pdftex.def Info: ./pics/population_mean_fitness_chart.png  used on inpu
-t line 47.
+t line 56.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
- [26 <./pics/population_mean_fitness_chart.png>]
-<./pics/global_fitness_histogram.png, id=563, 2168.1pt x 1445.4pt>
+ [26 <./pics/stat_fitness_perc_change_genome_size.png>]
+<./pics/global_fitness_histogram.png, id=568, 2168.1pt x 1445.4pt>
 File: ./pics/global_fitness_histogram.png Graphic file (type png)
 <use ./pics/global_fitness_histogram.png>
 Package pdftex.def Info: ./pics/global_fitness_histogram.png  used on input lin
-e 57.
+e 66.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
-<./pics/stat_fitness_global_mean_metabolic_error.png, id=565, 2168.1pt x 1445.4
+ [27 <./pics/population_mean_fitness_chart.png>]
+<./pics/stat_fitness_global_mean_metabolic_error.png, id=577, 2168.1pt x 1445.4
 pt>
 File: ./pics/stat_fitness_global_mean_metabolic_error.png Graphic file (type pn
 g)
 <use ./pics/stat_fitness_global_mean_metabolic_error.png>
 Package pdftex.def Info: ./pics/stat_fitness_global_mean_metabolic_error.png  u
-sed on input line 63.
+sed on input line 74.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
- [27 <./pics/global_fitness_histogram.png>]
-<./pics/percent_noncoding.png, id=575, 2168.1pt x 1445.4pt>
+ [28 <./pics/global_fitness_histogram.png>]
+<./pics/percent_noncoding.png, id=587, 2168.1pt x 1445.4pt>
 File: ./pics/percent_noncoding.png Graphic file (type png)
 <use ./pics/percent_noncoding.png>
-Package pdftex.def Info: ./pics/percent_noncoding.png  used on input line 100.
+Package pdftex.def Info: ./pics/percent_noncoding.png  used on input line 110.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
-
-[28 <./pics/stat_fitness_global_mean_metabolic_error.png>]
-<./pics/stat_genes_global_mean_num_functional_genes.png, id=582, 2168.1pt x 144
+ [29 <./pics/stat_fitness_global_mean_metabolic_error.png>]
+<./pics/stat_genes_global_mean_num_functional_genes.png, id=594, 2168.1pt x 144
 5.4pt>
 File: ./pics/stat_genes_global_mean_num_functional_genes.png Graphic file (type
  png)
 <use ./pics/stat_genes_global_mean_num_functional_genes.png>
 Package pdftex.def Info: ./pics/stat_genes_global_mean_num_functional_genes.png
-  used on input line 109.
+  used on input line 119.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
- [29 <./pics/percent_noncoding.png>]
-<./pics/stat_genes_global_mean_avg_size_of_functional_genes.png, id=591, 2168.1
+ [30 <./pics/percent_noncoding.png>]
+<./pics/stat_genes_global_mean_avg_size_of_functional_genes.png, id=604, 2168.1
 pt x 1445.4pt>
 File: ./pics/stat_genes_global_mean_avg_size_of_functional_genes.png Graphic fi
 le (type png)
 <use ./pics/stat_genes_global_mean_avg_size_of_functional_genes.png>
 Package pdftex.def Info: ./pics/stat_genes_global_mean_avg_size_of_functional_g
-enes.png  used on input line 119.
+enes.png  used on input line 129.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
- [30 <./pics/stat_genes_global_mean_num_functional_genes.png>]
-<./pics/evolvability_boxplot_all_seeds_avg.png, id=600, 2168.1pt x 1445.4pt>
+ [31 <./pics/stat_genes_global_mean_num_functional_genes.png>]
+<./pics/evolvability_boxplot_all_seeds_avg.png, id=612, 2168.1pt x 1445.4pt>
 File: ./pics/evolvability_boxplot_all_seeds_avg.png Graphic file (type png)
 <use ./pics/evolvability_boxplot_all_seeds_avg.png>
 Package pdftex.def Info: ./pics/evolvability_boxplot_all_seeds_avg.png  used on
- input line 129.
+ input line 139.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
-
-[31 <./pics/stat_genes_global_mean_avg_size_of_functional_genes.png>] [32 <./pi
-cs/evolvability_boxplot_all_seeds_avg.png>]
-<./pics/stat_robustness_best_mean_frac_neutral_mutants.png, id=613, 2168.1pt x 
+ [32 <./pics/stat_genes_global_mean_avg_size_of_functional_genes.png>] [33 <./p
+ics/evolvability_boxplot_all_seeds_avg.png>]
+<./pics/stat_robustness_best_mean_frac_neutral_mutants.png, id=625, 2168.1pt x 
 1445.4pt>
 File: ./pics/stat_robustness_best_mean_frac_neutral_mutants.png Graphic file (t
 ype png)
 <use ./pics/stat_robustness_best_mean_frac_neutral_mutants.png>
 Package pdftex.def Info: ./pics/stat_robustness_best_mean_frac_neutral_mutants.
-png  used on input line 168.
+png  used on input line 178.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
- [33 <./pics/stat_robustness_best_mean_frac_neutral_mutants.png>]) (Chapter5.te
-x [34]
+ [34 <./pics/stat_robustness_best_mean_frac_neutral_mutants.png>])
+(Chapter5.tex [35]
 Chapter 5.
-) [35
+) [36
 
-] [36] [37] (Thesis.bbl [38
+] [37] [38] (Thesis.bbl [39
 
-] [39] [40]) 
+] [40] [41]) 
 AED: lastpage setting LastPage
-[41]
+[42]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
  (Thesis.aux)
@@ -753,10 +758,10 @@ Package rerunfilecheck Info: File `Thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
  ) 
 Here is how much of TeX's memory you used:
- 8873 strings out of 492895
- 127314 string characters out of 3133459
- 243013 words of memory out of 3000000
- 12402 multiletter control sequences out of 15000+200000
+ 8882 strings out of 492895
+ 127633 string characters out of 3133459
+ 243114 words of memory out of 3000000
+ 12408 multiletter control sequences out of 15000+200000
  19830 words of font info for 68 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
  30i,12n,43p,1406b,601s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -783,9 +788,9 @@ onts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
 rw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8
 a.pfb>
-Output written on Thesis.pdf (48 pages, 2043763 bytes).
+Output written on Thesis.pdf (49 pages, 2181499 bytes).
 PDF statistics:
- 764 PDF objects out of 1000 (max. 8388607)
- 155 named destinations out of 1000 (max. 500000)
- 380 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 778 PDF objects out of 1000 (max. 8388607)
+ 157 named destinations out of 1000 (max. 500000)
+ 385 words of extra memory for PDF output out of 10000 (max. 10000000)
 
