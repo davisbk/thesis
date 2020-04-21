@@ -1,26 +1,44 @@
 \chapter{Results and Discussion}\label{ch:results_discussion}
-This chapter presents the results of our experiments as performed according to the description in Chapter~\ref{ch:methods}. We then discuss our results and conclude the chapter with a comparison of our results in relation to real-world organisms, as well as potential limitations.
+This chapter presents the results of our experiments as performed according to the description in Chapter~\ref{ch:methods}. We then discuss our results and conclude the chapter by relating our results to real-world organisms, as well a short discussion of potential limitations of the experiments.
 
 \section{Results}\label{results}
-In this section we present the results of our experiments. We begin by presenting the results of our statistical analysis before moving on to show the results in various plots. It is of minor note that in many of the figures, a rolling window was used to smooth the values, resulting in many of the plots only showing data starting after a few thousand generations (often 10,000). It should be noted, however, that organisms were evolved for 500,000 generations and that the data is complete. 
-
-\subsection{Statistical Analysis}
-Below in Table~ we see the results of our p-value calculations for testing whether the results are significant.   
+In this section we present the results of our experiments. We begin by presenting the results of our statistical analysis before moving on to show the results in various plots. It is of minor note that in many of the figures, a rolling window was used to smooth the values, resulting in many of the plots only showing data starting after a few thousand generations (often 10,000). It should be noted, however, that organisms were continuously evolved for 500,000 generations. 
 
 \subsection{Genome Size}\label{sec:genome_size}
 In this section we will examine the results of the different conditions, focusing on which, if any, lead to a reduced genome. Figure~\ref{fig:genome_size}
-presents the main findings regarding genome size. In the figure, the blue line represents the control condition and the other colors show the changed conditions: mutation up/down, selection up/down, and population up/down. As can be seen from the figure,the results did not actually vary all that much across the conditions with regard to genome size.  
+presents the main findings regarding genome size. In the figure, the blue line represents the control condition and the other colors show the changed conditions: mutation up/down, selection up/down, and population up/down. As can be seen from the figure, the results did not actually vary all that much across the conditions with regard to genome size.  
 \begin{figure}[H]
 	\includegraphics[width=\linewidth]{stat_fitness_global_mean_genome_size}
 	\centering
 	\caption[Genome size]{Genome size in number of bases of all conditions. Average taken across all five seeds for each condition.}
 	\label{fig:genome_size}
 \end{figure}
-In fact the \textit{population down} condition had a runaway increase in the number of bases, reaching over 16,500 bases, at least a 25\% increase over the original wild type's roughly 13,200. Surprisingly, even after 500,000 generations it seems that the upper limit may still not have been reached. 
+In fact the \textit{population down} condition had a runaway increase in the number of bases, reaching over 16,500 bases, at least a 25\% increase over the original wild type's roughly 13,200. Surprisingly, even after 500,000 generations it seems that the upper limit may still not have been reached. The statistical results are given below in Table~\ref{table:genome_size_stats}.
 
-The next obvious observation is that of the remaining conditions, only the \textit{selection up} condition seems to have made much of a significant change with its 11\% increase. All of the remaining conditions had a mild increase in genome size. 
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\multicolumn{3}{c}{\Large Genome Size} \\
+		\hline
+		 & \textbf{rank sum U} & \textbf{p-value} \\
+		\hline \hline
+		Mutation Up & 110508011469.5 & $< 0.01$ \\
+		\hline
+		Mutation Down & 71008638349.5 & $< 0.01$ \\
+		\hline
+		Population Down & 16477791900.5 & $< 0.01$ \\
+		\hline
+		Selection Up & 100151680984.5 & $< 0.01$ \\
+		\hline
+		Selection Down & 88533681875.0 & $< 0.01$ \\
+		\hline
+	\end{tabular}
+	\caption[Genome size statistics]{Genome size statistics.}
+	\label{table:genome_size_stats}
+\end{table} 
 
-Also noteworthy is that the mutation down condition appears to have had a steady increase in the number of base pairs until a maximum of just over 14,000 around generation 350,000 before having a fairly sharp decline back to nearly the original size. 
+The next obvious observation is that of the remaining conditions, only the \textit{selection up} condition seems to have made much of a significant change, again however with an increase of 11\%. Also noteworthy is that the mutation down condition appears to have had a steady increase in the number of base pairs until a maximum of just over 14,000 around generation 350,000 before having a fairly sharp decline back to nearly the original size. 
 
 \subsection{Metabolic Error and Fitness}
 Figures ~\ref{fig:mean_fitness_plot} shows the mean fitness of the population for the control, mutation up/down, and population down conditions. Selection up/down were excluded from this graph because they were significantly outside of the range of the other conditions, but they are included in Figure~\ref{fig:global_fitness_histogram}, a histogram of the results.

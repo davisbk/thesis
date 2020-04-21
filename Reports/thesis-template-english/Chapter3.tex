@@ -4,18 +4,41 @@ With an understanding of the basics behind us, in this chapter we provide an ove
 \section{Contributions}
 
 \section{Experimental Designs} \label{experimental_design}
-To assist in determining which conditions might lead to reductive evolution, we need to isolate individual variables and change just one thing at a time in order to see what effect, if any, it has on the final genome. To that end, we designed and conducted a series of experiments in which a ``wild type'' genome was allowed to evolve in differing conditions for 500,000 generations before analyzing the results. To first create the wild type, a genome was generated randomly in Aevol which had at least one coding gene and which was allowed to evolve for 10 million generations in a non-varying environment. By the beginning of its use in our experiments, the wild type comprised 13,237 base pairs with 132 functional genes (i.e. genes which produce a gene product). 
+To assist in determining which conditions might lead to reductive evolution, we need to isolate individual variables and change just one thing at a time in order to see what effect, if any, it has on the final genome. To that end, we designed and conducted a series of experiments in which a ``wild type'' genome was allowed to evolve in differing conditions for 500,000 generations before analyzing the effects. To first create the wild type, a genome was generated randomly in Aevol which had at least one coding gene and which was allowed to evolve for 10 million generations in a non-varying environment. By the beginning of its use in our experiments, the wild type comprised 13,237 base pairs with 132 functional genes (i.e. genes which produce a gene product). 
 
-In our experiments, we allowed the wild types to continue to evolve in the same environment in a total of 6 different conditions: with an increased/decreased selection strength, an increased/decreased mutation rate, and an increased/decreased population size. The environment did not vary and was the same as during the generation of the wild types; an approximation of the target function, $f_E$, is seen below in Figure~\ref{fig:target_function}.
+In our experiments, we allowed the wild types to continue to evolve in the same environment in a total of 6 different conditions: with an increased/decreased selection strength, an increased/decreased mutation rate, and an increased/decreased population size.  For all experiments the environmental target function did not vary with respect to the time of the wild type generation nor with respect to any of the performed experiments. The three Gaussian functions are characterized by a height $h$, mean $m$, and width $w$:
+\begin{equation*}
+y(x) = h * e^{\left(\frac{-(x-m)^2}{2 * w^2} \right)}
+\end{equation*}
+
+An approximation of the target function used in our experiments, $f_E$, can be seen below in Figure~\ref{fig:target_function}. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{environmental_target_function01}
-	\caption[Experimental target function]{An approximation of the target function $f_E$ for our experiments. Three Gaussians combine to form the target area, shaded gray.}
+	\caption[Experimental target function]{A visual approximation of the target function $f_E$ for our experiments.}
 	\label{fig:target_function}
 \end{figure}
-
-Additionally, a control condition was performed in which the wild type was simply allowed to continue to evolve for the 500,000 generations with no change in any of the above conditions and with the same parameter settings as in the wild type generation. To minimize bias, for each condition we performed five runs each (i.e. 5 rounds of mutation up, 5 rounds of mutation down, etc.), where each run had a differing random seed to control for the deterministic effects of the pseudorandom nature of Aevol's stochastic processes. This lead to a total of 35 experiments, all of which were carried out on a cluster from bwCloud\footnote{\url{https://www.bw-cloud.org/}}. 
+ The parameters for the three Gaussians are given in the table below. 
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c||c|c|c|}
+		\cline{2-4}
+		
+		\multicolumn{1}{c||}{}& \textbf{h} & \textbf{m} & \textbf{w} \\
+		\hline \hline
+		Gaussian 1 & 1.2 & 0.52 & 0.12 \\
+		\hline
+		Gaussian 2 & -1.4 & 0.5 & 0.07 \\
+		\hline
+		Gaussian 3 & 0.3 & 0.8 & 0.03 \\
+		\hline
+	\end{tabular}
+	\caption[Gaussian environmental parameters]{The Gaussian environmental target function parameters.}
+	\label{table:gaussian_environment_params}
+\end{table}
+ 
+In addition to the six tested changed conditions, a control condition was performed in which the wild type was simply allowed to continue to evolve for the 500,000 generations with no change in any of the parameters from the generation of the wild type. To minimize bias, for each condition we performed five runs each (i.e. 5 rounds of mutation up, 5 rounds of mutation down, etc.), where each run had a differing random seed to control for the deterministic effects of the pseudorandom nature of Aevol's stochastic processes. This lead to a total of 35 experiments, all of which were carried out on a cluster from bwCloud\footnote{\url{https://www.bw-cloud.org/}}. 
 
 The resulting data was processed using a combination of Python\footnote{\url{https://www.python.org/}}, Pandas\footnote{\url{https://pandas.pydata.org/}}, and Jupyter Notebooks\footnote{\url{https://jupyter.org/}}.  
 
@@ -48,37 +71,44 @@ In Table~\ref{table:input_parameters}, our parameter values for all input parame
 	\caption[Table of parameters]{Table of input parameters. $\mu$ is the mutation rate, $k$ is the selection strength, and $N$ is the population size.}
 	\label{table:input_parameters}
 \end{table}
-As can be seen in Table~\ref{table:input_parameters}, only one parameter varied per condition in order to isolate potential influences. A multiplier of $4$ was chosen for the differing conditions relative to the control condition (e.g. $N_\text{population up} = 4096 = 4*N_\text{control} = 4*1024$). In all conditions, the environment did not vary, and once the experiment was begun, the above parameters were held steady as well. 
+As can be seen in Table~\ref{table:input_parameters}, only one parameter varied per condition in order to isolate potential influences on the outcome. A multiplier of $4$ was chosen for the differing conditions relative to the control condition (e.g. $N_\text{population up} = 4096 = 4*N_\text{control} = 4*1024$). This choice of a $4$x multiplier was chosen following the model of Carde et al.\cite{carde.2019}. In all conditions, the environment did not vary, and once the experiment was begun, the above parameters were held steady as well. 
 
 
-\subsection{Evaluation Strategy}
+\section{Evaluation Strategy}
 In this section, we will examine the criteria we will be using to evaluate the results. The primary criteria will be examining the evolved genome's evolvability, robustness, and structure, with a statistical analysis of the changed conditions vs. the control condition. 
 
-\subsubsection{Statistical Analysis of the Conditions}
-We must first determine how to tell whether the results of the condition (mutation up, selection down, etc.) were significantly different from the control condition, statistically speaking. To do this, we will evaluate the means of all seeds of the control condition for some test variable (e.g. robustness, evolvability, etc.) vs. the same for a different condition (e.g. mutation up) using the Wilcoxon signed-rank test. This is similar to a paired Student's t-test but is used when the distribution of the two samples cannot be assumed to be normally distributed. More precisely, we will use the ``Mann-Whitney U'' test, another non-parametric version of the Wilcoxon test which can be used when the sample sizes are different. The Mann-Whitney U test checks whether two independent samples were selected from populations having the same distribution. The test consists of the following steps:
+\subsection{Statistical Analysis of the Conditions}
+We must first determine how to tell whether the results of the condition (e.g. mutation up, selection down, etc.) were significantly different from the control condition, statistically speaking. To do this, for some test variable (e.g. robustness, evolvability, etc.) we will first calculate the mean of all seeds for that condition and compare it to the mean across all seeds of the control condition. For the comparison,  we will use the ``Mann-Whitney U'' test. The Mann-Whitney U test is similar to the Wilcoxon signed-rank test, but it is used when the distribution of the two samples cannot be assumed to be normally distributed. The Mann-Whitney U test can also be used when the sample sizes are different, for example when the number of base pairs is different between two organisms. 
+
+The purpose of the Mann-Whitney U test is to check whether two independent samples were selected from populations having the same distribution. Similar to other rank-sum tests, the test consists of the following steps:
 \begin{enumerate}
-	\item Assign numeric ranks to all observations
-	\item Add up the ranks for the observations from the first sample
+	\item Assign numeric ranks to all observations;
+	\item Add up the ranks for the observations from the first sample, giving us $R_1$
 	\item The statistic $U_1$ for the first sample is given by:
 	\begin{equation*}
 	U_1 = R_1 - \frac{n_1*(n_1 + 1)}{2}
 	\end{equation*}
 	where $n_1$ is the sample size for the first sample and $R_1$ is the sum of the ranks from the first sample.
 \end{enumerate}
-The $U$ statistic for the second sample (i.e. $U_2$) is computed analogously. We used the \texttt{Scipi.stats.mannwhitneyu} function to calculate this statistic as needed, which also calculates the p-value. 
+The $U$ statistic for the second sample (i.e. $U_2$) is computed analogously. We then use $U = U_1 + U_2$ which, for sample sizes greater than 20, is approximately normally distributed. Then the standard score is given by:
+\begin{equation*}
+z = \frac{U - m_U}{\sigma_U}
+\end{equation*}
+where $m_U$ and $\sigma_U$ are the mean and standard deviation of $U$.
+\begin{equation*}
+m_U = \frac{n_1*n_2}{2} \text{and } \sigma_U = \sqrt{\frac{n_1*n_2\left(n_1 + n_2 +1\right)}{12}}
+\end{equation*} We used the Python library function \texttt{scipy.stats.mannwhitneyu} to calculate this statistic, which also calculates the p-value. If the p-value is below $0.05$, we may reject the null hypothesis $H_o$ that the two samples (i.e. the control and the condition) are from the same distribution.
 
-If the p-value is below $0.05$, we may reject the null hypothesis $H_o$ that the two samples (i.e. the control and the condition) are from the same distribution.
-
-\subsubsection{Fitness}
+\subsection{Fitness}
 Fitness in Aevol is closely tied in to the ``metabolic error''. This error, $g$, is calculated as the gap between the environmental function $f_E$ and the phenotype of the organism, $f_P$. Once $g$ is determined as described above in Section~\ref{subsec:aevol_selection}, it may be used to calculate the actual fitness of the organism according to the equation:
 \begin{equation*}
 \text{fitness} = exp(-k*g)
 \end{equation*} 
 where k is the \textit{selection coefficient} variable set by the user in a parameter file. Aevol provides fitness statistics both for the fittest individual and for the population at large.
-\subsubsection{Robustness}
+\subsection{Robustness}
 Aevol calculates statistics for both mutational robustness as well as antirobustness. Robustness in Aevol is calculated similarly to evolvability: a \texttt{lineage} file for an individual is fed to the post-treatment \texttt{misc\_ancestor\_robustness}, which generates a large number (specifiable by the user) of offspring, whose fitness is then measured. The percentage of these offspring which are neutral (i.e. whose phenotype is not affected by the mutations) is the robustness, and the percentage of positive offspring determines the antirobustness.
 
-In our experiments, at the end of the run of 500,000 generations we generated a lineage file for the best individual at generation 500,000, i.e. the individual whose metabolic error was smallest. This lineage file is then fed in to the post-treatment ``\texttt{aevol\_misc\_ancestor\_robustness}'' and robustness statistics are generated for each generation in the lineage file. The statistics given are summarized in Table~\ref{table:robustness} below.
+In our experiments, at the end of the run of 500,000 generations we generated a lineage file for the best individual at generation 500,000, i.e. the individual whose metabolic error was smallest. This lineage file is then fed in to the post-treatment \texttt{aevol\_misc\_ancestor\_robustness} and robustness statistics are generated for each generation in the lineage file. The statistics produced by this post-treatment are summarized in Table~\ref{table:robustness} below.
 \begin{table}[H]
 	\centering
 	\begin{tabular}{||c||}
@@ -114,9 +144,9 @@ In our experiments, at the end of the run of 500,000 generations we generated a 
 	\caption[Aevol robustness statistics]{Table of robustness statistics calculated by Aevol for the best individual with the provided lineage.}
 	\label{table:robustness}
 \end{table}
-We may then compare these statistics for both the control and specific condition we wish to compare (e.g. mutation up). Because this data is somewhat noisy (i.e. the values for these statistics jumps up and down) we will use box and whisker plots to show the overall spread. 
+We may then compare these statistics for both the control and specific condition we wish to compare (e.g. mutation up). Because this data is somewhat noisy (owing to the fact that the fitness may change rapidly) we will use box and whisker plots to show the overall spread rather than plotting the robustness generation by generation. 
 \subsubsection{Evolvability}
-In Aevol, evolvability is calculated by generating a large set of offspring for a specific individual (one whose \texttt{lineage} was generated) at regular periods along their lineage and then determining the number of ``positive offspring''. Positive offspring are defined as those whose fitness is greater than their parent's. The evolvability of an individual is then the sum total of all improvement of all of the beneficial offspring, i.e.:
+In Aevol, evolvability is calculated by generating a large set of offspring for a specific individual (one whose lineage was generated using the post-treatment \texttt{aevol\_misc\_lineage}) at regular periods along their lineage and then determining the number of ``positive offspring''. Positive offspring are defined as those whose fitness is greater than their parent's. The evolvability of an individual is then the sum total of all improvement of all of the beneficial offspring, i.e.:
 
 \begin{equation*}
 \text{evolvability} = \frac{|\text{positive offspring of }i|}{|\text{total offspring of }i|}*\sum \Delta^{\text{positive offspring}}_{fitness}
@@ -126,7 +156,7 @@ In Aevol, evolvability is calculated by generating a large set of offspring for 
 
  
 \subsection{Structure}\label{methods:structure}
-Another strength of Aevol is its ability to analyze changes in the structure of DNA. As with fitness, Aevol produces statistics about individuals and the population at large for many aspects of genome structure, including: the number of coding vs. non-coding bases (i.e. they respectively do or do not code for at least one protein), the average size of coding and non-coding DNAs, the number of genes, the number of ``essential'' base pairs (i.e. those that are part of a functional coding sequence), etc. Tables~\ref{table:aevol_stats_genes_and_bp} and Table~\ref{table:aevol_stats_fitness_and_mutation} summarize where different statistics are to be found Aevol's output files. 
+Another strength of Aevol is its ability to analyze changes in the structure of DNA and RNA. As with fitness, Aevol produces statistics about individuals and the population at large for many aspects of genome structure, including: the number of coding vs. non-coding bases (i.e. they respectively do or do not code for at least one protein), the average size of coding and non-coding DNAs, the number of genes, the number of ``essential'' base pairs (i.e. those that are part of a functional coding sequence), etc. Tables~\ref{table:aevol_stats_genes_and_bp} and Table~\ref{table:aevol_stats_fitness_and_mutation} summarize the different statistics and where they are to be found Aevol's output files. 
 
 \begin{table}[H]
 	\centering
@@ -210,11 +240,8 @@ Given the state of the literature and other experiments, as partially described 
 		Evolvability & $+^{\cite{Knibbe2007}}$ & $-^{\cite{Knibbe2007}}$ &  $+^{\cite{Batut.2013}}$ & $-^{\cite{Batut.2013}}$ & $-^{\cite{wein2019effect}}$ & $+^{\cite{wein2019effect}}$ \\
 		\hline		
 	\end{tabular}
-	\caption[Experiment expectations]{Our predictions for the experiments. $\mu$ is the mutation rate, ~$k$ is the selection rate, and $N$ is the population size. $\mu_+$ indicates an increased mutation rate, $\mu_-$ a decreased rate, etc. A $+$ in the main grid indicates we expect an increase (over the control condition) for that condition, and a $-$ indicates an expected decrease for that condition.}
+	\caption[Experiment expectations]{Our predictions for the experiments. $\mu$ is the mutation rate, ~$k$ is the selection rate, and $N$ is the population size. $\mu_+$ indicates an increased mutation rate, $\mu_-$ a decreased rate, etc. A $+$ in the main grid space indicates we expect an increase (over the control condition) for that condition, and a $-$ indicates an expected decrease for that condition.}
 	\label{table:experiment_predictions}
 \end{table}
-
-
-
 
 
