@@ -161,4 +161,11 @@ Tanita Wein and Tal Dagan.
   genetic diversity and evolvability in bacteria.
 \newblock {\em Genome biology and evolution}, 11(11):3283--3290, 2019.
 
+\bibitem{wilke2001evolution}
+Claus~O Wilke, Jia~Lan Wang, Charles Ofria, Richard~E Lenski, and Christoph
+  Adami.
+\newblock Evolution of digital organisms at high mutation rates leads to
+  survival of the flattest.
+\newblock {\em Nature}, 412(6844):331--333, 2001.
+
 \end{thebibliography}
