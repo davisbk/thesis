@@ -38,11 +38,11 @@
 \contentsline {subsubsection}{Non-coding DNA}{30}{section*.11}% 
 \contentsline {subsubsection}{Number of Genes}{31}{section*.12}% 
 \contentsline {subsubsection}{Average Size of Functional Genes}{32}{section*.13}% 
-\contentsline {subsection}{\numberline {4.1.4}Evolvability}{33}{subsection.4.1.4}% 
-\contentsline {subsection}{\numberline {4.1.5}Robustness}{34}{subsection.4.1.5}% 
-\contentsline {section}{\numberline {4.2}Discussion}{35}{section.4.2}% 
-\contentsline {subsection}{\numberline {4.2.1}Relation to Real-World Biological Entities}{35}{subsection.4.2.1}% 
-\contentsline {subsection}{\numberline {4.2.2}Limitations of Results}{35}{subsection.4.2.2}% 
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{37}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Conclusion}{37}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Future work}{37}{section.5.2}% 
+\contentsline {subsection}{\numberline {4.1.4}Evolvability}{34}{subsection.4.1.4}% 
+\contentsline {subsection}{\numberline {4.1.5}Robustness}{35}{subsection.4.1.5}% 
+\contentsline {section}{\numberline {4.2}Discussion and Relation to Real-World Entities}{37}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}Relation to Real-World Biological Entities}{38}{subsection.4.2.1}% 
+\contentsline {subsection}{\numberline {4.2.2}Limitations of Results}{38}{subsection.4.2.2}% 
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{39}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Conclusion}{39}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Future work}{39}{section.5.2}% 

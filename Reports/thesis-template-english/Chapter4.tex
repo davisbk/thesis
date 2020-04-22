@@ -49,6 +49,7 @@ Examining the percent changed from the \textit{control} condition shown in Figur
 	\label{fig:genome_size_percent_change}
 \end{figure}
 
+
 \subsection{Metabolic Error and Fitness}
 Figure~\ref{fig:mean_fitness_plot} shows the mean fitness of the population for the control, mutation up/down, and population down conditions. Selection up/down were excluded from this graph because they were significantly outside of the range of the other conditions and made the results impossible to graph, but they are included in Figure~\ref{fig:global_fitness_histogram}, a histogram of the results.
 
@@ -148,17 +149,91 @@ Figure~\ref{fig:mean_num_functional_genes} below illustrates the mean number of 
 	\caption[Mean number of functional genes]{Plot showing the mean number of functional genes over time across all seeds.}
 	\label{fig:mean_num_functional_genes}
 \end{figure}
-As seen in the figure, the increased selection condition showed the greatest increase in the number of functional genes in the whole population, about 3\% (130 to 134). Interestingly, the selection down condition did not change the number of genes at all, which is to be expected, since with a lower selection pressure, any newer genes may not be selected for reproduction. Whereas most of the other curves are fairly flat, the mutation up condition fluctuates relatively rapidly, owing to the quick increase and decrease in the number of base pairs. 
+As seen in the figure, the \textit{selection up} condition showed the greatest increase in the number of functional genes in the whole population, reaching a maximum increase of about 2.2\% (131 to 134). This is in agreement with our predictions (from Table~\ref{table:experiment_predictions}) and the findings of Knibbe et al.~\cite{Knibbe2007}. Whereas most of the other curves are fairly flat, the mutation up condition fluctuates relatively rapidly, owing to the quick increase and decrease in the number of base pairs. 
+
+The mean and standard deviation of each condition is given in Table~\ref{table:number_of_genes_mean_std_dev} below.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\multicolumn{3}{|c|}{\Large \textbf{Number of Genes}} \\
+		\hline
+		 & \textbf{mean} & \textbf{standard deviation} \\
+		\hline
+		Control & 131.33289822159796 & 0.08150846235734634 \\
+		\hline
+		Mutation up & 131.97477775907822 & 0.25246331309927117 \\
+		\hline
+		Mutation down & 131.50054072148615 & 0.20757038951512172 \\
+		\hline
+		Selection up & 132.60656804679095 & 0.7195302117186394 \\ 
+		\hline
+		Selection down & 131.2389093250132 & 0.013973734803973407 \\
+		\hline
+		Population down & 131.35051857775917 & 0.08328014006877373 \\
+		\hline
+	\end{tabular}
+	\caption[Number of genes - mean and standard deviation]{The mean and standard deviation for the number of genes across all seeds and for all conditions.}
+	\label{table:number_of_genes_mean_std_dev}
+\end{table}
 
 \subsubsection{Average Size of Functional Genes}\label{sec:average_size_functional_genes}
-Figure~\ref{fig:mean_functional_gene_size} shows the average number of base pairs for each functional gene for the best individual, mapped out over the 500,000 generations. 
+Figure~\ref{fig:mean_functional_gene_size} shows the average number of base pairs for each functional gene for the best individual, mapped out over the 500,000 generations. The population down condition continues to be the outlier in terms of genome structure, with the average size of the functional genes remaining noticeably lower than for any other condition. It is worth pointing out, however, that the difference between the smallest average and the largest average is only 1 base pair. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{stat_genes_global_mean_avg_size_of_functional_genes}
 	\caption[Average size of functional genes]{Plot showing the average size of functional genes over time for all seeds.}
 	\label{fig:mean_functional_gene_size}
 \end{figure}
-The population down condition continues to be the outlier in terms of genome structure, with the average size of the functional genes remaining noticeably lower than for any other condition. It is worth pointing out, however, that the difference between the smallest average and the largest average is only 1 base pair. 
+Table~\ref{table:mean_functional_gene_size_and_std_dev} below gives the mean and standard deviation of the results, and Table~\ref{table:avg_size_of_functional_genes_rank_sum_and_p-value} gives the p-values for comparing the control condition to every other condition. Surprisingly, the selection up condition's results were not different enough to pass the Mann-Whitney test, with a p-value of $p = 0.2236$. 
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\multicolumn{3}{|c|}{\Large \textbf{Average size of functional genes}} \\
+		\hline
+		& \textbf{mean} & \textbf{standard deviation} \\
+		\hline
+		Control & 55.375429751247275 & 0.13745740540215895 \\
+		\hline
+		Mutation up & 55.5426245000319 & 0.20716437222446815\\ 
+		\hline
+		Mutation down & 55.309915451000805 & 0.05059383390579744 \\
+		\hline
+		Selection up & 55.37046527382346 & 0.2024427915314053 \\
+		\hline
+		Selection down & 55.414464890880595 & 0.1954246818788886 \\
+		\hline
+		Population down & 55.17428963311534	& 0.09886004440916518 \\
+		\hline
+	\end{tabular}
+	\caption[Mean functional gene size and standard deviation]{Mean functional gene size and standard deviation, all seeds, all conditions.}
+	\label{table:mean_functional_gene_size_and_std_dev}
+\end{table}
+
+\begin{table}[H]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\multicolumn{3}{|c|}{\Large \textbf{Average size of functional genes - rank sum \& p-value}} \\
+		\hline
+		& \textbf{rank sum} & \textbf{p-value} \\
+		\hline
+		Mutation Up & 68252491056.0 & $ < 0.01$ \\
+		\hline
+		Mutation Down & 96067062201.5 & $ < 0.01$ \\
+		\hline
+		Population Down & 28963878467.0 & $ < 0.01$ \\
+		\hline
+		Selection Up & 103481641646.0 & $ < 0.01$ \\
+		\hline
+		Selection Down & 124890321462.0 & 0.223664707704009 \\
+		\hline
+	\end{tabular}
+	\caption[Average size of functional genes - rank sum and p-value]{Average size of functional genes - rank sum and p-value for all conditions and all seeds.}
+	\label{table:avg_size_of_functional_genes_rank_sum_and_p-value}
+\end{table}
 
 \subsection{Evolvability}
 In Figure~\ref{fig:evolvability_mean} below, we see the results of the experiments on evolvability for the best individual's (at generation 500,000) lineage. 
@@ -174,6 +249,8 @@ The figure illustrates that, for each condition, overall the best individual sti
 	\centering
 	\begin{tabular}{| c | c | c |}
 		\hline
+		\multicolumn{3}{|c|}{\Large Evolvability} \\
+		\hline
 		 & \textbf{mean} & \textbf{standard deviation}\\
 		 \hline
 		 \hline
@@ -185,31 +262,107 @@ The figure illustrates that, for each condition, overall the best individual sti
 		 \hline
 		 $k_\text{up}$ & 1.9498939718794653e-15 & 6.394659146405824e-14 \\
 		 \hline
-		 %TODO Fill in selection down
-		 $k_\text{down}$ & & \\
+		 $k_\text{down}$ & 4.3065723639721706e-10 & 5.20232907351617e-09 \\
 		 \hline
-		 $N_\text{up}$ & 8.837632116681012e-11 & 1.0799303682398726e-09 \\
-		 \hline
-		 $N_\text{down}$ & & \\
-		 %TODO Fill in population down
+		  %TODO Fill in population down
+		 $N_\text{up}$ &  & \\
+		 \hline fuc
+		 $N_\text{down}$ & 8.837632116681012e-11 &  1.0799303682398726e-09 \\
+		
 		 \hline	 		 
 	\end{tabular}
 	\caption[Evolvability mean and standard deviation]{Table illustrating the mean and standard deviation of the evolvability for each condition. $\mu$ is the mutation rate, $k$ is the selection rate, and $N$ is the population size.}
 	\label{table:mean_std_dev_evolvability}
 \end{table}
+The evolvability rank sum and p-value information is given in Table~
+
+\begin{table}[H]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\multicolumn{3}{|c|}{\Large \textbf{Evolvability rank sum and p-value}} \\
+		\hline
+		 & \textbf{rank sum} & \textbf{p-value} \\
+		 \hline
+		Mutation Up & 36203620.0 & 0.000000000309416 \\
+		\hline
+		Mutation Down & 7025283.5 & 0.010212448990316 \\
+		\hline
+		Population Down & 19403134.5 & 0.000000000000000\\
+		\hline
+		Selection Up & 13181851.5 & 0.000000000000074 \\
+		\hline
+		Selection Down & 13779001.5 & 0.000000084666842 \\
+		\hline
+	\end{tabular}
+\end{table}
 \subsection{Robustness}
-Recall from Section~\ref{subsec:robustness_antirobustness} that robustness is measured by the fraction of neutral mutants of an individual. In the following figure, we see a bar plot showing the spread of neutral mutants for the best individual for the control condition as well as the six variations. 
+Recall from Section~\ref{subsec:robustness_antirobustness} that robustness is measured by the fraction of neutral offspring of an individual. In the following figure, we see a bar plot showing the spread of neutral offspring for the best individual for the control condition as well as the six variations. 
 
 %TODO update graphic with more conditions once experiments are completed
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\linewidth]{stat_robustness_best_mean_frac_neutral_mutants}
-	\caption[Robustness bar graph]{Bar graph showing the spread of neutral mutants for the best individual at generation 500,000, all conditions.}
+	\includegraphics[width=\linewidth]{stat_robustness_best_mean_frac_neutral_offspring}
+	\caption[Robustness bar graph]{Bar graph showing the spread of neutral offspring for the best individual at generation 500,000, all conditions.}
 	\label{fig:mean_robustness_all_conditions}
 \end{figure}
-The mutation up condition clearly had the largest percentage of neutral mutants, at 0.5\%. 
-\section{Discussion}\label{discussion}
+The mutation up condition clearly had the largest mean percentage of neutral mutants, at 0.5\%. The full statistics are given in the tables below:
+
+\begin{table}
+	\begin{tabular}{|c|c|c}
+		\hline
+		\multicolumn{3}{|c|}{\Large \textbf{Robustness - Rank Sum \& p-values}} \\
+		\hline
+		 & \textbf{rank sum} & \textbf{p-value} \\
+		 \hline
+		Mutation Up & 16756710.5 & 0.000000000000000 \\
+		\hline
+		Mutation Down & 5741758.0 & 0.000000000000000 \\
+		\hline
+		Population Down & 12493750.0 & 0.000000000000000 \\
+		\hline
+		Selection Up & 13580845.5 &	0.001358704915202 \\
+		\hline
+		Selection Down & 13925884.0 & 0.001273247024315 \\
+		\hline
+	\end{tabular}
+	\caption[Robustness rank sum \& p-values]{Mean robustness rank sum and p-values for all conditions and all seeds.}
+	\label{table:rank_sum_p-values}
+\end{table}
+\begin{table}[H]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\multicolumn{3}{|c|}{\Large \textbf{Robustness - means \& standard deviations}} \\
+		\hline
+		& \textbf{rank sum} & \textbf{p-value} \\
+		\hline
+		Control & 0.944925327538429	& 0.007334383035973237 \\
+		\hline
+		Mutation up & 0.9366773604226319 & 0.007907308763606846 \\
+		\hline
+		Mutation down &	0.94754266274366 & 0.0070662676155014035 \\
+		\hline
+ 		Selection up & 0.9444661080775791 & 0.007371509508882273 \\
+ 		\hline
+		Selection down & 0.9445156995960435	& 0.007423851661757711 \\
+		\hline
+		Population down & 0.9374093190746451 & 0.008846010304259707 \\
+		\hline
+	\end{tabular}
+	\caption[Robustness means and standard deviations]{Robustness means and standard deviations for all conditions and all seeds.}
+	\label{table:robustness_means_and_std_dev}
+\end{table}
+
+
+\section{Discussion and Relation to Real-World Entities}\label{discussion}
+According to our predictions based on a survey of the literature (summarized in Table~\ref{table:experiment_predictions}), the $\mu_+$, $k_-$, and $N_+$ conditions should have lead to a reduced genome. As shown in Figure~\ref{fig:genome_size} however, none of these predictions held up, and in fact the genome size increased in all conditions, including these. One possible explanation is that, because the wild types had already been evolving for 10 million generations, and we did not vary the environment further for our experiments, perhaps they had reached a sort of stasis for which another half-million generations were not sufficient to fully demonstrate the effects of any changes. This seems unlikely, however, as some conditions (e.g. $\mu_+$, $N_-$) did see a rather rapid change in fitness, genome structure, etc. even in the (comparatively) short time. 
+
+Also interesting is that along with the genome size, the fitness of the organisms did not change much with only one exception ($k_+$). It has been postulated that perhaps gene loss may be selected for in order to increase the overall fitness of an organism by removing the added cost of the superfluous genes~\cite{koskiniemi2012}. Our results do not fully agree with this hypothesis, as our results show that, in addition to the general accumulation of non-coding DNA across all conditions (Figure~\ref{fig:mean_non-coding_DNA}), which would theoretically have a higher fitness cost, the number of genes actually \textit{increased} slightly for each condition, except for $k_-$. Likewise, fitness overall went \textit{up} as the number of genes increased (except for $N_-$). Clearly the fitness cost of the new genes was outweighed by their contribution to overall fitness. Lastly, decreasing the selection pressure resulted in the highest overall mean fitness by a wide margin (Table~\ref{table:fitness_means_std_dev}).
+
+It has also been suggested that for endosymbiotic bacteria such as \textit{Buchnera aphidicola}, gene loss may occur as a result of a smaller effective population size leading to the clicking of Muller's Ratchet~\cite{Batut.2014}. In this situation, deleterious mutations accumulate in a population because the smaller population size does not allow for enough variability, so deleterious mutations become fixed in a population. This does not seem to be what is happening in our experiments either, however. Though mean fitness of the $N_-$ condition did greatly decline (see Figure~\ref{fig:mean_fitness_plot}), the $N_-$ condition also saw the largest accumulation of non-coding DNA and the second-highest level of evolvability, which should theoretically have lead to an easier time of overcoming the ratchet. The number of functional genes stayed more or less the same as all of the other conditions.   suggests that the population of just 256 organisms is not able to overcome the accumulation of that also occurred. The findings that the number of functional genes in the $N_-$ condition stayed mostly the same (Figure~\ref{fig:mean_num_functional_genes}) and the amount of non-coding base pairs increased (Figure~\ref{fig:mean_non-coding_DNA}) 
+
 Overall, the mean fitness of our digital organisms was nearly unchanged from generation 1 to 500,000. One explanation for this might be that the organisms were allowed to continue to evolve in the same environment in which their wild types were generated. 
+
+Argue that complexity is more strongly selected for than robustness, overcoming selection \cite{Liard.2018}.
 
 %TODO Generate table showing results vs. what we expected
 \subsection{Relation to Real-World Biological Entities}

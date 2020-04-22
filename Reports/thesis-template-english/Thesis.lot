@@ -12,5 +12,10 @@
 \contentsline {table}{\numberline {4.1}{\ignorespaces Genome size statistics}}{25}{table.4.1}% 
 \contentsline {table}{\numberline {4.2}{\ignorespaces Fitness means and standard deviations.}}{29}{table.4.2}% 
 \contentsline {table}{\numberline {4.3}{\ignorespaces Non-coding DNA mean and standard deviation}}{31}{table.4.3}% 
-\contentsline {table}{\numberline {4.4}{\ignorespaces Evolvability mean and standard deviation}}{34}{table.4.4}% 
+\contentsline {table}{\numberline {4.4}{\ignorespaces Number of genes - mean and standard deviation}}{32}{table.4.4}% 
+\contentsline {table}{\numberline {4.5}{\ignorespaces Mean functional gene size and standard deviation}}{33}{table.4.5}% 
+\contentsline {table}{\numberline {4.6}{\ignorespaces Average size of functional genes - rank sum and p-value}}{34}{table.4.6}% 
+\contentsline {table}{\numberline {4.7}{\ignorespaces Evolvability mean and standard deviation}}{35}{table.4.7}% 
+\contentsline {table}{\numberline {4.8}{\ignorespaces Robustness rank sum \& p-values}}{36}{table.4.8}% 
+\contentsline {table}{\numberline {4.9}{\ignorespaces Robustness means and standard deviations}}{37}{table.4.9}% 
 \addvspace {10\p@ }
