@@ -16,7 +16,7 @@
 \contentsline {section}{\numberline {2.3}Analyzing with Aevol}{11}{section.2.3}% 
 \contentsline {subsection}{\numberline {2.3.1}Evolvability}{12}{subsection.2.3.1}% 
 \contentsline {subsection}{\numberline {2.3.2}Robustness and Antirobustness}{12}{subsection.2.3.2}% 
-\contentsline {subsubsection}{Robustness vs. Evolvability}{13}{section*.9}% 
+\contentsline {subsubsection}{Robustness vs. Evolvability}{12}{section*.9}% 
 \contentsline {subsection}{\numberline {2.3.3}Fitness}{13}{subsection.2.3.3}% 
 \contentsline {section}{\numberline {2.4}Related Work}{13}{section.2.4}% 
 \contentsline {chapter}{\numberline {3}Methods}{15}{chapter.3}% 
@@ -26,8 +26,8 @@
 \contentsline {section}{\numberline {3.3}Evaluation Strategy}{18}{section.3.3}% 
 \contentsline {subsection}{\numberline {3.3.1}Statistical Analysis of the Conditions}{18}{subsection.3.3.1}% 
 \contentsline {subsection}{\numberline {3.3.2}Fitness}{19}{subsection.3.3.2}% 
-\contentsline {subsection}{\numberline {3.3.3}Robustness}{20}{subsection.3.3.3}% 
-\contentsline {subsubsection}{Evolvability}{21}{section*.10}% 
+\contentsline {subsection}{\numberline {3.3.3}Robustness}{19}{subsection.3.3.3}% 
+\contentsline {subsubsection}{Evolvability}{20}{section*.10}% 
 \contentsline {subsection}{\numberline {3.3.4}Structure}{21}{subsection.3.3.4}% 
 \contentsline {section}{\numberline {3.4}Expected Results}{23}{section.3.4}% 
 \contentsline {chapter}{\numberline {4}Results and Discussion}{24}{chapter.4}% 
@@ -40,9 +40,12 @@
 \contentsline {subsubsection}{Number of Non-Functional Genes}{33}{section*.13}% 
 \contentsline {subsubsection}{Average Size of Functional Genes}{34}{section*.14}% 
 \contentsline {subsection}{\numberline {4.1.4}Evolvability}{36}{subsection.4.1.4}% 
-\contentsline {subsection}{\numberline {4.1.5}Robustness}{37}{subsection.4.1.5}% 
-\contentsline {section}{\numberline {4.2}Discussion and Relation to Real-World Entities}{39}{section.4.2}% 
-\contentsline {subsection}{\numberline {4.2.1}Limitations of Results}{41}{subsection.4.2.1}% 
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{42}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Conclusion}{42}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Future work}{42}{section.5.2}% 
+\contentsline {subsection}{\numberline {4.1.5}Robustness}{38}{subsection.4.1.5}% 
+\contentsline {section}{\numberline {4.2}Discussion}{40}{section.4.2}% 
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{43}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Conclusions}{43}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Relation to Real-World Organisms}{43}{section.5.2}% 
+\contentsline {section}{\numberline {5.3}Limitations and Future work}{43}{section.5.3}% 
+\contentsline {subsection}{\numberline {5.3.1}Parameters}{43}{subsection.5.3.1}% 
+\contentsline {subsection}{\numberline {5.3.2}Environments}{44}{subsection.5.3.2}% 
+\contentsline {subsection}{\numberline {5.3.3}Limitations of the Aevol Model}{44}{subsection.5.3.3}% 

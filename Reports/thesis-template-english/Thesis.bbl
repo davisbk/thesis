@@ -33,11 +33,14 @@ Katie Bradwell, Marine Combe, Pilar Domingo-Calap, and Rafael Sanju{\'a}n.
 \newblock {\em Genetics}, 195(1):243--251, 2013.
 
 \bibitem{carde.2019}
-Quentin Carde, Marco Foley, Carole Knibbe, David~P. Parsons, Jonathan
+Quentin Carde, Marco Foley, Carole Knibbe, David~P Parsons, Jonathan
   Rouzaud-Cornabas, and Guillaume Beslon.
 \newblock How to reduce a genome? alife as a tool to teach the scientific
   method to school pupils.
-\newblock {\em Artificial Life Conference Proceedings}, (31):497--504, 2019.
+\newblock In {\em The 2018 Conference on Artificial Life: A Hybrid of the
+  European Conference on Artificial Life (ECAL) and the International
+  Conference on the Synthesis and Simulation of Living Systems (ALIFE)}, pages
+  497--504. MIT Press, 2019.
 
 \bibitem{Castillo-DOSE}
 Clarence~FG Castillo and Maurice~HT Ling.
@@ -103,6 +106,12 @@ Octavio Miramontes, Franois Taddei, Ariel~B. Lindner, Antoine Frenoy, and Dusan
 \newblock Shape matters in cooperation.
 \newblock {\em Artificial Life Conference Proceedings}, 1(28):340--341, 2016.
 
+\bibitem{misevic2012effects}
+Dusan Misevic, Antoine Frenoy, David~P Parsons, and Francois Taddei.
+\newblock Effects of public good properties on the evolution of cooperation.
+\newblock In {\em Artificial Life Conference Proceedings 12}, pages 218--225.
+  MIT Press, 2012.
+
 \bibitem{Mozhayskiy-In-Silico-Review}
 Vadim Mozhayskiy and Ilias Tagkopoulos.
 \newblock {Microbial evolution in vivo and in silico: methods and
@@ -114,6 +123,12 @@ C.~{Ofria} and C.~O. {Wilke}.
 \newblock Avida: A software platform for research in computational evolutionary
   biology.
 \newblock {\em Artificial Life}, 10(2):191--229, 2004.
+
+\bibitem{parsons2011selection}
+David Parsons.
+\newblock {\em S {\ 'e} indirect election in {\' e} Darwinian evolution: m {\
+  'e} mechanisms and implications}.
+\newblock PhD thesis, Lyon, INSA, 2011.
 
 \bibitem{Tierra-Ray}
 T.~S. {Ray} and J.~{Hart}.

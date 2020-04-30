@@ -2,22 +2,23 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Gaussian environmental parameters}}{17}{table.3.1}% 
-\contentsline {table}{\numberline {3.2}{\ignorespaces Table of parameters}}{18}{table.3.2}% 
-\contentsline {table}{\numberline {3.3}{\ignorespaces Aevol robustness statistics}}{20}{table.3.3}% 
-\contentsline {table}{\numberline {3.4}{\ignorespaces Aevol's stats: genes and base pairs}}{22}{table.3.4}% 
-\contentsline {table}{\numberline {3.5}{\ignorespaces Aevol's stats: fitness and mutation}}{22}{table.3.5}% 
-\contentsline {table}{\numberline {3.6}{\ignorespaces Experiment expectations}}{23}{table.3.6}% 
+\contentsline {table}{\numberline {3.1}{\ignorespaces Table of parameters}}{17}{table.3.1}% 
+\contentsline {table}{\numberline {3.2}{\ignorespaces Aevol robustness statistics}}{20}{table.3.2}% 
+\contentsline {table}{\numberline {3.3}{\ignorespaces Aevol's stats: genes and base pairs}}{22}{table.3.3}% 
+\contentsline {table}{\numberline {3.4}{\ignorespaces Aevol's stats: fitness and mutation}}{22}{table.3.4}% 
+\contentsline {table}{\numberline {3.5}{\ignorespaces Experiment expectations}}{23}{table.3.5}% 
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {4.1}{\ignorespaces Genome size - mean and std. dev.}}{25}{table.4.1}% 
 \contentsline {table}{\numberline {4.2}{\ignorespaces Genome size statistics}}{26}{table.4.2}% 
 \contentsline {table}{\numberline {4.3}{\ignorespaces Fitness means and standard deviations.}}{30}{table.4.3}% 
 \contentsline {table}{\numberline {4.4}{\ignorespaces Non-coding DNA mean and standard deviation}}{32}{table.4.4}% 
 \contentsline {table}{\numberline {4.5}{\ignorespaces Number of functional genes - mean and standard deviation}}{33}{table.4.5}% 
-\contentsline {table}{\numberline {4.6}{\ignorespaces Mean functional gene size and standard deviation}}{35}{table.4.6}% 
-\contentsline {table}{\numberline {4.7}{\ignorespaces Average size of functional genes - rank sum and p-value}}{36}{table.4.7}% 
-\contentsline {table}{\numberline {4.8}{\ignorespaces Evolvability mean and standard deviation}}{37}{table.4.8}% 
-\contentsline {table}{\numberline {4.9}{\ignorespaces Robustness rank sum \& p-values}}{38}{table.4.9}% 
-\contentsline {table}{\numberline {4.10}{\ignorespaces Robustness means and standard deviations}}{39}{table.4.10}% 
-\contentsline {table}{\numberline {4.11}{\ignorespaces Experiment result summary}}{41}{table.4.11}% 
+\contentsline {table}{\numberline {4.6}{\ignorespaces Number of Non-functional Genes - Mean \& St. Dev.}}{34}{table.4.6}% 
+\contentsline {table}{\numberline {4.7}{\ignorespaces Mean functional gene size and standard deviation}}{36}{table.4.7}% 
+\contentsline {table}{\numberline {4.8}{\ignorespaces Average size of functional genes - rank sum and p-value}}{36}{table.4.8}% 
+\contentsline {table}{\numberline {4.9}{\ignorespaces Evolvability - rank sum and p-value}}{37}{table.4.9}% 
+\contentsline {table}{\numberline {4.10}{\ignorespaces Evolvability mean and standard deviation}}{38}{table.4.10}% 
+\contentsline {table}{\numberline {4.11}{\ignorespaces Robustness rank sum \& p-values}}{39}{table.4.11}% 
+\contentsline {table}{\numberline {4.12}{\ignorespaces Robustness means and standard deviations}}{40}{table.4.12}% 
+\contentsline {table}{\numberline {4.13}{\ignorespaces Experiment result summary}}{40}{table.4.13}% 
 \addvspace {10\p@ }
