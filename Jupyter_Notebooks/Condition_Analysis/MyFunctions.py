@@ -22,7 +22,7 @@ def read_robustness(fileLoc):
 
 def perc_diff(new_value, old_value):
     
-    df_perc_diff = (new_value - old_value)/ new_value
+    df_perc_diff = (new_value - old_value)/ old_value
     return df_perc_diff
     
 def name(col_header):

@@ -83,7 +83,7 @@ z = \frac{U - m_U}{\sigma_U}
 where $m_U$ and $\sigma_U$ are the mean and standard deviation of $U$.
 \begin{equation*}
 m_U = \frac{n_1*n_2}{2} \text{and } \sigma_U = \sqrt{\frac{n_1*n_2\left(n_1 + n_2 +1\right)}{12}}
-\end{equation*} We used the Python library function \texttt{scipy.stats.mannwhitneyu} to calculate this statistic, which also calculates the p-value. If the p-value is below $0.05$, we may reject the null hypothesis $H_o$ that the two samples (i.e. the control and the condition) are from the same distribution.
+\end{equation*} We used the Python library function \texttt{scipy.stats.mannwhitneyu} to calculate this statistic, which also calculates the p-value. If the p-value is below $0.05$, we may reject the null hypothesis $H_o$ that the two samples (i.e. the control and the condition) are from the same distribution; otherwise we must accept it.
 
 \subsection{Fitness}
 Fitness in Aevol is closely tied in to the ``metabolic error''. This error, $g$, is calculated as the gap between the environmental function $f_E$ and the phenotype of the organism, $f_P$. Once $g$ is determined as described above in Section~\ref{subsec:aevol_selection}, it may be used to calculate the actual fitness of the organism according to the equation:
@@ -131,7 +131,7 @@ In our experiments, at the end of the run of 500,000 generations we generated a 
 	\label{table:robustness}
 \end{table}
 We may then compare these statistics for both the control and specific condition we wish to compare (e.g. mutation up). Because this data is somewhat noisy (owing to the fact that the fitness may change rapidly) we will use box and whisker plots to show the overall spread rather than plotting the robustness generation by generation. 
-\subsubsection{Evolvability}
+\subsection{Evolvability}
 In Aevol, evolvability is calculated by generating a large set of offspring for a specific individual (one whose lineage was generated using the post-treatment \texttt{aevol\_misc\_lineage}) at regular periods along their lineage and then determining the number of ``positive offspring''. Positive offspring are defined as those whose fitness is greater than their parent's. The evolvability of an individual is then the sum total of all improvement of all of the beneficial offspring, i.e.:
 
 \begin{equation*}

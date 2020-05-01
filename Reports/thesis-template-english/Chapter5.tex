@@ -3,7 +3,7 @@
 In this section we will summarize our overall conclusions drawn from the work, discuss some limitations of our experiments, and highlight a few possibilities for further research.
 
 \section{Conclusions}
-Although the mean values for genome size given in Table~\ref{table:genome_size_mean_and_std_dev} suggest that only the $\mu_-$ condition lead to a reduced genome, at generation 500,000 there were three conditions in which the genome size was lower than the control condition (see Figure~\ref{fig:genome_size}): $\mu_+$, $k_-$, and surprisingly $m_-$. 
+At generation 500,000 there were three conditions in which the genome size was lower than the control condition (see Figure~\ref{fig:genome_size}): $\mu_+$, $k_-$, and surprisingly $m_-$. 
 
 \section{Relation to Real-World Organisms}
 %TODO Complete Section - Relation to Real-World Organisms
@@ -20,4 +20,8 @@ In a similar vein, we only tested one value for each changed condition. For exam
 Another limitation is that the environments did not vary in our experiments. Aevol includes the ability to vary the environment natively, so future experiments could vary the environment over time to see if doing so would increase or decrease robustness or evolvability, which are strong drivers of reductive evolution~\cite{Batut.2013}. 
 
 \subsection{Limitations of the Aevol Model}
-Aevol as a modeling software is limited in that, like all models, it relies on several simplifications. For example, the population sizes tested here, even in the population up condition, are still much smaller than would be found in real world populations. It could be that in order to properly judge the effects of Muller's Ratchet under differing conditions, we need much larger population sizes. 
+Aevol as a modeling software is limited in that, like all models, it relies on several simplifications. For example, the population sizes tested here, even in the population up condition, are still much smaller than would be found in real world populations. It could be that in order to properly judge the effects of Muller's Ratchet under differing conditions, we need much larger population sizes, but the length of time required for running such a simulation in Aevol is intractable.
+
+Aevol also relies on the simplification that its space of ``biological functions'' are a one-dimensional function, when the real-world space is obviously much more complicated. But this simplification effectively disallows the use of gene networks, which might be 
+
+%TODO Can flesh out this section with points from the official model description ( http://aevol.fr/documentation/resources/the-aevol-model.pdf )

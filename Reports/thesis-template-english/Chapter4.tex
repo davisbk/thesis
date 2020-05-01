@@ -2,17 +2,17 @@
 This chapter presents the results of our experiments as performed according to the plan described in Chapter~\ref{ch:methods}. Section~\ref{results} provides the data and we then discuss these results in Section~\ref{discussion}. 
 
 \section{Results}\label{results}
-In this section we present the results of our experiments. We begin by presenting the results of our statistical analysis before moving on to show the results in various plots. It is of minor note that in many of the figures, a rolling window was used to smooth the values, resulting in many of the plots only showing data starting after a few thousand generations (often 10,000). It should be noted, however, that organisms were continuously evolved for 500,000 generations. 
+In this section we present the results of our experiments. For each examined aspect, we give both a graphical representation of the data and some of the statistics, beginning by examining the conditions' impact on genome size. It is of minor note that in many of the figures throughout this chapter, a rolling window of the mean was used to smooth the values, resulting in many of the plots only showing data starting after a few thousand generations (often 10,000). It should be noted, however, that organisms were continuously evolved for 500,000 generations. 
 
 \subsection{Genome Size}\label{sec:genome_size}
-In this section we will examine the results of the different conditions, focusing on which, if any, lead to a reduced genome. Figure~\ref{fig:genome_size} presents the main findings regarding genome size. In the figure, the blue line shows the control condition and the other colors show the changed conditions: $\mu_+$/$\mu_-$ (mutation up/down), $k_+$/$k_-$ (selection up/down), and $N_+$/$N_-$ (population up/down). As can be seen from the figure, our expectations in Section~\ref{sec:expected_results} did not hold up, as all conditions actually \textit{increased} over their original size.
+In this section we will examine the results of the different conditions, focusing on which, if any, lead to a reduced genome. Figure~\ref{fig:genome_size} presents the main findings regarding genome size. In the figure, the blue line shows the control condition and the other colors show the changed conditions: $\mu_+$/$\mu_-$ (mutation up/down), $k_+$/$k_-$ (selection up/down), and $N_+$/$N_-$ (population up/down). As can be seen from the figure, our expectations in Section~\ref{sec:expected_results} did not always hold up, as several conditions actually \textit{increased} over their original size.
 \begin{figure}[H]
 	\includegraphics[width=\linewidth]{stat_fitness_global_mean_genome_size}
 	\centering
 	\caption[Genome size]{Genome size in number of bases of all conditions. Average taken across all five seeds for each condition.}
 	\label{fig:genome_size}
 \end{figure}
-In fact the \textit{population down} condition had a runaway increase in the number of bases, reaching over 16,500 bases at one time, a 25\% increase over the original wild type's roughly 13,200 bp. Surprisingly, even after 500,000 generations it seems that the upper limit may still not have been reached. The statistical results are given below in Tables~\ref{table:genome_size_stats} and \ref{table:genome_size_mean_and_std_dev}, which show the mean and standard deviation among all five seeds.
+In fact, the $N_-$ condition had a runaway increase in the number of bases, reaching over 16,500 bases at one time, a 25\% increase over the original wild type's roughly 13,200 bp. Surprisingly, even after 500,000 generations it seems that the upper limit may still not have been reached. The statistical results are given below in Tables~\ref{table:genome_size_stats} and \ref{table:genome_size_mean_and_std_dev}, which show the mean and standard deviation among all five seeds over all generations.
 
 \begin{table}[H]
 	\begin{tabular}{|c|c|c|}
@@ -61,9 +61,9 @@ In fact the \textit{population down} condition had a runaway increase in the num
 	\label{table:genome_size_stats}
 \end{table} 
 
-The next most obvious observation is that of the remaining conditions, all but the \textit{selection up} condition (which had an an increase of 11\% over the control condition) ended up with fewer base pairs than the control condition, though all increased slightly over their starting point. Also noteworthy is that the mutation down condition appears to have had a steady increase in the number of base pairs until a maximum of just over 14,000 around generation 350,000 before having a fairly sharp decline back to nearly the original size. 
+The next most obvious observation is that of the remaining conditions, all but the $k_+$ condition (which had an an increase of 11\% over the control condition) ended up with fewer base pairs than the control condition, though all increased slightly over their starting point. Also noteworthy is that the mutation down condition appears to have had a steady increase in the number of base pairs until a maximum of just over 14,000 around generation 350,000 before having a fairly sharp decline back to nearly the original size. 
 
-Examining the percent changed from the \textit{control} condition shown in Figure~\ref{fig:genome_size_percent_change} we see that at points, the \textit{mutation down} condition was nearly 5\% smaller than the \textit{control} condition. 
+Examining the percent changed from the \textit{control} condition shown in Figure~\ref{fig:genome_size_percent_change} we see that at points, the $\mu_-$ condition was nearly 5\% smaller than the \textit{control} condition. 
 
 \begin{figure}[H]
 	\centering
@@ -91,7 +91,7 @@ More interesting is the population down condition, where the average fitness in 
 	\caption[Mean fitness histogram]{Histogram of all conditions' fitness. Note that for the selection up condition, the scale is 1e-7. }
 	\label{fig:global_fitness_histogram}
 \end{figure}
-Figure~\ref{fig:global_fitness_histogram} shows a histogram of all fitness values for all conditions. Although the \textit{mutation down} condition ended the simulations in the most similar position to the \textit{control} condition, Figure~\ref{fig:global_fitness_histogram} makes it clear that the \textit{control} condition remained much steadier throughout the simulation, regularly jumping from value to value, whereas the \textit{mutation down} condition, as expected, tended to hover at certain locations in between rarer mutation events. 
+Figure~\ref{fig:global_fitness_histogram} shows a histogram of all fitness values for all conditions. Although the $N_-$ condition ended the simulations in the most similar position to the \textit{control} condition, Figure~\ref{fig:global_fitness_histogram} makes it clear that the \textit{control} condition remained much steadier throughout the simulation, regularly jumping from value to value, whereas the \textit{mutation down} condition, as expected, tended to hover at certain locations in between rarer mutation events. 
 
 Figure~\ref{fig:mean_metabolic_error} shows the mean metabolic error across all seeds for the whole population over time with respect to each condition. 
 \begin{figure}[H]
@@ -100,7 +100,7 @@ Figure~\ref{fig:mean_metabolic_error} shows the mean metabolic error across all 
 	\label{fig:mean_metabolic_error}
 \end{figure}
 
-Table~\ref{table:fitness_means_std_dev} below gives the mean fitness scores for differing conditions. The selection up/down conditions seem to be somewhat anomalous.
+Table~\ref{table:fitness_means_std_dev} below gives the mean fitness scores for differing conditions. The selection up/down conditions seem to be somewhat anomalous, as they were several orders of magnitude smaller than all other conditions, despite having comparable genome sizes, numbers of genes, etc.
 \begin{table}[H]
 	\centering
 	\begin{tabular}{|c||c|c|}
@@ -401,7 +401,7 @@ The mutation up condition clearly had the largest mean percentage of neutral mut
 		\hline
 		\multicolumn{3}{c}{\Large \textbf{Robustness - means \& standard deviations}} \\
 		\hline
-		& \textbf{rank sum} & \textbf{p-value} \\
+		& \textbf{mean} & \textbf{std. dev.} \\
 		\hline
 		Control & 0.944925327538429	& 0.007334383035973237 \\
 		\hline
@@ -462,6 +462,8 @@ Also of interest is that, along with the genome size, overall the fitness of the
 Regarding the $N_-$ condition, comparing this with the results of Batut et al. and their work with \textit{Buchnera aphidicola} (see Section~\ref{related_work}), it may be possible that gene loss is occurring because of the smaller effective population size clicking down Muller's Ratchet. This does not seem to be what is happening in our experiments either, however. Though mean fitness of the $N_-$ condition did greatly decline (see Figure~\ref{fig:mean_fitness_plot}), the $N_-$ condition also saw the largest accumulation of non-coding DNA (see Figure~\ref{fig:mean_non-coding_DNA}) and the second-highest level of evolvability (see Table~\ref{table:mean_std_dev_evolvability}), which should theoretically have lead to an easier time of overcoming the ratchet. On the other hand, the number of functional genes stayed more or less the same as all of the other conditions, and the accumulated number of non-functional genes (pseudogenes) of the $N_-$ condition was the largest (see Figure~\ref{fig:mean_num_non-functional_genes}). These two factors together suggest that there almost certainly was some loss of fitness through pseudogenization; perhaps with more time, the pseudogenes would also have been lost.
 
 Recall the work of Liard et al.\cite{Liard.2018} as discussed in Section~\ref{related_work}, in which the proposed ``complexity ratchet'' was overcome by increasing the mutation rate. Their work was quite successful in overcoming this ratchet, but in our experiments, both the number of genes and the average size of the genes increased. One possible explanation for this is that, in their work, their increased mutation rate $\mu_+$ was set to $1e^{-3}$.  By contrast, even our elevated mutation rate, $\mu_+$, was just $4e^{-7}$, which is $\frac{1}{4}*e^4 \approx 13.65$ times lower than their highest mutation rate. Perhaps an even higher mutation rate would be sufficient to overcome the power of selection and reduce the genome further. 
+
+The robustness results indicate that the stable environment is not requiring much differentiation between the different conditions.  The average difference in robustness between any of the conditions and the control condition was only 0.002803, i.e. only 0.28\%. Robustness does not seem to be selected for in any of the conditions. 
 
 %TODO Perform another experiment with a much higher mutation rate: 1e-3 for 100k generations?
 
