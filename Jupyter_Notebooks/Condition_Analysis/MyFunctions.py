@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 def read_fitness(fileLoc):
     fitness_best_names = ['generation', 'pop_size', 'fitness', 'genome_size', 'metabolic_error','parents_metabolic_error', 'metabolic_fitness', 'secretion_error', 'parents_secretion_error', 'secretion_fitness', 'amt_compound_present']
@@ -21,8 +22,13 @@ def read_robustness(fileLoc):
     return df_robustness
 
 def perc_diff(new_value, old_value):
-    
+    if isinstance(old_value, float):
+        old_value = 0.000000001
+    else:
+        old_value.replace(0,np.nan)
+        
     df_perc_diff = (new_value - old_value)/ old_value
+    
     return df_perc_diff
     
 def name(col_header):
