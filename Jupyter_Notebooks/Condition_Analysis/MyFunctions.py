@@ -22,14 +22,25 @@ def read_robustness(fileLoc):
     return df_robustness
 
 def perc_diff(new_value, old_value):
-    if isinstance(old_value, float):
-        old_value = 0.000000001
-    else:
-        old_value.replace(0,np.nan)
+    #if isinstance(old_value, float):
+    #    old_value = 0.000000001
+    #else:
+    #    old_value.replace(0,np.nan)
         
     df_perc_diff = (new_value - old_value)/ old_value
     
     return df_perc_diff
+    
+lineformat_control = "\n{0} & {1:.4f} & {2:.4f} & {3} \\\\ \n\\hline"
+lineformat_condition = "\n{0} & {1:.4f} & {2:.4f} & {3:.4f} \\\\ \n\\hline"
+
+def fmt(condition, mean, std_dev, mean_perc_diff):
+    if isinstance(mean_perc_diff,str): # mean_perc_diff might be \\textemdash in the control condition
+        ret = lineformat_control.format(condition, mean, std_dev, mean_perc_diff)
+    else:
+        ret = lineformat_condition.format(condition, mean, std_dev, mean_perc_diff)
+    
+    return ret
     
 def name(col_header):
     switch = {

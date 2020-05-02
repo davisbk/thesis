@@ -2,10 +2,10 @@
 This chapter presents the results of our experiments as performed according to the plan described in Chapter~\ref{ch:methods}. Section~\ref{results} provides the data and we then discuss these results in Section~\ref{discussion}. 
 
 \section{Results}\label{results}
-In this section we present the results of our experiments. For each examined aspect, we give both a graphical representation of the data and some of the statistics, beginning by examining the conditions' impact on genome size. It is of minor note that in many of the figures throughout this chapter, a rolling window of the mean was used to smooth the values, resulting in many of the plots only showing data starting after a few thousand generations (often 10,000). It should be noted, however, that organisms were continuously evolved for 500,000 generations. 
+In this section we present the results of our experiments. For each examined aspect, we give both a graphical representation of the data and some of the statistics, beginning by examining the conditions' impact on genome size. It should be noted that in many of the figures throughout this chapter, a rolling window of the mean was used to smooth the values, resulting in many of the plots only showing data starting after a few thousand generations (typically 10,000). It should be noted, however, that this is simply an artifact of the graphing process and organisms were continuously evolved for 500,000 generations. 
 
 \subsection{Genome Size}\label{sec:genome_size}
-In this section we will examine the results of the different conditions, focusing on which, if any, lead to a reduced genome. Figure~\ref{fig:genome_size} presents the main findings regarding genome size. In the figure, the blue line shows the control condition and the other colors show the changed conditions: $\mu_+$/$\mu_-$ (mutation up/down), $k_+$/$k_-$ (selection up/down), and $N_+$/$N_-$ (population up/down). As can be seen from the figure, our expectations in Section~\ref{sec:expected_results} did not always hold up, as several conditions actually \textit{increased} over their original size.
+In this section we will examine the results of the different conditions focusing on which, if any, lead to a reduced genome. Figure~\ref{fig:genome_size} presents the main findings regarding genome size. In the figure, the blue line shows the control condition and the other colors show the changed conditions: $\mu_+$/$\mu_-$ (mutation up/down), $k_+$/$k_-$ (selection up/down), and $N_+$/$N_-$ (population up/down). As can be seen from the figure, our expectations in Section~\ref{sec:expected_results} did not always hold up, as several conditions actually \textit{increased} over their original size. 
 \begin{figure}[H]
 	\includegraphics[width=\linewidth]{stat_fitness_global_mean_genome_size}
 	\centering
@@ -15,23 +15,23 @@ In this section we will examine the results of the different conditions, focusin
 In fact, the $N_-$ condition had a runaway increase in the number of bases, reaching over 16,500 bases at one time, a 25\% increase over the original wild type's roughly 13,200 bp. Surprisingly, even after 500,000 generations it seems that the upper limit may still not have been reached. The statistical results are given below in Tables~\ref{table:genome_size_stats} and \ref{table:genome_size_mean_and_std_dev}, which show the mean and standard deviation among all five seeds over all generations.
 
 \begin{table}[H]
-	\begin{tabular}{|c|c|c|}
+	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{3}{c}{\Large \textbf{Genome Size - Mean \& Std. Dev. (in bp)}} \\
+		\multicolumn{4}{c}{\Large \textbf{Genome Size - Mean \& Std. Dev. (in bp)}} \\
 		\hline
-		 & \textbf{mean} & \textbf{standard deviation} \\
+		 & \textbf{mean} & \textbf{standard deviation} & \textbf{mean's \% change from control} \\
 		 \hline
-		 Control & 13537.031513461712 & 144.35113788568995 \\
+		 Control & 13537.031513461712 & 144.35113788568995 & \textemdash \\ 
 		 \hline
-		 $\mu_+$ & 13558.37415989583 & 155.0778470373894 \\
+		 $\mu_+$ & 13558.37415989583 & 155.0778470373894 & 0.1576612007801965 \\
 		 \hline
-		 $\mu_-$ & 13410.74368980468 & 101.37610437279282 \\
+		 $\mu_-$ & 13410.74368980468 & 101.37610437279282 & -0.9329063283294208 \\
 		 \hline
-		 $k_+$ & 13621.901103597776	& 229.63570760641895 \\
+		 $k_+$ & 13621.901103597776 & 229.63570760641895 & 0.6269438765187694 \\
 		 \hline
-		 $k_-$ & 13614.663598682531 & 172.67504183409068 \\
+		 $k_-$ & 13614.663598682531 & 172.67504183409068 & 0.5734793861092736 \\
 		 \hline
-		 $N_-$ & 15275.14939195188 & 950.2662434333312 \\
+		 $N_-$ & 15275.14939195188 & 950.2662434333312 & 12.839726913258055 \\
 		 \hline
 	\end{tabular}
 	\caption[Genome size - mean and std. dev.]{Average genome size and standard deviation for all seeds and all conditions. }
