@@ -27,14 +27,19 @@ def perc_diff(new_value, old_value):
     #else:
     #    old_value.replace(0,np.nan)
         
-    df_perc_diff = (new_value - old_value)/ old_value
+    df_perc_diff = 100*(new_value - old_value)/ old_value
     
     return df_perc_diff
     
-lineformat_control = "\n{0} & {1:.4f} & {2:.4f} & {3} \\\\ \n\\hline"
-lineformat_condition = "\n{0} & {1:.4f} & {2:.4f} & {3:.4f} \\\\ \n\\hline"
+def rank_sum_format(condition, rank_sum, p_value):
+    lineformat = "\n{0} & {1:.2f} & {2:.8f} \\\\ \n\hline"
+    
+    return lineformat.format(condition, rank_sum, p_value)
 
-def fmt(condition, mean, std_dev, mean_perc_diff):
+def mean_format(condition, mean, std_dev, mean_perc_diff):
+    lineformat_control = "\n{0} & {1:.6f} & {2:.6f} & {3} \\\\ \n\\hline"
+    lineformat_condition = "\n{0} & {1:.6f} & {2:.6f} & {3:.6f} \\\\ \n\\hline"
+
     if isinstance(mean_perc_diff,str): # mean_perc_diff might be \\textemdash in the control condition
         ret = lineformat_control.format(condition, mean, std_dev, mean_perc_diff)
     else:

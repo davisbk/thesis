@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.11)  2 MAY 2020 15:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.11)  2 MAY 2020 16:57
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -686,7 +686,7 @@ on input line 10.
 [25
 
 ]
-Overfull \hbox (129.2847pt too wide) in paragraph at lines 18--37
+Overfull \hbox (56.4461pt too wide) in paragraph at lines 18--37
 [][] 
  []
 
@@ -720,8 +720,12 @@ g)
 Package pdftex.def Info: ./pics/stat_fitness_global_mean_metabolic_error.png  u
 sed on input line 98.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
- [30 <./pics/global_fitness_histogram.png>] [31 <./pics/stat_fitness_global_mea
-n_metabolic_error.png>]
+ [30 <./pics/global_fitness_histogram.png>]
+Overfull \hbox (36.94608pt too wide) in paragraph at lines 106--125
+ [][] 
+ []
+
+[31 <./pics/stat_fitness_global_mean_metabolic_error.png>]
 <./pics/percent_noncoding.png, id=656, 2168.1pt x 1445.4pt>
 File: ./pics/percent_noncoding.png Graphic file (type png)
 <use ./pics/percent_noncoding.png>
@@ -745,7 +749,8 @@ type png)
 Package pdftex.def Info: ./pics/stat_genes_global_mean_num_non-functional_genes
 .png  used on input line 210.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
- [34]
+
+[34]
 Overfull \hbox (39.89789pt too wide) in paragraph at lines 218--239
  [][] 
  []
@@ -839,7 +844,7 @@ onts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
 rw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8
 a.pfb>
-Output written on Thesis.pdf (58 pages, 2526700 bytes).
+Output written on Thesis.pdf (58 pages, 2527016 bytes).
 PDF statistics:
  958 PDF objects out of 1000 (max. 8388607)
  182 named destinations out of 1000 (max. 500000)
