@@ -1,5 +1,7 @@
 
 \chapter{Conclusions and Future Work}\label{ch:conclusion}
+%TODO Remove chapter 5 summary?
+%TODO Remove "we" language from Chapter 5 summary
 In this section we will summarize our overall conclusions drawn from the work, discuss some limitations of our experiments, and highlight a few possibilities for further research.
 
 \section{Conclusions}
@@ -7,21 +9,21 @@ At generation 500,000 there were three conditions in which the genome size was l
 
 \section{Relation to Real-World Organisms}
 %TODO Complete Section - Relation to Real-World Organisms
-We began this thesis with the intention of examining the factors that may drive reductive evolution, with the overall intention of relating this to real-world examples. The marine cyanobacteria \textit{Prochlorococcus} has large effective population sizes and high adaptability, which has resulted in a large number of ecotypes which exist at differing depths in the oligotrophic oceans. 
+This thesis was begun with the intention of examining the factors that may drive reductive evolution, with the overall intention of relating this to real-world examples. The marine cyanobacteria \textit{Prochlorococcus} has large effective population sizes and high adaptability, which has resulted in a large number of ecotypes which exist at differing depths in the oligotrophic oceans. 
   
 \section{Limitations and Future work}\label{limitations}
 %TODO Complete Section - Limitation of Results
 \subsection{Parameters}
 Although it was the main design of our experiments, one limitation to consider is that only one parameter varied per condition. It may be possible that it is only under a combination of conditions that reductive evolution more reliably occurs. Since both an increased mutation rate and decreased selection pressure lead to a reduced genome in our experiments, it may be worth testing whether a combination of the two would lead to an even greater reduction. 
 
-In a similar vein, we only tested one value for each changed condition. For example, only a mutation rate of $\mu_+ = 4e^{-7}$ was tested for the $\mu_+$ condition. Perhaps an even higher mutation rate, such as $\mu_+ = 1e^{-3}$, might be enough to reduce the number of genes, as predicted by Knibbe et al.~\cite{Knibbe2007} and \cite{Liard.2018}. Their mutation rates were $2.1e^{-5}$ and $1e^{-3}$, roughly $3.9$ and $13.65$ times higher than our rate. The testing of more extreme values for each parameter may provide a fuller picture of the balance between selection, mutation rates, population sizes, and reductive genomes. 
+In a similar vein, only one value for each changed condition was tested. For example, only a mutation rate of $\mu = 4e^{-7}$ was tested for the $\mu_+$ condition. Perhaps an even higher mutation rate, such as $\mu_+ = 1e^{-3}$, might be enough to reduce the number of genes, as predicted by Knibbe et al.~\cite{Knibbe2007} and \cite{Liard.2018}. Their mutation rates were $2.1e^{-5}$ and $1e^{-3}$, roughly $3.9$ and $13.65$ times higher than the rate found here. The testing of more extreme values for each parameter may provide a fuller picture of the balance between selection, mutation rates, population sizes, and reductive genomes. 
 
 \subsection{Environments}
-Another limitation is that the environments did not vary in our experiments. Aevol includes the ability to vary the environment natively, so future experiments could vary the environment over time to see if doing so would increase or decrease robustness or evolvability, which are strong drivers of reductive evolution~\cite{Batut.2013}. 
+Another limitation is that the environments did not vary in these experiments. Aevol includes the ability to vary the environment natively, so future experiments could vary the environment over time to see if doing so would increase or decrease robustness or evolvability, which are strong drivers of reductive evolution~\cite{Batut.2013}. 
 
 \subsection{Limitations of the Aevol Model}
-Aevol as a modeling software is limited in that, like all models, it relies on several simplifications. For example, the population sizes tested here, even in the population up condition, are still much smaller than would be found in real world populations. It could be that in order to properly judge the effects of Muller's Ratchet under differing conditions, we need much larger population sizes, but the length of time required for running such a simulation in Aevol is intractable.
+Aevol as a modeling software is limited in that, like all models, it relies on several simplifications. For example, the population sizes tested here, even in the population up condition, are still much smaller than would be found in real world populations. It could be that in order to properly judge the effects of Muller's Ratchet under differing conditions, much larger population sizes are needed. However, the length of time required for running such a simulation in Aevol even on a decent cluster might make this intractable, as quadrupling the population size also quadrupled the run-time of these experiments. 
 
-Aevol also relies on the simplification that its space of ``biological functions'' are a one-dimensional function, when the real-world space is obviously much more complicated. But this simplification effectively disallows the use of gene networks, which might be 
+Aevol also relies on the simplification that its space of ``biological functions'' are a one-dimensional function, when the real-world space is obviously much more complicated. But this simplification effectively disallows the use of gene networks, which %TODO Finish this sentence
 
 %TODO Can flesh out this section with points from the official model description ( http://aevol.fr/documentation/resources/the-aevol-model.pdf )

@@ -1,11 +1,13 @@
 \chapter{Results and Discussion}\label{ch:results_discussion}
+%TODO Remove chapter summary?
+%TODO Remove "we" language from summary
 This chapter presents the results of our experiments as performed according to the plan described in Chapter~\ref{ch:methods}. Section~\ref{results} provides the data and we then discuss these results in Section~\ref{discussion}. 
 
 \section{Results}\label{results}
-In this section we present the results of our experiments. For each examined aspect, we give both a graphical representation of the data and some of the statistics, beginning by examining the conditions' impact on genome size. It should be noted that in many of the figures throughout this chapter, a rolling window of the mean was used to smooth the values, resulting in many of the plots only showing data starting after a few thousand generations (typically 10,000). It should be noted, however, that this is simply an artifact of the graphing process and organisms were continuously evolved for 500,000 generations. 
+In this section, the results of the experiments are presented. For each examined aspect, both a graphical representation of the data and some of the statistics are given, beginning with the conditions' impact on genome size. It should be noted that in many of the figures throughout this chapter, a rolling window of the mean was used to smooth the values, resulting in many of the plots only showing data starting after a few thousand generations (typically 10,000). It should be noted, however, that this is simply an artifact of the graphing process and organisms were continuously evolved for 500,000 generations. 
 
 \subsection{Genome Size}\label{sec:genome_size}
-In this section we will examine the results of the different conditions focusing on which, if any, lead to a reduced genome. Figure~\ref{fig:genome_size} presents the main findings regarding genome size. In the figure, the blue line shows the control condition and the other colors show the changed conditions: $\mu_+$/$\mu_-$ (mutation up/down), $k_+$/$k_-$ (selection up/down), and $N_+$/$N_-$ (population up/down). As can be seen from the figure, our expectations in Section~\ref{sec:expected_results} did not always hold up, as several conditions actually \textit{increased} over their original size. 
+In this section the results of the different conditions are examined, focusing on which, if any, lead to a reduced genome. Figure~\ref{fig:genome_size} presents the main findings regarding genome size. In the figure, the blue line shows the control condition and the other colors show the changed conditions: $\mu_+$/$\mu_-$ (mutation up/down), $k_+$/$k_-$ (selection up/down), and $N_+$/$N_-$ (population up/down). As can be seen from the figure, the expectations from Section~\ref{sec:expected_results} did not always hold up, as several conditions actually \textit{increased} over their original size. 
 \begin{figure}[H]
 	\includegraphics[width=\linewidth]{stat_fitness_global_mean_genome_size}
 	\centering
@@ -63,7 +65,7 @@ In fact, the $N_-$ condition had a runaway increase in the number of bases, reac
 
 The next most obvious observation is that of the remaining conditions, all but the $k_+$ condition (which had an an increase of 11\% over the control condition) ended up with fewer base pairs than the control condition, though all increased slightly over their starting point. Also noteworthy is that the mutation down condition appears to have had a steady increase in the number of base pairs until a maximum of just over 14,000 around generation 350,000 before having a fairly sharp decline back to nearly the original size. 
 
-Examining the percent changed from the \textit{control} condition shown in Figure~\ref{fig:genome_size_percent_change} we see that at points, the $\mu_-$ condition was nearly 5\% smaller than the \textit{control} condition. 
+Examining the percent changed from the \textit{control} condition shown in Figure~\ref{fig:genome_size_percent_change} it can be seen that at points, the $\mu_-$ condition was nearly 5\% smaller than the \textit{control} condition. 
 
 \begin{figure}[H]
 	\centering
@@ -82,7 +84,7 @@ Figure~\ref{fig:mean_fitness_plot} shows the mean fitness of the population for 
 	\label{fig:mean_fitness_plot}
 \end{figure}
 
-We can see in the figure that the fitness of the control condition (in blue) consistently stayed at the same level, likely owing to the fact that the wild genotype had already been allowed to evolve for 10 million generations in this environment, so the phenotype closely lines up with the target before the simulations even began. Small fluctuations occurred due to mutations, insertions, etc. but since we were beginning with a clonal population of the best organism after 10 million generations in this environment, the average fitness remained steady. 
+The figure shows that the fitness of the control condition (in blue) consistently stayed at the same level, likely owing to the fact that the wild genotype had already been allowed to evolve for 10 million generations in this environment, so the phenotype closely lines up with the target before the simulations even began. Small fluctuations occurred due to mutations, insertions, etc. but since beginning with a clonal population of the best organism after 10 million generations in this same environment, the average fitness remained steady. 
 
 More interesting is the population down condition, where the average fitness in the whole population sharply declined, sinking to 4.5\% below the control condition at generation 500,000. It seems that with the smaller population size, genetic drift may be more strongly at work in continually increasing the gap between the phenotype and environmental function, as the lack of variety inherent in a smaller population causes a cascade of increasingly deleterious consequences. 
 
@@ -127,7 +129,7 @@ Table~\ref{table:fitness_means_std_dev} below gives the mean fitness scores for 
 \end{table}
 
 \subsection{Genome Structure}
-In this section we examine the effects of the differing conditions on the structure of the genome as measured by the criteria in Tables~\ref{table:aevol_stats_genes_and_bp} and~\ref{table:aevol_stats_fitness_and_mutation}. 
+In this section, the effects of the differing conditions on the structure of the genome as measured by the criteria in Tables~\ref{table:aevol_stats_genes_and_bp} and~\ref{table:aevol_stats_fitness_and_mutation} is examined. 
 
 \subsubsection{Non-coding DNA}
 One important factor in genome structure is the amount of non-coding DNA, i.e. the number of bases which are part of a genome but which do not encode protein sequences. Aevol gives the number of bases which are not in any coding sequence, as well as the total genome size, so one may easily calculate this percentage. The results from our experiments are shown in Figure~\ref{fig:mean_non-coding_DNA}. Recalling genome size in Figure~\ref{fig:genome_size}, it seems that as the genome size of the population down condition rapidly expanded, most of those expansions were non-coding.
@@ -137,27 +139,27 @@ One important factor in genome structure is the amount of non-coding DNA, i.e. t
 	\caption[Non-coding DNA]{Plot of non-coding DNA over time for all conditions, average of all seeds.}
 	\label{fig:mean_non-coding_DNA}
 \end{figure}
-By comparison, despite the \textit{selection up} condition's rapid decline in fitness, it did not acquire more than 1\% non-coding DNA. 
+By comparison, despite the $k_+$ condition's rapid decline in fitness, it did not acquire more than 1\% non-coding DNA. 
 
 The average percentages of non-coding DNA are given in Table~\ref{table:non-coding_DNA_mean_and_standard_deviation} below. 
 \begin{table}[H]
-	\begin{tabular}{|c|c|c|}
+	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{3}{c}{\Large \textbf{\% Non-coding DNA}} \\
+		\multicolumn{4}{c}{\Large \textbf{\% Non-coding DNA}} \\
 		\hline
-		& \textbf{mean} & \textbf{standard deviation} \\
+		& \textbf{mean} & \textbf{standard deviation} & \textbf{mean's \% change from control} \\
 		\hline \hline
-		Control & 38.63423466698755	& 0.6082140361213884 \\
+		control & 38.622711 & 0.601258 & \textemdash \\ 
 		\hline
-		$\mu_+$ & 38.671613712955356 & 0.7101004314162586 \\
+		$\mu_+$ & 38.661764 & 0.707173 & 0.101114 \\ 
 		\hline
-		$\mu_-$ & 37.45404807887061 & 0.6975468467601527 \\
+		$\mu_-$ & 37.446414 & 0.694349 & -3.045608 \\ 
 		\hline
-		$k_+$ & 39.33999462052945 & 1.135781531861679 \\
+		$k_+$ & 39.329164 & 1.138623 & 1.829114 \\ 
 		\hline
-		$k_-$ & 38.01289386160514 & 0.704172791027157 \\
+		$k_-$ & 38.004029 & 0.704953 & -1.601860 \\ 
 		\hline
-		$N_-$ & 45.46747213756932 & 3.5462787275316896 \\
+		$N_-$ & 45.462209 & 3.545778 & 17.708489 \\ 
 		\hline
 	\end{tabular}
 	\caption[Non-coding DNA mean and standard deviation]{Mean and standard deviation of non-coding percentages of DNA across all seeds.}
@@ -296,10 +298,10 @@ Table~\ref{table:mean_functional_gene_size_and_std_dev} below gives the mean and
 	\caption[Average size of functional genes - rank sum and p-value]{Average size of functional genes - rank sum and p-value for all conditions and all seeds.}
 	\label{table:avg_size_of_functional_genes_rank_sum_and_p-value}
 \end{table}
-Since the $k_-$ condition's p-value was $\geq0.05$, we must conclude that these results are not significant. 
+Since the $k_-$ condition's p-value was $\geq0.05$, it must be concluded that these results are not significant. 
 
 \subsection{Evolvability}
-In Figure~\ref{fig:evolvability_mean} below, we see the results of the experiments on evolvability for the best individual's (at generation 500,000) lineage. 
+In Figure~\ref{fig:evolvability_mean} below, the results of the experiments on evolvability for the best individual's (at generation 500,000) lineage are shown. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{evolvability_boxplot_all_seeds_avg}
@@ -364,7 +366,7 @@ The evolvability rank sum and p-value information is given in Table~\ref{table:e
 \end{table}
 
 \subsection{Robustness}
-Recall from Section~\ref{subsec:robustness_antirobustness} that robustness is measured by the fraction of neutral offspring of an individual. In the following figure, we see a bar plot showing the spread of neutral offspring for the best individual for the control condition as well as the six variations. 
+Recall from Section~\ref{subsec:robustness_antirobustness} that robustness is measured by the fraction of neutral offspring of an individual. In the following figure, a bar plot showing the spread of neutral offspring for the best individual is seen for the control condition as well as the six variations. 
 
 %TODO update graphic with more conditions once experiments are completed
 \begin{figure}[H]
@@ -423,7 +425,7 @@ The mutation up condition clearly had the largest mean percentage of neutral mut
 
 \section{Discussion}\label{discussion}
 
-Analogously to Table~\ref{table:experiment_predictions}, we summarize the results of our experiments in Table~\ref{table:experiment_results_summary} below. For each cell, {\color{green} green} indicates that our prediction was confirmed in our experiments and {\color{red}red} indicates that the prediction must be rejected. Our predictions for each condition are duplicated here for convenience, with a $+$ indicating a predicted increase and $-$ indicating a predicted decrease over the control condition. 
+Analogously to Table~\ref{table:experiment_predictions}, the results of the experiments in Table~\ref{table:experiment_results_summary} are summarized below. For each cell, {\color{green} green} indicates that the prediction was confirmed in these experiments and {\color{red}red} indicates that the prediction must be rejected. The predictions for each condition are duplicated here for convenience, with a $+$ indicating a predicted increase and $-$ indicating a predicted decrease over the control condition. 
 
 %TODO Is this table from Chapter 3 correct? Specifically, is mutation+/- right for fitness? 
 \begin{table}[H]
@@ -455,7 +457,7 @@ Analogously to Table~\ref{table:experiment_predictions}, we summarize the result
 	\label{table:experiment_results_summary}
 \end{table}
 
-According to our predictions based on a survey of the literature (summarized in Table~\ref{table:experiment_predictions}), the $\mu_+$, $k_-$, and $N_+$ conditions should have lead to a reduced genome. As shown in Figure~\ref{fig:genome_size} however, none of these predictions held up, and in fact the genome size increased in all conditions, including those that were predicted to be reduced. One possible explanation is that, because the wild types had already been evolving for 10 million generations, and we did not vary the environment further for our experiments, perhaps they had reached a sort of stasis for which another half-million generations were not sufficient to fully demonstrate the effects of any changes. This may not explain everything, however, as some conditions (e.g. $\mu_+$, $N_-$) did see a rather rapid change in fitness, genome structure, etc. even in the (comparatively) short time. 
+According to the predictions based on a survey of the literature (summarized in Table~\ref{table:experiment_predictions}), the $\mu_+$, $k_-$, and $N_+$ conditions should have lead to a reduced genome. As shown in Figure~\ref{fig:genome_size} however, none of these predictions held up, and in fact the genome size increased in all conditions, including those that were predicted to be reduced. One possible explanation is that, because the wild types had already been evolving for 10 million generations, and the environment was not varied further for these experiments, perhaps the wild types had reached a sort of stasis for which another half-million generations were not sufficient to fully demonstrate the effects of any changes. This may not explain everything, however, as some conditions (e.g. $\mu_+$, $N_-$) did see a rather rapid change in fitness, genome structure, etc. even in the (comparatively) short time. 
 
 Also of interest is that, along with the genome size, overall the fitness of the organisms did not change much with only one exception ($k_+$). It has been postulated that perhaps gene loss may be selected for in order to increase the overall fitness of an organism by removing the added cost of the superfluous genes~\cite{koskiniemi2012}. Our results do not fully agree with this hypothesis, as our results show that, in addition to the general accumulation of non-coding DNA across all conditions (Figure~\ref{fig:mean_non-coding_DNA}), which would theoretically have a higher fitness cost, the number of genes actually \textit{increased} slightly for each condition, except for $k_-$. Likewise, fitness overall went \textit{up} as the number of genes increased (except for $N_-$). Lastly, decreasing the selection pressure resulted in the highest overall mean fitness by a wide margin (Table~\ref{table:fitness_means_std_dev}). In Aevol, non-coding DNA is not really associated with a fitness cost, so this explanation may likely also not fully apply. 
 
