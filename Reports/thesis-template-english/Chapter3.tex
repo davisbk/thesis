@@ -1,7 +1,7 @@
 \chapter{Methods}\label{ch:methods}
 %TODO Remove this chapter description?
 %TODO Remove "we" language at least.
-With an understanding of the basics behind us, in this chapter we provide an overview of our contributions and proposed solution.
+With an understanding of the basics from Chapter~\ref{ch:background}, in this chapter an overview of the contributions of this thesis and an outline of the methods used in the experiments are presented. 
 %TODO Expand chapter introduction
 \section{Contributions}
 %TODO Complete the Contributions section
@@ -16,12 +16,12 @@ For all experiments here, the original target environmental function in which th
 y(x) = h * e^{\left(\frac{-(x-m)^2}{2 * w^2} \right)}
 \end{equation*}
 
-A visualization of the target function used in our experiments, $f_E$, can be seen below in Figure~\ref{fig:target_function}. Each Gaussian's parameters $h$, $m$, and $w$ are given in the figure. The gray shaded area is the phenotypic target area.  
+A visualization of the target function used in the experiments, $f_E$, can be seen below in Figure~\ref{fig:target_function}. Each Gaussian's parameters $h$, $m$, and $w$ are given in the figure. The gray shaded area is the phenotypic target area.  
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{environmental_target_function01}
-	\caption[Experimental target function]{A visual representation of the target function $f_E$ for our experiments.}
+	\caption[Experimental target function]{A visual representation of the target function $f_E$ for the experiments.}
 	\label{fig:target_function}
 \end{figure}
 
@@ -31,7 +31,7 @@ In addition to the six tested changed conditions (i.e. $\langle\mu_+$/$\mu_-\ran
 The resulting data was processed using a combination of Python\footnote{\url{https://www.python.org/}}, Pandas\footnote{\url{https://pandas.pydata.org/}}, and Jupyter Notebooks\footnote{\url{https://jupyter.org/}}.  
 
 \subsection{Inputs}
-In Table~\ref{table:input_parameters}, our parameter values for all input parameters may be found. Please note that for $\mu$, this represents the mutation rates for point mutations, small insertions, and small deletions. The rearrangement rates were not changed under any condition and were always $1e-6$ for duplications, deletions, translocations, and inversions. 
+In Table~\ref{table:input_parameters}, the parameter values for all input parameters may be found. Please note that for $\mu$, this represents the mutation rates for point mutations, small insertions, and small deletions. The rearrangement rates were not changed under any condition and were always $1e-6$ for duplications, deletions, translocations, and inversions. 
 
 \begin{table}[h]
 	\centering
@@ -85,7 +85,7 @@ z = \frac{U - m_U}{\sigma_U}
 where $m_U$ and $\sigma_U$ are the mean and standard deviation of $U$.
 \begin{equation*}
 m_U = \frac{n_1*n_2}{2} \text{and } \sigma_U = \sqrt{\frac{n_1*n_2\left(n_1 + n_2 +1\right)}{12}}
-\end{equation*} In these experiments, the Python library function \texttt{scipy.stats.mannwhitneyu} was used on Pandas DataFrames containing the observations in order to calculate this statistic. This function also calculates the p-value. With the typical confidence level of $\alpha = 0.05$, if the p-value is below $0.05$, the null hypothesis $H_o$ must be rejected that the two samples (i.e. the control and the condition) are from the same distribution; otherwise it must be accepted.
+\end{equation*} In these experiments, the Python library function \texttt{scipy.stats.mannwhitneyu} was used on Pandas DataFrames containing the observations in order to calculate the Mann-Whitney U statistic. This function also calculates the p-value. With the typical confidence level of $\alpha = 0.05$, if the p-value is below $0.05$, the null hypothesis $H_o$ must be rejected that the two samples (i.e. the control and the condition) are from the same distribution; otherwise it must be accepted.
 
 \subsection{Fitness}
 Fitness in Aevol is closely tied in to the ``metabolic error''. This error, $g$, is calculated as the gap between the environmental function $f_E$ and the phenotype of the organism, $f_P$. Once $g$ is determined as described above in Section~\ref{subsec:aevol_selection}, it may be used to calculate the actual fitness of the organism according to the equation:
@@ -96,7 +96,7 @@ where k is the \textit{selection coefficient} variable set by the user in a para
 \subsection{Robustness}
 Aevol calculates statistics for both mutational robustness as well as antirobustness. Robustness in Aevol is calculated similarly to evolvability: a \texttt{lineage} file for an individual is fed to the post-treatment \texttt{misc\_ancestor\_robustness}, which generates a large number (specifiable by the user) of offspring, whose fitness is then measured. The percentage of these offspring which are neutral (i.e. whose phenotype is not affected by the mutations) is the robustness, and the percentage of positive offspring determines the antirobustness.
 
-In our experiments, at the end of the run of 500,000 generations a lineage file for the best individual at generation 500,000, i.e. the individual whose metabolic error was smallest, is generated. This lineage file is then fed in to the post-treatment \texttt{aevol\_misc\_ancestor\_robustness} and robustness statistics are generated for each generation in the lineage file. The statistics produced by this post-treatment are summarized in Table~\ref{table:robustness} below.
+In these experiments, at the end of the run of 500,000 generations a lineage file for the best individual at generation 500,000, i.e. the individual whose metabolic error was smallest, is generated. This lineage file is then fed in to the post-treatment \texttt{aevol\_misc\_ancestor\_robustness} and robustness statistics are generated for each generation in the lineage file. The statistics produced by this post-treatment are summarized in Table~\ref{table:robustness} below.
 \begin{table}[H]
 	\centering
 	\begin{tabular}{||c||}
@@ -207,7 +207,7 @@ Non-coding bases determine regulation %TODO Find source for this - read it just 
 \end{table}
  
 \section{Expected Results}\label{sec:expected_results}
-Given the state of the literature and other experiments, as partially described in Section~\ref{related_work}, the table below summarizes our expected results. 
+Given the state of the literature and other experiments, as partially described in Section~\ref{related_work}, the table below summarizes the expected results. 
 
 \begin{table}[H]
 	\centering
