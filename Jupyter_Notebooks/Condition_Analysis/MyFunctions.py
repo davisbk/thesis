@@ -22,11 +22,6 @@ def read_robustness(fileLoc):
     return df_robustness
 
 def perc_diff(new_value, old_value):
-    #if isinstance(old_value, float):
-    #    old_value = 0.000000001
-    #else:
-    #    old_value.replace(0,np.nan)
-        
     df_perc_diff = 100*(new_value - old_value)/ old_value
     
     return df_perc_diff
@@ -37,8 +32,8 @@ def rank_sum_format(condition, rank_sum, p_value):
     return lineformat.format(condition, rank_sum, p_value)
 
 def mean_format(condition, mean, std_dev, mean_perc_diff, precision=6):
-    lineformat_control = "\n{0} & {1:."+str(precision)+"f} & {2:."+str(precision)+"} & {3} \\\\ \n\\hline"
-    lineformat_condition = "\n{0} & {1:."+str(precision)+"f} & {2:."+str(precision)+"f} & {3:."+str(precision)+"f} \\\\ \n\\hline"
+    lineformat_control = "\n{0} & {1:."+str(precision)+"e} & {2:."+str(precision)+"} & {3} \\\\ \n\\hline"
+    lineformat_condition = "\n{0} & {1:."+str(precision)+"e} & {2:."+str(precision)+"e} & {3:."+str(precision)+"e} \\\\ \n\\hline"
 
     if isinstance(mean_perc_diff,str): # mean_perc_diff might be \\textemdash in the control condition
         ret = lineformat_control.format(condition, mean, std_dev, mean_perc_diff)
