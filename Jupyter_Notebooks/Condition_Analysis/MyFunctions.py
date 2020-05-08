@@ -36,9 +36,9 @@ def rank_sum_format(condition, rank_sum, p_value):
     
     return lineformat.format(condition, rank_sum, p_value)
 
-def mean_format(condition, mean, std_dev, mean_perc_diff):
-    lineformat_control = "\n{0} & {1:.6f} & {2:.6f} & {3} \\\\ \n\\hline"
-    lineformat_condition = "\n{0} & {1:.6f} & {2:.6f} & {3:.6f} \\\\ \n\\hline"
+def mean_format(condition, mean, std_dev, mean_perc_diff, precision=6):
+    lineformat_control = "\n{0} & {1:."+str(precision)+"f} & {2:."+str(precision)+"} & {3} \\\\ \n\\hline"
+    lineformat_condition = "\n{0} & {1:."+str(precision)+"f} & {2:."+str(precision)+"f} & {3:."+str(precision)+"f} \\\\ \n\\hline"
 
     if isinstance(mean_perc_diff,str): # mean_perc_diff might be \\textemdash in the control condition
         ret = lineformat_control.format(condition, mean, std_dev, mean_perc_diff)
