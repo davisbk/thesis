@@ -7,6 +7,10 @@ With an understanding of the basics from Chapter~\ref{ch:background}, in this ch
 %TODO Complete the Contributions section
 
 \section{Experimental Designs} \label{experimental_design}
+%TODO Make it clearer that I did not create the wild type
+%TODO Describe how a population was generated from a wild type
+%TODO Explain the model of Carde et al. (the student) in one sentence
+
 To assist in determining which conditions might lead to reductive evolution, one must isolate individual variables and change just one thing at a time in order to see what effect, if any, it has on the final genome. To that end, a series of experiments were designed and conducted in which a ``wild type'' genome was allowed to evolve in differing conditions for 500,000 generations before analyzing the effects. To first create the wild type, a genome was generated randomly in Aevol which had at least one coding gene and which was allowed to evolve for 10 million generations in a non-varying environment. By the beginning of its use in these experiments, the wild type comprised 13,237 base pairs with 132 functional genes (i.e. genes which produce a gene product) and around 37\% non-coding DNA. 
 
 In these experiments, separate (initially clonal) populations of the wild types were created, one for each condition (including one for the controls), which were then allowed to continue to evolve in a static environment in a total of 6 different conditions: with an increased/decreased selection strength ($k_+$/$k_-$), an increased/decreased mutation rate ($\mu_+$/$\mu_-$), and an increased/decreased population size ($N_+$/$N_-$). 
@@ -94,7 +98,7 @@ Fitness in Aevol is closely tied in to the ``metabolic error''. This error, $g$,
 \end{equation*} 
 where k is the \textit{selection coefficient} variable set by the user in a parameter file. Aevol provides fitness statistics both for the fittest individual and for the population at large.
 \subsection{Robustness}
-Aevol calculates statistics for both mutational robustness as well as antirobustness. Robustness in Aevol is calculated similarly to evolvability: a \texttt{lineage} file for an individual is fed to the post-treatment \texttt{misc\_ancestor\_robustness}, which generates a large number (specifiable by the user) of offspring, whose fitness is then measured. The percentage of these offspring which are neutral (i.e. whose phenotype is not affected by the mutations) is the robustness, and the percentage of positive offspring determines the antirobustness.
+Aevol calculates statistics for both mutational robustness as well as antirobustness. Robustness in Aevol is calculated similarly to evolvability (see Section~\ref{aevol:evolvability}): a \texttt{lineage} file (see~Section~\ref{sec:aevol_analysis}) for an individual is fed to the post-treatment \texttt{misc\_ancestor\_robustness}, which generates a user-specified large number of offspring whose fitness is then measured. The percentage of these offspring which are neutral (i.e. whose phenotype is not affected by the mutations) is the robustness, and the percentage of positive offspring (i.e. those whose fitness is greater than their parent's) determines the antirobustness.
 
 In these experiments, at the end of the run of 500,000 generations a lineage file for the best individual at generation 500,000, i.e. the individual whose metabolic error was smallest, is generated. This lineage file is then fed in to the post-treatment \texttt{aevol\_misc\_ancestor\_robustness} and robustness statistics are generated for each generation in the lineage file. The statistics produced by this post-treatment are summarized in Table~\ref{table:robustness} below.
 \begin{table}[H]
@@ -133,7 +137,7 @@ In these experiments, at the end of the run of 500,000 generations a lineage fil
 	\label{table:robustness}
 \end{table}
 These statistics for both the control and the specific desired condition (e.g. mutation up) may then be compared. Because this data is somewhat noisy (owing to the fact that the fitness may change rapidly), occasionally box and whisker plots will be used to show the overall spread rather than plotting the robustness generation by generation. 
-\subsection{Evolvability}
+\subsection{Evolvability}\label{aevol:evolvability}
 In Aevol, evolvability is calculated by generating a large set of offspring for a specific individual (one whose lineage was generated using the post-treatment \texttt{aevol\_misc\_lineage}) at regular periods along their lineage and then determining the number of ``positive offspring''. Positive offspring are defined as those whose fitness is greater than their parent's. The evolvability of an individual is then the sum total of all improvement of all of the beneficial offspring, i.e.:
 
 \begin{equation*}
@@ -237,5 +241,5 @@ Given the state of the literature and other experiments, as partially described 
 	\caption[Experiment expectations]{Predictions for the experiments. $\mu$ is the mutation rate, ~$k$ is the selection rate, and $N$ is the population size. $\mu_+$ indicates an increased mutation rate, $\mu_-$ a decreased rate, etc. A $+$ in the main grid space indicates an expected increase (over the control condition) for that condition, and a $-$ indicates an expected decrease for that condition.}
 	\label{table:experiment_predictions}
 \end{table}
-
+%TODO Flesh out these expectations
 

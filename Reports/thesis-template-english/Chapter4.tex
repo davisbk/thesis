@@ -7,6 +7,7 @@ This chapter presents the results of the experiments as performed according to t
 In this section, the results of the experiments are presented. For each examined aspect, both a graphical representation of the data and some of the statistics are given, beginning with the conditions' impact on genome size. It should be noted that in many of the figures throughout this chapter, a rolling window of the mean was used to smooth the values, resulting in many of the plots only showing data starting after a few thousand generations (typically 10,000). It should be noted, however, that this is simply an artifact of the graphing process and organisms were continuously evolved for 500,000 generations. 
 
 \subsection{Genome Size}\label{sec:genome_size}
+%TODO Remember whether I'm using the best individual or the population average and make this clearer in the text
 In this section the results of the different conditions are examined, focusing on which, if any, lead to a reduced genome. Figure~\ref{fig:genome_size} presents the main findings regarding genome size. In the figure, the blue line shows the control condition and the other colors show the changed conditions: $\mu_+$/$\mu_-$ (mutation up/down), $k_+$/$k_-$ (selection up/down), and $N_+$/$N_-$ (population up/down). As can be seen from the figure, the expectations from Section~\ref{sec:expected_results} did not always hold up, as several conditions actually \textit{increased} over their original size. 
 \begin{figure}[H]
 	\includegraphics[width=\linewidth]{stat_fitness_global_mean_genome_size}
@@ -88,9 +89,11 @@ The figure shows that the fitness of the control condition (in blue) consistentl
 
 More interesting is the population down condition, where the average fitness in the whole population sharply declined, sinking to 4.5\% below the control condition at generation 500,000. It seems that with the smaller population size, genetic drift may be more strongly at work in continually increasing the gap between the phenotype and environmental function, as the lack of variety inherent in a smaller population causes a cascade of increasingly deleterious consequences. 
 
+%TODO Need to redo this graphic, maybe with sharedx=True
+%TODO Make larger!
 \begin{figure}[H]
 	\includegraphics[width=\linewidth]{global_fitness_histogram}
-	\caption[Mean fitness histogram]{Histogram of all conditions' fitness. Note that for the selection up condition, the scale is 1e-7. }
+	\caption[Mean fitness histogram]{Histogram of population fitness at generation 500,000 for all conditions. Note that for the selection up condition, the scale is 1e-7.}
 	\label{fig:global_fitness_histogram}
 \end{figure}
 Figure~\ref{fig:global_fitness_histogram} shows a histogram of all fitness values for all conditions. Although the $N_-$ condition ended the simulations in the most similar position to the \textit{control} condition, Figure~\ref{fig:global_fitness_histogram} makes it clear that the \textit{control} condition remained much steadier throughout the simulation, regularly jumping from value to value, whereas the \textit{mutation down} condition, as expected, tended to hover at certain locations in between rarer mutation events. 
@@ -167,7 +170,7 @@ The average percentages of non-coding DNA are given in Table~\ref{table:non-codi
 \end{table}
 
 \subsubsection{Number of Functional Genes}\label{sec:number_of_functional_genes}
-Figure~\ref{fig:mean_num_functional_genes} below illustrates the mean number of functional genes across the population for each condition.  
+Recall from Section~\ref{experimental_design} that a ``functional gene'' is a gene which produces a gene product. In this case, this means a triangle of mean $m$, height $h$, and half-width $w$. Figure~\ref{fig:mean_num_functional_genes} below illustrates the mean number of functional genes across the population for each condition.  
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{stat_genes_global_mean_num_functional_genes}
@@ -305,7 +308,7 @@ In Figure~\ref{fig:evolvability_mean} below, the results of the experiments on e
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{evolvability_boxplot_all_seeds_avg}
-	\caption[Evolvability boxplot]{A box plot showing the mean evolvability spread of all seeds and all conditions. Higher numbers are more evolvable.}
+	\caption[Evolvability boxplot]{A box plot showing the mean evolvability spread of all seeds and all conditions. Higher numbers are more evolvable (keep in mind the scale is $1e^{-8}$). }
 	\label{fig:evolvability_mean}	
 \end{figure}
 The figure illustrates that, for each condition, overall the best individual still had quite low evolvability. For the selection up condition, however, the deviation from zero was even smaller, as illustrated in Table~\ref{table:mean_std_dev_evolvability} below, which provides the mean and standard deviation of the evolvability of the best individual in each condition. 
@@ -372,7 +375,7 @@ Recall from Section~\ref{subsec:robustness_antirobustness} that robustness is me
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{stat_robustness_best_mean_frac_neutral_offspring}
-	\caption[Robustness bar graph]{Bar graph showing the spread of neutral offspring for the best individual at generation 500,000, all conditions.}
+	\caption[Robustness box and whisker plot]{A box and whisker plot showing the spread of neutral offspring for the best individual at generation 500,000, all conditions. Higher numbers are more robust.}
 	\label{fig:mean_robustness_all_conditions}
 \end{figure}
 The mutation up condition clearly had the largest mean percentage of neutral mutants, at 0.5\%. The full statistics are given in the tables below:
@@ -384,38 +387,39 @@ The mutation up condition clearly had the largest mean percentage of neutral mut
 		\hline
 		& \textbf{rank sum} & \textbf{p-value} \\
 		\hline
-		$\mu_+$ & 16756710.5 & 0.000000000000000 \\
 		\hline
-		$\mu_-$ & 5741758.0 & 0.000000000000000 \\
+		$\mu_+$ & 16756710.50 & 0.00000000 \\ 
 		\hline
-		$N_-$ & 12493750.0 & 0.000000000000000 \\
+		$\mu_-$ & 5741758.00 & 0.00000000 \\ 
 		\hline
-		$k_+$ & 13580845.5 & 0.001358704915202 \\
+		$N_-$ & 12493750.00 & 0.00000000 \\ 
 		\hline
-		$k_-$ & 13925884.0 & 0.001273247024315 \\
+		$k_+$ & 13580845.50 & 0.00135870 \\ 
+		\hline
+		$k_-$ & 13925884.00 & 0.00127325 \\ 
 		\hline
 	\end{tabular}
 	\caption[Robustness rank sum \& p-values]{Mean robustness rank sum and p-values for all conditions and all seeds.}
 	\label{table:rank_sum_p-values}
 \end{table}
 \begin{table}[H]
-	\begin{tabular}{|c|c|c|}
+	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{3}{c}{\Large \textbf{Robustness - means \& standard deviations}} \\
+		\multicolumn{4}{c}{\Large \textbf{Robustness - means \& standard deviations}} \\
 		\hline
-		& \textbf{mean} & \textbf{std. dev.} \\
+		& \textbf{mean} & \textbf{std. dev.} & \textbf{mean's \% change from control} \\
 		\hline
-		Control & 0.944925327538429	& 0.007334383035973237 \\
+		control & 0.944925 & 0.007334 & \textemdash \\ 
 		\hline
-		$\mu_+$ & 0.9366773604226319 & 0.007907308763606846 \\
+		$\mu_+$ & 0.936677 & 0.007907 & -0.872870 \\ 
 		\hline
-		$\mu_-$ &	0.94754266274366 & 0.0070662676155014035 \\
+		$\mu_-$ & 0.947543 & 0.007066 & 0.276989 \\ 
 		\hline
-		$k_+$ & 0.9444661080775791 & 0.007371509508882273 \\
+		$k_+$ & 0.944466 & 0.007372 & -0.048598 \\ 
 		\hline
-		$k_-$ & 0.9445156995960435	& 0.007423851661757711 \\
+		$k_-$ & 0.944516 & 0.007424 & -0.043350 \\ 
 		\hline
-		$N_-$ & 0.9374093190746451 & 0.008846010304259707 \\
+		$N_-$ & 0.937409 & 0.008846 & -0.795408 \\ 
 		\hline
 	\end{tabular}
 	\caption[Robustness means and standard deviations]{Robustness means and standard deviations for all conditions and all seeds.}

@@ -1,6 +1,6 @@
 \chapter{Background}\label{ch:background}
-%TODO Remove "we" language
-In this chapter we will examine some of the theoretical background information required for this thesis. We begin with an examination of experimental evolution and move on to a discussion of Aevol, the specific tool that was used in this thesis. We close the chapter by examining how Aevol can be used to study reductive evolution and discuss the current state of the literature surrounding reductive evolution.  
+
+In this chapter, some of the theoretical background information required for this thesis is examined. An overview of experimental evolution is given before moving on to a discussion of Aevol, the specific tool that was used in this thesis. The chapter closes examining how Aevol can be used to study reductive evolution and by discussing the current state of the literature surrounding reductive evolution.  
 
 \section{Experimental Evolution}
 As discussed in Section~\ref{problem_statement}, in vivo experiments, although sometimes more realistic, have their own set of difficulties. Some examples of these difficulties include recreating challenging environmental conditions (e.g. simulating the open ocean in a laboratory) and identifying and/or simulating the multiple selection pressures acting on genomes in the real world~\cite{Batut.2013}. These challenges add enormous difficulty and complexity to conducting proper experiments and isolating the specific factors which lead to particular outcomes. 
@@ -11,17 +11,18 @@ Factors such as the mutation rates or selection pressure are then parameters for
 
 Although there are certainly limitations to using in silico evolution (see Section~\ref{limitations}), overall in silico experimental evolution is a valuable tool for studying the underlying mechanisms of evolution when real-world experiments would be prohibitively time-consuming or expensive.
 
-\subsubsection{Why use Aevol}
+\section{Aevol}
+Aevol follows a ``sequence-of-nucleotides'' model~\cite{Batut.2013} in which organisms are simulated with a binary genome which can either be generated at random or input as a previously-generated sequence. Aevol essentially consists of three steps: 1) decoding the genome of these organisms to produce artificial proteins, 2) selecting the most fit individuals and 3) reproduction of these fittest individuals with possible variations (mutations, rearrangements, etc.). The sections below examine each of these steps in greater detail.
+
+\subsection{Why use Aevol}
 Many silico evolution tools have been used to test various aspects of evolution: Tierra~\cite{Tierra-Ray} and Avida~\cite{Avida-Ofria}, in which the genetic units are computer programs fighting for CPU time, were some of the first; DOSE, an ecology-conscious method of checking for heterozygosity (variation within a population)~\cite{Castillo-DOSE} is a more recent example; and many more (see \cite{Mozhayskiy-In-Silico-Review} for a more comprehensive review). 
 
 The in silico tool Aevol was developed to ``study the evolution of the size and organization of bacterial genomes in various scenarios''\cite{Batut.2013}. The program has also been expanded upon and tested in a variety of scenarios over the years (e.g. \cite{parsons2011selection}, \cite{misevic2012effects}, \cite{Miramontes.2016}). Some examples of experiments in which Aevol was the primary mechanism of in silico experimental evolution include: testing the predictability of evolution with high mutation rates as in viruses~\cite{beslon:hal-01577115}, determining whether selection is able to overcome evolution's drive towards more complex organisms~\cite{Liard.2018}, examining the role of mutators in reorganizing the genome in order to overcome mutational load~\cite{doi:10.1186/s12862-019-1507-z}, examining the effects of population shape on levels of cooperation~\cite{Miramontes.2016}, modeling regulatory networks~\cite{sanchezdehesa:hal-01502737} and more. 
 
 As an in silico experimental evolution tool, Aevol embodies several of the advantages of in silico evolution in general. There is a ``fossil record'' of each generation, experimental conditions are tightly controlled, and experiments are easily repeatable. The encoding/decoding strategy of Aevol follows a biologically realistic model, in the sense that there are many degrees of freedom between an organism's genome and its proteome. Many genes may encode for very simple proteins (e.g. if the genes contain the same or similar sequences), and by contrast, overlapping genes may code for complex proteomes.
- 
+
 In the following sections, the in silico experimental evolution tool Aevol will be examined in greater detail. 
 %TODO Can flesh out this section with points from "Strengths and limits of the model" from the official description ( http://aevol.fr/documentation/resources/the-aevol-model.pdf )
-\section{Aevol}
-Aevol follows a ``sequence-of-nucleotides'' model~\cite{Batut.2013} in which organisms are simulated with a binary genome which can either be generated at random or input as a previously-generated sequence. Aevol essentially consists of three steps: 1) decoding the genome of these organisms to produce artificial proteins, 2) selecting the most fit individuals and 3) reproduction of these fittest individuals with possible variations (mutations, rearrangements, etc.). The sections below examine each of these steps in greater detail.
 
 \subsection{Aevol's Architecture}
 Aevol's three main steps\textemdash decoding the genome, selection, and reproduction\textemdash are illustrated in Figure~\ref{fig:aevol_overview01} and are discussed in greater detail in the following sections. 
@@ -29,7 +30,7 @@ Aevol's three main steps\textemdash decoding the genome, selection, and reproduc
 \begin{figure}[H]
 	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{aevol_overview01}
 	\centering
-	\caption[Overview of Aevol's architecture.]{Overview of Aevol's architecture, from \cite{Batut.2013}}
+	\caption[Overview of Aevol's architecture.]{Overview of Aevol's architecture, from \cite{Batut.2013}. In step 1, the binary genome of the organisms is decoded and the resulting phenotype (bottom, in green) is matched up against an environmental target function. In step 2, the probability of reproduction is calculated for each organism, based on its fitness (gap between the environment $f_E$ and its phenotype). In step 3, the next generation is created based on the probabilities from step 2, along with random mutations, rearrangements, etc.}
 	\label{fig:aevol_overview01}
 \end{figure}
 \subsubsection{Decoding the Genome}\label{subsec:aevol_decoding}
@@ -39,7 +40,7 @@ Once an initiation sequence is found, the following bases are read three at a ti
 
 A cellular process is simply an abstract representation of some phenotypic function and is represented by the ordered set $\Omega = \left[ a,b \right] \subset \mathbb{R}$. Together, these cellular processes make up the organism's proteome. To keep things simple, $\Omega$ is a one-dimensional space in the interval $\left[0,1\right]$, i.e. a ``cellular process'' is simply a real number, and the genomic encoding of each cellular process determines the function $f(x) : \Omega \rightarrow \left[0,1\right]$. The mean $m$ gives us the specific cellular process in the range $\left[0,1\right]$. The width $w$ describes the ``scope'' of the process, i.e. the \textit{pleiotropy} of the process, meaning the subset of the protein that is in the interval $ \left(m - w, m + w\right) \subset \Omega$ . The height determines the degree of possibility of the process, i.e. its relative strength.
 
-The codons are read one after the other and their Gray codes\footnote{A binary encoding such that two successive values (e.g. 2, 3) only differ by at most one bit (e.g. 0011, 0010). See \url{https://en.wikipedia.org/wiki/Gray_code}} are used to compute the real numbers $m$, $w$, and $h$ as follows. Each parameter ($m$, $w$, $h$) is assigned two codons in the genetic code (see Figure \ref{fig:aevol_overview01}), for example $w_0 = 010$ and $w_1 = 011$. Any $w_0$ codons become a $0$ in the Gray code, and vice versa with $1$s. So if, for example, when reading the coding sequence, the codons $w_1$, $w_0$, $w_1$, $w_0$ are read, the Gray code becomes $1010$, which is 12 in decimal. This is done for $m$, $w$, and $h$, and the resulting values are then normalized to be in the proper range. $w$'s range is specified in the parameter file (as \texttt{MAX\_TRIANGLE\_WIDTH}), $h$ must be in the range $\left[-1,+1\right]$ (indicating that both activating and inhibiting processes are allowed) and $m$ must be in the range $\left[0,1\right]$ (the range of $\Omega$). 
+The codons are read one after the other and their Gray codes\footnote{A binary encoding such that two successive values (e.g. 2, 3) only differ by at most one bit (e.g. 0011, 0010). See \cite{doran2007gray} for an overview.} are used to compute the real numbers $m$, $w$, and $h$ as follows. Each parameter ($m$, $w$, $h$) is assigned two codons in the genetic code (see Figure \ref{fig:aevol_overview01}), for example $w_0 = 010$ and $w_1 = 011$. Any $w_0$ codons become a $0$ in the Gray code, and vice versa with $1$s. So if, for example, when reading the coding sequence, the codons $w_1$, $w_0$, $w_1$, $w_0$ are read, the Gray code becomes $1010$, which is 12 in decimal. This is done for $m$, $w$, and $h$, and the resulting values are then normalized to be in the proper range. $w$'s range is specified in the parameter file (as \texttt{MAX\_TRIANGLE\_WIDTH}), $h$ must be in the range $\left[-1,+1\right]$ (indicating that both activating and inhibiting processes are allowed) and $m$ must be in the range $\left[0,1\right]$ (the range of $\Omega$). 
 
 Given the fact that there are likely multiple coding sequences in a genome, several triangles (cellular processes) are translated from the genome, each parameterized by its own $m$, $w$, and $h$. These triangles form the phenotypic function $f_P$. \textit{Fuzzy logic} is used to find the overall contribution of each cellular process, using the Lukasiewicz fuzzy operators\footnote{See \url{https://en.wikipedia.org/wiki/Lukasiewicz\_logic} for an introduction.}. Roughly speaking, the activating proteins are added up, as are the inhibiting proteins, and the difference between these two totals represents the final function $f_P$. More formally, if $f_i$ is the possibility distribution of the $i$-th activator protein and $f_j$ is the possibility distribution of the $j$-th inhibitor protein, then the phenotype of the individual is defined as:
 \begin{equation*}
@@ -75,7 +76,7 @@ Once the experiments have completed, Aevol by default produces several statistic
 One of the key features of Aevol is the ability to look back in time at the ''archaeological record'' of previous organisms, which is stored on disk, in order to perform various analyses. This is primarily done with a myriad of post-treatments'', i.e. supplementary programs. These post-treatments generally require a \texttt{lineage} file, which is a file generated by Aevol that shows a record back in time of the line of descent for an individual. One may specify either the best-ranked individual (i.e. the fittest) or a specific individual by their unique identification number. The basic idea is illustrated below in Figure~\ref{fig:lineage01}. 
 
 \begin{figure}[H]
-	\includegraphics[scale=0.65]{lineage01}
+	\includegraphics[width=\linewidth]{lineage01}
 	\centering
 	\caption[Lineage basic illustration.]{A basic illustration of a lineage. The ancestors of the individual (labeled `A') can be traced back through the previous generations for all of its ancestors (all in orange).}
 	\label{fig:lineage01}
@@ -103,6 +104,12 @@ Relative fitness, on the other hand, describes the change in genotype \textit{fr
  
 
 \section{Related Work}\label{related_work}
+%TODO Restructure this section to be clearer: what is my message here? What are the different hypotheses for reductive evolution (Batut 2013?2014?)
+%TODO Add population aspect of in silico experimental evolution.
+%TODO Add clear definition of reductive genome evolution and examples of species and lineages.
+%TODO Check where I found Aevol described as 3 steps
+%TODO How are evolvability adn selection linked?
+%TODO Fix citation for Muller's ratchet for endosymbionts to no longer be from Batut
 Much work has already been done in the field of reductive evolution, and this section will look at the current state of the literature. 
 %Batut et al. focused primarily on examining the differing hypotheses 
 
