@@ -12,7 +12,7 @@ Factors such as the mutation rates or selection pressure are then parameters for
 Although there are certainly limitations to using in silico evolution (see Section~\ref{limitations}), overall in silico experimental evolution is a valuable tool for studying the underlying mechanisms of evolution when real-world experiments would be prohibitively time-consuming or expensive.
 
 \section{Aevol}
-Aevol follows a ``sequence-of-nucleotides'' model~\cite{Batut.2013} in which organisms are simulated with a binary genome which can either be generated at random or input as a previously-generated sequence. Aevol essentially consists of three steps: 1) decoding the genome of these organisms to produce artificial proteins, 2) selecting the most fit individuals and 3) reproduction of these fittest individuals with possible variations (mutations, rearrangements, etc.). The sections below examine each of these steps in greater detail.
+Aevol follows a ``sequence-of-nucleotides'' model~\cite{Batut.2013} in which organisms are simulated with a binary genome which can either be generated at random or input as a previously-generated sequence. Aevol essentially consists of a repeated iteration of three main steps: 1) decoding the genome of these organisms to produce artificial proteins, 2) selecting the most fit individuals and 3) reproduction of these fittest individuals with possible variations (mutations, rearrangements, etc.). The sections below examine each of these steps in greater detail.
 
 \subsection{Why use Aevol}
 Many silico evolution tools have been used to test various aspects of evolution: Tierra~\cite{Tierra-Ray} and Avida~\cite{Avida-Ofria}, in which the genetic units are computer programs fighting for CPU time, were some of the first; DOSE, an ecology-conscious method of checking for heterozygosity (variation within a population)~\cite{Castillo-DOSE} is a more recent example; and many more (see \cite{Mozhayskiy-In-Silico-Review} for a more comprehensive review). 
@@ -87,6 +87,9 @@ In the following subsections, other statistics that Aevol calculates are examine
 \subsection{Evolvability}\label{subsec:evolvability}
 Evolvability is usually defined as the ability of a system (in this case an organism) to evolve. In other words, a system has evolvability ``if mutations in it can produce heritable phenotypic variation''\cite{doi:10.1098/rspb.2007.1137}. However, of critical importance is that this is not simply having a large amount of genetic diversity, but rather \textit{adaptive} diversity which provides some benefit. 
 
+%TODO How are evolvability and selection linked?
+There is a link between evolvability and selection, in the sense that a trait which confers some fitness advantage may be selected for and a genome with high evolvability may contain this trait. %TODO Finish this section
+
 
 \subsection{Robustness and Antirobustness}\label{subsec:robustness_antirobustness}
 Robustness is broadly defined as the ability of an organism to withstand disruptions or perturbations without affecting its phenotype. There are differing kinds of robustness, as well: one may describe robustness in terms of mutational robustness\textendash which describes the extent to which an organism's phenotype is not affected by stochastic mutational events\textendash or one may speak of environmental robustness, which describes the ability of an organism to maintain its phenotype in diverse environments with little or no loss in fitness. 
@@ -107,9 +110,9 @@ Relative fitness, on the other hand, describes the change in genotype \textit{fr
 %TODO Restructure this section to be clearer: what is my message here? What are the different hypotheses for reductive evolution (Batut 2013?2014?)
 %TODO Add population aspect of in silico experimental evolution.
 %TODO Add clear definition of reductive genome evolution and examples of species and lineages.
-%TODO Check where I found Aevol described as 3 steps
-%TODO How are evolvability adn selection linked?
-%TODO Fix citation for Muller's ratchet for endosymbionts to no longer be from Batut
+
+
+
 Much work has already been done in the field of reductive evolution, and this section will look at the current state of the literature. 
 %Batut et al. focused primarily on examining the differing hypotheses 
 
@@ -119,11 +122,11 @@ Liard et al. showed in \cite{Liard.2018} that selection for fitness is not neces
 \end{quote} 
 Echoing the findings of Knibbe et al.~\cite{Knibbe2007} they found, however, that limiting \textit{robustness} can overcome the tendency of organisms to become more and more complex, because this places an upper bound on the amount of information that an organism can transmit in its genome. Increasing the mutation rate forced gene elimination despite the fitness loss because it lowered the information content of the genome. A mutation rate of even $\mu = 10^{-4}$ resulted in nearly 40\% of their organisms developing a simpler genome. 
 
-Knibbe et al. also found, via in silico experimentation, that the accumulation of non-coding DNA strongly depends on the mutation rate. This in turn affects the selection tradeoff between reliably passing on the existing genome and having the mutational variability to adapt to new challenges.  Under higher mutation rates, their organisms closely resembled viral genomes in that they had almost no non-coding sequences. When the selection strength was larger, genomes were larger. 
+Knibbe et al. also found, via in silico experimentation, that the accumulation of non-coding DNA strongly depends on the mutation rate. This in turn affects the selection tradeoff between reliably passing on the existing genome and having the mutational variability to adapt to new challenges.  Under higher mutation rates, their organisms closely resembled viral genomes in that they had almost no non-coding sequences. When the selection strength was larger, genomes were larger.  Kuo et al. \cite{kuo2009consequences} examined the role of genetic drift on gene density (i.e. the ratio of the number of genes per number of base pairs) and found that, as the ratio of non-synonymous to synonymous substitutions increased, gene density varied much more greatly. 
 
 Koskiniemi et al.~\cite{koskiniemi2012} performed in vivo experiments on the bacterium \textit{Salmonella enterica} in which the effects on fitness of random deletions was measured. Some 25\% of the deletions actually caused an increase in fitness under some conditions, suggesting that there is a certain cost associated with having superfluous genes and thus gene loss may be selected for under certain conditions.
 
-Batut et al.~\cite{Batut.2014} found that in organisms with smaller effective population sizes, such as endosymbiotic bacteria like \textit{Buchnera aphidicola}, gene loss may occur as a result of the smaller population sizes effectively clicking down on ``Muller's Ratchet''. In this situation, deleterious mutations accumulate in a population because the smaller population size does not allow for enough variability, so deleterious mutations become fixed in a population. 
+Batut et al.~\cite{Batut.2014} investigated the idea of ``Muller's ratchet'' and whether it might explain the genome reduction seen in \textit{Prochlorococcus}. In Muller's ratchet, organisms with smaller effective population sizes, such as endosymbiotic bacteria like \textit{Buchnera aphidicola}, may lose genes because deleterious mutations accumulate in a population due to the smaller population size not allowing for enough variability. In the absence of recombination, these deleterious mutations become fixed in a population. The idea was originally put forth by H.J. Muller~\cite{MullersRatchet}. Batut et al. found that generally, the 
 
 Liard et al. showed in their experiments with Aevol that complexity can arise in organisms in even the most simple of environments (a single triangular target function) and with the most basic beginnings (a single gene and protein)~\cite{Liard.2018}. They found that the complexity continues to increase, even when the resulting organisms are much less fit than the simpler ones, and that this complexity even overcomes selection. They also found that whether an organism would develop into a simple or complex organism was usually determined quite early in its evolution, around generation 10,000. Reasoning that genome compactness is a direct driver of mutational robustness, as Knibbe et al.~\cite{Knibbe2007} showed, and that more robust organisms can be selected over fitter organisms under heavy mutational stress as shown by Wilke et al.~\cite{wilke2001evolution}, they wondered if robustness could select for a more simplified genome. To test this, they changed the mutation rate to be exceptionally high (up to $\mu = 1e^{-4} *bp^{-1}*gen^{-1}$) and ran their simulations for another 100,000 generations, and the results confirmed their expectations: The higher the differential between the old and the new mutation rate, the larger percentage of organisms evolved a more reduced genome (up to 91\% in the case of a change from $\mu_\text{old}=1e^{-6}$ to $\mu_\text{new}=1e^{-3}$).
 

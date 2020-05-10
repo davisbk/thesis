@@ -93,11 +93,21 @@ Sanna Koskiniemi, Song Sun, Otto~G Berg, and Dan~I Andersson.
 \newblock Selection-driven gene loss in bacteria.
 \newblock {\em PLoS genetics}, 8(6), 2012.
 
+\bibitem{kuo2009consequences}
+Chih-Horng Kuo, Nancy~A Moran, and Howard Ochman.
+\newblock The consequences of genetic drift for bacterial genome complexity.
+\newblock {\em Genome research}, 19(8):1450--1454, 2009.
+
 \bibitem{Liard.2018}
 Vincent Liard, David Parsons, Jonathan Rouzaud-Cornabas, and Guillaume Beslon.
 \newblock The complexity ratchet: Stronger than selection, weaker than
   robustness.
 \newblock {\em Artificial Life Conference Proceedings}, 1(30):250--257, 2018.
+
+\bibitem{Lynch1401}
+Michael Lynch and John~S. Conery.
+\newblock The origins of genome complexity.
+\newblock {\em Science}, 302(5649):1401--1404, 2003.
 
 \bibitem{marais2008mutation}
 Gabriel~AB Marais, Alexandra Calteau, and Olivier Tenaillon.
@@ -122,6 +132,11 @@ Vadim Mozhayskiy and Ilias Tagkopoulos.
 \newblock {Microbial evolution in vivo and in silico: methods and
   applications}.
 \newblock {\em Integrative Biology}, 5(2):262--277, 10 2012.
+
+\bibitem{MullersRatchet}
+H.~J. Muller.
+\newblock Some genetic aspects of sex.
+\newblock {\em The American Naturalist}, 66(703):118--138, 1932.
 
 \bibitem{Avida-Ofria}
 C.~{Ofria} and C.~O. {Wilke}.
@@ -155,13 +170,6 @@ Yolanda Sanchez-Dehesa, Lo{\"i}c Cerf, Jose~Maria Pena, Jean-Fran{\c c}ois
 \newblock {Artificial Regulatory Networks Evolution}.
 \newblock In {\em {Proc 1st Int Workshop on Machine Learning for Systems
   Biology MLSB 07}}, pages 47--52, Evry, France, September 2007.
-
-\bibitem{sun_zhiyi_blanchard}
-Zhiyi Sun and Jeffrey Blanchard.
-\newblock Strong genome-wide selection early in the evolution of
-  prochlorococcus resulted in a reduced genome through the loss of a large
-  number of small effect genes.
-\newblock {\em PloS one}, 9:e88837, 03 2014.
 
 \bibitem{vahdati2017effect}
 Ali~R Vahdati, Kathleen Sprouffske, and Andreas Wagner.
