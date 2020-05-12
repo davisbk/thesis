@@ -60,7 +60,7 @@ In fact, the $N_-$ condition had a runaway increase in the number of bases, reac
 		$k_-$ & 88533681875.00 & 0.00000000 \\ 
 		\hline
 	\end{tabular}
-	\caption[Genome size statistics]{Genome size statistics. Each condition is compared with the \textit{control} condition.}
+	\caption[Genome size rank sum statistics]{Genome size rank sum statistics.}
 	\label{table:genome_size_stats}
 \end{table} 
 
@@ -96,7 +96,7 @@ More interesting is the population down condition, where the average fitness in 
 	\caption[Mean fitness histogram]{Histogram of population fitness at generation 500,000 for all conditions. Note that for the selection up condition, the scale is 1e-7.}
 	\label{fig:global_fitness_histogram}
 \end{figure}
-Figure~\ref{fig:global_fitness_histogram} shows a histogram of all fitness values for all conditions. Although the $N_-$ condition ended the simulations in the most similar position to the \textit{control} condition, Figure~\ref{fig:global_fitness_histogram} makes it clear that the \textit{control} condition remained much steadier throughout the simulation, regularly jumping from value to value, whereas the \textit{mutation down} condition, as expected, tended to hover at certain locations in between rarer mutation events. 
+Figure~\ref{fig:global_fitness_histogram} shows a histogram of the population mean fitness values for all conditions. Although the $N_-$ condition ended the simulations in the most similar position to the \textit{control} condition, Figure~\ref{fig:global_fitness_histogram} makes it clear that the \textit{control} condition remained much steadier throughout the simulation, regularly jumping from value to value, whereas the \textit{mutation down} condition, as expected, tended to hover at certain locations in between rarer mutation events. 
 
 Figure~\ref{fig:mean_metabolic_error} shows the mean metabolic error across all seeds for the whole population over time with respect to each condition. 
 \begin{figure}[H]
@@ -105,7 +105,7 @@ Figure~\ref{fig:mean_metabolic_error} shows the mean metabolic error across all 
 	\label{fig:mean_metabolic_error}
 \end{figure}
 
-Table~\ref{table:fitness_means_std_dev} below gives the mean fitness scores for differing conditions. The selection up/down conditions seem to be somewhat anomalous, as they were several orders of magnitude smaller than all other conditions, despite having comparable genome sizes, numbers of genes, etc.
+Table~\ref{table:fitness_means_std_dev} below gives the mean fitness scores for the population and the differing conditions. The selection down condition seems to be somewhat anomalous, as it was several orders of magnitude larger than all other conditions, despite having comparable genome sizes, numbers of genes, etc.
 \begin{table}[H]
 	\centering
 	\begin{tabular}{|c||c|c|c|}
@@ -127,7 +127,7 @@ Table~\ref{table:fitness_means_std_dev} below gives the mean fitness scores for 
 		$N_-$ & 0.022097 & 0.000310 & -2.764272 \\ 
 		\hline
 	\end{tabular}
-	\caption[Fitness means and standard deviations.]{Fitness means and standard deviations across all seeds. }
+	\caption[Fitness means and standard deviations.]{Population mean fitness and standard deviations across all seeds. }
 	\label{table:fitness_means_std_dev}
 \end{table}
 
@@ -139,7 +139,7 @@ One important factor in genome structure is the amount of non-coding DNA, i.e. t
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{percent_noncoding}
-	\caption[Non-coding DNA]{Plot of non-coding DNA over time for all conditions, average of all seeds.}
+	\caption[Non-coding DNA]{Plot of the average (across all seeds) number of non-coding bases for the whole population over time for all conditions.}
 	\label{fig:mean_non-coding_DNA}
 \end{figure}
 By comparison, despite the $k_+$ condition's rapid decline in fitness, it did not acquire more than 1\% non-coding DNA. 
@@ -170,41 +170,39 @@ The average percentages of non-coding DNA are given in Table~\ref{table:non-codi
 \end{table}
 
 \subsubsection{Number of Functional Genes}\label{sec:number_of_functional_genes}
-Recall from Section~\ref{experimental_design} that a ``functional gene'' is a gene which produces a gene product. In this case, this means a triangle of mean $m$, height $h$, and half-width $w$. Figure~\ref{fig:mean_num_functional_genes} below illustrates the mean number of functional genes across the population for each condition.  
+Recall from Section~\ref{experimental_design} that a ``functional gene'' is a gene which produces a gene product. Specifically in Aevol, this means the production of a triangle of mean $m$, height $h$, and half-width $w$. Figure~\ref{fig:mean_num_functional_genes} below illustrates the mean number of functional genes across the population for each condition.  
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{stat_genes_global_mean_num_functional_genes}
-	\caption[Mean number of functional genes]{Plot showing the mean number of functional genes over time across all seeds.}
+	\caption[Mean number of functional genes]{Plot showing the mean number of functional genes for the population, averaged across all seeds for each condition.}
 	\label{fig:mean_num_functional_genes}
 \end{figure}
 As seen in the figure, the \textit{selection up} condition showed the greatest increase in the number of functional genes in the whole population, reaching a maximum increase of about 2.2\% (131 to 134). This is in agreement with the predictions (from Table~\ref{table:experiment_predictions}) and the findings of Knibbe et al.~\cite{Knibbe2007}. Whereas most of the other curves are fairly flat, the mutation up condition fluctuates relatively rapidly, owing to the quick increase and decrease in the number of base pairs. 
 
-The mean and standard deviation of each condition is given in Table~\ref{table:number_of_genes_mean_std_dev} below.
+The mean and standard deviation of the number of functional genes for the population for each condition is given in Table~\ref{table:number_of_genes_mean_std_dev} below.
 
 \begin{table}[H]
 	\centering
-	\begin{tabular}{|c|c|c|}
+	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{3}{c}{\Large \textbf{Number of Functional Genes}} \\
+		\multicolumn{4}{c}{\Large \textbf{Mean Number of Functional Genes}} \\
 		\hline
-		& \textbf{mean} & \textbf{standard deviation} \\
+		& \textbf{mean} & \textbf{standard deviation} & \textbf{\% change from control} \\
 		\hline
-		Control & 131.33289822159796 & 0.08150846235734634 \\
+		control & 131.332898 & 0.081508 & \textemdash \\ 
 		\hline
-		$\mu_+$ & 131.97477775907822 & 0.25246331309927117 \\
+		$\mu_+$ & 131.974778 & 0.252463 & 0.488742 \\ 
 		\hline
-		$\mu_-$ & 131.50054072148615 & 0.20757038951512172 \\
+		$\mu_-$ & 131.500541 & 0.207570 & 0.127647 \\ 
 		\hline
-		$k_+$ & 132.60656804679095 & 0.7195302117186394 \\ 
+		$k_+$ & 132.606568 & 0.719530 & 0.969803 \\ 
 		\hline
-		$k_-$ & 131.2389093250132 & 0.013973734803973407 \\
+		$k_-$ & 131.238909 & 0.013974 & -0.071565 \\ 
 		\hline
-		$N_+$ & & \\
-		\hline
-		$N_-$ & 131.35051857775917 & 0.08328014006877373 \\
+		$N_-$ & 131.350519 & 0.083280 & 0.013417 \\ 
 		\hline
 	\end{tabular}
-	\caption[Number of functional genes - mean and standard deviation]{The mean and standard deviation for the number of functional genes across all seeds and for all conditions.}
+	\caption[Number of functional genes - mean and standard deviation]{The mean and standard deviation for the number of functional genes of the population, averaged across all seeds and for all conditions.}
 	\label{table:number_of_genes_mean_std_dev}
 \end{table}
 \subsubsection{Number of Non-Functional Genes}
@@ -220,33 +218,31 @@ The average number of non-functional genes across all seeds for each condition i
 
 \begin{table}[h]
 	\centering
-	\begin{tabular}{|c|c|c|}
+	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{3}{c}{\Large \textbf{Number of Non-Functional Genes - Mean \& Std. Dev.}} \\
+		\multicolumn{4}{c}{\Large \textbf{Population Mean Number of Non-Functional Genes - Mean \& Std. Dev.}} \\
 		\hline
-		& \textbf{mean} & \textbf{standard deviation} \\
+		& \textbf{mean} & \textbf{standard deviation} & \textbf{\% change from control} \\
 		\hline
-		Control & 5.927067481209257 & 0.3857900832994517 \\
+		control & 5.927067 & 0.385790 & \textemdash \\ 
 		\hline
-		$\mu_+$ & 5.856448948104222	& 0.42847313257452385 \\
+		$\mu_+$ & 5.856449 & 0.428473 & -1.191458 \\ 
 		\hline
-		$\mu_-$ & 6.821347895210327 & 0.22159072539984662 \\
+		$\mu_-$ & 6.821348 & 0.221591 & 15.088075 \\ 
 		\hline
-		$k_+$ & 5.844289488031533 & 0.5069222102358901 \\
+		$k_+$ & 5.844289 & 0.506922 & -1.396610 \\ 
 		\hline
-		$k_-$ & 6.297804225025876 & 0.45415175059248414 \\
+		$k_-$ & 6.297804 & 0.454152 & 6.254978 \\ 
 		\hline
-		$N_+$ & & \\
-		\hline
-		$N_-$ & 6.555471025284081 & 0.4836308269184799 \\
+		$N_-$ & 6.555471 & 0.483631 & 10.602267 \\ 
 		\hline
 	\end{tabular}
-	\caption[Number of Non-functional Genes - Mean \& St. Dev.]{The mean and standard deviation for the number of non-functional genes, all seeds, all conditions.}
+	\caption[Number of Non-functional Genes - Mean \& St. Dev.]{Population mean and standard deviation for the number of non-functional genes, mean of all seeds, all conditions.}
 	\label{table:non-functional_genes_mean_std_dev}
 \end{table}
 
 \subsubsection{Average Size of Functional Genes}\label{sec:average_size_functional_genes}
-Figure~\ref{fig:mean_functional_gene_size} shows the average number of base pairs for each functional gene for the best individual, mapped out over the 500,000 generations. The population down condition continues to be the outlier in terms of genome structure, with the average size of the functional genes remaining noticeably lower than for any other condition. It is worth pointing out, however, that the difference between the smallest average and the largest average is only 1 base pair. 
+Figure~\ref{fig:mean_functional_gene_size} shows the average number of base pairs for each functional gene for the population, mapped out over the 500,000 generations. The population down condition continues to be the outlier in terms of genome structure, with the average size of the functional genes remaining noticeably lower than for any other condition. It is worth pointing out, however, that the difference between the smallest average and the largest average is only 1 base pair. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{stat_genes_global_mean_avg_size_of_functional_genes}
@@ -257,23 +253,23 @@ Table~\ref{table:mean_functional_gene_size_and_std_dev} below gives the mean and
 
 \begin{table}[H]
 	\centering
-	\begin{tabular}{|c|c|c|}
+	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{3}{c}{\Large \textbf{Average size of functional genes}} \\
+		\multicolumn{4}{c}{\Large \textbf{Average size of functional genes}} \\
 		\hline
-		& \textbf{mean} & \textbf{standard deviation} \\
+		& \textbf{mean} & \textbf{standard deviation} & \textbf{\% change from control} \\
 		\hline
-		Control & 55.375429751247275 & 0.13745740540215895 \\
+		control & 55.375430 & 0.137457 & \textemdash \\ 
 		\hline
-		$\mu_+$ & 55.5426245000319 & 0.20716437222446815\\ 
+		$\mu_+$ & 55.542625 & 0.207164 & 0.301929 \\ 
 		\hline
-		$\mu_-$ & 55.309915451000805 & 0.05059383390579744 \\
+		$\mu_-$ & 55.309915 & 0.050594 & -0.118309 \\ 
 		\hline
-		$k_+$ & 55.37046527382346 & 0.2024427915314053 \\
+		$k_+$ & 55.370465 & 0.202443 & -0.008965 \\ 
 		\hline
-		$k_-$ & 55.414464890880595 & 0.1954246818788886 \\
+		$k_-$ & 55.414465 & 0.195425 & 0.070492 \\ 
 		\hline
-		$N_-$ & 55.17428963311534	& 0.09886004440916518 \\
+		$N_-$ & 55.174290 & 0.098860 & -0.363230 \\ 
 		\hline
 	\end{tabular}
 	\caption[Mean functional gene size and standard deviation]{Mean functional gene size and standard deviation, all seeds, all conditions.}
@@ -287,15 +283,15 @@ Table~\ref{table:mean_functional_gene_size_and_std_dev} below gives the mean and
 		\hline
 		& \textbf{rank sum} & \textbf{p-value} \\
 		\hline
-		$\mu_+$ & 68252491056.0 & 0.00000000000000 \\
+		$\mu_+$ & 68252491056.00 & 0.00000000 \\ 
 		\hline
-		$\mu_-$ & 96067062201.5 & 0.00000000000000 \\
+		$\mu_-$ & 96067062201.50 & 0.00000000 \\ 
 		\hline
-		$N_-$ & 28963878467.0 & 0.00000000000000 \\
+		$N_-$ & 28963878467.00 & 0.00000000 \\ 
 		\hline
-		$k_+$ & 103481641646.0 & 0.00000000000000 \\
+		$k_+$ & 103481641646.00 & 0.00000000 \\ 
 		\hline
-		$k_-$ & 124890321462.0 & 0.223664707704009 \\
+		$k_-$ & 124890321462.00 & 0.22366471 \\ 
 		\hline
 	\end{tabular}
 	\caption[Average size of functional genes - rank sum and p-value]{Average size of functional genes - rank sum and p-value for all conditions and all seeds.}
@@ -322,17 +318,15 @@ The evolvability rank sum and p-value information is given in Table~\ref{table:e
 		\hline
 		& \textbf{rank sum} & \textbf{p-value} \\
 		\hline
-		$\mu_+$ & 36203620.0 & 0.000000000309416 \\
+		$\mu_+$ & 36203620.00 & 0.00000000 \\ 
 		\hline
-		$\mu_-$ & 7025283.5 & 0.010212448990316 \\
+		$\mu_-$ & 7025283.50 & 0.01021245 \\ 
 		\hline
-		$k_+$ & 13181851.5 & 0.000000000000074 \\
+		$N_-$ & 19403134.50 & 0.00000000 \\ 
 		\hline
-		$k_-$ & 13779001.5 & 0.000000084666842 \\
+		$k_+$ & 13181851.50 & 0.00000000 \\ 
 		\hline
-		$N_+$ & & \\
-		\hline
-		$N_-$ & 19403134.5 & 0.00000000000000 \\
+		$k_-$ & 13779001.50 & 0.00000008 \\ 
 		\hline
 	\end{tabular}
 	\caption[Evolvability - rank sum and p-value]{Rank sum and p-values for evolvability, all seeds, all conditions.}
@@ -341,27 +335,24 @@ The evolvability rank sum and p-value information is given in Table~\ref{table:e
 
 \begin{table}[H]
 	\centering
-	\begin{tabular}{| c | c | c |}
+	\begin{tabular}{| c | c | c | c |}
 		\hline
-		\multicolumn{3}{c}{\Large Evolvability - Mean \& Std. Dev.} \\
+		\multicolumn{4}{c}{\Large Evolvability - Mean \& Std. Dev.} \\
 		\hline
-		& \textbf{mean} & \textbf{standard deviation}\\
+		& \textbf{mean} & \textbf{standard deviation} & \textbf{\% change from control} \\
 		\hline
 		\hline
-		control & 2.035523813975702e-11 & 3.2787490312081233e-10\\
+		control & 2.035524e-11 & 3.27875e-10 & \textemdash \\ 
 		\hline
-		$\mu_+$ & 9.97655150597127e-11 & 8.41749150634588e-10 \\
+		$\mu_+$ & 9.976552e-11 & 8.417492e-10 & 3.901221e+02 \\ 
 		\hline
-		$\mu_-$ & 6.064697990806935e-12 & 1.2471674281540128e-10 \\
+		$\mu_-$ & 6.064698e-12 & 1.247167e-10 & -7.020571e+01 \\ 
 		\hline
-		$k_+$ & 1.9498939718794653e-15 & 6.394659146405824e-14 \\
+		$k_+$ & 1.949894e-15 & 6.394659e-14 & -9.999042e+01 \\ 
 		\hline
-		$k_-$ & 4.3065723639721706e-10 & 5.20232907351617e-09 \\
+		$k_-$ & 4.306572e-10 & 5.202329e-09 & 2.015707e+03 \\ 
 		\hline
-		%TODO Fill in population up
-		$N_+$ &  & \\
-		\hline
-		$N_-$ & 8.837632116681012e-11 &  1.0799303682398726e-09 \\
+		$N_-$ & 8.837632e-11 & 1.079930e-09 & 3.341699e+02 \\ 
 		\hline	 		 
 	\end{tabular}
 	\caption[Evolvability mean and standard deviation]{Table illustrating the mean and standard deviation of the evolvability for each condition. $\mu$ is the mutation rate, $k$ is the selection rate, and $N$ is the population size.}
