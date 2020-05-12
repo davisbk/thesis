@@ -207,8 +207,8 @@ Non-coding bases determine regulation %TODO Find source for this - read it just 
 \end{table}
  
 \section{Expected Results}\label{sec:expected_results}
-Given the state of the literature and other experiments, as partially described in Section~\ref{related_work}, the table below summarizes the expected results. 
-
+%TODO Expand on this section
+Table~\ref{table:experiment_predictions} gives the expected behavior for each of the six conditions investigated in this thesis based on the literature review from Section~\ref{related_work}. A `$+$' indicates that an increase is expected in that area (e.g. genome size) and a `$-$' indicates an expected decrease.
 \begin{table}[H]
 	\centering
 	\begin{tabular}{|c||c|c|c|c|c|c|}
@@ -237,10 +237,8 @@ Given the state of the literature and other experiments, as partially described 
 	\caption[Experiment expectations]{Predictions for the experiments. $\mu$ is the mutation rate, ~$k$ is the selection rate, and $N$ is the population size. $\mu_+$ indicates an increased mutation rate, $\mu_-$ a decreased rate, etc. A $+$ in the main grid space indicates an expected increase (over the control condition) for that condition, and a $-$ indicates an expected decrease for that condition.}
 	\label{table:experiment_predictions}
 \end{table}
-
-%TODO Expand on this section
-Table~\ref{table:experiment_predictions} gives the expected behavior for each of the six conditions investigated in this thesis. A $+$ indicates that an increase is expected in that quantity (e.g. genome size) and a $-$ indicates an expected decrease. Based on the table, a reduction in genome size should occur in the $\mu_+$, $k_-$, and $N_+$ conditions. 
-
+As summarized in the table, a reduction in genome size is expected to occur in the $\mu_+$, $k_-$, and $N_+$ conditions. Based on the work of Bradwell et al., Carde et al., and Marais et al. \cite{bradwell2013correlation, carde.2019, marais2008mutation}, it is expected that an increased mutation rate (i.e. the $\mu_+$ condition) should cause many deleterious mutations which in turn will be removed by purifying selection. Likewise, with weaker selection, the work of Batut et al. \cite{Batut.2013} indicates that with a decreased selection pressure (corresponding to the $k_-$ condition here), many functional genes are lost, causing the organisms to be less fit on average. More interestingly, however, the reduced selection pressure is also expected to cause a loss in non-coding bases, which was the primary source of genome reduction in their experiments. This follows from the fact that, as found in a previous study by Knibbe et al. \cite{Knibbe2007}, the most successful genomes tend to be those that produce ``a little more than one `neutral offspring', that is to say, offspring without mutations or with only neutral mutations'' \cite{Batut.2013}. More formally, Knibbe et al. found that successful genomes fulfill $F_v*W \approxeq 1$, where $W=\frac{e^{-k*g}}{\sum_{i=1}^{N}e^{-k*g}}$ is the expected number of offspring ($k$ is the selection coefficient and $g$ is the gap described in Section~\ref{subsec:aevol_selection}) and $F_v$ is the probability of an offspring having either no mutations or only neutral ones. In other words, with reduced selection, $F_v$ is increased because non-coding DNA is mutagenic for the surrounding genes, so a certain level of mutational variability is still selected for. Lastly, based on the work in another publication by Batut et al. \cite{Batut.2014}, an increase in population size (corresponding to the $N_+$ condition) is expected to cause a decrease in genome size, most likely because of the increased efficacy of selection in larger populations. 
+ 
 1) a larger population
 2) weaker selection
 3) increased mutation rate
@@ -248,4 +246,6 @@ Table~\ref{table:experiment_predictions} gives the expected behavior for each of
 Robustness \& Evolvability
 1) Robustness mirrors genome size except in the case of selection
 2) Evolvability mirrors genome size except for population size
+
+
 

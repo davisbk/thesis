@@ -4,15 +4,15 @@
 This chapter presents the results of the experiments as performed according to the plan described in Chapter~\ref{ch:03methods}. Section~\ref{results} provides the data and these results are discussed in Section~\ref{discussion}. 
 
 \section{Results}\label{results}
-In this section, the results of the experiments are presented. For each examined aspect, both a graphical representation of the data and some of the statistics are given, beginning with the conditions' impact on genome size. It should be noted that in many of the figures throughout this chapter, a rolling window of the mean was used to smooth the values, resulting in many of the plots only showing data starting after a few thousand generations (typically 10,000). It should be noted, however, that this is simply an artifact of the graphing process and organisms were continuously evolved for 500,000 generations. 
+In this section, the results of the experiments are presented. For each examined aspect, both a graphical representation of the data and some of the statistics are given, beginning with the conditions' impact on genome size. It should be noted that in many of the figures throughout this chapter, a rolling window of the mean was used to smooth the values, resulting in many of the plots only showing data starting after a few thousand generations (typically 10,000). It should be noted, however, that this is simply an artifact of the graphing process and organisms were continuously evolved for 500,000 generations. The values given in the tables and graphs are for the population at large unless specified as being for the best individual. 
 
 \subsection{Genome Size}\label{sec:genome_size}
-%TODO Remember whether I'm using the best individual or the population average and make this clearer in the text
+
 In this section the results of the different conditions are examined, focusing on which, if any, lead to a reduced genome. Figure~\ref{fig:genome_size} presents the main findings regarding genome size. In the figure, the blue line shows the control condition and the other colors show the changed conditions: $\mu_+$/$\mu_-$ (mutation up/down), $k_+$/$k_-$ (selection up/down), and $N_+$/$N_-$ (population up/down). As can be seen from the figure, the expectations from Section~\ref{sec:expected_results} did not always hold up, as several conditions actually \textit{increased} over their original size. 
 \begin{figure}[H]
 	\includegraphics[width=\linewidth]{stat_fitness_global_mean_genome_size}
 	\centering
-	\caption[Genome size]{Genome size in number of bases of all conditions. Average taken across all five seeds for each condition.}
+	\caption[Genome size]{Average genome size across the population, in number of bases, of all conditions. Average taken across all five seeds for each condition.}
 	\label{fig:genome_size}
 \end{figure}
 In fact, the $N_-$ condition had a runaway increase in the number of bases, reaching over 16,500 bases at one time, a 25\% increase over the original wild type's roughly 13,200 bp. Surprisingly, even after 500,000 generations it seems that the upper limit may still not have been reached. The statistical results are given below in Tables~\ref{table:genome_size_stats} and \ref{table:genome_size_mean_and_std_dev}, which show the mean and standard deviation among all five seeds over all generations.
@@ -460,6 +460,7 @@ Analogously to Table~\ref{table:experiment_predictions}, the results of the expe
 	\caption[Experiment result summary]{A summary of whether the experiment results confirmed or denied the hypotheses of Table~\ref{table:experiment_predictions}.  were confirmed ({\color{green}green}) or rejected ({\color{red}red}), along with the predicted results of whether the given result would increase (+) or decrease (-) over the control condition.}
 	\label{table:experiment_results_summary}
 \end{table}
+\subsection{Genome Size}
 
 According to the predictions based on a survey of the literature (summarized in Table~\ref{table:experiment_predictions}), the $\mu_+$, $k_-$, and $N_+$ conditions should have lead to a reduced genome. As shown in Figure~\ref{fig:genome_size} however, none of these predictions held up, and in fact the genome size increased in all conditions, including those that were predicted to be reduced. One possible explanation is that, because the wild types had already been evolving for 10 million generations, and the environment was not varied further for these experiments, perhaps the wild types had reached a sort of stasis for which another half-million generations were not sufficient to fully demonstrate the effects of any changes. This may not explain everything, however, as some conditions (e.g. $\mu_+$, $N_-$) did see a rather rapid change in fitness, genome structure, etc. even in the (comparatively) short time. 
 

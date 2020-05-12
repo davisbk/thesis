@@ -86,6 +86,14 @@ Isabel Gordo and Brian Charlesworth.
 \newblock On the speed of muller{\textquoteright}s ratchet.
 \newblock {\em Genetics}, 156(4):2137--2140, 2000.
 
+\bibitem{kashtan2014single}
+Nadav Kashtan, Sara~E Roggensack, S{\'e}bastien Rodrigue, Jessie~W Thompson,
+  Steven~J Biller, Allison Coe, Huiming Ding, Pekka Marttinen, Rex~R Malmstrom,
+  Roman Stocker, et~al.
+\newblock Single-cell genomics reveals hundreds of coexisting subpopulations in
+  wild prochlorococcus.
+\newblock {\em Science}, 344(6182):416--420, 2014.
+
 \bibitem{knibbe:tel-00482375}
 Carole Knibbe.
 \newblock {\em {Evolution of genome structure by indirect selection of the
@@ -203,6 +211,12 @@ Tanita Wein and Tal Dagan.
 \newblock The effect of population bottleneck size and selective regime on
   genetic diversity and evolvability in bacteria.
 \newblock {\em Genome biology and evolution}, 11(11):3283--3290, 2019.
+
+\bibitem{wilcox2003consequences}
+Jennifer~L Wilcox, Helen~E Dunbar, Russell~D Wolfinger, and Nancy~A Moran.
+\newblock Consequences of reductive evolution for gene expression in an
+  obligate endosymbiont.
+\newblock {\em Molecular microbiology}, 48(6):1491--1500, 2003.
 
 \bibitem{wilke2001evolution}
 Claus~O Wilke, Jia~Lan Wang, Charles Ofria, Richard~E Lenski, and Christoph
