@@ -1,6 +1,6 @@
 \chapter{Results and Discussion}\label{ch:04results_discussion}
 %TODO Remove chapter summary?
-%TODO Remove "we" language from summary
+
 This chapter presents the results of the experiments as performed according to the plan described in Chapter~\ref{ch:03methods}. Section~\ref{results} provides the data and these results are discussed in Section~\ref{discussion}. 
 
 \section{Results}\label{results}
@@ -20,7 +20,7 @@ In fact, the $N_-$ condition had a runaway increase in the number of bases, reac
 \begin{table}[H]
 	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{4}{c}{\Large \textbf{Genome Size - Mean \& Std. Dev. (in bp)}} \\
+		\multicolumn{4}{c}{\Large \textbf{Genome Size - 500k Gen. Mean \& Std. Dev. (in bp)}} \\
 		\hline
 		 & \textbf{mean} & \textbf{standard deviation} & \textbf{mean's \% change from control} \\
 		 \hline
@@ -37,7 +37,7 @@ In fact, the $N_-$ condition had a runaway increase in the number of bases, reac
 		 $N_-$ & 15275.149392 & 950.266243 & 12.839727 \\ 
 		 \hline
 	\end{tabular}
-	\caption[Genome size - mean and std. dev.]{Average genome size and standard deviation for all seeds and all conditions. }
+	\caption[Genome size - mean and std. dev.]{Average genome size across all 500,000 generations, with standard deviation for all seeds and all conditions. }
 	\label{table:genome_size_mean_and_std_dev}
 \end{table}
 
@@ -422,7 +422,6 @@ The mutation up condition clearly had the largest mean percentage of neutral mut
 
 Analogously to Table~\ref{table:experiment_predictions}, the results of the experiments in Table~\ref{table:experiment_results_summary} are summarized below. For each cell, {\color{green} green} indicates that the prediction was confirmed in these experiments and {\color{red}red} indicates that the prediction must be rejected. The predictions for each condition are duplicated here for convenience, with a $+$ indicating a predicted increase and $-$ indicating a predicted decrease over the control condition. 
 
-%TODO Is this table from Chapter 3 correct? Specifically, is mutation+/- right for fitness? 
 \begin{table}[H]
 	\centering
 	\begin{tabular}{|c||c|c|c|c|c|c|}
@@ -433,7 +432,7 @@ Analogously to Table~\ref{table:experiment_predictions}, the results of the expe
 		\cline{2-7}
 		& {\Large$\mu_+$} & {\Large$\mu_-$} & {\Large$k_+$} & {\Large$k_-$} & {\Large$N_+$} & {\Large$N_-$} \\
 		\hline 
-		Genome Size & \cellcolor{green} $-^{\cite{bradwell2013correlation, marais2008mutation}}$ & \cellcolor{red} $\text{+}^{\cite{bradwell2013correlation, drake1991constant}}$ & \cellcolor{green} $+^{\cite{Batut.2013}}$ & \cellcolor{green} $-^{\cite{Batut.2013}}$ & $-^{\cite{Batut.2014}}$ & \cellcolor{green} $+^{\cite{Batut.2014}}$ \\
+		Genome Size & \cellcolor{green} $-^{\cite{bradwell2013correlation, carde.2019, marais2008mutation}}$ & \cellcolor{red} $\text{+}^{\cite{bradwell2013correlation, carde.2019, drake1991constant}}$ & \cellcolor{green} $+^{\cite{Batut.2013}}$ & \cellcolor{green} $-^{\cite{Batut.2013}}$ & $-^{\cite{Batut.2014, carde.2019}}$ & \cellcolor{green} $+^{\cite{Batut.2014, carde.2019}}$ \\
 		\hline
 		Fitness & \cellcolor{green} $+^{\cite{bataillon2000estimation, vahdati2017effect}}$ & \cellcolor{green} $-^{\cite{vahdati2017effect}}$ & \cellcolor{red} $+^{\cite{Batut.2014}}$ & \cellcolor{red} $-^{\cite{Batut.2014}}$ & $+^{\cite{cutter2019primer, vahdati2017effect}} $ & \cellcolor{green} $-^{\cite{cutter2019primer, vahdati2017effect}} $\\
 		\hline
@@ -453,14 +452,20 @@ Analogously to Table~\ref{table:experiment_predictions}, the results of the expe
 \end{table}
 \subsection{Genome Size}
 
-According to the predictions based on a survey of the literature (summarized in Table~\ref{table:experiment_predictions}), the $\mu_+$, $k_-$, and $N_+$ conditions should have lead to a reduced genome. As shown in Figure~\ref{fig:genome_size} however, none of these predictions held up, and in fact the genome size increased in all conditions, including those that were predicted to be reduced. One possible explanation is that, because the wild types had already been evolving for 10 million generations, and the environment was not varied further for these experiments, perhaps the wild types had reached a sort of stasis for which another half-million generations were not sufficient to fully demonstrate the effects of any changes. This may not explain everything, however, as some conditions (e.g. $\mu_+$, $N_-$) did see a rather rapid change in fitness, genome structure, etc. even in the (comparatively) short time. 
+According to the predictions based on a survey of the literature (summarized in Table~\ref{table:experiment_predictions}), only the $\mu_+$, $k_-$, and $N_+$ conditions were predicted to lead to a reduced genome. As shown in Figure~\ref{fig:genome_size} however, although the $\mu_+$ and $k_-$ conditions did end up with a genome size which was noticeably smaller than the control condition. 
 
+%TODO Fix this explanation once the N+ condition is done. Expectations were met but I actualyl wrote this as if they weren't. Oops!
+One possible explanation is that, because the wild types had already been evolving for 10 million generations, and the environment was not varied further for these experiments, perhaps the wild types had reached a sort of stasis for which another half-million generations were not sufficient to fully demonstrate the effects of any changes. This may not explain everything, however, as some conditions (e.g. $\mu_+$, $N_-$) did see a rather rapid change in fitness, genome structure, etc. even in the (comparatively) short time. 
+
+\subsection{Fitness}
 Also of interest is that, along with the genome size, overall the fitness of the organisms did not change much with only one exception ($k_+$). It has been postulated that perhaps gene loss may be selected for in order to increase the overall fitness of an organism by removing the added cost of the superfluous genes~\cite{koskiniemi2012}. These results do not fully agree with this hypothesis, as the results show that, in addition to the general accumulation of non-coding DNA across all conditions (Figure~\ref{fig:mean_non-coding_DNA}), which would theoretically have a higher fitness cost, the number of genes actually \textit{increased} slightly for each condition, except for $k_-$. Likewise, fitness overall went \textit{up} as the number of genes increased (except for $N_-$). Lastly, decreasing the selection pressure resulted in the highest overall mean fitness by a wide margin (Table~\ref{table:fitness_means_std_dev}). In Aevol, non-coding DNA is not really associated with a fitness cost, so this explanation may likely also not fully apply. 
 
+\subsection{Functional Genes}
 Regarding the $N_-$ condition, comparing this with the results of Batut et al. and their work with \textit{Buchnera aphidicola} (see Section~\ref{related_work}), it may be possible that gene loss is occurring because of the smaller effective population size clicking down Muller's Ratchet. This does not seem to be what is happening in these experiments either, however. Though mean fitness of the $N_-$ condition did greatly decline (see Figure~\ref{fig:mean_fitness_plot}), the $N_-$ condition also saw the largest accumulation of non-coding DNA (see Figure~\ref{fig:mean_non-coding_DNA}) and the second-highest level of evolvability (see Table~\ref{table:mean_std_dev_evolvability}), which should theoretically have lead to an easier time of overcoming the ratchet. On the other hand, the number of functional genes stayed more or less the same as all of the other conditions, and the accumulated number of non-functional genes (pseudogenes) of the $N_-$ condition was the largest (see Figure~\ref{fig:mean_num_non-functional_genes}). These two factors together suggest that there almost certainly was some loss of fitness through pseudogenization; perhaps with more time, the pseudogenes would also have been lost.
 
 Recall the work of Liard et al.\cite{Liard.2018} as discussed in Section~\ref{related_work}, in which the proposed ``complexity ratchet'' was overcome by increasing the mutation rate. Their work was quite successful in overcoming this ratchet, but in the experiments of this thesis, both the number of genes and the average size of the genes increased. One possible explanation for this is that, in their work, their increased mutation rate $\mu_+$ was set to $1e^{-3}$.  By contrast, even the elevated mutation rate used here, $\mu_+$, was just $4e^{-7}$, which is $\frac{1}{4}*e^4 \approx 13.65$ times lower than their highest mutation rate. Perhaps an even higher mutation rate would be sufficient to overcome the power of selection and reduce the genome further. 
 
+\subsection{Robustness \& Evolvability}
 The robustness results indicate that the stable environment is not requiring much differentiation between the different conditions.  The average difference in robustness between any of the conditions and the control condition was only 0.002803, i.e. only 0.28\%. Robustness does not seem to be selected for in any of the conditions. 
 
 
