@@ -31,11 +31,16 @@ def rank_sum_format(condition, rank_sum, p_value):
     
     return lineformat.format(condition, rank_sum, p_value)
 
-def mean_format(condition, mean, std_dev, mean_perc_diff, precision=6):
-    lineformat_control = "\n{0} & {1:."+str(precision)+"e} & {2:."+str(precision)+"} & {3} \\\\ \n\\hline"
-    lineformat_condition = "\n{0} & {1:."+str(precision)+"e} & {2:."+str(precision)+"e} & {3:."+str(precision)+"e} \\\\ \n\\hline"
+def mean_format(condition, mean, std_dev, mean_perc_diff, precision=6, scientific=True):
+    if scientific:
+        lineformat_control = "\n{0} & {1:."+str(precision)+"e} & {2:."+str(precision)+"} & {3} \\\\ \n\\hline" # mean_perc_diff would be '\\textemdash' in the control condition
+        lineformat_condition = "\n{0} & {1:."+str(precision)+"e} & {2:."+str(precision)+"e} & {3:."+str(precision)+"e} \\\\ \n\\hline"
+    else:
+        lineformat_control = "\n{0} & {1:."+str(precision)+"f} & {2:."+str(precision)+"} & {3} \\\\ \n\\hline" # mean_perc_diff would be '\\textemdash' in the control condition
+        lineformat_condition = "\n{0} & {1:."+str(precision)+"f} & {2:."+str(precision)+"f} & {3:."+str(precision)+"f} \\\\ \n\\hline"
+    
 
-    if isinstance(mean_perc_diff,str): # mean_perc_diff might be \\textemdash in the control condition
+    if isinstance(mean_perc_diff,str): 
         ret = lineformat_control.format(condition, mean, std_dev, mean_perc_diff)
     else:
         ret = lineformat_condition.format(condition, mean, std_dev, mean_perc_diff)
