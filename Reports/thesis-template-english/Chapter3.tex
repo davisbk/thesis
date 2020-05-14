@@ -78,7 +78,7 @@ The purpose of the Mann-Whitney U test is to check whether two independent sampl
 	\end{equation*}
 	where $n_1$ is the sample size for the first sample and $R_1$ is the sum of the ranks from the first sample.
 \end{enumerate}
-The $U$ statistic for the second sample (i.e. $U_2$) is computed analogously. Then, $U = U_1 + U_2$ which, for sample sizes greater than 20, is approximately normally distributed. Then the standard score is given by:
+The $U$ statistic for the second sample (i.e. $U_2$) is computed analogously. Then the final statistic $U$ is given by $U = U_1 + U_2$ which, for sample sizes greater than 20, is approximately normally distributed. Then the standard score is given by:
 \begin{equation*}
 z = \frac{U - m_U}{\sigma_U}
 \end{equation*}
@@ -101,7 +101,7 @@ In these experiments, at the end of the run of 500,000 generations a lineage fil
 	\centering
 	\begin{tabular}{||c||}
 		\hline
-		\textbf{Statistic} \\
+		\textbf{Robustness Statistic} \\
 		\hline \hline
 		Fraction of positive offspring \\
 		\hline
@@ -129,10 +129,10 @@ In these experiments, at the end of the run of 500,000 generations a lineage fil
 		\hline
 		
 	\end{tabular}
-	\caption[Aevol robustness statistics]{Table of robustness statistics calculated by Aevol for the best individual with the provided lineage.}
+	\caption[Aevol robustness statistics]{Table of robustness statistics calculated by Aevol's \texttt{aevol\_misc\_ancestor\_robustness} post-treatment for a provided lineage.}
 	\label{table:robustness}
 \end{table}
-These statistics for both the control and the specific desired condition (e.g. mutation up) may then be compared. Because this data is somewhat noisy (owing to the fact that the fitness may change rapidly), occasionally box and whisker plots will be used to show the overall spread rather than plotting the robustness generation by generation. 
+These statistics for both the control and the specific desired condition (e.g. mutation up) may then be compared. Because this data is somewhat noisy (owing to the fact that the fitness may change rapidly from generation to generation), box and whisker plots will be used to show the overall spread rather than plotting the robustness generation by generation. 
 \subsection{Evolvability}\label{aevol:evolvability}
 In Aevol, evolvability is calculated by generating a large set of offspring for a specific individual (one whose lineage was generated using the post-treatment \texttt{aevol\_misc\_lineage}) at regular periods along their lineage and then determining the number of ``positive offspring''. Positive offspring are defined as those whose fitness is greater than their parent's. The evolvability of an individual is then the sum total of all improvement of all of the beneficial offspring, i.e.:
 
