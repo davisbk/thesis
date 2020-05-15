@@ -3,44 +3,45 @@
 \BOOKMARK [0][-]{chapter*.4}{List of Tables}{}% 3
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 4
 \BOOKMARK [0][-]{chapter.2}{Background}{}% 5
-\BOOKMARK [1][-]{section.2.1}{Experimental Evolution}{chapter.2}% 6
-\BOOKMARK [1][-]{section.2.2}{Aevol}{chapter.2}% 7
-\BOOKMARK [2][-]{subsection.2.2.1}{Why use Aevol}{section.2.2}% 8
-\BOOKMARK [2][-]{subsection.2.2.2}{Aevol's Architecture}{section.2.2}% 9
-\BOOKMARK [1][-]{section.2.3}{Analyzing with Aevol}{chapter.2}% 10
-\BOOKMARK [2][-]{subsection.2.3.1}{Evolvability}{section.2.3}% 11
-\BOOKMARK [2][-]{subsection.2.3.2}{Robustness and Antirobustness}{section.2.3}% 12
-\BOOKMARK [2][-]{subsection.2.3.3}{Fitness}{section.2.3}% 13
-\BOOKMARK [1][-]{section.2.4}{Related Work}{chapter.2}% 14
-\BOOKMARK [2][-]{subsection.2.4.1}{Reductive Evolution}{section.2.4}% 15
-\BOOKMARK [2][-]{subsection.2.4.2}{Investigations in Experimental Evolution}{section.2.4}% 16
-\BOOKMARK [0][-]{chapter.3}{Methods}{}% 17
-\BOOKMARK [1][-]{section.3.1}{Contributions}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.2}{Experimental Designs}{chapter.3}% 19
-\BOOKMARK [2][-]{subsection.3.2.1}{Inputs}{section.3.2}% 20
-\BOOKMARK [1][-]{section.3.3}{Evaluation Strategy}{chapter.3}% 21
-\BOOKMARK [2][-]{subsection.3.3.1}{Statistical Analysis of the Conditions}{section.3.3}% 22
-\BOOKMARK [2][-]{subsection.3.3.2}{Fitness}{section.3.3}% 23
-\BOOKMARK [2][-]{subsection.3.3.3}{Robustness}{section.3.3}% 24
-\BOOKMARK [2][-]{subsection.3.3.4}{Evolvability}{section.3.3}% 25
-\BOOKMARK [2][-]{subsection.3.3.5}{Structure}{section.3.3}% 26
-\BOOKMARK [1][-]{section.3.4}{Expected Results}{chapter.3}% 27
-\BOOKMARK [0][-]{chapter.4}{Results and Discussion}{}% 28
-\BOOKMARK [1][-]{section.4.1}{Results}{chapter.4}% 29
-\BOOKMARK [2][-]{subsection.4.1.1}{Genome Size}{section.4.1}% 30
-\BOOKMARK [2][-]{subsection.4.1.2}{Metabolic Error and Fitness}{section.4.1}% 31
-\BOOKMARK [2][-]{subsection.4.1.3}{Genome Structure}{section.4.1}% 32
-\BOOKMARK [2][-]{subsection.4.1.4}{Evolvability}{section.4.1}% 33
-\BOOKMARK [2][-]{subsection.4.1.5}{Robustness}{section.4.1}% 34
-\BOOKMARK [1][-]{section.4.2}{Discussion}{chapter.4}% 35
-\BOOKMARK [2][-]{subsection.4.2.1}{Genome Size}{section.4.2}% 36
-\BOOKMARK [2][-]{subsection.4.2.2}{Fitness}{section.4.2}% 37
-\BOOKMARK [2][-]{subsection.4.2.3}{Functional Genes}{section.4.2}% 38
-\BOOKMARK [2][-]{subsection.4.2.4}{Robustness \046 Evolvability}{section.4.2}% 39
-\BOOKMARK [0][-]{chapter.5}{Conclusions and Future Work}{}% 40
-\BOOKMARK [1][-]{section.5.1}{Conclusions}{chapter.5}% 41
-\BOOKMARK [1][-]{section.5.2}{Relation to Real-World Organisms}{chapter.5}% 42
-\BOOKMARK [1][-]{section.5.3}{Limitations and Future work}{chapter.5}% 43
-\BOOKMARK [2][-]{subsection.5.3.1}{Parameters}{section.5.3}% 44
-\BOOKMARK [2][-]{subsection.5.3.2}{Environments}{section.5.3}% 45
-\BOOKMARK [2][-]{subsection.5.3.3}{Limitations of the Aevol Model}{section.5.3}% 46
+\BOOKMARK [1][-]{section.2.1}{Reductive Evolution}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.2}{Experimental Evolution}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.3}{Aevol}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.3.1}{Why use Aevol}{section.2.3}% 9
+\BOOKMARK [2][-]{subsection.2.3.2}{Aevol's Architecture}{section.2.3}% 10
+\BOOKMARK [1][-]{section.2.4}{Analyzing with Aevol}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.4.1}{Evolvability}{section.2.4}% 12
+\BOOKMARK [2][-]{subsection.2.4.2}{Robustness and Antirobustness}{section.2.4}% 13
+\BOOKMARK [2][-]{subsection.2.4.3}{Fitness}{section.2.4}% 14
+\BOOKMARK [1][-]{section.2.5}{Related Work}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.5.1}{Reductive Evolution}{section.2.5}% 16
+\BOOKMARK [2][-]{subsection.2.5.2}{Investigations in Experimental Evolution}{section.2.5}% 17
+\BOOKMARK [0][-]{chapter.3}{Methods}{}% 18
+\BOOKMARK [1][-]{section.3.1}{Contributions}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.2}{Experimental Designs}{chapter.3}% 20
+\BOOKMARK [2][-]{subsection.3.2.1}{Inputs}{section.3.2}% 21
+\BOOKMARK [1][-]{section.3.3}{Evaluation Strategy}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.3.1}{Statistical Analysis of the Conditions}{section.3.3}% 23
+\BOOKMARK [2][-]{subsection.3.3.2}{Fitness}{section.3.3}% 24
+\BOOKMARK [2][-]{subsection.3.3.3}{Robustness}{section.3.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.4}{Evolvability}{section.3.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.5}{Structure}{section.3.3}% 27
+\BOOKMARK [1][-]{section.3.4}{Expected Results}{chapter.3}% 28
+\BOOKMARK [0][-]{chapter.4}{Results and Discussion}{}% 29
+\BOOKMARK [1][-]{section.4.1}{Results}{chapter.4}% 30
+\BOOKMARK [2][-]{subsection.4.1.1}{Genome Size}{section.4.1}% 31
+\BOOKMARK [2][-]{subsection.4.1.2}{Metabolic Error and Fitness}{section.4.1}% 32
+\BOOKMARK [2][-]{subsection.4.1.3}{Genome Structure}{section.4.1}% 33
+\BOOKMARK [2][-]{subsection.4.1.4}{Evolvability}{section.4.1}% 34
+\BOOKMARK [2][-]{subsection.4.1.5}{Robustness}{section.4.1}% 35
+\BOOKMARK [1][-]{section.4.2}{Discussion}{chapter.4}% 36
+\BOOKMARK [2][-]{subsection.4.2.1}{Genome Size}{section.4.2}% 37
+\BOOKMARK [2][-]{subsection.4.2.2}{Fitness}{section.4.2}% 38
+\BOOKMARK [2][-]{subsection.4.2.3}{Functional Genes}{section.4.2}% 39
+\BOOKMARK [2][-]{subsection.4.2.4}{Robustness \046 Evolvability}{section.4.2}% 40
+\BOOKMARK [0][-]{chapter.5}{Conclusions and Future Work}{}% 41
+\BOOKMARK [1][-]{section.5.1}{Conclusions}{chapter.5}% 42
+\BOOKMARK [1][-]{section.5.2}{Relation to Real-World Organisms}{chapter.5}% 43
+\BOOKMARK [1][-]{section.5.3}{Limitations and Future work}{chapter.5}% 44
+\BOOKMARK [2][-]{subsection.5.3.1}{Parameters}{section.5.3}% 45
+\BOOKMARK [2][-]{subsection.5.3.2}{Environments}{section.5.3}% 46
+\BOOKMARK [2][-]{subsection.5.3.3}{Limitations of the Aevol Model}{section.5.3}% 47

@@ -75,6 +75,12 @@ John~W Drake.
 \newblock {\em Proceedings of the National Academy of Sciences},
   88(16):7160--7164, 1991.
 
+\bibitem{dufresne2005accelerated}
+Alexis Dufresne, Laurence Garczarek, and Fr{\'e}d{\'e}ric Partensky.
+\newblock Accelerated evolution associated with genome reduction in a
+  free-living prokaryote.
+\newblock {\em Genome biology}, 6(2):R14, 2005.
+
 \bibitem{elena2007effects}
 Santiago~F Elena, Claus~O Wilke, Charles Ofria, and Richard~E Lenski.
 \newblock Effects of population size and mutation rate on the evolution of
@@ -145,6 +151,12 @@ Dusan Misevic, Antoine Frenoy, David~P Parsons, and Francois Taddei.
 \newblock In {\em Artificial Life Conference Proceedings 12}, pages 218--225.
   MIT Press, 2012.
 
+\bibitem{morris2012black}
+J~Jeffrey Morris, Richard~E Lenski, and Erik~R Zinser.
+\newblock The black queen hypothesis: evolution of dependencies through
+  adaptive gene loss.
+\newblock {\em MBio}, 3(2):e00036--12, 2012.
+
 \bibitem{Mozhayskiy-In-Silico-Review}
 Vadim Mozhayskiy and Ilias Tagkopoulos.
 \newblock {Microbial evolution in vivo and in silico: methods and
@@ -175,6 +187,14 @@ T.~S. {Ray} and J.~{Hart}.
   Intelligent Robots and Systems. Human and Environment Friendly Robots with
   High Intelligence and Emotional Quotients (Cat. No.99CH36289)}, volume~1,
   pages 1--10 vol.1, 1999.
+
+\bibitem{rocap2003genome}
+Gabrielle Rocap, Frank~W Larimer, Jane Lamerdin, Stephanie Malfatti, Patrick
+  Chain, Nathan~A Ahlgren, Andrae Arellano, Maureen Coleman, Loren Hauser,
+  Wolfgang~R Hess, et~al.
+\newblock Genome divergence in two prochlorococcus ecotypes reflects oceanic
+  niche differentiation.
+\newblock {\em Nature}, 424(6952):1042--1047, 2003.
 
 \bibitem{doi:10.1186/s12862-019-1507-z}
 Jacob Rutten, Paulien Hogeweg, and Guillaume Beslon.
