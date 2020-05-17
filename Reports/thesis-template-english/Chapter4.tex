@@ -110,12 +110,21 @@ Lastly, looking at just the last 50,000 generations in Figure~\ref{fig:genome_si
 
 
 \subsection{Metabolic Error and Fitness}
+%TODO Fix up this section with the new graphic!
 Figure~\ref{fig:mean_fitness_plot} shows the mean fitness of the population for the control, mutation up/down, and population down conditions. Selection up/down were excluded from this graph because they were significantly outside of the range of the other conditions and made the overall results difficult to graph, but they are included in Figure~\ref{fig:global_fitness_histogram}.
 
 \begin{figure}[H]
 	\includegraphics[width=\linewidth]{population_mean_fitness_chart}
 	\caption[Mean fitness]{Plot of the mean fitness over time for the control, mutation up/down, and population down conditions.}
 	\label{fig:mean_fitness_plot}
+\end{figure}
+
+Figure~\ref{fig:mean_fitness_all_seeds} shows the population mean fitness for all seeds, as well as the average across all seeds, for each condition. 
+
+\begin{figure}[H]
+	\includegraphics[width=\linewidth]{global_fitness_all_seeds}
+	\caption[Fitness all seeds all conditions]{Mean population fitness for each condition, all seeds}
+	\label{fig:mean_fitness_all_seeds}
 \end{figure}
 
 The figure shows that the fitness of the control condition (in blue) consistently stayed at the same level, likely owing to the fact that the wild genotype had already been allowed to evolve for 10 million generations in this environment, so the phenotype closely lines up with the target before the simulations even began. Small fluctuations occurred due to mutations, insertions, etc. but since beginning with a clonal population of the best organism after 10 million generations in this same environment, the average fitness remained steady. 
