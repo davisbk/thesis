@@ -110,29 +110,24 @@ Lastly, looking at just the last 50,000 generations in Figure~\ref{fig:genome_si
 
 
 \subsection{Metabolic Error and Fitness}
-%TODO Fix up this section with the new graphic!
-Figure~\ref{fig:mean_fitness_plot} shows the mean fitness of the population for the control, mutation up/down, and population down conditions. Selection up/down were excluded from this graph because they were significantly outside of the range of the other conditions and made the overall results difficult to graph, but they are included in Figure~\ref{fig:global_fitness_histogram}.
-
-\begin{figure}[H]
-	\includegraphics[width=\linewidth]{population_mean_fitness_chart}
-	\caption[Mean fitness]{Plot of the mean fitness over time for the control, mutation up/down, and population down conditions.}
-	\label{fig:mean_fitness_plot}
-\end{figure}
-
-Figure~\ref{fig:mean_fitness_all_seeds} shows the population mean fitness for all seeds, as well as the average across all seeds, for each condition. 
+%TODO Fix Metabolic Error and Fitness section
+Figure~\ref{fig:mean_fitness_all_seeds} shows three categories of information for each condition: 1) the individual seeds for the population mean fitness for that seed (in various colors), 2) the mean fitness for all seeds for that condition (dashed line, black), 3) the control condition (dashed line, blue) for each condition. It is important to note that for the $k_+$ and $k_-$ conditions, the fitness is on a different scale because of the \texttt{fitness\_proportionate} selection method. Recall that in the \texttt{fitness\_proportionate} selection method, the probability $p$ of reproduction for an organism with gap $g$ is given by:
+\begin{equation*}
+p = \frac{e^{-k*g}}{\sum_{i=1}^{N}e^{-k*g_i}}
+\end{equation*}
+where $g_i$ is the gap for the other organisms in the population. Thus, changing the selection parameter $k$, as in the $k_+$ and $k_-$ conditions, changes the scale of the fitness values. Their behavior over time is more important than the scale, so they are nevertheless included in this set of plots. So as not to skew the scale of the plots, however, the control condition is left off of these plots. 
 
 \begin{figure}[H]
 	\includegraphics[width=\linewidth]{global_fitness_all_seeds}
-	\caption[Fitness all seeds all conditions]{Mean population fitness for each condition, all seeds}
+	\caption[Fitness all seeds all conditions]{Mean population fitness for each condition, all seeds. The dashed line shows the average of the five seeds.}
 	\label{fig:mean_fitness_all_seeds}
 \end{figure}
 
-The figure shows that the fitness of the control condition (in blue) consistently stayed at the same level, likely owing to the fact that the wild genotype had already been allowed to evolve for 10 million generations in this environment, so the phenotype closely lines up with the target before the simulations even began. Small fluctuations occurred due to mutations, insertions, etc. but since beginning with a clonal population of the best organism after 10 million generations in this same environment, the average fitness remained steady. 
+Examining the figure, it quickly becomes apparent that, in the static environment in which the wild type evolved, adding another 500,000 generations on top of the previous 10 million does not much affect the average fitness of the control condition. Small fluctuations occurred due to mutations, insertions, etc. but overall the genotype was quite steady. However, for the $\mu_+$, $\mu_-$, $k_+$, and $N_+$ conditions, a clear trend towards improved fitness may be observed.
 
-More interesting is the population down condition, where the average fitness in the whole population sharply declined, sinking to 4.5\% below the control condition at generation 500,000. It seems that with the smaller population size, genetic drift may be more strongly at work in continually increasing the gap between the phenotype and environmental function, as the lack of variety inherent in a smaller population causes a cascade of increasingly deleterious consequences. 
 
-%TODO Need to redo this graphic, maybe with sharedx=True
-%TODO Make larger!
+More interesting is the population down condition, where the average fitness in the whole population sharply declined, sinking to 4.5\% below the control condition at generation 500,000 (see Table~\ref{table:fitness_means_std_dev}). It seems that with the smaller population size, genetic drift may be more strongly at work in continually increasing the gap between the phenotype and environmental function, as the lack of variety inherent in a smaller population causes a cascade of increasingly deleterious consequences. 
+
 \begin{figure}[H]
 	\includegraphics[width=\linewidth]{global_fitness_histogram}
 	\caption[Mean fitness histogram]{Histogram of population fitness at generation 500,000 for all conditions. Note that for the selection up condition, the scale is 1e-7.}
@@ -156,17 +151,19 @@ Table~\ref{table:fitness_means_std_dev} below gives the mean fitness scores for 
 		\hline
 		& \textbf{mean} & \textbf{standard deviation} & \textbf{mean's \% change from control} \\
 		\hline \hline
-		control & 0.022725 & 0.000023 & \textemdash \\ 
+		control & 2.272542e-02 & 2.34433e-05 & \textemdash \\ 
 		\hline
-		$\mu_+$ & 0.023107 & 0.000219 & 1.679131 \\ 
+		$\mu_+$ & 2.310701e-02 & 2.191826e-04 & 1.679131 \\ 
 		\hline
-		$\mu_-$ & 0.022909 & 0.000118 & 0.806895 \\ 
+		$\mu_-$ & 2.290879e-02 & 1.180940e-04 & 0.8068952 \\ 
 		\hline
-		$k_+$ & 0.000000 & 0.000000 & -99.998326 \\ 
+		$k_+$ & 3.803823e-07 & 3.130504e-08 & -99.99833 \\ 
 		\hline
-		$k_-$ & 0.369594 & 0.000810 & 1526.344327 \\ 
+		$k_-$ & 3.695935e-01 & 8.101732e-04 & 1526.344 \\ 
 		\hline
-		$N_-$ & 0.022097 & 0.000310 & -2.764272 \\ 
+		$N_+$ & 2.428255e-02 & 1.081245e-03 & 6.851949 \\ 
+		\hline
+		$N_-$ & 2.209722e-02 & 3.104264e-04 & -2.764272 \\ 
 		\hline
 	\end{tabular}
 	\caption[Fitness means and standard deviations.]{Population mean fitness and standard deviations across all seeds. }
