@@ -38,7 +38,7 @@ def rank_sum_format(condition, rank_sum, p_value):
     return lineformat.format(condition, rank_sum, p_value)
 
 # Function to format the mean and std. dev. calculations, allowing for easy changes to number of decimal places, etc.
-def mean_format(condition, mean, std_dev, mean_perc_diff, precision=6, scientific=True):
+def mean_format(condition, mean, std_dev, mean_perc_diff, precision=6, scientific=False):
     if scientific:
         lineformat_control = "\n{0} & {1:."+str(precision)+"e} & {2:."+str(precision)+"} & {3} \\\\ \n\\hline" # mean_perc_diff would be '\\textemdash' in the control condition
         lineformat_condition = "\n{0} & {1:."+str(precision)+"e} & {2:."+str(precision)+"e} & {3:."+str(precision)+"e} \\\\ \n\\hline"
@@ -62,8 +62,7 @@ def seed_color(seed_name):
         'seed03' : 'seagreen',
         'seed04' : 'red',
         'seed05' : 'plum',
-        'control_avg' : 'blue',
-        'mut_up_avg' : 'black'
+        'control_avg' : 'blue'        
         }
     return switch.get(seed_name, 'black')
         

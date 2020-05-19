@@ -133,7 +133,7 @@ Figure~\ref{fig:global_fitness_histogram} shows a histogram of the population me
 Figure~\ref{fig:mean_metabolic_error} shows the mean metabolic error across all seeds for the whole population over time with respect to each condition. 
 \begin{figure}[H]
 	\includegraphics[width=\linewidth]{stat_fitness_global_mean_metabolic_error}
-	\caption[Metabolic error]{Plot of the metabolic error over time for all conditions, average of all seeds}
+	\caption[Metabolic error]{Plot of the population mean metabolic error over time for all conditions, average of all seeds}
 	\label{fig:mean_metabolic_error}
 \end{figure}
 
@@ -254,7 +254,8 @@ The average number of non-functional genes across all seeds for each condition i
 	\centering
 	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{4}{c}{\Large \textbf{Population Mean Number of Non-Functional Genes - Mean \& Std. Dev.}} \\
+		\multicolumn{4}{c}{\Large \textbf{Mean Num. Non-Functional Genes}} \\
+		\multicolumn{4}{c}{\Large \textbf{Mean \& Std. Dev.}} \\
 		\hline
 		& \textbf{mean} & \textbf{standard deviation} & \textbf{\% change from control} \\
 		\hline
@@ -334,12 +335,12 @@ Table~\ref{table:mean_functional_gene_size_and_std_dev} below gives the mean and
 Since the $k_-$ condition's p-value was $\geq0.05$, it must be concluded that these results are not significant. 
 
 \subsection{Evolvability}
-In Figure~\ref{fig:evolvability_mean} below, the results of the experiments on evolvability for the best individual's (at generation 500,000) lineage are shown. 
+In Figure~\ref{fig:evolvability_all_seeds} below, the results of the experiments on evolvability for the best individual's (at generation 500,000) lineage are shown. 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\linewidth]{evolvability_boxplot_all_seeds_avg}
-	\caption[Evolvability boxplot]{A box and whisker plot showing the mean evolvability spread of all seeds and all conditions. Larger numbers are more evolvable (keep in mind the scale is $1e^{-8}$). }
-	\label{fig:evolvability_mean}	
+	\includegraphics[width=\linewidth]{evolvability_plot_all_seeds01}
+	\caption[Evolvability plot, all seed]{A plot showing the evolvability of all seeds and all conditions. Larger numbers are more evolvable (mind the scale for each condition, upper left).}
+	\label{fig:evolvability_all_seeds}	
 \end{figure}
 The figure illustrates that, for each condition, overall the best individual still had quite low evolvability. For the selection up condition, however, the deviation from zero was even smaller, as illustrated in Table~\ref{table:mean_std_dev_evolvability} below, which provides the mean and standard deviation of the evolvability of the best individual in each condition. 
 
@@ -352,15 +353,17 @@ The evolvability rank sum and p-value information is given in Table~\ref{table:e
 		\hline
 		& \textbf{rank sum} & \textbf{p-value} \\
 		\hline
-		$\mu_+$ & 36203620.00 & 0.00000000 \\ 
+		$\mu_+$ & 37476904.00 & 0.11538726 \\ 
 		\hline
-		$\mu_-$ & 7025283.50 & 0.01021245 \\ 
+		$\mu_-$ & 4084573.50 & 0.00000000 \\ 
 		\hline
-		$N_-$ & 19403134.50 & 0.00000000 \\ 
+		$N_+$ & 101772759.00 & 0.00000000 \\ 
 		\hline
-		$k_+$ & 13181851.50 & 0.00000000 \\ 
+		$N_-$ & 15367560.00 & 0.00000000 \\ 
 		\hline
-		$k_-$ & 13779001.50 & 0.00000008 \\ 
+		$k_+$ & 6997351.00 & 0.00000000 \\ 
+		\hline
+		$k_-$ & 8535654.00 & 0.00000000 \\ 
 		\hline
 	\end{tabular}
 	\caption[Evolvability - rank sum and p-value]{Rank sum and p-values for evolvability, all seeds, all conditions.}
@@ -376,17 +379,19 @@ The evolvability rank sum and p-value information is given in Table~\ref{table:e
 		& \textbf{mean} & \textbf{standard deviation} & \textbf{\% change from control} \\
 		\hline
 		\hline
-		control & 2.035524e-11 & 3.27875e-10 & \textemdash \\ 
+		control & 0.000000 & 3.28521e-09 & \textemdash \\ 
 		\hline
-		$\mu_+$ & 9.976552e-11 & 8.417492e-10 & 3.901221e+02 \\ 
+		$\mu_+$ & 0.000000 & 0.000000 & 332.896875 \\ 
 		\hline
-		$\mu_-$ & 6.064698e-12 & 1.247167e-10 & -7.020571e+01 \\ 
+		$\mu_-$ & 0.000000 & 0.000000 & -66.866273 \\ 
 		\hline
-		$k_+$ & 1.949894e-15 & 6.394659e-14 & -9.999042e+01 \\ 
+		$k_+$ & 0.000000 & 0.000000 & -99.989955 \\ 
 		\hline
-		$k_-$ & 4.306572e-10 & 5.202329e-09 & 2.015707e+03 \\ 
+		$k_-$ & 0.000000 & 0.000000 & 1930.772962 \\ 
 		\hline
-		$N_-$ & 8.837632e-11 & 1.079930e-09 & 3.341699e+02 \\ 
+		$N_+$ & 0.000000 & 0.000000 & 97.148594 \\ 
+		\hline
+		$N_-$ & 0.000000 & 0.000000 & 145.771827 \\ 
 		\hline	 		 
 	\end{tabular}
 	\caption[Evolvability mean and standard deviation]{Table illustrating the mean and standard deviation of the evolvability for each condition. $\mu$ is the mutation rate, $k$ is the selection rate, and $N$ is the population size.}
