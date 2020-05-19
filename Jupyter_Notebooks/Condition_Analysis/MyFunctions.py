@@ -47,6 +47,19 @@ def mean_format(condition, mean, std_dev, mean_perc_diff, precision=6, scientifi
     
     return ret
     
+def seed_color(seed_name):
+    switch = {
+        'seed01' : 'teal',
+        'seed02' : 'orange',
+        'seed03' : 'seagreen',
+        'seed04' : 'red',
+        'seed05' : 'plum',
+        'control_avg' : 'blue',
+        'mut_up_avg' : 'black'
+        }
+    return switch.get(seed_name, 'black')
+        
+    
 def name(col_header):
     switch = {
         'generation' : 'generation',

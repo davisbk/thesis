@@ -111,11 +111,11 @@ Lastly, looking at just the last 50,000 generations in Figure~\ref{fig:genome_si
 
 \subsection{Metabolic Error and Fitness}
 %TODO Fix Metabolic Error and Fitness section
-Figure~\ref{fig:mean_fitness_all_seeds} shows three categories of information for each condition: 1) the individual seeds for the population mean fitness for that seed (in various colors), 2) the mean fitness for all seeds for that condition (dashed line, black), 3) the control condition (dashed line, blue) for each condition. It is important to note that for the $k_+$ and $k_-$ conditions, the fitness is on a different scale because of the \texttt{fitness\_proportionate} selection method. Recall that in the \texttt{fitness\_proportionate} selection method, the probability $p$ of reproduction for an organism with gap $g$ is given by:
+Figure~\ref{fig:mean_fitness_all_seeds} shows three categories of information for each condition: 1) the mean population fitness for each seed (in various colors), 2) the mean fitness across all seeds for that condition (dashed line, black), 3) the control condition (dashed line, blue) for each condition. It is important to note that for the $k_+$ and $k_-$ conditions, the fitness is on a different scale because of the \texttt{fitness\_proportionate} selection method. Recall that in the \texttt{fitness\_proportionate} selection method, the probability $p$ of reproduction for an organism with gap $g$ is given by:
 \begin{equation*}
 p = \frac{e^{-k*g}}{\sum_{i=1}^{N}e^{-k*g_i}}
 \end{equation*}
-where $g_i$ is the gap for the $i$th organism in the population. Thus, changing the selection parameter $k$, as in the $k_+$ and $k_-$ conditions, changes the scale of the fitness values. Their behavior over time is more important than the scale, so they are nevertheless included in this set of plots. So as not to skew the scale of the plots, however, the control condition is left off of these plots. 
+where $g_i$ is the gap for the $i$th organism in the population. Thus, changing the selection parameter $k$, as in the $k_+$ and $k_-$ conditions, changes the scale of the fitness values. Their behavior over time is more important than the scale, so they are nevertheless included in this set of plots. So as not to skew the scale of the other plots, however, the control condition is left off of these plots. 
 
 \begin{figure}[H]
 	\includegraphics[width=\linewidth]{global_fitness_all_seeds}
@@ -128,7 +128,7 @@ where $g_i$ is the gap for the $i$th organism in the population. Thus, changing 
 	\caption[Mean fitness histogram]{Histogram of population fitness at generation 500,000 for all conditions. Note that for the selection up condition, the scale is 1e-7.}
 	\label{fig:global_fitness_histogram}
 \end{figure}
-Figure~\ref{fig:global_fitness_histogram} shows a histogram of the population mean fitness values for all conditions over the 500k generations. Although the $N_-$ condition ended the simulations in the most similar position to the \textit{control} condition, Figure~\ref{fig:global_fitness_histogram} makes it clear that the \textit{control} condition remained much steadier throughout the simulation, regularly jumping from value to value, whereas the \textit{mutation down} condition, as expected, tended to hover at certain locations in between rarer mutation events. 
+Figure~\ref{fig:global_fitness_histogram} shows a histogram of the population mean fitness values for all conditions over the 500k generations. This figure is included to show the relative "stability" of a condition, i.e. to show how many times the fitness changed throughout the simulations. For example, although the $\mu_-$ condition ended the simulations in the most similar position to the control condition regarding fitness (just 0.8\% away), the more even distribution of the value counts for the control condition given in Figure~\ref{fig:global_fitness_histogram} makes it clear that the control condition experienced many more fluctuations in value throughout the simulation. By contrast, the $\mu_-$ condition, as expected, tended to hover at certain locations in between rarer mutation events. 
 
 Figure~\ref{fig:mean_metabolic_error} shows the mean metabolic error across all seeds for the whole population over time with respect to each condition. 
 \begin{figure}[H]
