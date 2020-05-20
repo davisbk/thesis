@@ -78,7 +78,7 @@ def cond_color(cond_name):
         'selection_up' : 'red',
         'selection_down' : 'purple',
         'pop_up' : 'brown',
-        'pop_down' : 'pink'
+        'pop_down' : 'cyan'
         }
     return switch.get(cond_name, 'ERROR_IN_COND_COLOR()')
 # This function returns a more verbose name for a given column header    

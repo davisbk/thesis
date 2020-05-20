@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.11)  19 MAY 2020 23:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.11)  20 MAY 2020 00:31
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -805,14 +805,14 @@ Overfull \hbox (35.28624pt too wide) in paragraph at lines 327--348
  []
 
 [45 <./pics/stat_genes_global_mean_avg_size_of_functional_genes.png>]
-<./pics/evolvability_plot_all_seeds01.png, id=827, 1195.46625pt x 1790.69pt>
+<./pics/evolvability_plot_all_seeds01.png, id=827, 1181.41376pt x 1780.6525pt>
 File: ./pics/evolvability_plot_all_seeds01.png Graphic file (type png)
 <use ./pics/evolvability_plot_all_seeds01.png>
 Package pdftex.def Info: ./pics/evolvability_plot_all_seeds01.png  used on inpu
 t line 357.
-(pdftex.def)             Requested size: 360.0pt x 539.23311pt.
+(pdftex.def)             Requested size: 360.0pt x 542.59558pt.
  [46]
-Overfull \vbox (7.17033pt too high) has occurred while \output is active []
+Overfull \vbox (10.5328pt too high) has occurred while \output is active []
 
 
 [47 <./pics/evolvability_plot_all_seeds01.png>]
@@ -893,7 +893,7 @@ onts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
 rw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8
 a.pfb>
-Output written on Thesis.pdf (70 pages, 3051886 bytes).
+Output written on Thesis.pdf (70 pages, 3049541 bytes).
 PDF statistics:
  1068 PDF objects out of 1200 (max. 8388607)
  213 named destinations out of 1000 (max. 500000)
