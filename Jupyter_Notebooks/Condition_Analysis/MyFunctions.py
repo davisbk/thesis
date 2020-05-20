@@ -66,6 +66,18 @@ def seed_color(seed_name):
         }
     return switch.get(seed_name, 'black')
         
+# This function will make sure that the colors of all conditions are consistent across all plots
+def cond_color(cond_name):
+    switch = {
+        'control' : 'blue',
+        'mut_up' : 'orange',
+        'mut_down' : 'green',
+        'selection_up' : 'purple',
+        'selection_down' : 'brown',
+        'pop_up' : 'plum',
+        'pop_down' : 'seagreen'
+        }
+    return switch.get(cond_name, 'black')
 # This function returns a more verbose name for a given column header    
 def name(col_header):
     switch = {
