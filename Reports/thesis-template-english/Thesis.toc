@@ -44,8 +44,8 @@
 \contentsline {subsection}{\numberline {4.1.5}Robustness}{48}{subsection.4.1.5}% 
 \contentsline {section}{\numberline {4.2}Discussion}{50}{section.4.2}% 
 \contentsline {subsection}{\numberline {4.2.1}Genome Size}{51}{subsection.4.2.1}% 
-\contentsline {subsection}{\numberline {4.2.2}Fitness}{51}{subsection.4.2.2}% 
-\contentsline {subsection}{\numberline {4.2.3}Functional Genes}{52}{subsection.4.2.3}% 
+\contentsline {subsection}{\numberline {4.2.2}Fitness}{52}{subsection.4.2.2}% 
+\contentsline {subsection}{\numberline {4.2.3}Functional Genes}{53}{subsection.4.2.3}% 
 \contentsline {subsection}{\numberline {4.2.4}Robustness \& Evolvability}{53}{subsection.4.2.4}% 
 \contentsline {chapter}{\numberline {5}Conclusions and Future Work}{54}{chapter.5}% 
 \contentsline {section}{\numberline {5.1}Conclusions}{54}{section.5.1}% 

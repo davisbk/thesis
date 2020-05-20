@@ -24,7 +24,7 @@ In fact, the $N_-$ condition had a runaway increase in the number of bases, reac
 		\hline
 		 & \textbf{mean} & \textbf{standard deviation} & \textbf{mean's \% change from control} \\
 		 \hline
-		 control & 13537.031513 & 144.351138 & \textemdash \\ 
+		 control & 13537.031513 & 144.351 & \textemdash \\ 
 		 \hline
 		 $\mu_+$ & 13558.374160 & 155.077847 & 0.157661 \\ 
 		 \hline
@@ -33,6 +33,8 @@ In fact, the $N_-$ condition had a runaway increase in the number of bases, reac
 		 $k_+$ & 13621.901104 & 229.635708 & 0.626944 \\ 
 		 \hline
 		 $k_-$ & 13614.663599 & 172.675042 & 0.573479 \\ 
+		 \hline
+		 $N_+$ & 13119.243838 & 230.240517 & -3.086258 \\ 
 		 \hline
 		 $N_-$ & 15275.149392 & 950.266243 & 12.839727 \\ 
 		 \hline
@@ -48,16 +50,18 @@ In fact, the $N_-$ condition had a runaway increase in the number of bases, reac
 		\multicolumn{3}{c}{\Large Genome Size - Rank Sum \& P-Values} \\
 		\hline
 		& \textbf{rank sum U} & \textbf{p-value} \\
-		\hline \hline
+		\hline\hline
 		$\mu_+$ & 110508011469.50 & 0.00000000 \\ 
 		\hline
 		$\mu_-$ & 71008638349.50 & 0.00000000 \\ 
 		\hline
-		$N_-$ & 16477791900.50 & 0.00000000 \\ 
-		\hline
 		$k_+$ & 100151680984.50 & 0.00000000 \\ 
 		\hline
 		$k_-$ & 88533681875.00 & 0.00000000 \\ 
+		\hline
+		$N_+$ & 21845365773.50 & 0.00000000 \\ 
+		\hline
+		$N_-$ & 16477791900.50 & 0.00000000 \\ 
 		\hline
 	\end{tabular}
 	\caption[Genome size rank sum statistics]{Genome size rank sum statistics.}
@@ -90,18 +94,18 @@ Lastly, looking at just the last 50,000 generations in Figure~\ref{fig:genome_si
 		\multicolumn{4}{c}{\textbf{Genome Size - Last 50k Gen. Mean \& Std. Dev.}} \\
 		\hline
 		& \textbf{Mean} & \textbf{Std. Dev} & \textbf{\% change from control} \\
-		\hline		
-		\textbf{control} & \textbf{13711.33} & \textbf{15.7415} & \textemdash \\ 
 		\hline
-		$\mu_+$ & 13562.61 & 15.00505 & -1.084674 \\ 
+		$\mu_+$ & 13562.607035 & 15.005054 & -1.084674 \\ 
 		\hline
-		$\mu_-$ & 13337.11 & 57.97296 & -2.729274\\ 
+		$\mu_-$ & 13337.110499 & 57.972963 & -2.729274 \\ 
 		\hline
-		$k_+$ & 13900.82 & 58.01581 & 1.381967 \\ 
+		$k_+$ & 13900.816367 & 58.015811 & 1.381967 \\ 
 		\hline
-		$k_-$ & 13588.36 & 23.64136 & -0.8968192 \\ 
+		$k_-$ & 13588.364457 & 23.641358 & -0.896819 \\ 
 		\hline
-		$N_-$ & 16559.80 & 69.53241 & 20.77458 \\ 
+		$N_+$ & 12760.384619 & 14.343728 & -6.935474 \\ 
+		\hline
+		$N_-$ & 16559.801132 & 69.532411 & 20.774577 \\ 
 		\hline
 	\end{tabular}
 	\caption[Genome size - last 50k generations mean \& std. dev.]{This table shows the mean, standard deviation, and percent change from the control condition for the population for just the last 50k generations.}
@@ -196,6 +200,8 @@ The average percentages of non-coding DNA are given in Table~\ref{table:non-codi
 		\hline
 		$k_-$ & 38.004029 & 0.704953 & -1.601860 \\ 
 		\hline
+		$N_+$ & 35.881134 & 1.519580 & -7.098353 \\ 
+		\hline
 		$N_-$ & 45.462209 & 3.545778 & 17.708489 \\ 
 		\hline
 	\end{tabular}
@@ -223,7 +229,7 @@ The mean and standard deviation of the number of functional genes for the popula
 		\hline
 		& \textbf{mean} & \textbf{standard deviation} & \textbf{\% change from control} \\
 		\hline
-		control & 131.332898 & 0.081508 & \textemdash \\ 
+		control & 131.332898 & 0.0815085 & \textemdash \\ 
 		\hline
 		$\mu_+$ & 131.974778 & 0.252463 & 0.488742 \\ 
 		\hline
@@ -233,13 +239,15 @@ The mean and standard deviation of the number of functional genes for the popula
 		\hline
 		$k_-$ & 131.238909 & 0.013974 & -0.071565 \\ 
 		\hline
+		$N_+$ & 132.990855 & 1.064211 & 1.262408 \\ 
+		\hline
 		$N_-$ & 131.350519 & 0.083280 & 0.013417 \\ 
 		\hline
 	\end{tabular}
 	\caption[Number of functional genes - mean and standard deviation]{The mean and standard deviation for the number of functional genes of the population, averaged across all seeds and for all conditions.}
 	\label{table:number_of_genes_mean_std_dev}
 \end{table}
-\subsubsection{Number of Non-Functional Genes}
+\subsubsection{Number of Non-Functional Genes}\label{results:number_non-functional_genes}
 The average number of non-functional genes across all seeds for each condition is illustrated in Figure~\ref{fig:mean_num_non-functional_genes} below, and Table~\ref{table:non-functional_genes_mean_std_dev} provides the mean and standard deviation for all seeds and all conditions.  
 
 \begin{figure}[H]
@@ -259,7 +267,7 @@ The average number of non-functional genes across all seeds for each condition i
 		\hline
 		& \textbf{mean} & \textbf{standard deviation} & \textbf{\% change from control} \\
 		\hline
-		control & 5.927067 & 0.385790 & \textemdash \\ 
+		control & 5.927067 & 0.38579 & \textemdash \\ 
 		\hline
 		$\mu_+$ & 5.856449 & 0.428473 & -1.191458 \\ 
 		\hline
@@ -268,6 +276,8 @@ The average number of non-functional genes across all seeds for each condition i
 		$k_+$ & 5.844289 & 0.506922 & -1.396610 \\ 
 		\hline
 		$k_-$ & 6.297804 & 0.454152 & 6.254978 \\ 
+		\hline
+		$N_+$ & 6.872703 & 0.407947 & 15.954520 \\ 
 		\hline
 		$N_-$ & 6.555471 & 0.483631 & 10.602267 \\ 
 		\hline
@@ -304,6 +314,8 @@ Table~\ref{table:mean_functional_gene_size_and_std_dev} below gives the mean and
 		\hline
 		$k_-$ & 55.414465 & 0.195425 & 0.070492 \\ 
 		\hline
+		$N_+$ & 55.612648 & 0.350997 & 0.428381 \\ 
+		\hline
 		$N_-$ & 55.174290 & 0.098860 & -0.363230 \\ 
 		\hline
 	\end{tabular}
@@ -318,9 +330,13 @@ Table~\ref{table:mean_functional_gene_size_and_std_dev} below gives the mean and
 		\hline
 		& \textbf{rank sum} & \textbf{p-value} \\
 		\hline
+		control & 124950901896.50 & 0.36686747 \\ 
+		\hline
 		$\mu_+$ & 68252491056.00 & 0.00000000 \\ 
 		\hline
 		$\mu_-$ & 96067062201.50 & 0.00000000 \\ 
+		\hline
+		$N_+$ & 86856644552.00 & 0.00000000 \\ 
 		\hline
 		$N_-$ & 28963878467.00 & 0.00000000 \\ 
 		\hline
@@ -417,10 +433,11 @@ The mutation up condition clearly had the largest mean percentage of neutral mut
 		\hline
 		& \textbf{rank sum} & \textbf{p-value} \\
 		\hline
-		\hline
 		$\mu_+$ & 16756710.50 & 0.00000000 \\ 
 		\hline
 		$\mu_-$ & 5741758.00 & 0.00000000 \\ 
+		\hline
+		$N_+$ & 6106612.50 & 0.00000000 \\ 
 		\hline
 		$N_-$ & 12493750.00 & 0.00000000 \\ 
 		\hline
@@ -439,7 +456,7 @@ The mutation up condition clearly had the largest mean percentage of neutral mut
 		\hline
 		& \textbf{mean} & \textbf{std. dev.} & \textbf{mean's \% change from control} \\
 		\hline
-		control & 0.944925 & 0.007334 & \textemdash \\ 
+		control & 0.944925 & 0.00733438 & \textemdash \\ 
 		\hline
 		$\mu_+$ & 0.936677 & 0.007907 & -0.872870 \\ 
 		\hline
@@ -448,6 +465,8 @@ The mutation up condition clearly had the largest mean percentage of neutral mut
 		$k_+$ & 0.944466 & 0.007372 & -0.048598 \\ 
 		\hline
 		$k_-$ & 0.944516 & 0.007424 & -0.043350 \\ 
+		\hline
+		$N_+$ & 0.946396 & 0.007143 & 0.155634 \\ 
 		\hline
 		$N_-$ & 0.937409 & 0.008846 & -0.795408 \\ 
 		\hline
@@ -471,19 +490,19 @@ Analogously to Table~\ref{table:experiment_predictions}, the results of the expe
 		\cline{2-7}
 		& {\Large$\mu_+$} & {\Large$\mu_-$} & {\Large$k_+$} & {\Large$k_-$} & {\Large$N_+$} & {\Large$N_-$} \\
 		\hline 
-		Genome Size & \cellcolor{green} $-^{\cite{bradwell2013correlation, carde.2019, marais2008mutation}}$ & \cellcolor{red} $\text{+}^{\cite{bradwell2013correlation, carde.2019, drake1991constant}}$ & \cellcolor{green} $+^{\cite{Batut.2013}}$ & \cellcolor{green} $-^{\cite{Batut.2013}}$ & $-^{\cite{Batut.2014, carde.2019}}$ & \cellcolor{green} $+^{\cite{Batut.2014, carde.2019}}$ \\
+		Genome Size & \cellcolor{green} - & \cellcolor{red} + & \cellcolor{green} + & \cellcolor{green} - & - & \cellcolor{green} + \\
 		\hline
-		Fitness & \cellcolor{green} $+^{\cite{bataillon2000estimation, vahdati2017effect}}$ & \cellcolor{green} $-^{\cite{vahdati2017effect}}$ & \cellcolor{red} $+^{\cite{Batut.2014}}$ & \cellcolor{red} $-^{\cite{Batut.2014}}$ & $+^{\cite{cutter2019primer, vahdati2017effect}} $ & \cellcolor{green} $-^{\cite{cutter2019primer, vahdati2017effect}} $\\
+		Fitness & \cellcolor{green} + & \cellcolor{green} - & \cellcolor{red} + & \cellcolor{red} - & + & \cellcolor{green} - \\
 		\hline
-		Amount of non-coding DNA & \cellcolor{green} $-^{\cite{Knibbe2007}}$ & \cellcolor{red} $+^{\cite{Knibbe2007}}$ & \cellcolor{green} $+^{\cite{Batut.2013, Knibbe2007}}$ & \cellcolor{green} $-^{\cite{Batut.2013, Knibbe2007}}$ & $-^{\cite{Batut.2013}}$ & \cellcolor{green} $+^{\cite{Batut.2013}}$ \\
+		Amount of non-coding DNA & \cellcolor{green} - & \cellcolor{red} + & \cellcolor{green} + & \cellcolor{green} - & - & \cellcolor{green} + \\
 		\hline
-		Number of genes & \cellcolor{red} $-^{\cite{Knibbe2007}}$ & \cellcolor{green} $+^{\cite{Knibbe2007}}$ &\cellcolor{green} $+^{\cite{Knibbe2007}}$ & \cellcolor{green} $-^{\cite{Knibbe2007}}$ & $-^{\cite{Batut.2014}}$ & \cellcolor{green} $+^{\cite{Batut.2014}}$ \\
+		Number of genes & \cellcolor{red} - & \cellcolor{green} + &\cellcolor{green} + & \cellcolor{green} - & - & \cellcolor{green} + \\
 		\hline
-		Average size of genes & \cellcolor{red} $-^{\cite{Liard.2018}}$ & \cellcolor{green} $+^{\cite{Liard.2018}}$ & \cellcolor{green} $-^{\cite{Batut.2013}}$ & \cellcolor{red}$+^{\cite{Batut.2013}}$ & $-^{\cite{Batut.2014}}$ & \cellcolor{red} $+^{\cite{Batut.2014}}$ \\
+		Average size of genes & \cellcolor{red} - & \cellcolor{green} + & \cellcolor{green} - & \cellcolor{red} + & - & \cellcolor{red} + \\
 		\hline
-		Robustness & \cellcolor{green} $-^{\cite{Knibbe2007}}$ &\cellcolor{green} $+^{\cite{Knibbe2007}}$ & \cellcolor{green} $-^{\cite{Batut.2013, Knibbe2007}}$ & \cellcolor{green}$+^{\cite{Batut.2013, Knibbe2007}}$ & $-^{\cite{elena2007effects}}$ & \cellcolor{red} $+^{\cite{elena2007effects}}$ \\
+		Robustness & \cellcolor{green} - &\cellcolor{green} + & \cellcolor{green} - & \cellcolor{green}+ & - & \cellcolor{red} + \\
 		\hline
-		Evolvability &\cellcolor{green} $+^{\cite{Knibbe2007}}$ &\cellcolor{green} $-^{\cite{Knibbe2007}}$ & \cellcolor{red}  $+^{\cite{Batut.2013}}$ & \cellcolor{red} $-^{\cite{Batut.2013}}$ & $-^{\cite{wein2019effect}}$ & \cellcolor{green} $+^{\cite{wein2019effect}}$ \\
+		Evolvability &\cellcolor{green} + &\cellcolor{green} - & \cellcolor{red}  + & \cellcolor{red} - & - & \cellcolor{green} + \\
 		\hline		
 	\end{tabular}
 	\caption[Experiment result summary]{A summary of whether the experiment results confirmed or denied the hypotheses of Table~\ref{table:experiment_predictions}.  were confirmed ({\color{green}green}) or rejected ({\color{red}red}), along with the predicted results of whether the given result would increase (+) or decrease (-) over the control condition.}
