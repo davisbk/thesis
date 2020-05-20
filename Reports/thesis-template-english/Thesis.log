@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.11)  19 MAY 2020 03:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.11)  19 MAY 2020 18:52
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -733,14 +733,15 @@ Overfull \vbox (5.20538pt too high) has occurred while \output is active []
 
 
 [37 <./pics/global_fitness_all_seeds.png>]
-<./pics/global_fitness_histogram.png, id=757, 1445.4pt x 2168.1pt>
-File: ./pics/global_fitness_histogram.png Graphic file (type png)
-<use ./pics/global_fitness_histogram.png>
-Package pdftex.def Info: ./pics/global_fitness_histogram.png  used on input lin
-e 127.
-(pdftex.def)             Requested size: 360.0pt x 540.00565pt.
- [38 <./pics/global_fitness_histogram.png>]
-<./pics/stat_fitness_global_mean_metabolic_error.png, id=766, 2168.1pt x 1445.4
+<./pics/population_mean_fitness_histogram.png, id=757, 1264.725pt x 1808.7575pt
+>
+File: ./pics/population_mean_fitness_histogram.png Graphic file (type png)
+<use ./pics/population_mean_fitness_histogram.png>
+Package pdftex.def Info: ./pics/population_mean_fitness_histogram.png  used on 
+input line 127.
+(pdftex.def)             Requested size: 360.0pt x 514.83887pt.
+ [38 <./pics/population_mean_fitness_histogram.png>]
+<./pics/stat_fitness_global_mean_metabolic_error.png, id=767, 2168.1pt x 1445.4
 pt>
 File: ./pics/stat_fitness_global_mean_metabolic_error.png Graphic file (type pn
 g)
@@ -754,7 +755,7 @@ Overfull \hbox (56.41275pt too wide) in paragraph at lines 143--164
  []
 
 [39 <./pics/stat_fitness_global_mean_metabolic_error.png>]
-<./pics/percent_noncoding.png, id=777, 2168.1pt x 1445.4pt>
+<./pics/percent_noncoding.png, id=778, 2168.1pt x 1445.4pt>
 File: ./pics/percent_noncoding.png Graphic file (type png)
 <use ./pics/percent_noncoding.png>
 Package pdftex.def Info: ./pics/percent_noncoding.png  used on input line 175.
@@ -764,7 +765,7 @@ Overfull \hbox (40.02109pt too wide) in paragraph at lines 183--202
 [][] 
  []
 
-<./pics/stat_genes_global_mean_num_functional_genes.png, id=786, 2168.1pt x 144
+<./pics/stat_genes_global_mean_num_functional_genes.png, id=787, 2168.1pt x 144
 5.4pt>
 File: ./pics/stat_genes_global_mean_num_functional_genes.png Graphic file (type
  png)
@@ -778,7 +779,7 @@ Overfull \hbox (3.45142pt too wide) in paragraph at lines 220--239
  []
 
 [42 <./pics/stat_genes_global_mean_num_functional_genes.png>]
-<./pics/stat_genes_global_mean_num_non-functional_genes.png, id=804, 2168.1pt x
+<./pics/stat_genes_global_mean_num_non-functional_genes.png, id=805, 2168.1pt x
  1445.4pt>
 File: ./pics/stat_genes_global_mean_num_non-functional_genes.png Graphic file (
 type png)
@@ -790,7 +791,7 @@ Package pdftex.def Info: ./pics/stat_genes_global_mean_num_non-functional_genes
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./pics/stat_genes_global_mean_avg_size_of_functional_genes.png, id=806, 2168.1
+<./pics/stat_genes_global_mean_avg_size_of_functional_genes.png, id=807, 2168.1
 pt x 1445.4pt>
 File: ./pics/stat_genes_global_mean_avg_size_of_functional_genes.png Graphic fi
 le (type png)
@@ -804,7 +805,7 @@ Overfull \hbox (35.28624pt too wide) in paragraph at lines 315--332
  []
 
 [45 <./pics/stat_genes_global_mean_avg_size_of_functional_genes.png>]
-<./pics/evolvability_plot_all_seeds01.png, id=826, 1195.46625pt x 1790.69pt>
+<./pics/evolvability_plot_all_seeds01.png, id=827, 1195.46625pt x 1790.69pt>
 File: ./pics/evolvability_plot_all_seeds01.png Graphic file (type png)
 <use ./pics/evolvability_plot_all_seeds01.png>
 Package pdftex.def Info: ./pics/evolvability_plot_all_seeds01.png  used on inpu
@@ -815,7 +816,11 @@ Overfull \vbox (7.17033pt too high) has occurred while \output is active []
 
 
 [47 <./pics/evolvability_plot_all_seeds01.png>]
-<./pics/stat_robustness_best_mean_frac_neutral_offspring.png, id=839, 2168.1pt 
+Overfull \hbox (11.96808pt too wide) in paragraph at lines 375--397
+ [][] 
+ []
+
+<./pics/stat_robustness_best_mean_frac_neutral_offspring.png, id=840, 2168.1pt 
 x 1445.4pt>
 File: ./pics/stat_robustness_best_mean_frac_neutral_offspring.png Graphic file 
 (type png)
@@ -823,7 +828,7 @@ File: ./pics/stat_robustness_best_mean_frac_neutral_offspring.png Graphic file
 Package pdftex.def Info: ./pics/stat_robustness_best_mean_frac_neutral_offsprin
 g.png  used on input line 407.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
- [48] [49 <./pics/stat_robustness_best_mean_frac_neutral_offspring.png>]
+[48] [49 <./pics/stat_robustness_best_mean_frac_neutral_offspring.png>]
 Overfull \hbox (123.98776pt too wide) in paragraph at lines 466--489
  [][] 
  []
@@ -862,10 +867,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 66.
  ) 
 Here is how much of TeX's memory you used:
- 9435 strings out of 492895
- 134928 string characters out of 3133459
- 256711 words of memory out of 3000000
- 12893 multiletter control sequences out of 15000+200000
+ 9436 strings out of 492895
+ 134991 string characters out of 3133459
+ 256758 words of memory out of 3000000
+ 12894 multiletter control sequences out of 15000+200000
  20131 words of font info for 69 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
  30i,14n,43p,2068b,601s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -892,9 +897,9 @@ onts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
 rw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8
 a.pfb>
-Output written on Thesis.pdf (70 pages, 3083885 bytes).
+Output written on Thesis.pdf (70 pages, 3061908 bytes).
 PDF statistics:
- 1122 PDF objects out of 1200 (max. 8388607)
+ 1123 PDF objects out of 1200 (max. 8388607)
  213 named destinations out of 1000 (max. 500000)
  475 words of extra memory for PDF output out of 10000 (max. 10000000)
 

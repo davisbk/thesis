@@ -124,11 +124,11 @@ where $g_i$ is the gap for the $i$th organism in the population. Thus, changing 
 \end{figure}
 
 \begin{figure}[H]
-	\includegraphics[width=\linewidth]{global_fitness_histogram}
-	\caption[Mean fitness histogram]{Histogram of population fitness at generation 500,000 for all conditions. Note that for the selection up condition, the scale is 1e-7.}
+	\includegraphics[width=\linewidth]{population_mean_fitness_histogram}
+	\caption[Mean fitness histogram]{Histogram of population fitness at generation 500,000 for all conditions. Note that the x-axes for both the $k_+$ and $k_-$ conditions are on a different scale relative to the other conditions and each other.}
 	\label{fig:global_fitness_histogram}
 \end{figure}
-Figure~\ref{fig:global_fitness_histogram} shows a histogram of the population mean fitness values for all conditions over the 500k generations. This figure is included to show the relative "stability" of a condition, i.e. to show how many times the fitness changed throughout the simulations. For example, although the $\mu_-$ condition ended the simulations in the most similar position to the control condition regarding fitness (just 0.8\% away), the more even distribution of the value counts for the control condition given in Figure~\ref{fig:global_fitness_histogram} makes it clear that the control condition experienced many more fluctuations in value throughout the simulation. By contrast, the $\mu_-$ condition, as expected, tended to hover at certain locations in between rarer mutation events. 
+Figure~\ref{fig:global_fitness_histogram} shows a histogram of the population mean fitness values for all conditions over the 500k generations. This figure is included to show the relative "stability" of a condition, i.e. to show how many times the fitness changed throughout the simulations. For example, although the $\mu_-$ condition ended the simulations in the most similar position to the control condition regarding fitness (just 0.8\% away), the more even distribution of the value counts for the control condition given in Figure~\ref{fig:global_fitness_histogram} makes it clear that the control condition experienced more fluctuations in value throughout the simulation. By contrast, the $\mu_-$ condition, as expected, tended to hover at certain locations in between rarer mutation events. This directly correlates to evolvability (see Section~\ref{res:evolvability}). 
 
 Figure~\ref{fig:mean_metabolic_error} shows the mean metabolic error across all seeds for the whole population over time with respect to each condition. 
 \begin{figure}[H]
@@ -334,7 +334,7 @@ Table~\ref{table:mean_functional_gene_size_and_std_dev} below gives the mean and
 \end{table}
 Since the $k_-$ condition's p-value was $\geq0.05$, it must be concluded that these results are not significant. 
 
-\subsection{Evolvability}
+\subsection{Evolvability}\label{res:evolvability}
 In Figure~\ref{fig:evolvability_all_seeds} below, the results of the experiments on evolvability for the best individual's (at generation 500,000) lineage are shown. 
 \begin{figure}[H]
 	\centering
@@ -379,19 +379,19 @@ The evolvability rank sum and p-value information is given in Table~\ref{table:e
 		& \textbf{mean} & \textbf{standard deviation} & \textbf{\% change from control} \\
 		\hline
 		\hline
-		control & 0.000000 & 3.28521e-09 & \textemdash \\ 
+		control & 4.133535e-10 & 3.28521e-09 & \textemdash \\ 
 		\hline
-		$\mu_+$ & 0.000000 & 0.000000 & 332.896875 \\ 
+		$\mu_+$ & 1.789394e-09 & 7.828305e-09 & 332.8969 \\ 
 		\hline
-		$\mu_-$ & 0.000000 & 0.000000 & -66.866273 \\ 
+		$\mu_-$ & 1.369594e-10 & 1.320591e-09 & -66.86627 \\ 
 		\hline
-		$k_+$ & 0.000000 & 0.000000 & -99.989955 \\ 
+		$k_+$ & 4.152320e-14 & 6.590472e-13 & -99.98995 \\ 
 		\hline
-		$k_-$ & 0.000000 & 0.000000 & 1930.772962 \\ 
+		$k_-$ & 8.394271e-09 & 5.085889e-08 & 1930.773 \\ 
 		\hline
-		$N_+$ & 0.000000 & 0.000000 & 97.148594 \\ 
+		$N_+$ & 8.149206e-10 & 4.345602e-09 & 97.14859 \\ 
 		\hline
-		$N_-$ & 0.000000 & 0.000000 & 145.771827 \\ 
+		$N_-$ & 1.015906e-09 & 8.152163e-09 & 145.7718 \\ 
 		\hline	 		 
 	\end{tabular}
 	\caption[Evolvability mean and standard deviation]{Table illustrating the mean and standard deviation of the evolvability for each condition. $\mu$ is the mutation rate, $k$ is the selection rate, and $N$ is the population size.}
