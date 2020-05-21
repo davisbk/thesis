@@ -79,11 +79,10 @@ Examining the percent changed from the \textit{control} condition shown in Figur
 	\label{fig:genome_size_percent_change}
 \end{figure}
 
-Lastly, looking at just the last 50,000 generations in Figure~\ref{fig:genome_size_last_50k} and the respective statistics in Table~%TODO Create table
-, it becomes clear that, with the exception of the $N_-$ condition, the genome sizes did not generally differ much across the conditions.
+Lastly, looking at just the last 50,000 generations in Figure~\ref{fig:genome_size_last_50k} and the respective statistics in Table~\ref{table:genome_size_stats_last_50k}, it becomes clear that, with the exception of the $N_-$ condition, the genome sizes did not generally differ much across the conditions.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\linewidth]{genome_size_last_50k}
+	\includegraphics[width=\linewidth]{genome_size_last_50k_all_seeds}
 	\caption[Genome size - last 50k generations]{Genome Size - Last 50k Generations, average of all seeds}
 	\label{fig:genome_size_last_50k}
 \end{figure}
@@ -114,7 +113,6 @@ Lastly, looking at just the last 50,000 generations in Figure~\ref{fig:genome_si
 
 
 \subsection{Metabolic Error and Fitness}
-%TODO Fix Metabolic Error and Fitness section
 Figure~\ref{fig:mean_fitness_all_seeds} shows three categories of information for each condition: 1) the mean population fitness for each seed (in various colors), 2) the mean fitness across all seeds for that condition (dashed line, black), 3) the control condition (dashed line, blue) for each condition. It is important to note that for the $k_+$ and $k_-$ conditions, the fitness is on a different scale because of the \texttt{fitness\_proportionate} selection method. Recall that in the \texttt{fitness\_proportionate} selection method, the probability $p$ of reproduction for an organism with gap $g$ is given by:
 \begin{equation*}
 p = \frac{e^{-k*g}}{\sum_{i=1}^{N}e^{-k*g_i}}
@@ -417,7 +415,6 @@ The evolvability rank sum and p-value information is given in Table~\ref{table:e
 \subsection{Robustness}
 Recall from Section~\ref{subsec:robustness_antirobustness} that robustness is measured by the fraction of neutral offspring of an individual. In the following figure, a bar plot showing the spread of neutral offspring for the best individual is seen for the control condition as well as the six variations. 
 
-%TODO update graphic with more conditions once experiments are completed
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{stat_robustness_best_mean_frac_neutral_offspring}
