@@ -24,8 +24,6 @@ In population genetics, ``fitness'' can relate to either the genotype or the phe
 
 Relative fitness, on the other hand, describes the change in genotype \textit{frequency}, i.e. the fraction of all chromosomes in the population that carry a particular allele. For a population of size $N$, if a genotype's frequency at time $t$ is given by $p(t) = n(t)/N(t)$, then $p(t+1) = \frac{w}{\bar{w}}*p(t)$, where $\bar{w}$ is the mean relative fitness in the population. This implies that $\frac{w}{\bar{w}}$ is proportional to $\frac{W}{\bar{W}}$. 
 
-%TODO Is what I wrote here useful? Too specific to population genetics?
-
 \section{Reductive Evolution}\label{reductive_evolution}
 Reductive evolution is the process by which organisms evolve to have a smaller average genome size than their ancestors via a pattern of gene loss \cite{wilcox2003consequences}. This has been observed both in free-living bacteria such as \textit{Prochlorococcus} as well as endosybmiotic bacteria living inside host cells (e.g. \textit{Buchnera aphidicola} in aphids). Patterns consistent across most cases of reductive evolution are: a reduced GC content (impacting protein stability), gene loss, low non-coding to coding DNA ratios, and rapid sequence evolution.  \cite{Batut.2014}. Some of the hypothesized mechanisms behind reductive evolution include: limits imposed by the effective population size (i.e. ``Muller's ratchet'', described below), the ``Black Queen Hypothesis'', and environmental adaptation. 
 
@@ -59,7 +57,6 @@ The in silico tool Aevol was developed to ``study the evolution of the size and 
 As an in silico experimental evolution tool, Aevol embodies several of the advantages of in silico evolution in general. There is a ``fossil record'' of each generation, experimental conditions are tightly controlled, and experiments are easily repeatable. The encoding/decoding strategy of Aevol follows a biologically realistic model, in the sense that there are many degrees of freedom between an organism's genome and its proteome. Many genes may encode for very simple proteins (e.g. if the genes contain the same or similar sequences), and by contrast, overlapping genes may code for complex proteomes.
 
 In the following sections, the in silico experimental evolution tool Aevol will be examined in greater detail. 
-%TODO Can flesh out this section with points from "Strengths and limits of the model" from the official description ( http://aevol.fr/documentation/resources/the-aevol-model.pdf )
 
 \subsection{Aevol's Architecture}
 Aevol's three main steps\textemdash decoding the genome, selection, and reproduction\textemdash are illustrated in Figure~\ref{fig:aevol_overview01} and are discussed in greater detail in the following sections. 
@@ -121,11 +118,8 @@ One of the key features of Aevol is the ability to look back in time at the ''ar
 
 
 \section{Related Work}\label{related_work}
-%TODO Restructure this section to be clearer: what is my message here? What are the different hypotheses for reductive evolution (Batut 2013?2014?)
-%TODO Add population aspect of in silico experimental evolution.
-%TODO Add clear definition of reductive genome evolution and examples of species and lineages.
 
-
+%TODO Add population aspect of in silico experimental evolution - waiting on clarification from berenice 5/20/2020
 
 Much work has already been done in the field of reductive evolution and in silico experimentation, and this section will look at the current state of the literature. 
 

@@ -24,7 +24,7 @@ In fact, the $N_-$ condition had a runaway increase in the number of bases, reac
 		\hline
 		 & \textbf{mean} & \textbf{standard deviation} & \textbf{mean's \% change from control} \\
 		 \hline
-		 control & 13537.031513 & 144.351138 & \textemdash \\ 
+		 control & 13537.031513 & 144.351 & \textemdash \\ 
 		 \hline
 		 $\mu_+$ & 13558.374160 & 155.077847 & 0.157661 \\ 
 		 \hline
@@ -33,6 +33,8 @@ In fact, the $N_-$ condition had a runaway increase in the number of bases, reac
 		 $k_+$ & 13621.901104 & 229.635708 & 0.626944 \\ 
 		 \hline
 		 $k_-$ & 13614.663599 & 172.675042 & 0.573479 \\ 
+		 \hline
+		 $N_+$ & 13119.243838 & 230.240517 & -3.086258 \\ 
 		 \hline
 		 $N_-$ & 15275.149392 & 950.266243 & 12.839727 \\ 
 		 \hline
@@ -48,16 +50,18 @@ In fact, the $N_-$ condition had a runaway increase in the number of bases, reac
 		\multicolumn{3}{c}{\Large Genome Size - Rank Sum \& P-Values} \\
 		\hline
 		& \textbf{rank sum U} & \textbf{p-value} \\
-		\hline \hline
+		\hline\hline
 		$\mu_+$ & 110508011469.50 & 0.00000000 \\ 
 		\hline
 		$\mu_-$ & 71008638349.50 & 0.00000000 \\ 
 		\hline
-		$N_-$ & 16477791900.50 & 0.00000000 \\ 
-		\hline
 		$k_+$ & 100151680984.50 & 0.00000000 \\ 
 		\hline
 		$k_-$ & 88533681875.00 & 0.00000000 \\ 
+		\hline
+		$N_+$ & 21845365773.50 & 0.00000000 \\ 
+		\hline
+		$N_-$ & 16477791900.50 & 0.00000000 \\ 
 		\hline
 	\end{tabular}
 	\caption[Genome size rank sum statistics]{Genome size rank sum statistics.}
@@ -66,21 +70,20 @@ In fact, the $N_-$ condition had a runaway increase in the number of bases, reac
 
 Of the remaining conditions, all but the $k_+$ condition (which had an an increase of 11\% over the control condition) ended up with fewer base pairs than the control condition, though all increased slightly over their starting point. Also noteworthy is that the mutation down condition appears to have had a steady increase in the number of base pairs until a maximum of just over 14,000 around generation 350,000 before having a fairly sharp decline back to nearly the original size. 
 
-Examining the percent changed from the \textit{control} condition shown in Figure~\ref{fig:genome_size_percent_change} it can be seen that at points, the $\mu_-$ condition was nearly 5\% smaller than the \textit{control} condition. 
+Examining the percent changed from the control condition shown in Figure~\ref{fig:genome_size_percent_change} it can be seen that at points, the $\mu_-$ condition was nearly 5\% smaller than the control condition. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{stat_fitness_perc_change_genome_size}
-	\caption[Genome size - percent change]{Genome size's percent change from the \textit{control} condition.}
+	\caption[Genome size - percent change]{Genome size's percent change from the control condition.}
 	\label{fig:genome_size_percent_change}
 \end{figure}
 
-Lastly, looking at just the last 50,000 generations in Figure~\ref{fig:genome_size_last_50k} and the respective statistics in Table~%TODO Create table
-, it becomes clear that, with the exception of the $N_-$ condition, the genome sizes did not generally differ much across the conditions.
+Lastly, a zoomed-in look at just the last 50,000 generations is provided in Figure~\ref{fig:genome_size_last_50k}, allowing a clearer distinction between the control and other conditions. The respective statistics are given in Table~\ref{table:genome_size_stats_last_50k}. In the figure, the horizontal dashed black line gives the control condition's genome size at generation 0, the blue dashed line gives the mean genome size across all control seeds, and the colored dashed lines in each figure give the mean of the seeds for that condition. 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\linewidth]{genome_size_last_50k}
-	\caption[Genome size - last 50k generations]{Genome Size - Last 50k Generations, average of all seeds}
+	\includegraphics[width=\linewidth]{genome_size_last_50k_all_seeds}
+	\caption[Genome size - last 50k generations]{Genome Size - Last 50k Generations, all seeds, all conditions. All seeds are shown (colored, solid lines) as well as the mean across all seeds for each condition (colored, dashed lines) are given. The black dashed line is the genome size at generation 0 in the control condition.}
 	\label{fig:genome_size_last_50k}
 \end{figure}
 
@@ -90,18 +93,18 @@ Lastly, looking at just the last 50,000 generations in Figure~\ref{fig:genome_si
 		\multicolumn{4}{c}{\textbf{Genome Size - Last 50k Gen. Mean \& Std. Dev.}} \\
 		\hline
 		& \textbf{Mean} & \textbf{Std. Dev} & \textbf{\% change from control} \\
-		\hline		
-		\textbf{control} & \textbf{13711.33} & \textbf{15.7415} & \textemdash \\ 
 		\hline
-		$\mu_+$ & 13562.61 & 15.00505 & -1.084674 \\ 
+		$\mu_+$ & 13562.607035 & 15.005054 & -1.084674 \\ 
 		\hline
-		$\mu_-$ & 13337.11 & 57.97296 & -2.729274\\ 
+		$\mu_-$ & 13337.110499 & 57.972963 & -2.729274 \\ 
 		\hline
-		$k_+$ & 13900.82 & 58.01581 & 1.381967 \\ 
+		$k_+$ & 13900.816367 & 58.015811 & 1.381967 \\ 
 		\hline
-		$k_-$ & 13588.36 & 23.64136 & -0.8968192 \\ 
+		$k_-$ & 13588.364457 & 23.641358 & -0.896819 \\ 
 		\hline
-		$N_-$ & 16559.80 & 69.53241 & 20.77458 \\ 
+		$N_+$ & 12760.384619 & 14.343728 & -6.935474 \\ 
+		\hline
+		$N_-$ & 16559.801132 & 69.532411 & 20.774577 \\ 
 		\hline
 	\end{tabular}
 	\caption[Genome size - last 50k generations mean \& std. dev.]{This table shows the mean, standard deviation, and percent change from the control condition for the population for just the last 50k generations.}
@@ -109,8 +112,7 @@ Lastly, looking at just the last 50,000 generations in Figure~\ref{fig:genome_si
 \end{table}
 
 
-\subsection{Metabolic Error and Fitness}
-%TODO Fix Metabolic Error and Fitness section
+\subsection{Metabolic Error and Fitness}\label{res:metabolic_error_and_fitness}
 Figure~\ref{fig:mean_fitness_all_seeds} shows three categories of information for each condition: 1) the mean population fitness for each seed (in various colors), 2) the mean fitness across all seeds for that condition (dashed line, black), 3) the control condition (dashed line, blue) for each condition. It is important to note that for the $k_+$ and $k_-$ conditions, the fitness is on a different scale because of the \texttt{fitness\_proportionate} selection method. Recall that in the \texttt{fitness\_proportionate} selection method, the probability $p$ of reproduction for an organism with gap $g$ is given by:
 \begin{equation*}
 p = \frac{e^{-k*g}}{\sum_{i=1}^{N}e^{-k*g_i}}
@@ -124,16 +126,16 @@ where $g_i$ is the gap for the $i$th organism in the population. Thus, changing 
 \end{figure}
 
 \begin{figure}[H]
-	\includegraphics[width=\linewidth]{global_fitness_histogram}
-	\caption[Mean fitness histogram]{Histogram of population fitness at generation 500,000 for all conditions. Note that for the selection up condition, the scale is 1e-7.}
+	\includegraphics[width=\linewidth]{population_mean_fitness_histogram}
+	\caption[Mean fitness histogram]{Histogram of population fitness at generation 500,000 for all conditions. Note that the x-axes for both the $k_+$ and $k_-$ conditions are on a different scale relative to the other conditions and each other.}
 	\label{fig:global_fitness_histogram}
 \end{figure}
-Figure~\ref{fig:global_fitness_histogram} shows a histogram of the population mean fitness values for all conditions over the 500k generations. This figure is included to show the relative "stability" of a condition, i.e. to show how many times the fitness changed throughout the simulations. For example, although the $\mu_-$ condition ended the simulations in the most similar position to the control condition regarding fitness (just 0.8\% away), the more even distribution of the value counts for the control condition given in Figure~\ref{fig:global_fitness_histogram} makes it clear that the control condition experienced many more fluctuations in value throughout the simulation. By contrast, the $\mu_-$ condition, as expected, tended to hover at certain locations in between rarer mutation events. 
+Figure~\ref{fig:global_fitness_histogram} shows a histogram of the population mean fitness values for all conditions over the 500k generations. This figure is included to show the relative "stability" of a condition, i.e. to show how many times the fitness changed throughout the simulations. For example, although the $\mu_-$ condition ended the simulations in the most similar position to the control condition regarding fitness (just 0.8\% away), the more even distribution of the value counts for the control condition given in Figure~\ref{fig:global_fitness_histogram} makes it clear that the control condition experienced more fluctuations in value throughout the simulation. By contrast, the $\mu_-$ condition, as expected, tended to hover at certain locations in between rarer mutation events. This directly correlates to evolvability (see Section~\ref{res:evolvability}). 
 
 Figure~\ref{fig:mean_metabolic_error} shows the mean metabolic error across all seeds for the whole population over time with respect to each condition. 
 \begin{figure}[H]
 	\includegraphics[width=\linewidth]{stat_fitness_global_mean_metabolic_error}
-	\caption[Metabolic error]{Plot of the metabolic error over time for all conditions, average of all seeds}
+	\caption[Metabolic error]{Plot of the population mean metabolic error over time for all conditions, average of all seeds}
 	\label{fig:mean_metabolic_error}
 \end{figure}
 
@@ -196,6 +198,8 @@ The average percentages of non-coding DNA are given in Table~\ref{table:non-codi
 		\hline
 		$k_-$ & 38.004029 & 0.704953 & -1.601860 \\ 
 		\hline
+		$N_+$ & 35.881134 & 1.519580 & -7.098353 \\ 
+		\hline
 		$N_-$ & 45.462209 & 3.545778 & 17.708489 \\ 
 		\hline
 	\end{tabular}
@@ -211,7 +215,7 @@ Recall from Section~\ref{experimental_design} that a ``functional gene'' is a ge
 	\caption[Mean number of functional genes]{Plot showing the mean number of functional genes for the population, averaged across all seeds for each condition.}
 	\label{fig:mean_num_functional_genes}
 \end{figure}
-As seen in the figure, the \textit{selection up} condition showed the greatest increase in the number of functional genes in the whole population, reaching a maximum increase of about 2.2\% (131 to 134). This is in agreement with the predictions (from Table~\ref{table:experiment_predictions}) and the findings of Knibbe et al.~\cite{Knibbe2007}. Whereas most of the other curves are fairly flat, the mutation up condition fluctuates relatively rapidly, owing to the quick increase and decrease in the number of base pairs. 
+As seen in the figure, the $k_+$ condition showed the greatest increase in the number of functional genes in the whole population, reaching a maximum increase of about 2.2\% (131 to 134). This is in agreement with the predictions (from Table~\ref{table:experiment_predictions}) and the findings of Knibbe et al.~\cite{Knibbe2007}. Whereas most of the other curves are fairly flat, the mutation up condition fluctuates relatively rapidly, owing to the quick increase and decrease in the number of base pairs. 
 
 The mean and standard deviation of the number of functional genes for the population for each condition is given in Table~\ref{table:number_of_genes_mean_std_dev} below.
 
@@ -223,7 +227,7 @@ The mean and standard deviation of the number of functional genes for the popula
 		\hline
 		& \textbf{mean} & \textbf{standard deviation} & \textbf{\% change from control} \\
 		\hline
-		control & 131.332898 & 0.081508 & \textemdash \\ 
+		control & 131.332898 & 0.0815085 & \textemdash \\ 
 		\hline
 		$\mu_+$ & 131.974778 & 0.252463 & 0.488742 \\ 
 		\hline
@@ -233,13 +237,15 @@ The mean and standard deviation of the number of functional genes for the popula
 		\hline
 		$k_-$ & 131.238909 & 0.013974 & -0.071565 \\ 
 		\hline
+		$N_+$ & 132.990855 & 1.064211 & 1.262408 \\ 
+		\hline
 		$N_-$ & 131.350519 & 0.083280 & 0.013417 \\ 
 		\hline
 	\end{tabular}
 	\caption[Number of functional genes - mean and standard deviation]{The mean and standard deviation for the number of functional genes of the population, averaged across all seeds and for all conditions.}
 	\label{table:number_of_genes_mean_std_dev}
 \end{table}
-\subsubsection{Number of Non-Functional Genes}
+\subsubsection{Number of Non-Functional Genes}\label{results:number_non-functional_genes}
 The average number of non-functional genes across all seeds for each condition is illustrated in Figure~\ref{fig:mean_num_non-functional_genes} below, and Table~\ref{table:non-functional_genes_mean_std_dev} provides the mean and standard deviation for all seeds and all conditions.  
 
 \begin{figure}[H]
@@ -254,11 +260,12 @@ The average number of non-functional genes across all seeds for each condition i
 	\centering
 	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\multicolumn{4}{c}{\Large \textbf{Population Mean Number of Non-Functional Genes - Mean \& Std. Dev.}} \\
+		\multicolumn{4}{c}{\Large \textbf{Mean Num. Non-Functional Genes}} \\
+		\multicolumn{4}{c}{\Large \textbf{Mean \& Std. Dev.}} \\
 		\hline
 		& \textbf{mean} & \textbf{standard deviation} & \textbf{\% change from control} \\
 		\hline
-		control & 5.927067 & 0.385790 & \textemdash \\ 
+		control & 5.927067 & 0.38579 & \textemdash \\ 
 		\hline
 		$\mu_+$ & 5.856449 & 0.428473 & -1.191458 \\ 
 		\hline
@@ -267,6 +274,8 @@ The average number of non-functional genes across all seeds for each condition i
 		$k_+$ & 5.844289 & 0.506922 & -1.396610 \\ 
 		\hline
 		$k_-$ & 6.297804 & 0.454152 & 6.254978 \\ 
+		\hline
+		$N_+$ & 6.872703 & 0.407947 & 15.954520 \\ 
 		\hline
 		$N_-$ & 6.555471 & 0.483631 & 10.602267 \\ 
 		\hline
@@ -303,6 +312,8 @@ Table~\ref{table:mean_functional_gene_size_and_std_dev} below gives the mean and
 		\hline
 		$k_-$ & 55.414465 & 0.195425 & 0.070492 \\ 
 		\hline
+		$N_+$ & 55.612648 & 0.350997 & 0.428381 \\ 
+		\hline
 		$N_-$ & 55.174290 & 0.098860 & -0.363230 \\ 
 		\hline
 	\end{tabular}
@@ -317,9 +328,13 @@ Table~\ref{table:mean_functional_gene_size_and_std_dev} below gives the mean and
 		\hline
 		& \textbf{rank sum} & \textbf{p-value} \\
 		\hline
+		control & 124950901896.50 & 0.36686747 \\ 
+		\hline
 		$\mu_+$ & 68252491056.00 & 0.00000000 \\ 
 		\hline
 		$\mu_-$ & 96067062201.50 & 0.00000000 \\ 
+		\hline
+		$N_+$ & 86856644552.00 & 0.00000000 \\ 
 		\hline
 		$N_-$ & 28963878467.00 & 0.00000000 \\ 
 		\hline
@@ -333,13 +348,13 @@ Table~\ref{table:mean_functional_gene_size_and_std_dev} below gives the mean and
 \end{table}
 Since the $k_-$ condition's p-value was $\geq0.05$, it must be concluded that these results are not significant. 
 
-\subsection{Evolvability}
-In Figure~\ref{fig:evolvability_mean} below, the results of the experiments on evolvability for the best individual's (at generation 500,000) lineage are shown. 
+\subsection{Evolvability}\label{res:evolvability}
+In Figure~\ref{fig:evolvability_all_seeds} below, the results of the experiments on evolvability for the best individual's (at generation 500,000) lineage are shown. 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\linewidth]{evolvability_boxplot_all_seeds_avg}
-	\caption[Evolvability boxplot]{A box and whisker plot showing the mean evolvability spread of all seeds and all conditions. Larger numbers are more evolvable (keep in mind the scale is $1e^{-8}$). }
-	\label{fig:evolvability_mean}	
+	\includegraphics[width=\linewidth]{evolvability_plot_all_seeds01}
+	\caption[Evolvability plot, all seed]{A plot showing the evolvability of all seeds and all conditions. Larger numbers are more evolvable (mind the scale for each condition, upper left).}
+	\label{fig:evolvability_all_seeds}	
 \end{figure}
 The figure illustrates that, for each condition, overall the best individual still had quite low evolvability. For the selection up condition, however, the deviation from zero was even smaller, as illustrated in Table~\ref{table:mean_std_dev_evolvability} below, which provides the mean and standard deviation of the evolvability of the best individual in each condition. 
 
@@ -352,15 +367,17 @@ The evolvability rank sum and p-value information is given in Table~\ref{table:e
 		\hline
 		& \textbf{rank sum} & \textbf{p-value} \\
 		\hline
-		$\mu_+$ & 36203620.00 & 0.00000000 \\ 
+		$\mu_+$ & 37476904.00 & 0.11538726 \\ 
 		\hline
-		$\mu_-$ & 7025283.50 & 0.01021245 \\ 
+		$\mu_-$ & 4084573.50 & 0.00000000 \\ 
 		\hline
-		$N_-$ & 19403134.50 & 0.00000000 \\ 
+		$N_+$ & 101772759.00 & 0.00000000 \\ 
 		\hline
-		$k_+$ & 13181851.50 & 0.00000000 \\ 
+		$N_-$ & 15367560.00 & 0.00000000 \\ 
 		\hline
-		$k_-$ & 13779001.50 & 0.00000008 \\ 
+		$k_+$ & 6997351.00 & 0.00000000 \\ 
+		\hline
+		$k_-$ & 8535654.00 & 0.00000000 \\ 
 		\hline
 	\end{tabular}
 	\caption[Evolvability - rank sum and p-value]{Rank sum and p-values for evolvability, all seeds, all conditions.}
@@ -376,17 +393,19 @@ The evolvability rank sum and p-value information is given in Table~\ref{table:e
 		& \textbf{mean} & \textbf{standard deviation} & \textbf{\% change from control} \\
 		\hline
 		\hline
-		control & 2.035524e-11 & 3.27875e-10 & \textemdash \\ 
+		control & 4.133535e-10 & 3.28521e-09 & \textemdash \\ 
 		\hline
-		$\mu_+$ & 9.976552e-11 & 8.417492e-10 & 3.901221e+02 \\ 
+		$\mu_+$ & 1.789394e-09 & 7.828305e-09 & 332.8969 \\ 
 		\hline
-		$\mu_-$ & 6.064698e-12 & 1.247167e-10 & -7.020571e+01 \\ 
+		$\mu_-$ & 1.369594e-10 & 1.320591e-09 & -66.86627 \\ 
 		\hline
-		$k_+$ & 1.949894e-15 & 6.394659e-14 & -9.999042e+01 \\ 
+		$k_+$ & 4.152320e-14 & 6.590472e-13 & -99.98995 \\ 
 		\hline
-		$k_-$ & 4.306572e-10 & 5.202329e-09 & 2.015707e+03 \\ 
+		$k_-$ & 8.394271e-09 & 5.085889e-08 & 1930.773 \\ 
 		\hline
-		$N_-$ & 8.837632e-11 & 1.079930e-09 & 3.341699e+02 \\ 
+		$N_+$ & 8.149206e-10 & 4.345602e-09 & 97.14859 \\ 
+		\hline
+		$N_-$ & 1.015906e-09 & 8.152163e-09 & 145.7718 \\ 
 		\hline	 		 
 	\end{tabular}
 	\caption[Evolvability mean and standard deviation]{Table illustrating the mean and standard deviation of the evolvability for each condition. $\mu$ is the mutation rate, $k$ is the selection rate, and $N$ is the population size.}
@@ -396,7 +415,6 @@ The evolvability rank sum and p-value information is given in Table~\ref{table:e
 \subsection{Robustness}
 Recall from Section~\ref{subsec:robustness_antirobustness} that robustness is measured by the fraction of neutral offspring of an individual. In the following figure, a bar plot showing the spread of neutral offspring for the best individual is seen for the control condition as well as the six variations. 
 
-%TODO update graphic with more conditions once experiments are completed
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{stat_robustness_best_mean_frac_neutral_offspring}
@@ -412,10 +430,11 @@ The mutation up condition clearly had the largest mean percentage of neutral mut
 		\hline
 		& \textbf{rank sum} & \textbf{p-value} \\
 		\hline
-		\hline
 		$\mu_+$ & 16756710.50 & 0.00000000 \\ 
 		\hline
 		$\mu_-$ & 5741758.00 & 0.00000000 \\ 
+		\hline
+		$N_+$ & 6106612.50 & 0.00000000 \\ 
 		\hline
 		$N_-$ & 12493750.00 & 0.00000000 \\ 
 		\hline
@@ -434,7 +453,7 @@ The mutation up condition clearly had the largest mean percentage of neutral mut
 		\hline
 		& \textbf{mean} & \textbf{std. dev.} & \textbf{mean's \% change from control} \\
 		\hline
-		control & 0.944925 & 0.007334 & \textemdash \\ 
+		control & 0.944925 & 0.00733438 & \textemdash \\ 
 		\hline
 		$\mu_+$ & 0.936677 & 0.007907 & -0.872870 \\ 
 		\hline
@@ -443,6 +462,8 @@ The mutation up condition clearly had the largest mean percentage of neutral mut
 		$k_+$ & 0.944466 & 0.007372 & -0.048598 \\ 
 		\hline
 		$k_-$ & 0.944516 & 0.007424 & -0.043350 \\ 
+		\hline
+		$N_+$ & 0.946396 & 0.007143 & 0.155634 \\ 
 		\hline
 		$N_-$ & 0.937409 & 0.008846 & -0.795408 \\ 
 		\hline
@@ -466,19 +487,19 @@ Analogously to Table~\ref{table:experiment_predictions}, the results of the expe
 		\cline{2-7}
 		& {\Large$\mu_+$} & {\Large$\mu_-$} & {\Large$k_+$} & {\Large$k_-$} & {\Large$N_+$} & {\Large$N_-$} \\
 		\hline 
-		Genome Size & \cellcolor{green} $-^{\cite{bradwell2013correlation, carde.2019, marais2008mutation}}$ & \cellcolor{red} $\text{+}^{\cite{bradwell2013correlation, carde.2019, drake1991constant}}$ & \cellcolor{green} $+^{\cite{Batut.2013}}$ & \cellcolor{green} $-^{\cite{Batut.2013}}$ & $-^{\cite{Batut.2014, carde.2019}}$ & \cellcolor{green} $+^{\cite{Batut.2014, carde.2019}}$ \\
+		Genome Size & \cellcolor{green} - & \cellcolor{red} + & \cellcolor{green} + & \cellcolor{green} - & \cellcolor{green} - & \cellcolor{green} + \\
 		\hline
-		Fitness & \cellcolor{green} $+^{\cite{bataillon2000estimation, vahdati2017effect}}$ & \cellcolor{green} $-^{\cite{vahdati2017effect}}$ & \cellcolor{red} $+^{\cite{Batut.2014}}$ & \cellcolor{red} $-^{\cite{Batut.2014}}$ & $+^{\cite{cutter2019primer, vahdati2017effect}} $ & \cellcolor{green} $-^{\cite{cutter2019primer, vahdati2017effect}} $\\
+		Fitness & \cellcolor{green} + & \cellcolor{green} - & \cellcolor{red} + & \cellcolor{red} - & \cellcolor{green} + & \cellcolor{green} - \\
 		\hline
-		Amount of non-coding DNA & \cellcolor{green} $-^{\cite{Knibbe2007}}$ & \cellcolor{red} $+^{\cite{Knibbe2007}}$ & \cellcolor{green} $+^{\cite{Batut.2013, Knibbe2007}}$ & \cellcolor{green} $-^{\cite{Batut.2013, Knibbe2007}}$ & $-^{\cite{Batut.2013}}$ & \cellcolor{green} $+^{\cite{Batut.2013}}$ \\
+		Amount of non-coding DNA & \cellcolor{green} - & \cellcolor{red} + & \cellcolor{green} + & \cellcolor{green} - & \cellcolor{green} - & \cellcolor{green} + \\
 		\hline
-		Number of genes & \cellcolor{red} $-^{\cite{Knibbe2007}}$ & \cellcolor{green} $+^{\cite{Knibbe2007}}$ &\cellcolor{green} $+^{\cite{Knibbe2007}}$ & \cellcolor{green} $-^{\cite{Knibbe2007}}$ & $-^{\cite{Batut.2014}}$ & \cellcolor{green} $+^{\cite{Batut.2014}}$ \\
+		Number of genes & \cellcolor{red} - & \cellcolor{green} + &\cellcolor{green} + & \cellcolor{green} - & \cellcolor{red} - & \cellcolor{green} + \\
 		\hline
-		Average size of genes & \cellcolor{red} $-^{\cite{Liard.2018}}$ & \cellcolor{green} $+^{\cite{Liard.2018}}$ & \cellcolor{green} $-^{\cite{Batut.2013}}$ & \cellcolor{red}$+^{\cite{Batut.2013}}$ & $-^{\cite{Batut.2014}}$ & \cellcolor{red} $+^{\cite{Batut.2014}}$ \\
+		Average size of genes & \cellcolor{red} - & \cellcolor{green} + & \cellcolor{green} - & \cellcolor{red} + & \cellcolor{green} - & \cellcolor{red} + \\
 		\hline
-		Robustness & \cellcolor{green} $-^{\cite{Knibbe2007}}$ &\cellcolor{green} $+^{\cite{Knibbe2007}}$ & \cellcolor{green} $-^{\cite{Batut.2013, Knibbe2007}}$ & \cellcolor{green}$+^{\cite{Batut.2013, Knibbe2007}}$ & $-^{\cite{elena2007effects}}$ & \cellcolor{red} $+^{\cite{elena2007effects}}$ \\
+		Robustness & \cellcolor{green} - &\cellcolor{green} + & \cellcolor{green} - & \cellcolor{green}+ & \cellcolor{green} - & \cellcolor{red} + \\
 		\hline
-		Evolvability &\cellcolor{green} $+^{\cite{Knibbe2007}}$ &\cellcolor{green} $-^{\cite{Knibbe2007}}$ & \cellcolor{red}  $+^{\cite{Batut.2013}}$ & \cellcolor{red} $-^{\cite{Batut.2013}}$ & $-^{\cite{wein2019effect}}$ & \cellcolor{green} $+^{\cite{wein2019effect}}$ \\
+		Evolvability &\cellcolor{green} + &\cellcolor{green} - & \cellcolor{red}  + & \cellcolor{red} - & \cellcolor{red} - & \cellcolor{green} + \\
 		\hline		
 	\end{tabular}
 	\caption[Experiment result summary]{A summary of whether the experiment results confirmed or denied the hypotheses of Table~\ref{table:experiment_predictions}.  were confirmed ({\color{green}green}) or rejected ({\color{red}red}), along with the predicted results of whether the given result would increase (+) or decrease (-) over the control condition.}
@@ -492,12 +513,13 @@ Beginning with the $N_-$ condition, recall Table~\ref{table:genome_size_stats_la
 
 Because the wild types began these experiments having evolved for 10 million generations in a static environment, their variability was low and the genome was relatively compact (thanks to the natural streamlining effects of bacterial genomes), and thus their mutational robustness was also low. As described in Liard et al.~\cite{Liard.2018}, however, in the $\mu_+$ condition, an increased mutation rate is expected to boost their mutational robustness by disrupting existing genes and introducing many non-coding bases, which in turn allows purifying selection to overcome the proposed complexity ratchet, finally reducing the genome. In these experiments, however, the robustness scores for the $\mu_+$ condition (see Table~\ref{table:robustness_means_and_std_dev} indicate that increasing the mutation rate did not produce this effect, as the robustness actually went down from the control condition. Nevertheless, in the $\mu_+$ condition, the number of non-coding bases went down (see Table~\ref{table:non-coding_DNA_mean_and_standard_deviation}), the gene density went up (see Table~\ref{table:mean_functional_gene_size_and_std_dev}), and the number of genes overall went down (see Table~\ref{table:number_of_genes_mean_std_dev}). %TODO Expain this!
 
-\subsection{Fitness}
+\subsection{Metabolic Error and Fitness}
 Examining Figure~\ref{fig:mean_fitness_all_seeds}, it quickly becomes apparent that, in the static environment in which the wild type evolved, adding another 500,000 generations on top of the previous 10 million does not much affect the average fitness of the control condition. Small fluctuations occurred due to mutations, insertions, etc. but overall the genotype was quite steady. However, for the $\mu_+$, $\mu_-$, $k_+$, and $N_+$ conditions, a clear trend towards improved fitness may be observed.
 
 More interesting are the $N_-$ and $k_+$ conditions, where by generation 500,000 the average fitness in the whole population declined to 2.76\% and 99.99\% below the control condition respectively (see Table~\ref{table:fitness_means_std_dev}). It seems that with the smaller population size, genetic drift may be more strongly at work in continually increasing the gap between the phenotype and environmental function, as the lack of variety inherent in a smaller population causes a cascade of increasingly deleterious consequences.
  
 It has been postulated that perhaps gene loss may be selected for in order to increase the overall fitness of an organism by removing the added cost of the superfluous genes~\cite{koskiniemi2012}. These results generally agree with this hypothesis, though the results show that, in addition to the general accumulation of non-coding DNA across all conditions (Figure~\ref{fig:mean_non-coding_DNA}), which would theoretically have a higher fitness cost, the number of genes actually \textit{increased} slightly for each condition, except for $k_-$. Likewise, fitness overall went \textit{up} as the number of genes increased (except for $N_-$). Lastly, decreasing the selection pressure resulted in the highest overall mean fitness by a wide margin (Table~\ref{table:fitness_means_std_dev}). In Aevol, non-coding DNA is not directly associated with a fitness cost, so this may not fully explain the circumstances.  
+
 
 \subsection{Functional Genes}
 Regarding the $N_-$ condition, comparing this with the results of Batut et al. and their work with \textit{Buchnera aphidicola} (see Section~\ref{related_work}), it may be possible that gene loss is occurring because of the smaller effective population size clicking down Muller's ratchet. This does not seem to be what is happening in these experiments either, however. Though mean fitness of the $N_-$ condition did greatly decline (see Figure~\ref{fig:mean_fitness_plot}), the $N_-$ condition also saw the largest accumulation of non-coding DNA (see Figure~\ref{fig:mean_non-coding_DNA}) and the second-highest level of evolvability (see Table~\ref{table:mean_std_dev_evolvability}), which should theoretically have lead to an easier time of overcoming the ratchet. On the other hand, the number of functional genes stayed more or less the same as all of the other conditions, and the accumulated number of non-functional genes (pseudogenes) of the $N_-$ condition was the largest (see Figure~\ref{fig:mean_num_non-functional_genes}). These two factors together suggest that there almost certainly was some loss of fitness through pseudogenization; perhaps with more time, the pseudogenes would also have been lost.
@@ -509,7 +531,12 @@ Recall the work of Liard et al.\cite{Liard.2018} as discussed in Section~\ref{re
 %
 %The reduced evolvability again seems to be playing a role, as the 
 
-
-
 %TODO Perform another experiment with a much higher mutation rate: 1e-3 for 100k generations?
 
+\section{Results Summary}
+Connecting it all together, there is, then, a natural link between the amount of non-coding DNA, coding DNA, genome size, evolvability, robustness, and selection. As the amount of non-coding bases (and therefore overall genome size) increases through natural mutational processes, these non-coding bases can nevertheless play a crucial role in increasing evolvability by being the fodder for new potentially beneficial mutations~\cite{Knibbe2007}. However, a trade-off exists because the increased \textit{mutational load} (i.e. the increasing cost of recurrent harmful mutations, as most mutations are) also carries a fitness cost. In a population whose effective population size is too small, these deleterious mutations accumulate, a phenomenon known as Muller's ratchet~\cite{MullersRatchet}. Liard et al.~\cite{Liard.2018} demonstrated, however, that this ``complexity ratchet'' (i.e. the tendency of genomes to become larger and more complex) is not impossible to overcome, and selecting for robustness is an effective strategy for overcoming the ratchet. 
+
+%TODO Fix this next paragraph. Does it really follow from the previous one? What's the connection?
+Similarly, Koskiniemi et al. showed via in vivo experiments that gene loss may be partially driven by selection~\cite{koskiniemi2012}, however. In their experiments with real-world bacteria, a high percentage of random deletions introduced into \textit{Salmonella} do in fact result in increased fitness (as measured by exponential growth rates). There seems to be a race between the gene-preserving force of selection and the natural tendency of bacterial genomes towards deletion and streamlining. 
+
+In these experiments, these natural processes were not  

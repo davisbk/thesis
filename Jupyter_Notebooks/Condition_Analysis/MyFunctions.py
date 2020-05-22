@@ -32,16 +32,19 @@ def perc_diff(new_value, old_value):
     return df_perc_diff
 
 # Function to format the rank sum calculations, allowing for easy changes to the number of decimal places, etc.    
-def rank_sum_format(condition, rank_sum, p_value):
-    lineformat = "\n{0} & {1:.2f} & {2:.8f} \\\\ \n\hline"
+def rank_sum_format(condition, rank_sum, p_value, scientific=False):
+    if scientific:
+        lineformat = "\n{0} & {1:.2f} & {2:.8e} \\\\ \n\hline"
+    else:
+        lineformat = "\n{0} & {1:.2f} & {2:.8f} \\\\ \n\hline"
     
     return lineformat.format(condition, rank_sum, p_value)
 
 # Function to format the mean and std. dev. calculations, allowing for easy changes to number of decimal places, etc.
-def mean_format(condition, mean, std_dev, mean_perc_diff, precision=6, scientific=True):
+def mean_format(condition, mean, std_dev, mean_perc_diff, precision=6, scientific=False):
     if scientific:
         lineformat_control = "\n{0} & {1:."+str(precision)+"e} & {2:."+str(precision)+"} & {3} \\\\ \n\\hline" # mean_perc_diff would be '\\textemdash' in the control condition
-        lineformat_condition = "\n{0} & {1:."+str(precision)+"e} & {2:."+str(precision)+"e} & {3:."+str(precision)+"e} \\\\ \n\\hline"
+        lineformat_condition = "\n{0} & {1:."+str(precision)+"e} & {2:."+str(precision)+"e} & {3:."+str(precision)+"f} \\\\ \n\\hline"
     else:
         lineformat_control = "\n{0} & {1:."+str(precision)+"f} & {2:."+str(precision)+"} & {3} \\\\ \n\\hline" # mean_perc_diff would be '\\textemdash' in the control condition
         lineformat_condition = "\n{0} & {1:."+str(precision)+"f} & {2:."+str(precision)+"f} & {3:."+str(precision)+"f} \\\\ \n\\hline"
@@ -57,16 +60,27 @@ def mean_format(condition, mean, std_dev, mean_perc_diff, precision=6, scientifi
 # This function will make sure that the colors of all seeds are consistent across all plots    
 def seed_color(seed_name):
     switch = {
-        'seed01' : 'teal',
-        'seed02' : 'orange',
-        'seed03' : 'seagreen',
-        'seed04' : 'red',
-        'seed05' : 'plum',
-        'control_avg' : 'blue',
-        'mut_up_avg' : 'black'
+        'seed01' : 'orange',
+        'seed02' : 'green',
+        'seed03' : 'red',
+        'seed04' : 'purple',
+        'seed05' : 'brown',
+        'control_avg' : 'blue'        
         }
-    return switch.get(seed_name, 'black')
+    return switch.get(seed_name, 'ERROR_IN_SEED_COLOR()')
         
+# This function will make sure that the colors of all conditions are consistent across all plots
+def cond_color(cond_name):
+    switch = {
+        'control' : 'blue',
+        'mut_up' : 'orange',
+        'mut_down' : 'green',
+        'selection_up' : 'red',
+        'selection_down' : 'purple',
+        'pop_up' : 'brown',
+        'pop_down' : 'cyan'
+        }
+    return switch.get(cond_name, 'ERROR_IN_COND_COLOR()')
 # This function returns a more verbose name for a given column header    
 def name(col_header):
     switch = {
