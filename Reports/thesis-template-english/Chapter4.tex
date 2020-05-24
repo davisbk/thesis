@@ -7,6 +7,13 @@ This chapter presents the results of the experiments as performed according to t
 In this section, the results of the experiments are presented. For each examined aspect, both a graphical representation of the data and some of the statistics are given, beginning with the conditions' impact on genome size. It should be noted that in many of the figures throughout this chapter, a rolling window of the mean was used to smooth the values, resulting in many of the plots only showing data starting after a few thousand generations (typically 10,000). This is simply an artifact of the graphing process, and simulations were indeed carried out for 500,000 generations. Lastly, since Aevol provides statistics for both the best individual at the end of the generation as well as for the population at large, the values given in the tables and graphs are for the population at large unless specified as being for the best individual. 
 \subsection{Control}
 \subsection{Mutation Up}
+Figure~\ref{fig:mut_up_percent_non-coding} shows the change in the percentage of non-coding bases in the $\mu_+$ condition. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{percent_non-coding}
+	\caption[Mutation up - percent non-coding]{$\mu_+$ percent non-coding}
+	\label{fig:mut_up_percent_non-coding}
+\end{figure}
 \subsection{Mutation Down}
 \subsection{Selection Up}
 \subsection{Selection Down}
@@ -17,8 +24,8 @@ In this section, the results of the experiments are presented. For each examined
 
 In this section the results of the different conditions are examined, beginning with a focus on which, if any, lead to a reduced genome. Figure~\ref{fig:genome_size} presents the main findings regarding genome size. In the figure, the blue line shows the control condition and the other colors show the changed conditions: $\mu_+$/$\mu_-$ (mutation up/down), $k_+$/$k_-$ (selection up/down), and $N_+$/$N_-$ (population up/down). As can be seen from the figure, the expectations from Section~\ref{sec:expected_results} did not always hold up, as several conditions actually \textit{increased} over their original size. 
 \begin{figure}[H]
-	\includegraphics[width=\linewidth]{stat_fitness_global_mean_genome_size}
 	\centering
+	\includegraphics[width=\linewidth]{stat_fitness_global_mean_genome_size}
 	\caption[Genome size]{Average genome size across the population, in number of bases, of all conditions. Average taken across all five seeds for each condition.}
 	\label{fig:genome_size}
 \end{figure}
