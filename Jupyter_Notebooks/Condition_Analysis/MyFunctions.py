@@ -126,3 +126,21 @@ def name(col_header):
     }
     return switch.get(col_header, "Invalid!")
     
+def my_y_label(col_header):
+    switch = {
+        'genome_size' : 'bp',
+        'num_bp_not_in_any_CDS' : 'bp',
+        'num_bp_not_in_any_functional_CDS' : 'bp',
+        'num_bp_not_in_any_non-functional_CDS' : 'bp',
+        'num_bp_not_included_in_any_RNA' : 'bp',
+        'num_bp_not_included_in_any_coding_RNA' : 'bp',
+        'num_bp_not_included_in_any_non-coding_RNA' : 'bp',
+        'num_of_non-essential_bp' : 'bp',
+        'num_of_non-essential_bp_including_non-functional_genes' : 'bp',
+        'avg_size_of_coding_RNAs' : 'bp',
+        'avg_size_of_non-coding_RNAs' : 'bp',
+        'avg_size_of_functional_genes' : 'bp',
+        'avg_size_of_non-functional_genes' : 'bp',
+        
+    }
+    return switch.get(col_header, '')
