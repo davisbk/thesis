@@ -35,6 +35,8 @@
 \contentsline {section}{\numberline {4.1}Results}{31}{section.4.1}% 
 \contentsline {subsection}{\numberline {4.1.1}Control}{31}{subsection.4.1.1}% 
 \contentsline {subsection}{\numberline {4.1.2}Mutation Up}{31}{subsection.4.1.2}% 
+\contentsline {subsubsection}{Genome Size}{32}{section*.8}% 
+\contentsline {subsubsection}{Percent Non-coding}{32}{section*.9}% 
 \contentsline {subsection}{\numberline {4.1.3}Mutation Down}{32}{subsection.4.1.3}% 
 \contentsline {subsection}{\numberline {4.1.4}Selection Up}{32}{subsection.4.1.4}% 
 \contentsline {subsection}{\numberline {4.1.5}Selection Down}{32}{subsection.4.1.5}% 
@@ -43,10 +45,10 @@
 \contentsline {subsection}{\numberline {4.1.8}Genome Size}{32}{subsection.4.1.8}% 
 \contentsline {subsection}{\numberline {4.1.9}Metabolic Error and Fitness}{37}{subsection.4.1.9}% 
 \contentsline {subsection}{\numberline {4.1.10}Genome Structure}{41}{subsection.4.1.10}% 
-\contentsline {subsubsection}{Non-coding DNA}{41}{section*.8}% 
-\contentsline {subsubsection}{Number of Functional Genes}{43}{section*.9}% 
-\contentsline {subsubsection}{Number of Non-Functional Genes}{44}{section*.10}% 
-\contentsline {subsubsection}{Average Size of Functional Genes}{45}{section*.11}% 
+\contentsline {subsubsection}{Non-coding DNA}{41}{section*.10}% 
+\contentsline {subsubsection}{Number of Functional Genes}{43}{section*.11}% 
+\contentsline {subsubsection}{Number of Non-Functional Genes}{44}{section*.12}% 
+\contentsline {subsubsection}{Average Size of Functional Genes}{45}{section*.13}% 
 \contentsline {subsection}{\numberline {4.1.11}Evolvability}{47}{subsection.4.1.11}% 
 \contentsline {subsection}{\numberline {4.1.12}Robustness}{49}{subsection.4.1.12}% 
 \contentsline {section}{\numberline {4.2}Discussion}{51}{section.4.2}% 
