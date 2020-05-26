@@ -201,7 +201,7 @@ Lastly, Figure~\ref{fig:selection_up_perc_non-coding} shows that some of the inc
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{selection_up_percent_non-coding_b1-e500000}
-	\caption[Selection up percent non-coding]{$k_+$ percent non-coding, generations 1-500,000, all seeds.}
+	\caption[Selection up percent non-coding]{$k_+$ population mean percent non-coding, generations 1-500,000, all seeds.}
 	\label{fig:selection_up_perc_non-coding}
 \end{figure}
 % SELECTION DOWN
@@ -210,10 +210,10 @@ Figure~\ref{fig:selection_down_genome_size} shows the genome size results for th
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{selection_down_genome_size_b1-e500000}
-	\caption[Selection down genome size]{$k_-$ genome size, generations 1-500,000.}
+	\caption[Selection down genome size]{$k_-$ population mean genome size, generations 1-500,000.}
 	\label{fig:selection_down_genome_size}
 \end{figure}
-The slight increase in genome size is probably best explained by the gaining of non-coding bases, as shown in Figure~\ref{fig:selection_down_perc_non-coding}.
+The slight increase in genome size is probably best explained by the gaining of some non-coding bases, as shown in Figure~\ref{fig:selection_down_perc_non-coding}, as the decreased selection caused an overall loss in the number of functional genes for most seeds for most of the generations (see Figure~\ref{fig:selection_down_num_functional_genes}).  
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{selection_down_percent_non-coding_b1-e500000}
@@ -221,14 +221,31 @@ The slight increase in genome size is probably best explained by the gaining of 
 	\label{fig:selection_down_perc_non-coding}
 \end{figure}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{selection_down_num_functional_genes_b1-e500000}
+	\caption[Selection down number of functional genes.]{$k_-$ mean population number of functional genes, generations 1-500,000, all seeds.}
+	\label{fig:selection_down_num_functional_genes}
+\end{figure}
+
+
 % POPULATION UP
 \subsection{Population Up}
-
+Figure~\ref{fig:pop_up_genome_size} shows the mean population genome size for the $N_+$ condition, and it is clearly the condition which experienced the largest amount of reductive evolution over the course of the 500,000 generations. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{population_up_genome_size_b1-e500000}
 	\caption[Population up genome size]{$N_+$ genome size, generations 1-500,000.}
 	\label{fig:pop_up_genome_size}
+\end{figure}
+
+Confirming the work of Batut et al.~\cite{Batut.2014}, the increased $N_e$ allowed the efficacy of selection to increase, removing deleterious mutations from the genome, removing non-coding DNA (Figure~\{fig:pop_up:perc_non-coding}). 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{population_up_percent_non-coding_b1-e500000}
+	\caption[Population up percent non-coding]{$N_+$ population mean percent non-coding, generations 1-500,000, all seeds.}
+	\label{fig:pop_up:perc_non-coding}
 \end{figure}
 
 % POPULATION DOWN
@@ -376,7 +393,7 @@ Figure~\ref{fig:mean_metabolic_error} shows the mean metabolic error across all 
 	\label{fig:mean_metabolic_error}
 \end{figure}
 
-Table~\ref{table:fitness_means_std_dev} below gives the mean fitness scores for the population and the differing conditions. The selection down condition seems to be somewhat anomalous, as it was several orders of magnitude larger than all other conditions, despite having comparable genome sizes, numbers of genes, etc.
+Table~\ref{table:fitness_means_std_dev} below gives the mean fitness scores for the population and the differing conditions. 
 \begin{table}[H]
 	\centering
 	\begin{tabular}{|c||c|c|c|}
@@ -712,6 +729,8 @@ Since the $k_-$ condition's p-value was $\geq0.5$, it must be rejected.
 
 \section{Discussion}\label{discussion}
 
+Similarly, Koskiniemi et al. showed via in vivo experiments that gene loss may be partially driven by selection~\cite{koskiniemi2012}. In their experiments with real-world bacteria, a high percentage of random deletions introduced into \textit{Salmonella} do in fact result in increased fitness (as measured by exponential growth rates). There seems to be a race between the gene-preserving force of selection and the natural tendency of bacterial genomes towards deletion and streamlining. 
+
 Analogously to Table~\ref{table:experiment_predictions}, the results of the experiments in Table~\ref{table:experiment_results_summary} are summarized below. For each cell, {\color{green} green} indicates that the prediction was confirmed in these experiments and {\color{red}red} indicates that the prediction must be rejected. The predictions for each condition are duplicated here for convenience, with a $+$ indicating a predicted increase and $-$ indicating a predicted decrease over the control condition. 
 
 \begin{table}[H]
@@ -753,9 +772,6 @@ Examining Figure~\ref{fig:mean_fitness_all_seeds}, it quickly becomes apparent t
 
 More interesting are the $N_-$ and $k_+$ conditions, where by generation 500,000 the average fitness in the whole population declined to 2.76\% and 99.99\% below the control condition respectively (see Table~\ref{table:fitness_means_std_dev}). It seems that with the smaller population size, genetic drift may be more strongly at work in continually increasing the gap between the phenotype and environmental function, as the lack of variety inherent in a smaller population causes a cascade of increasingly deleterious consequences.
  
-xxx (Figure~\ref{fig:mean_non-coding_DNA}), which would theoretically have a higher fitness cost, the number of genes actually \textit{increased} slightly for each condition, except for $k_-$. Likewise, fitness overall went \textit{up} as the number of genes increased (except for $N_-$). Lastly, decreasing the selection pressure resulted in the highest overall mean fitness by a wide margin (Table~\ref{table:fitness_means_std_dev}). In Aevol, non-coding DNA is not directly associated with a fitness cost, so this may not fully explain the circumstances.  
-
-
 \subsection{Functional Genes}
 Regarding the $N_-$ condition, comparing this with the results of Batut et al. and their work with \textit{Buchnera aphidicola} (see Section~\ref{related_work}), it may be possible that gene loss is occurring because of the smaller effective population size clicking down Muller's ratchet. This does not seem to be what is happening in these experiments either, however. Though mean fitness of the $N_-$ condition did greatly decline (see Figure~\ref{fig:mean_fitness_plot}), the $N_-$ condition also saw the largest accumulation of non-coding DNA (see Figure~\ref{fig:mean_non-coding_DNA}) and the second-highest level of evolvability (see Table~\ref{table:mean_std_dev_evolvability}), which should theoretically have lead to an easier time of overcoming the ratchet. On the other hand, the number of functional genes stayed more or less the same as all of the other conditions, and the accumulated number of non-functional genes (pseudogenes) of the $N_-$ condition was the largest (see Figure~\ref{fig:mean_num_non-functional_genes}). These two factors together suggest that there almost certainly was some loss of fitness through pseudogenization; perhaps with more time, the pseudogenes would also have been lost.
 
@@ -766,13 +782,11 @@ Recall the work of Liard et al.\cite{Liard.2018} as discussed in Section~\ref{re
 %
 %The reduced evolvability again seems to be playing a role, as the 
 
-%TODO Perform another experiment with a much higher mutation rate: 1e-3 for 100k generations?
-
 \section{Results Summary}
 Connecting it all together, there is, then, a natural link between the amount of non-coding DNA, coding DNA, genome size, evolvability, robustness, and selection. As the amount of non-coding bases (and therefore overall genome size) increases through natural mutational processes, these non-coding bases can nevertheless play a crucial role in increasing evolvability by being the fodder for new potentially beneficial mutations~\cite{Knibbe2007}. However, a trade-off exists because the increased \textit{mutational load} (i.e. the increasing cost of recurrent harmful mutations, as most mutations are) also carries a fitness cost. In a population whose effective population size is too small, these deleterious mutations accumulate, a phenomenon known as Muller's ratchet~\cite{MullersRatchet}. 
 
 Liard et al.~\cite{Liard.2018} demonstrated, however, that this ``complexity ratchet'' (i.e. the tendency of genomes to become larger and more complex) is not impossible to overcome, and selecting for robustness is an effective strategy for overcoming the ratchet. 
 
-%TODO Fix this next paragraph. Does it really follow from the previous one? What's the connection?
-Similarly, Koskiniemi et al. showed via in vivo experiments that gene loss may be partially driven by selection~\cite{koskiniemi2012}. In their experiments with real-world bacteria, a high percentage of random deletions introduced into \textit{Salmonella} do in fact result in increased fitness (as measured by exponential growth rates). There seems to be a race between the gene-preserving force of selection and the natural tendency of bacterial genomes towards deletion and streamlining. 
+
+
 
