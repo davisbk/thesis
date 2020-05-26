@@ -22,7 +22,7 @@ Examining the figure, over the course of 500,000 generations the mean genome siz
 	\caption[Control condition percent non-coding]{Percent non-coding for the control condition, generation 1-500,000.}
 	\label{fig:control_perc_non-coding}
 \end{figure}
-Despite the slight increase in non-coding bases, however, overall population fitness continued to improve even though the wild types had already evolved for 500,000 generations in the same environment.
+Despite the slight increase in non-coding bases, however, overall population fitness continued to improve even though the wild types had already evolved for 500,000 generations in the same environment, as seen in Figure~\ref{fig:control_fitness}.
 
 % CONTROL FITNESS
 \begin{figure}[H]
@@ -31,13 +31,13 @@ Despite the slight increase in non-coding bases, however, overall population fit
 	\label{fig:control_fitness}
 \end{figure}
 
-Table~\ref{table:control_mean_fitness_change} below illustrates, however, that when considering the mean population fitness of all seeds, the final 50,000 generations were only an improvement of 0.2333\% over the first 50,000 generations, though the largest individual improvement in a seed (seed05) was closer to 1.322\%, a more than five-fold improvement.  
+Table~\ref{table:control_mean_fitness_change} below illustrates, however, that although the largest individual fitness improvement in a seed (seed05) was closer to 1.322\%, the improvement in the all-seed mean from the first 50,000 generations to the last 50,000 generations was only 0.2333\%, a very modest increase. 
 
 \begin{table}[H]
 	\centering
 	\begin{tabular}{|c|c|c|}
 		\hline
-		\multicolumn{3}{|c|}{\Large \textbf{Control Mean Fitness}} \\
+		\multicolumn{3}{|c|}{\Large \textbf{Control Mean Fitness, All Seeds}} \\
 		\hline
 		\textbf{fitness @0-50k} & \textbf{fitness @450k-500k} & \textbf{Percent Change} \\
 		\hline \hline
@@ -45,11 +45,12 @@ Table~\ref{table:control_mean_fitness_change} below illustrates, however, that w
 		\hline
 		
 	\end{tabular}
-	\caption[Control Population Mean Fitness, Gens 0-50k, 450k-500k]{Table showing the mean population fitness change from generations 0-50k and 450-500k.}
+	\caption[Control Population Mean Fitness, Gens 0-50k, 450k-500k]{Table showing the mean population fitness change from generations 0-50k and 450-500k for all seeds.}
 	\label{table:control_mean_fitness_change}
 \end{table}
 
-Figure~\ref{fig:control_avg_size_of_functional_genes_b1-e500000} shows the average size of functional genes observed in the control condition for all seeds for all 500,000 generations.
+Figure~\ref{fig:control_avg_size_of_functional_genes_b1-e500000} shows the change in the average size of functional genes observed in the control condition for all seeds for all 500,000 generations. Gene density 
+
 \begin{figure}[H]
 	\includegraphics[width=\linewidth]{control_avg_size_of_functional_genes_b1-e500000}
 	\caption[Control avg. size of functional genes]{Figure showing the population mean size of the functional genes in the control condition, generations 1-500,000.}
@@ -415,7 +416,7 @@ Figure~\ref{fig:mean_functional_gene_size} shows the average number of base pair
 	\caption[Average size of functional genes]{Plot showing the average size of functional genes over time for all seeds.}
 	\label{fig:mean_functional_gene_size}
 \end{figure}
-Table~\ref{table:mean_functional_gene_size_and_std_dev} below gives the mean and standard deviation of the results, and Table~\ref{table:avg_size_of_functional_genes_rank_sum_and_p-value} gives the p-values for comparing the control condition to every other condition. 
+Table~\ref{table:mean_functional_gene_size_and_std_dev} below summarizes the mean and standard deviation of the average size of functional genes for all conditions, and Table~\ref{table:avg_size_of_functional_genes_rank_sum_and_p-value} gives the p-values for comparing the control condition to every other condition. 
 
 \begin{table}[H]
 	\centering
