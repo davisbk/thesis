@@ -57,9 +57,35 @@ Figure~\ref{fig:control_avg_size_of_functional_genes_b1-e500000} shows the chang
 	\label{fig:control_avg_size_of_functional_genes_b1-e500000}
 \end{figure}
 
+Figure~\ref{fig:control_gene_density} shows gene density (number of genes per total number of base pairs). This is a convenient measure for taking into account both the number of genes and the genome size. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{control_density_b1-e500000}
+	\caption[Control gene density]{Control condition gene density, generations 1 to 500,000, all seeds}
+	\label{fig:control_gene_density}
+\end{figure}
+
+Figures~\ref{fig:control_robustness} and Figure~\ref{fig:control_evolvability} show the control condition's robustness and evolvability, respectively. As a reminder, in Aevol, mutational robustness is calculated by finding the fraction of neutral offspring of an individual. In these figures, both robustness and evolvability are calculated based on the best individual at generation 500,000. Please note the scale of Figure~\ref{fig:control_evolvability}, which is $1*e^{-8}$.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{control_frac_neutral_mutants_b1-e500000}
+	\caption[Control robustness]{Control robustness for generations 1-500,000, all seeds.}
+	\label{fig:control_robustness}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{control_evolvability_b1-e500000}
+	\caption[Control evolvability]{Control evolvability, all seeds.}
+	\label{fig:control_evolvability}
+\end{figure}
+
+
 % MUTATION UP
 \subsection{Mutation Up}
-The genome size for the $\mu_+$ condition is shown in Figure~\ref{fig:mut_up_genome_size}. The $\mu_+$ population mean genome size fluctuated both above and below the control condition, and Table~\ref{table:genome_size_mean_and_std_dev} (pg. \pageref{table:genome_size_mean_and_std_dev}) makes it clear that the increased mutation rate lead to a slightly larger average genome size (0.157661\%). 
+The genome size for the $\mu_+$ condition is shown in Figure~\ref{fig:mut_up_genome_size}. The $\mu_+$ population mean genome size fluctuated between being above and below the control condition, and Table~\ref{table:genome_size_mean_and_std_dev} (pg. \pageref{table:genome_size_mean_and_std_dev}) makes it clear that, when considered over the whole run of 500,000 generations, the increased mutation rate lead to a slightly larger mean genome size (0.157661\%). 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{mut_up_genome_size_b1-e500000}
@@ -67,9 +93,25 @@ The genome size for the $\mu_+$ condition is shown in Figure~\ref{fig:mut_up_gen
 	\label{fig:mut_up_genome_size}
 \end{figure}
 
-This was counter to the predictions based on Liard et al.~\cite{Liard.2018}. Based on their research, in the $\mu_+$ condition, an increased mutation rate is expected to boost mutational robustness by disrupting existing genes and introducing many non-coding bases, which in turn allows purifying selection to overcome the proposed complexity ratchet, finally reducing the genome. In these experiments, however, the robustness scores for the $\mu_+$ condition (see Table~\ref{table:robustness_means_and_std_dev} indicate that increasing the mutation rate did not produce this effect, as the robustness actually went down from the control condition. Counter to the work of Liard et al., in these experiments, in the $\mu_+$ condition the number of non-coding bases went down (see Figure~\ref{fig:mut_up_percent_non-coding} below) and Table~\ref{table:non-coding_DNA_mean_and_standard_deviation}, pg.~\pageref{table:non-coding_DNA_mean_and_standard_deviation}), the gene density went up (see Table~\ref{table:mean_functional_gene_size_and_std_dev}, pg.~\pageref{table:mean_functional_gene_size_and_std_dev}), and the number of genes overall nevertheless went down (see Table~\ref{table:number_of_genes_mean_std_dev}, pg.~\pageref{table:number_of_genes_mean_std_dev}).
+At first glance, this increase in genome size seems counter to the prediction based on Liard et al.~\cite{Liard.2018} as discussed in Section~\ref{related_work:reductive_evolution}. Based on their research, in the $\mu_+$ condition, an increased mutation rate is expected to boost mutational robustness by disrupting existing genes and introducing many non-coding bases, which in turn allows purifying selection to overcome the proposed complexity ratchet, finally reducing the genome. This does seem to be what happened in these experiments, as well, as the final genome size was below the control condition and seemingly on its way down. 
 
-Figure~\ref{fig:mut_up_percent_non-coding} shows the change in the percentage of non-coding bases in the $\mu_+$ condition. 
+Figure~\ref{fig:mut_up_robustness} confirms that, as time went on, the robustness greatly increased over the control condition (blue dashed line vs. black dashed line) and Figure~\ref{fig:mut_up_gene_density} indicates that purifying selection was at work, increasing the gene density. Similarly, Figure~\ref{fig:mut_up_percent_non-coding} shows the initial increase in the number of non-coding bases as genes were disrupted. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{mut_up_frac_neutral_mutants_b1-e500000}
+	\caption[Mutation up robustness]{Mutation up robustness, generations 1-500,000.}
+	\label{fig:mut_up_robustness}
+\end{figure}
+
+The robustness scores for the $\mu_+$ condition seen in Table~\ref{table:robustness_means_and_std_dev} (pg.~\pageref{table:robustness_means_and_std_dev}) indicate that increasing the mutation rate did not produce this effect on robustness, as mutational robustness actually went down from the control condition. Contrary to Liard et al., despite the increased mutation rate in this condition, the number of non-coding bases went down (see Figure~\ref{fig:mut_up_percent_non-coding} below) and Table~\ref{table:non-coding_DNA_mean_and_standard_deviation}, pg.~\pageref{table:non-coding_DNA_mean_and_standard_deviation}), the gene density went up (see Figure~\ref{fig:mut_up_gene_density}), and the number of genes overall nevertheless went down (see Table~\ref{table:number_of_genes_mean_std_dev}, pg.~\pageref{table:number_of_genes_mean_std_dev}).
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{mut_up_gene_density_b1-e500000}
+	\caption[Mutation up gene density]{Mutation up gene density for generations 1-500,000, all seeds.}
+	\label{fig:mut_up_gene_density}
+\end{figure}
 
 \begin{figure}[H]
 	\centering

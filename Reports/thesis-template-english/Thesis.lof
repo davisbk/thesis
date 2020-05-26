@@ -12,23 +12,28 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Control condition percent non-coding}}{33}{figure.4.2}% 
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Control condition fitness}}{34}{figure.4.3}% 
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Control avg. size of functional genes}}{35}{figure.4.4}% 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Mutation down genome size}}{36}{figure.4.5}% 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Mutation up - percent non-coding}}{37}{figure.4.6}% 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Mutation down genome size}}{38}{figure.4.7}% 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Selection up genome size}}{39}{figure.4.8}% 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Selection down genome size}}{40}{figure.4.9}% 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Population up genome size}}{41}{figure.4.10}% 
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Population down genome size}}{42}{figure.4.11}% 
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Genome size}}{43}{figure.4.12}% 
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Genome size - percent change}}{45}{figure.4.13}% 
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Genome size - last 50k generations}}{46}{figure.4.14}% 
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Fitness all seeds all conditions}}{48}{figure.4.15}% 
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Mean fitness histogram}}{49}{figure.4.16}% 
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Metabolic error}}{50}{figure.4.17}% 
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Non-coding DNA}}{52}{figure.4.18}% 
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Mean number of functional genes}}{53}{figure.4.19}% 
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Mean number of non-functional genes}}{54}{figure.4.20}% 
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Average size of functional genes}}{56}{figure.4.21}% 
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Evolvability plot, all seed}}{58}{figure.4.22}% 
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Robustness box and whisker plot}}{60}{figure.4.23}% 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Control gene density}}{36}{figure.4.5}% 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Control robustness}}{37}{figure.4.6}% 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Control evolvability}}{37}{figure.4.7}% 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Mutation down genome size}}{38}{figure.4.8}% 
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Mutation up robustness}}{39}{figure.4.9}% 
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Mutation up gene density}}{40}{figure.4.10}% 
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Mutation up - percent non-coding}}{40}{figure.4.11}% 
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Mutation down genome size}}{41}{figure.4.12}% 
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Selection up genome size}}{42}{figure.4.13}% 
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Selection down genome size}}{43}{figure.4.14}% 
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Population up genome size}}{44}{figure.4.15}% 
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Population down genome size}}{45}{figure.4.16}% 
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Genome size}}{46}{figure.4.17}% 
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Genome size - percent change}}{48}{figure.4.18}% 
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Genome size - last 50k generations}}{49}{figure.4.19}% 
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Fitness all seeds all conditions}}{51}{figure.4.20}% 
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Mean fitness histogram}}{52}{figure.4.21}% 
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Metabolic error}}{53}{figure.4.22}% 
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Non-coding DNA}}{55}{figure.4.23}% 
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Mean number of functional genes}}{56}{figure.4.24}% 
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Mean number of non-functional genes}}{57}{figure.4.25}% 
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Average size of functional genes}}{59}{figure.4.26}% 
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Evolvability plot, all seed}}{61}{figure.4.27}% 
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Robustness box and whisker plot}}{63}{figure.4.28}% 
 \addvspace {10\p@ }
