@@ -239,13 +239,13 @@ Figure~\ref{fig:pop_up_genome_size} shows the mean population genome size for th
 	\label{fig:pop_up_genome_size}
 \end{figure}
 
-Confirming the work of Batut et al.~\cite{Batut.2014}, the increased $N_e$ allowed the efficacy of selection to increase, removing deleterious mutations from the genome, removing non-coding DNA (Figure~\{fig:pop_up:perc_non-coding}). 
+Confirming the work of Batut et al.~\cite{Batut.2014}, the increased $N_e$ allowed the efficacy of selection to increase, removing deleterious mutations from the genome, removing non-coding DNA (Figure~\ref{fig:pop_up_perc_non-coding}). 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{population_up_percent_non-coding_b1-e500000}
 	\caption[Population up percent non-coding]{$N_+$ population mean percent non-coding, generations 1-500,000, all seeds.}
-	\label{fig:pop_up:perc_non-coding}
+	\label{fig:pop_up_perc_non-coding}
 \end{figure}
 
 % POPULATION DOWN
@@ -258,7 +258,15 @@ Confirming the work of Batut et al.~\cite{Batut.2014}, the increased $N_e$ allow
 	\label{fig:pop_down_genome_size}
 \end{figure}
 
-The $N_-$ condition ending up with a genome over 20\% larger than the control condition perfectly illustrates the effects of genetic drift described by Batut et al. with regard to small effective population sizes ($N_e$) \cite{Batut.2014}. The efficacy of selection to remove deleterious mutations and accumulations of non-coding bases is predicted to go down in populations with a smaller effective population size, causing rapid expansion of the genome size. This appears to be exactly what happened here, as Table~\ref{table:non-coding_DNA_mean_and_standard_deviation} shows the amount of non-coding bases greatly expanding, reaching 17.7\% over the control condition. 
+The $N_-$ condition ending up with a genome over 20\% larger than the control condition perfectly illustrates the effects of genetic drift described by Batut et al. with regard to small effective population sizes ($N_e$) \cite{Batut.2014}. The efficacy of selection to remove deleterious mutations and accumulations of non-coding bases is predicted to go down in populations with a smaller effective population size, causing rapid expansion of the genome size. This appears to be exactly what happened here, as Figure~\ref{fig:pop_down_perc_non-coding} shows the amount of non-coding bases greatly expanding, reaching 17.7\% over the control condition. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{population_down_percent_non-coding_b1-e500000}
+	\caption[Population down percent non-coding]{$N_-$ population mean percent non-coding, generations 1-500,000, all seeds.}
+	\label{fig:pop_down_perc_non-coding}
+\end{figure}
+	
 
 Because the wild types began these experiments having evolved for 10 million generations in a static environment, their variability was low and the genome was relatively compact (thanks to the natural streamlining effects of bacterial genomes), and thus their mutational robustness was also low.
 

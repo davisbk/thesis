@@ -146,12 +146,6 @@ In Aevol, evolvability is calculated by generating a large set of offspring for 
 \subsection{Structure}\label{methods:structure}
 Another strength of Aevol is its ability to analyze changes in the structure of DNA and RNA. As with fitness, Aevol produces statistics about individuals and the population at large for many aspects of genome structure, including: the number of coding vs. non-coding bases (i.e. they respectively do or do not code for at least one protein), the average size of coding and non-coding DNAs, the number of genes, the number of ``essential'' base pairs (i.e. those that are part of a functional coding sequence), etc. Tables~\ref{table:aevol_stats_genes_and_bp} and Table~\ref{table:aevol_stats_fitness_and_mutation} summarize the different statistics and where they are to be found Aevol's output files. 
 
-As mentioned in Section~\ref{related_work}, Koskiniemi et al.~\cite{koskiniemi2012} tested the hypothesis that reductive evolution might occur partly as a result of selection, where fitness is gained by selecting for a 
-
-%TODO Flesh out motivation for including non-coding bases as a performance measure
-Non-coding bases determine regulation %TODO Find source for this - read it just on Wikipedia
-	
-
 \begin{table}[H]
 	\centering
 	\begin{tabular}{ |c|c| }
@@ -239,10 +233,6 @@ Table~\ref{table:experiment_predictions} gives the expected behavior for each of
 \end{table}
 As summarized in the table, a reduction in genome size is expected to occur in the $\mu_+$, $k_-$, and $N_+$ conditions. Based on the work of Bradwell et al., Carde et al., and Marais et al. \cite{bradwell2013correlation, carde.2019, marais2008mutation}, it is expected that an increased mutation rate (i.e. the $\mu_+$ condition) should cause many deleterious mutations which in turn will be removed by purifying selection. Likewise, with weaker selection, the work of Batut et al. \cite{Batut.2013} indicates that with a decreased selection pressure (corresponding to the $k_-$ condition here), many functional genes are lost, causing the organisms to be less fit on average. More interestingly, however, the reduced selection pressure is also expected to cause a loss in non-coding bases, which was the primary source of genome reduction in their experiments. This follows from the fact that, as found in a previous study by Knibbe et al. \cite{Knibbe2007}, the most successful genomes tend to be those that produce ``a little more than one `neutral offspring', that is to say, offspring without mutations or with only neutral mutations'' \cite{Batut.2013}. More formally, Knibbe et al. found that successful genomes fulfill $F_v*W \approxeq 1$, where $W=\frac{e^{-k*g}}{\sum_{i=1}^{N}e^{-k*g}}$ is the expected number of offspring ($k$ is the selection coefficient and $g$ is the gap described in Section~\ref{subsec:aevol_selection}) and $F_v$ is the probability of an offspring having either no mutations or only neutral ones. In other words, with reduced selection, $F_v$ is increased because non-coding DNA is mutagenic for the surrounding genes, so a certain level of mutational variability is still selected for. Lastly, based on the work in another publication by Batut et al. \cite{Batut.2014}, an increase in population size (corresponding to the $N_+$ condition) is expected to cause a decrease in genome size, most likely because of the increased efficacy of selection in larger populations. 
 
-%TODO Finish expected results section on Evolvability and Robustness
-%Robustness \& Evolvability
-%1) Robustness mirrors genome size except in the case of selection
-%2) Evolvability mirrors genome size except for population size
 
 
 
