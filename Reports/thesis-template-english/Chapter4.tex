@@ -3,9 +3,9 @@
 This chapter presents the results of the experiments as performed according to the plan described in Chapter~\ref{ch:03methods}. Section~\ref{results} provides the data and these results are discussed in more detail in Section~\ref{discussion}. 
 
 \section{Results}\label{results}
-In this section, the results of the experiments are presented. For each tested condition (e.g. $\mu_+$, $N_-$, etc.), both a graphical representation of the data and some of the statistics are given. It should be noted that in many of the figures throughout this chapter, a rolling window of the mean (either of the control or non-control conditions) or of the individual seeds was used to smooth the plots, resulting in many of the plots only showing data starting after a few thousand generations (usually 10,000). This is simply an artifact of the graphing process, and simulations were indeed carried out for 500,000 generations. Lastly, although Aevol provides statistics for both the best individual at the end of the generation as well as for the population at large, since this thesis is primarily concerned with general trends, the values given in the tables and graphs are for the population at large unless specified as being for the best individual. 
+In this section, the results of the experiments are presented. For each tested condition (e.g. $\mu_+$, $N_-$, etc.), both a graphical representation of the data and some of the statistics are given. It should be noted that in many of the figures throughout this chapter, a rolling window of the mean (either of the control or non-control conditions) or of the individual seeds was used to smooth the plots, resulting in many of the plots only showing data starting after a certain number of generations (usually 10,000). This is simply an artifact of the graphing process, and simulations were indeed carried out for 500,000 generations. Lastly, although Aevol provides statistics for both the best individual at a particular generation as well as for the population at large, since this thesis is primarily concerned with general trends, the values given in the tables and graphs are for the population at large unless specified as being for the best individual. 
 \subsection{Control}
-The results of the control condition are presented first to provide a baseline for the remaining conditions. As mentioned in Chapter~\ref{ch:03methods}, five runs (seeds) of the experiment were performed. Beginning with genome size, the primary focus on this thesis, Figure~\ref{fig:control_genome_size} shows the number of base pairs (bp) of the individual seeds (various colors) and the average across all five seeds (black, dashed line). 
+The results of the control condition are presented first to provide a baseline for the remaining conditions. As mentioned in Chapter~\ref{ch:03methods}, five runs (seeds) of the experiment were performed. Beginning with genome size, the primary focus on this thesis, Figure~\ref{fig:control_genome_size} shows the mean number of base pairs (bp) for the population at large of the individual seeds (various colors) and the average across all five seeds (black, dashed line) for 500,000 generations. 
 
 \begin{figure}[H]
 	\centering
@@ -49,7 +49,7 @@ Table~\ref{table:control_mean_fitness_change} below illustrates, however, that a
 	\label{table:control_mean_fitness_change}
 \end{table}
 
-Figure~\ref{fig:control_avg_size_of_functional_genes_b1-e500000} shows the change in the average size of functional genes observed in the control condition for all seeds for all 500,000 generations. Gene density 
+Figure~\ref{fig:control_avg_size_of_functional_genes_b1-e500000} shows the change in the average size of functional genes observed in the control condition for all seeds for all 500,000 generations.  
 
 \begin{figure}[H]
 	\includegraphics[width=\linewidth]{control_avg_size_of_functional_genes_b1-e500000}
@@ -57,7 +57,7 @@ Figure~\ref{fig:control_avg_size_of_functional_genes_b1-e500000} shows the chang
 	\label{fig:control_avg_size_of_functional_genes_b1-e500000}
 \end{figure}
 
-Figure~\ref{fig:control_gene_density} shows gene density (number of genes per total number of base pairs). This is a convenient measure for taking into account both the number of genes and the genome size. 
+Figure~\ref{fig:control_gene_density} shows gene density (the number of genes per total number of base pairs). Though this is usually given per million base pairs (Mb), here it is simply the straight number of genes divided by the genome size, and is given as a convenient measure for comparison which takes into account both the number of genes and the genome size. 
 
 \begin{figure}[H]
 	\centering
