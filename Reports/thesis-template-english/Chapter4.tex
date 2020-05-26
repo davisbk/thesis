@@ -3,36 +3,129 @@
 This chapter presents the results of the experiments as performed according to the plan described in Chapter~\ref{ch:03methods}. Section~\ref{results} provides the data and these results are discussed in more detail in Section~\ref{discussion}. 
 
 \section{Results}\label{results}
-In this section, the results of the experiments are presented. For each tested condition (e.g. $\mu_+$, $N_-$, etc.), both a graphical representation of the data and some of the statistics are given. It should be noted that in many of the figures throughout this chapter, a rolling window of the mean was used to smooth the plots, resulting in many of the plots only showing data starting after a few thousand generations (typically 10,000). This is simply an artifact of the graphing process, and simulations were indeed carried out for 500,000 generations. Lastly, since Aevol provides statistics for both the best individual at the end of the generation as well as for the population at large, the values given in the tables and graphs are for the population at large unless specified as being for the best individual. 
+In this section, the results of the experiments are presented. For each tested condition (e.g. $\mu_+$, $N_-$, etc.), both a graphical representation of the data and some of the statistics are given. It should be noted that in many of the figures throughout this chapter, a rolling window of the mean (either of the control or non-control conditions) or of the individual seeds was used to smooth the plots, resulting in many of the plots only showing data starting after a few thousand generations (usually 10,000). This is simply an artifact of the graphing process, and simulations were indeed carried out for 500,000 generations. Lastly, although Aevol provides statistics for both the best individual at the end of the generation as well as for the population at large, since this thesis is primarily concerned with general trends, the values given in the tables and graphs are for the population at large unless specified as being for the best individual. 
 \subsection{Control}
-The results of the control condition are presented first to provide a baseline for the remaining conditions. As mentioned in Chapter~\ref{ch:03methods}, five runs (seeds) of the experiment were performed. Beginning with genome size, the primary focus on this thesis, Figure~\ref{fig:control_genome_size}, shows the number of base pairs (bp) of the individual seeds (various colors) and the average across all five seeds (black, dashed line). 
+The results of the control condition are presented first to provide a baseline for the remaining conditions. As mentioned in Chapter~\ref{ch:03methods}, five runs (seeds) of the experiment were performed. Beginning with genome size, the primary focus on this thesis, Figure~\ref{fig:control_genome_size} shows the number of base pairs (bp) of the individual seeds (various colors) and the average across all five seeds (black, dashed line). 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{control_genome_size_b1-e500000}
-	\caption[Control genome size, all seeds]{Genome size of the control condition. The individual seeds are shown in various colors and the mean across all seeds is shown in the dashed black line.}
+	\caption[Control genome size, all seeds]{Genome size of the control condition, generations 1-500,000. The individual seeds are shown in various colors and the mean across all seeds is shown in the dashed black line.}
 	\label{fig:control_genome_size}
 \end{figure}
 
-Examining the figure, over the course of 500,000 generations the mean genome size in the control condition tended towards \textit{gaining} base pairs\textemdash just under approximately 500, averaging across all seeds. As noted in Table~\ref{table:input_parameters}, the mutation rate for small insertions and deletions was $1*e^{-7}$ and the duplication rate was $1*e^{-6}$. 
+Examining the figure, over the course of 500,000 generations the mean genome size in the control condition tended towards \textit{gaining} base pairs, averaging just under approximately 500 new base pairs across all seeds. As can be seen in Figure~\ref{fig:control_perc_non-coding}, the averaging out to a modest gain in overall genome size was partially the result of the accumulation of non-coding bases.
 
+% CONTROL PERCENT NON-CODING
+\begin{figure}[H]
+	\includegraphics[width=\linewidth]{control_percent_non-coding_b1-e500000}
+	\caption[Control condition percent non-coding]{Percent non-coding for the control condition, generation 1-500,000.}
+	\label{fig:control_perc_non-coding}
+\end{figure}
+Despite the slight increase in non-coding bases, however, overall population fitness continued to improve even though the wild types had already evolved for 500,000 generations in the same environment.
 
+% CONTROL FITNESS
+\begin{figure}[H]
+	\includegraphics[width=\linewidth]{control_fitness_b1-e500000}
+	\caption[Control condition fitness]{Control condition fitness, seeds and mean, generations 1-500,000. The five seeds are in various colors and the mean of these seeds is shown in black, dashed.}
+	\label{fig:control_fitness}
+\end{figure}
 
+Table~\ref{table:control_mean_fitness_change} below illustrates, however, that when considering the mean population fitness of all seeds, the final 50,000 generations were only an improvement of 0.2333\% over the first 50,000 generations, though the largest individual improvement in a seed (seed05) was closer to 1.322\%, a more than five-fold improvement.  
 
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\multicolumn{3}{|c|}{\Large \textbf{Control Mean Fitness}} \\
+		\hline
+		\textbf{fitness @0-50k} & \textbf{fitness @450k-500k} & \textbf{Percent Change} \\
+		\hline \hline
+		0.022709775696292796 & 0.02276276339318254 & 0.2333\%  \\
+		\hline
+		
+	\end{tabular}
+	\caption[Control Population Mean Fitness, Gens 0-50k, 450k-500k]{Table showing the mean population fitness change from generations 0-50k and 450-500k.}
+	\label{table:control_mean_fitness_change}
+\end{table}
+
+Figure~\ref{fig:control_avg_size_of_functional_genes_b1-e500000} shows the average size of functional genes observed in the control condition for all seeds for all 500,000 generations.
+\begin{figure}[H]
+	\includegraphics[width=\linewidth]{control_avg_size_of_functional_genes_b1-e500000}
+	\caption[Control avg. size of functional genes]{Figure showing the population mean size of the functional genes in the control condition, generations 1-500,000.}
+	\label{fig:control_avg_size_of_functional_genes_b1-e500000}
+\end{figure}
+
+% MUTATION UP
 \subsection{Mutation Up}
+The genome size for the $\mu_+$ condition is shown in Figure~\ref{fig:mut_up_genome_size}. The $\mu_+$ population mean genome size fluctuated both above and below the control condition, and Table~\ref{table:genome_size_mean_and_std_dev} (pg. \pageref{table:genome_size_mean_and_std_dev}) makes it clear that the increased mutation rate lead to a slightly larger average genome size (0.157661\%). 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{mut_up_genome_size_b1-e500000}
+	\caption[Mutation down genome size]{$\mu_+$ population genome size, generations 1-500,000.}
+	\label{fig:mut_up_genome_size}
+\end{figure}
+
+This was counter to the predictions based on Liard et al.~\cite{Liard.2018}. Based on their research, in the $\mu_+$ condition, an increased mutation rate is expected to boost mutational robustness by disrupting existing genes and introducing many non-coding bases, which in turn allows purifying selection to overcome the proposed complexity ratchet, finally reducing the genome. In these experiments, however, the robustness scores for the $\mu_+$ condition (see Table~\ref{table:robustness_means_and_std_dev} indicate that increasing the mutation rate did not produce this effect, as the robustness actually went down from the control condition. Counter to the work of Liard et al., in these experiments, in the $\mu_+$ condition the number of non-coding bases went down (see Figure~\ref{fig:mut_up_percent_non-coding} below) and Table~\ref{table:non-coding_DNA_mean_and_standard_deviation}, pg.~\pageref{table:non-coding_DNA_mean_and_standard_deviation}), the gene density went up (see Table~\ref{table:mean_functional_gene_size_and_std_dev}, pg.~\pageref{table:mean_functional_gene_size_and_std_dev}), and the number of genes overall nevertheless went down (see Table~\ref{table:number_of_genes_mean_std_dev}, pg.~\pageref{table:number_of_genes_mean_std_dev}).
+
 Figure~\ref{fig:mut_up_percent_non-coding} shows the change in the percentage of non-coding bases in the $\mu_+$ condition. 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\linewidth]{percent_non-coding_b1-e500000}
+	\includegraphics[width=\linewidth]{mut_up_percent_non-coding_b1-e500000}
 	\caption[Mutation up - percent non-coding]{$\mu_+$ percent non-coding}
 	\label{fig:mut_up_percent_non-coding}
 \end{figure}
+
+% MUTATION DOWN
 \subsection{Mutation Down}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{mut_down_genome_size_b1-e500000}
+	\caption[Mutation down genome size]{$\mu_-$ genome size, generations 1-500,000.}
+	\label{fig:mut_down:genome_size}
+\end{figure}
+
+% SELECTION UP
 \subsection{Selection Up}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{selection_up_genome_size_b1-e500000}
+	\caption[Selection up genome size]{$k_+$ genome size, generations 1-500,000.}
+	\label{fig:selection_up_genome_size}
+\end{figure}
+
+% SELECTION DOWN
 \subsection{Selection Down}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{selection_down_genome_size_b1-e500000}
+	\caption[Selection down genome size]{$k_-$ genome size, generations 1-500,000.}
+	\label{fig:selection_down_genome_size}
+\end{figure}
+
+% POPULATION UP
 \subsection{Population Up}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{population_up_genome_size_b1-e500000}
+	\caption[Population up genome size]{$N_+$ genome size, generations 1-500,000.}
+	\label{fig:pop_up_genome_size}
+\end{figure}
+
+% POPULATION DOWN
 \subsection{Population Down}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{population_down_genome_size_b1-e500000}
+	\caption[Population down genome size]{$N_-$ genome size, generations 1-500,000.}
+	\label{fig:pop_down_genome_size}
+\end{figure}
 
 \subsection{Genome Size}\label{sec:genome_size}
 
@@ -541,7 +634,7 @@ According to the predictions based on a survey of the literature (as summarized 
 
 Beginning with the $N_-$ condition, recall Table~\ref{table:genome_size_stats_last_50k}. The $N_-$ condition ending up with a genome over 20\% larger than the control condition perfectly illustrates the effects of genetic drift described by Batut et al. with regard to small effective population sizes ($N_e$) \cite{Batut.2014}. The efficacy of selection to remove deleterious mutations and accumulations of non-coding bases is predicted to go down in populations with a smaller effective population size, causing rapid expansion of the genome size. This appears to be exactly what happened here, as Table~\ref{table:non-coding_DNA_mean_and_standard_deviation} shows the amount of non-coding bases greatly expanding, reaching 17.7\% over the control condition. 
 
-Because the wild types began these experiments having evolved for 10 million generations in a static environment, their variability was low and the genome was relatively compact (thanks to the natural streamlining effects of bacterial genomes), and thus their mutational robustness was also low. As described in Liard et al.~\cite{Liard.2018}, however, in the $\mu_+$ condition, an increased mutation rate is expected to boost their mutational robustness by disrupting existing genes and introducing many non-coding bases, which in turn allows purifying selection to overcome the proposed complexity ratchet, finally reducing the genome. In these experiments, however, the robustness scores for the $\mu_+$ condition (see Table~\ref{table:robustness_means_and_std_dev} indicate that increasing the mutation rate did not produce this effect, as the robustness actually went down from the control condition. Nevertheless, in the $\mu_+$ condition, the number of non-coding bases went down (see Table~\ref{table:non-coding_DNA_mean_and_standard_deviation}), the gene density went up (see Table~\ref{table:mean_functional_gene_size_and_std_dev}), and the number of genes overall went down (see Table~\ref{table:number_of_genes_mean_std_dev}). %TODO Expain this!
+Because the wild types began these experiments having evolved for 10 million generations in a static environment, their variability was low and the genome was relatively compact (thanks to the natural streamlining effects of bacterial genomes), and thus their mutational robustness was also low. 
 
 \subsection{Metabolic Error and Fitness}
 Examining Figure~\ref{fig:mean_fitness_all_seeds}, it quickly becomes apparent that, in the static environment in which the wild type evolved, adding another 500,000 generations on top of the previous 10 million does not much affect the average fitness of the control condition. Small fluctuations occurred due to mutations, insertions, etc. but overall the genotype was quite steady. However, for the $\mu_+$, $\mu_-$, $k_+$, and $N_+$ conditions, a clear trend towards improved fitness may be observed.
