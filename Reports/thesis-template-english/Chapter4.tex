@@ -5,7 +5,20 @@ This chapter presents the results of the experiments as performed according to t
 \section{Results}\label{results}
 In this section, the results of the experiments are presented. For each tested condition (e.g. $\mu_+$, $N_-$, etc.), both a graphical representation of the data and some of the statistics are given. It should be noted that in many of the figures throughout this chapter, a rolling window of the mean was used to smooth the plots, resulting in many of the plots only showing data starting after a few thousand generations (typically 10,000). This is simply an artifact of the graphing process, and simulations were indeed carried out for 500,000 generations. Lastly, since Aevol provides statistics for both the best individual at the end of the generation as well as for the population at large, the values given in the tables and graphs are for the population at large unless specified as being for the best individual. 
 \subsection{Control}
-Beginning with the control condition, it is clear that the wild type genome was already quite stable and 
+The results of the control condition are presented first to provide a baseline for the remaining conditions. As mentioned in Chapter~\ref{ch:03methods}, five runs (seeds) of the experiment were performed. Beginning with genome size, the primary focus on this thesis, Figure~\ref{fig:control_genome_size}, shows the number of base pairs (bp) of the individual seeds (various colors) and the average across all five seeds (black, dashed line). 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{control_genome_size_b1-e500000}
+	\caption[Control genome size, all seeds]{Genome size of the control condition. The individual seeds are shown in various colors and the mean across all seeds is shown in the dashed black line.}
+	\label{fig:control_genome_size}
+\end{figure}
+
+Examining the figure, over the course of 500,000 generations the mean genome size in the control condition tended towards \textit{gaining} base pairs\textemdash just under approximately 500, averaging across all seeds. As noted in Table~\ref{table:input_parameters}, the mutation rate for small insertions and deletions was $1*e^{-7}$ and the duplication rate was $1*e^{-6}$. 
+
+
+
+
 \subsection{Mutation Up}
 Figure~\ref{fig:mut_up_percent_non-coding} shows the change in the percentage of non-coding bases in the $\mu_+$ condition. 
 
