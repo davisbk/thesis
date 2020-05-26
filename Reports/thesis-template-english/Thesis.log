@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.11)  26 MAY 2020 11:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.11)  26 MAY 2020 15:24
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -601,7 +601,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) [1
 
 ] [2] [3]
-<./pics/phylogeny03.png, id=463, 316.18124pt x 239.89626pt>
+<./pics/phylogeny03.png, id=479, 316.18124pt x 239.89626pt>
 File: ./pics/phylogeny03.png Graphic file (type png)
 <use ./pics/phylogeny03.png>
 Package pdftex.def Info: ./pics/phylogeny03.png  used on input line 20.
@@ -615,7 +615,7 @@ Chapter 2.
 [6
 
 ] [7] [8] [9] [10]
-<./pics/aevol_overview01.png, id=555, 684.30656pt x 717.43031pt>
+<./pics/aevol_overview01.png, id=571, 684.30656pt x 717.43031pt>
 File: ./pics/aevol_overview01.png Graphic file (type png)
 <use ./pics/aevol_overview01.png>
 Package pdftex.def Info: ./pics/aevol_overview01.png  used on input line 65.
@@ -626,7 +626,7 @@ Overfull \hbox (1.8798pt too wide) in paragraph at lines 79--80
 -quences in a genome,
  []
 
-<./pics/aevol_fitness_description01.png, id=590, 377.91188pt x 294.34969pt>
+<./pics/aevol_fitness_description01.png, id=606, 377.91188pt x 294.34969pt>
 File: ./pics/aevol_fitness_description01.png Graphic file (type png)
 <use ./pics/aevol_fitness_description01.png>
 Package pdftex.def Info: ./pics/aevol_fitness_description01.png  used on input 
@@ -642,7 +642,7 @@ y the \OT1/cmtt/m/n/10.95 fitness[]proportionate
  []
 
 [14] [15 <./pics/aevol_fitness_description01.png>]
-<./pics/lineage01.png, id=608, 660.96938pt x 195.73125pt>
+<./pics/lineage01.png, id=624, 660.96938pt x 195.73125pt>
 File: ./pics/lineage01.png Graphic file (type png)
 <use ./pics/lineage01.png>
 Package pdftex.def Info: ./pics/lineage01.png  used on input line 113.
@@ -657,7 +657,7 @@ Overfull \hbox (2.05186pt too wide) in paragraph at lines 12--13
  com-mand \OT1/cmtt/m/n/10.95 aevol[]run\OT1/cmr/m/n/10.95 )
  []
 
-<./pics/environmental_target_function01.png, id=646, 1204.5pt x 903.375pt>
+<./pics/environmental_target_function01.png, id=662, 1204.5pt x 903.375pt>
 File: ./pics/environmental_target_function01.png Graphic file (type png)
 <use ./pics/environmental_target_function01.png>
 Package pdftex.def Info: ./pics/environmental_target_function01.png  used on in
@@ -695,14 +695,14 @@ Chapter 4.
 [31
 
 ]
-<./pics/control_genome_size_b1-e500000.png, id=800, 1848.9075pt x 1233.60875pt>
+<./pics/control_genome_size_b1-e500000.png, id=816, 1848.9075pt x 1233.60875pt>
 
 File: ./pics/control_genome_size_b1-e500000.png Graphic file (type png)
 <use ./pics/control_genome_size_b1-e500000.png>
 Package pdftex.def Info: ./pics/control_genome_size_b1-e500000.png  used on inp
 ut line 12.
 (pdftex.def)             Requested size: 360.0pt x 240.18568pt.
-<./pics/control_percent_non-coding_b1-e500000.png, id=802, 1806.75pt x 1233.608
+<./pics/control_percent_non-coding_b1-e500000.png, id=818, 1806.75pt x 1233.608
 75pt>
 File: ./pics/control_percent_non-coding_b1-e500000.png Graphic file (type png)
 <use ./pics/control_percent_non-coding_b1-e500000.png>
@@ -710,14 +710,14 @@ Package pdftex.def Info: ./pics/control_percent_non-coding_b1-e500000.png  used
  on input line 21.
 (pdftex.def)             Requested size: 360.0pt x 245.79503pt.
  [32 <./pics/control_genome_size_b1-e500000.png>]
-<./pics/control_fitness_b1-e500000.png, id=809, 1831.84375pt x 1233.60875pt>
+<./pics/control_fitness_b1-e500000.png, id=825, 1831.84375pt x 1233.60875pt>
 File: ./pics/control_fitness_b1-e500000.png Graphic file (type png)
 <use ./pics/control_fitness_b1-e500000.png>
 Package pdftex.def Info: ./pics/control_fitness_b1-e500000.png  used on input l
 ine 29.
 (pdftex.def)             Requested size: 360.0pt x 242.42566pt.
  [33 <./pics/control_percent_non-coding_b1-e500000.png>]
-<./pics/control_avg_size_of_functional_genes_b1-e500000.png, id=817, 1842.885pt
+<./pics/control_avg_size_of_functional_genes_b1-e500000.png, id=833, 1842.885pt
  x 1233.60875pt>
 File: ./pics/control_avg_size_of_functional_genes_b1-e500000.png Graphic file (
 type png)
@@ -726,7 +726,7 @@ Package pdftex.def Info: ./pics/control_avg_size_of_functional_genes_b1-e500000
 .png  used on input line 55.
 (pdftex.def)             Requested size: 360.0pt x 240.97626pt.
  [34 <./pics/control_fitness_b1-e500000.png>]
-<./pics/control_density_b1-e500000.png, id=825, 1832.8475pt x 1233.60875pt>
+<./pics/control_density_b1-e500000.png, id=841, 1832.8475pt x 1233.60875pt>
 File: ./pics/control_density_b1-e500000.png Graphic file (type png)
 <use ./pics/control_density_b1-e500000.png>
 Package pdftex.def Info: ./pics/control_density_b1-e500000.png  used on input l
@@ -734,7 +734,7 @@ ine 64.
 (pdftex.def)             Requested size: 360.0pt x 242.2939pt.
 
 [35 <./pics/control_avg_size_of_functional_genes_b1-e500000.png>]
-<./pics/control_frac_neutral_mutants_b1-e500000.png, id=834, 1793.70125pt x 123
+<./pics/control_frac_neutral_mutants_b1-e500000.png, id=850, 1793.70125pt x 123
 3.60875pt>
 File: ./pics/control_frac_neutral_mutants_b1-e500000.png Graphic file (type png
 )
@@ -743,21 +743,22 @@ Package pdftex.def Info: ./pics/control_frac_neutral_mutants_b1-e500000.png  us
 ed on input line 73.
 (pdftex.def)             Requested size: 360.0pt x 247.58325pt.
  [36 <./pics/control_density_b1-e500000.png>]
-<./pics/control_evolvability_b1-e500000.png, id=840, 1758.57pt x 1233.60875pt>
+<./pics/control_evolvability_b1-e500000.png, id=856, 1758.57pt x 1233.60875pt>
 File: ./pics/control_evolvability_b1-e500000.png Graphic file (type png)
 <use ./pics/control_evolvability_b1-e500000.png>
 Package pdftex.def Info: ./pics/control_evolvability_b1-e500000.png  used on in
 put line 80.
 (pdftex.def)             Requested size: 360.0pt x 252.53378pt.
-<./pics/mut_up_genome_size_b1-e500000.png, id=844, 1848.9075pt x 1233.60875pt>
+ [37 <./pics/control_frac_neutral_mutants_b1-e500000.png> <./pics/control_evolv
+ability_b1-e500000.png>]
+<./pics/mut_up_genome_size_b1-e500000.png, id=866, 1848.9075pt x 1233.60875pt>
 File: ./pics/mut_up_genome_size_b1-e500000.png Graphic file (type png)
 <use ./pics/mut_up_genome_size_b1-e500000.png>
 Package pdftex.def Info: ./pics/mut_up_genome_size_b1-e500000.png  used on inpu
 t line 91.
 (pdftex.def)             Requested size: 360.0pt x 240.18568pt.
- [37 <./pics/control_frac_neutral_mutants_b1-e500000.png> <./pics/control_evolv
-ability_b1-e500000.png>] [38 <./pics/mut_up_genome_size_b1-e500000.png>]
-<./pics/mut_up_frac_neutral_mutants_b1-e500000.png, id=861, 1780.6525pt x 1233.
+ [38 <./pics/mut_up_genome_size_b1-e500000.png>]
+<./pics/mut_up_frac_neutral_mutants_b1-e500000.png, id=877, 1780.6525pt x 1233.
 60875pt>
 File: ./pics/mut_up_frac_neutral_mutants_b1-e500000.png Graphic file (type png)
 
@@ -765,222 +766,296 @@ File: ./pics/mut_up_frac_neutral_mutants_b1-e500000.png Graphic file (type png)
 Package pdftex.def Info: ./pics/mut_up_frac_neutral_mutants_b1-e500000.png  use
 d on input line 102.
 (pdftex.def)             Requested size: 360.0pt x 249.39029pt.
-<./pics/mut_up_gene_density_b1-e500000.png, id=870, 1832.8475pt x 1233.60875pt>
+<./pics/mut_up_gene_density_b1-e500000.png, id=878, 1832.8475pt x 1233.60875pt>
 
 File: ./pics/mut_up_gene_density_b1-e500000.png Graphic file (type png)
 <use ./pics/mut_up_gene_density_b1-e500000.png>
 Package pdftex.def Info: ./pics/mut_up_gene_density_b1-e500000.png  used on inp
-ut line 111.
+ut line 109.
 (pdftex.def)             Requested size: 360.0pt x 242.2939pt.
  [39 <./pics/mut_up_frac_neutral_mutants_b1-e500000.png>]
-<./pics/mut_up_percent_non-coding_b1-e500000.png, id=876, 1787.67876pt x 1233.6
+<./pics/mut_up_percent_non-coding_b1-e500000.png, id=884, 1787.67876pt x 1233.6
 0875pt>
 File: ./pics/mut_up_percent_non-coding_b1-e500000.png Graphic file (type png)
 <use ./pics/mut_up_percent_non-coding_b1-e500000.png>
 Package pdftex.def Info: ./pics/mut_up_percent_non-coding_b1-e500000.png  used 
-on input line 118.
+on input line 116.
 (pdftex.def)             Requested size: 360.0pt x 248.41147pt.
-<./pics/mut_down_genome_size_b1-e500000.png, id=877, 1848.9075pt x 1233.60875pt
+<./pics/mut_down_genome_size_b1-e500000.png, id=887, 1848.9075pt x 1233.60875pt
 >
 File: ./pics/mut_down_genome_size_b1-e500000.png Graphic file (type png)
 <use ./pics/mut_down_genome_size_b1-e500000.png>
 Package pdftex.def Info: ./pics/mut_down_genome_size_b1-e500000.png  used on in
-put line 128.
+put line 126.
 (pdftex.def)             Requested size: 360.0pt x 240.18568pt.
  [40 <./pics/mut_up_gene_density_b1-e500000.png> <./pics/mut_up_percent_non-cod
 ing_b1-e500000.png>]
-<./pics/selection_up_genome_size_b1-e500000.png, id=885, 1848.9075pt x 1233.608
+<./pics/mut_down_fitness_b1-e500000.png, id=897, 1831.84375pt x 1233.60875pt>
+File: ./pics/mut_down_fitness_b1-e500000.png Graphic file (type png)
+<use ./pics/mut_down_fitness_b1-e500000.png>
+Package pdftex.def Info: ./pics/mut_down_fitness_b1-e500000.png  used on input 
+line 137.
+(pdftex.def)             Requested size: 360.0pt x 242.42566pt.
+ [41 <./pics/mut_down_genome_size_b1-e500000.png>]
+<./pics/mut_down_num_functional_genes_b1-e500000.png, id=905, 1818.795pt x 1233
+.60875pt>
+File: ./pics/mut_down_num_functional_genes_b1-e500000.png Graphic file (type pn
+g)
+<use ./pics/mut_down_num_functional_genes_b1-e500000.png>
+Package pdftex.def Info: ./pics/mut_down_num_functional_genes_b1-e500000.png  u
+sed on input line 146.
+(pdftex.def)             Requested size: 360.0pt x 244.15741pt.
+
+[42 <./pics/mut_down_fitness_b1-e500000.png>]
+<./pics/mut_down_gene_density_b1-e500000.png, id=914, 1832.8475pt x 1233.60875p
+t>
+File: ./pics/mut_down_gene_density_b1-e500000.png Graphic file (type png)
+<use ./pics/mut_down_gene_density_b1-e500000.png>
+Package pdftex.def Info: ./pics/mut_down_gene_density_b1-e500000.png  used on i
+nput line 155.
+(pdftex.def)             Requested size: 360.0pt x 242.2939pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./pics/mut_down_percent_non-coding_b1-e500000.png, id=915, 1787.67876pt x 1233
+.60875pt>
+File: ./pics/mut_down_percent_non-coding_b1-e500000.png Graphic file (type png)
+
+<use ./pics/mut_down_percent_non-coding_b1-e500000.png>
+Package pdftex.def Info: ./pics/mut_down_percent_non-coding_b1-e500000.png  use
+d on input line 163.
+(pdftex.def)             Requested size: 360.0pt x 248.41147pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./pics/selection_up_genome_size_b1-e500000.png, id=918, 1848.9075pt x 1233.608
 75pt>
 File: ./pics/selection_up_genome_size_b1-e500000.png Graphic file (type png)
 <use ./pics/selection_up_genome_size_b1-e500000.png>
 Package pdftex.def Info: ./pics/selection_up_genome_size_b1-e500000.png  used o
-n input line 138.
+n input line 174.
 (pdftex.def)             Requested size: 360.0pt x 240.18568pt.
- [41 <./pics/mut_down_genome_size_b1-e500000.png>]
-<./pics/selection_down_genome_size_b1-e500000.png, id=891, 1848.9075pt x 1233.6
+[43 <./pics/mut_down_num_functional_genes_b1-e500000.png>] [44 <./pics/mut_down
+_gene_density_b1-e500000.png> <./pics/selection_up_genome_size_b1-e500000.png>]
+<./pics/selection_up_num_functional_genes_b1-e500000.png, id=933, 1818.795pt x 
+1233.60875pt>
+File: ./pics/selection_up_num_functional_genes_b1-e500000.png Graphic file (typ
+e png)
+<use ./pics/selection_up_num_functional_genes_b1-e500000.png>
+Package pdftex.def Info: ./pics/selection_up_num_functional_genes_b1-e500000.pn
+g  used on input line 187.
+(pdftex.def)             Requested size: 360.0pt x 244.15741pt.
+[45 <./pics/mut_down_percent_non-coding_b1-e500000.png>]
+<./pics/selection_up_fitness_b1-e500000.png, id=939, 1806.75pt x 1233.60875pt>
+File: ./pics/selection_up_fitness_b1-e500000.png Graphic file (type png)
+<use ./pics/selection_up_fitness_b1-e500000.png>
+Package pdftex.def Info: ./pics/selection_up_fitness_b1-e500000.png  used on in
+put line 194.
+(pdftex.def)             Requested size: 360.0pt x 245.79503pt.
+ [46 <./pics/selection_up_num_functional_genes_b1-e500000.png> <./pics/selectio
+n_up_fitness_b1-e500000.png>]
+<./pics/selection_up_percent_non-coding_b1-e500000.png, id=948, 1787.67876pt x 
+1233.60875pt>
+File: ./pics/selection_up_percent_non-coding_b1-e500000.png Graphic file (type 
+png)
+<use ./pics/selection_up_percent_non-coding_b1-e500000.png>
+Package pdftex.def Info: ./pics/selection_up_percent_non-coding_b1-e500000.png 
+ used on input line 203.
+(pdftex.def)             Requested size: 360.0pt x 248.41147pt.
+<./pics/selection_down_genome_size_b1-e500000.png, id=950, 1848.9075pt x 1233.6
 0875pt>
 File: ./pics/selection_down_genome_size_b1-e500000.png Graphic file (type png)
 <use ./pics/selection_down_genome_size_b1-e500000.png>
 Package pdftex.def Info: ./pics/selection_down_genome_size_b1-e500000.png  used
- on input line 148.
+ on input line 212.
 (pdftex.def)             Requested size: 360.0pt x 240.18568pt.
-
-[42 <./pics/selection_up_genome_size_b1-e500000.png>]
-<./pics/population_up_genome_size_b1-e500000.png, id=897, 1848.9075pt x 1233.60
+ [47 <./pics/selection_up_percent_non-coding_b1-e500000.png>]
+<./pics/selection_down_percent_non-coding_b1-e500000.png, id=957, 1787.67876pt 
+x 1233.60875pt>
+File: ./pics/selection_down_percent_non-coding_b1-e500000.png Graphic file (typ
+e png)
+<use ./pics/selection_down_percent_non-coding_b1-e500000.png>
+Package pdftex.def Info: ./pics/selection_down_percent_non-coding_b1-e500000.pn
+g  used on input line 219.
+(pdftex.def)             Requested size: 360.0pt x 248.41147pt.
+ [48 <./pics/selection_down_genome_size_b1-e500000.png>]
+<./pics/population_up_genome_size_b1-e500000.png, id=963, 1848.9075pt x 1233.60
 875pt>
 File: ./pics/population_up_genome_size_b1-e500000.png Graphic file (type png)
 <use ./pics/population_up_genome_size_b1-e500000.png>
 Package pdftex.def Info: ./pics/population_up_genome_size_b1-e500000.png  used 
-on input line 158.
+on input line 229.
 (pdftex.def)             Requested size: 360.0pt x 240.18568pt.
- [43 <./pics/selection_down_genome_size_b1-e500000.png>]
-<./pics/population_down_genome_size_b1-e500000.png, id=903, 1848.9075pt x 1233.
+ [49 <./pics/selection_down_percent_non-coding_b1-e500000.png>]
+<./pics/population_down_genome_size_b1-e500000.png, id=969, 1848.9075pt x 1233.
 60875pt>
 File: ./pics/population_down_genome_size_b1-e500000.png Graphic file (type png)
 
 <use ./pics/population_down_genome_size_b1-e500000.png>
 Package pdftex.def Info: ./pics/population_down_genome_size_b1-e500000.png  use
-d on input line 168.
+d on input line 239.
 (pdftex.def)             Requested size: 360.0pt x 240.18568pt.
- [44 <./pics/population_up_genome_size_b1-e500000.png>]
-<./pics/stat_fitness_global_mean_genome_size.png, id=911, 2168.1pt x 1445.4pt>
+ [50 <./pics/population_up_genome_size_b1-e500000.png>]
+<./pics/stat_fitness_global_mean_genome_size.png, id=979, 2168.1pt x 1445.4pt>
 File: ./pics/stat_fitness_global_mean_genome_size.png Graphic file (type png)
 <use ./pics/stat_fitness_global_mean_genome_size.png>
 Package pdftex.def Info: ./pics/stat_fitness_global_mean_genome_size.png  used 
-on input line 178.
+on input line 253.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
- [45 <./pics/population_down_genome_size_b1-e500000.png>]
-Overfull \hbox (56.4461pt too wide) in paragraph at lines 185--206
+ [51 <./pics/population_down_genome_size_b1-e500000.png>]
+Overfull \hbox (56.4461pt too wide) in paragraph at lines 260--281
 [][] 
  []
 
-[46 <./pics/stat_fitness_global_mean_genome_size.png>]
-<./pics/stat_fitness_perc_change_genome_size.png, id=926, 2168.1pt x 1445.4pt>
+[52 <./pics/stat_fitness_global_mean_genome_size.png>]
+<./pics/stat_fitness_perc_change_genome_size.png, id=994, 2168.1pt x 1445.4pt>
 File: ./pics/stat_fitness_perc_change_genome_size.png Graphic file (type png)
 <use ./pics/stat_fitness_perc_change_genome_size.png>
 Package pdftex.def Info: ./pics/stat_fitness_perc_change_genome_size.png  used 
-on input line 241.
+on input line 316.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
- [47]
-<./pics/genome_size_last_50k_all_seeds.png, id=934, 1262.7175pt x 1804.7425pt>
+ [53]
+<./pics/genome_size_last_50k_all_seeds.png, id=1002, 1262.7175pt x 1804.7425pt>
+
 File: ./pics/genome_size_last_50k_all_seeds.png Graphic file (type png)
 <use ./pics/genome_size_last_50k_all_seeds.png>
 Package pdftex.def Info: ./pics/genome_size_last_50k_all_seeds.png  used on inp
-ut line 249.
+ut line 324.
 (pdftex.def)             Requested size: 360.0pt x 514.52219pt.
- [48 <./pics/stat_fitness_perc_change_genome_size.png>] [49 <./pics/genome_size
+ [54 <./pics/stat_fitness_perc_change_genome_size.png>] [55 <./pics/genome_size
 _last_50k_all_seeds.png>]
-<./pics/global_fitness_all_seeds.png, id=946, 1445.4pt x 2168.1pt>
+<./pics/global_fitness_all_seeds.png, id=1014, 1445.4pt x 2168.1pt>
 File: ./pics/global_fitness_all_seeds.png Graphic file (type png)
 <use ./pics/global_fitness_all_seeds.png>
 Package pdftex.def Info: ./pics/global_fitness_all_seeds.png  used on input lin
-e 289.
+e 360.
 (pdftex.def)             Requested size: 360.0pt x 540.00565pt.
- [50]
+ [56]
 Overfull \vbox (5.20538pt too high) has occurred while \output is active []
 
 
-[51 <./pics/global_fitness_all_seeds.png>]
-<./pics/population_mean_fitness_histogram.png, id=956, 1264.725pt x 1808.7575pt
->
+[57 <./pics/global_fitness_all_seeds.png>]
+<./pics/population_mean_fitness_histogram.png, id=1024, 1264.725pt x 1808.7575p
+t>
 File: ./pics/population_mean_fitness_histogram.png Graphic file (type png)
 <use ./pics/population_mean_fitness_histogram.png>
 Package pdftex.def Info: ./pics/population_mean_fitness_histogram.png  used on 
-input line 295.
+input line 366.
 (pdftex.def)             Requested size: 360.0pt x 514.83887pt.
- [52 <./pics/population_mean_fitness_histogram.png>]
-<./pics/stat_fitness_global_mean_metabolic_error.png, id=967, 2168.1pt x 1445.4
-pt>
+ [58 <./pics/population_mean_fitness_histogram.png>]
+<./pics/stat_fitness_global_mean_metabolic_error.png, id=1035, 2168.1pt x 1445.
+4pt>
 File: ./pics/stat_fitness_global_mean_metabolic_error.png Graphic file (type pn
 g)
 <use ./pics/stat_fitness_global_mean_metabolic_error.png>
 Package pdftex.def Info: ./pics/stat_fitness_global_mean_metabolic_error.png  u
-sed on input line 303.
+sed on input line 374.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
 
-Overfull \hbox (56.41275pt too wide) in paragraph at lines 311--332
+Overfull \hbox (56.41275pt too wide) in paragraph at lines 382--403
  [][] 
  []
 
-[53 <./pics/stat_fitness_global_mean_metabolic_error.png>]
-<./pics/percent_noncoding.png, id=978, 2168.1pt x 1445.4pt>
+[59 <./pics/stat_fitness_global_mean_metabolic_error.png>]
+<./pics/percent_noncoding.png, id=1046, 2168.1pt x 1445.4pt>
 File: ./pics/percent_noncoding.png Graphic file (type png)
 <use ./pics/percent_noncoding.png>
-Package pdftex.def Info: ./pics/percent_noncoding.png  used on input line 343.
+Package pdftex.def Info: ./pics/percent_noncoding.png  used on input line 414.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
- [54]
-Overfull \hbox (40.02109pt too wide) in paragraph at lines 351--372
+ [60]
+Overfull \hbox (40.02109pt too wide) in paragraph at lines 422--443
 [][] 
  []
 
-<./pics/stat_genes_global_mean_num_functional_genes.png, id=987, 2168.1pt x 144
-5.4pt>
+<./pics/stat_genes_global_mean_num_functional_genes.png, id=1055, 2168.1pt x 14
+45.4pt>
 File: ./pics/stat_genes_global_mean_num_functional_genes.png Graphic file (type
  png)
 <use ./pics/stat_genes_global_mean_num_functional_genes.png>
 Package pdftex.def Info: ./pics/stat_genes_global_mean_num_functional_genes.png
-  used on input line 380.
+  used on input line 451.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
-[55 <./pics/percent_noncoding.png>]
-Overfull \hbox (3.45142pt too wide) in paragraph at lines 390--411
+[61 <./pics/percent_noncoding.png>]
+Overfull \hbox (3.45142pt too wide) in paragraph at lines 461--482
  [][] 
  []
 
-[56 <./pics/stat_genes_global_mean_num_functional_genes.png>]
-<./pics/stat_genes_global_mean_num_non-functional_genes.png, id=1004, 2168.1pt 
+[62 <./pics/stat_genes_global_mean_num_functional_genes.png>]
+<./pics/stat_genes_global_mean_num_non-functional_genes.png, id=1072, 2168.1pt 
 x 1445.4pt>
 File: ./pics/stat_genes_global_mean_num_non-functional_genes.png Graphic file (
 type png)
 <use ./pics/stat_genes_global_mean_num_non-functional_genes.png>
 Package pdftex.def Info: ./pics/stat_genes_global_mean_num_non-functional_genes
-.png  used on input line 419.
+.png  used on input line 490.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
 
-Overfull \hbox (8.90297pt too wide) in paragraph at lines 427--449
+Overfull \hbox (8.90297pt too wide) in paragraph at lines 498--520
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./pics/stat_genes_global_mean_avg_size_of_functional_genes.png, id=1006, 2168.
+<./pics/stat_genes_global_mean_avg_size_of_functional_genes.png, id=1074, 2168.
 1pt x 1445.4pt>
 File: ./pics/stat_genes_global_mean_avg_size_of_functional_genes.png Graphic fi
 le (type png)
 <use ./pics/stat_genes_global_mean_avg_size_of_functional_genes.png>
 Package pdftex.def Info: ./pics/stat_genes_global_mean_avg_size_of_functional_g
-enes.png  used on input line 457.
+enes.png  used on input line 528.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
-[57 <./pics/stat_genes_global_mean_num_non-functional_genes.png>] [58]
-Overfull \hbox (35.28624pt too wide) in paragraph at lines 491--512
+[63 <./pics/stat_genes_global_mean_num_non-functional_genes.png>] [64]
+Overfull \hbox (35.28624pt too wide) in paragraph at lines 562--583
 [][] 
  []
 
-[59 <./pics/stat_genes_global_mean_avg_size_of_functional_genes.png>]
-<./pics/evolvability_plot_all_seeds01.png, id=1027, 1445.4pt x 2168.1pt>
+[65 <./pics/stat_genes_global_mean_avg_size_of_functional_genes.png>]
+<./pics/evolvability_plot_all_seeds01.png, id=1095, 1445.4pt x 2168.1pt>
 File: ./pics/evolvability_plot_all_seeds01.png Graphic file (type png)
 <use ./pics/evolvability_plot_all_seeds01.png>
 Package pdftex.def Info: ./pics/evolvability_plot_all_seeds01.png  used on inpu
-t line 521.
+t line 592.
 (pdftex.def)             Requested size: 360.0pt x 540.00565pt.
- [60]
+ [66]
 Overfull \vbox (7.94287pt too high) has occurred while \output is active []
 
 
-[61 <./pics/evolvability_plot_all_seeds01.png>]
-Overfull \hbox (11.96808pt too wide) in paragraph at lines 555--577
+[67 <./pics/evolvability_plot_all_seeds01.png>]
+Overfull \hbox (11.96808pt too wide) in paragraph at lines 626--648
  [][] 
  []
 
-<./pics/stat_robustness_best_mean_frac_neutral_offspring.png, id=1040, 2168.1pt
+<./pics/stat_robustness_best_mean_frac_neutral_offspring.png, id=1108, 2168.1pt
  x 1445.4pt>
 File: ./pics/stat_robustness_best_mean_frac_neutral_offspring.png Graphic file 
 (type png)
 <use ./pics/stat_robustness_best_mean_frac_neutral_offspring.png>
 Package pdftex.def Info: ./pics/stat_robustness_best_mean_frac_neutral_offsprin
-g.png  used on input line 586.
+g.png  used on input line 657.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
-[62] [63 <./pics/stat_robustness_best_mean_frac_neutral_offspring.png>]
-[64] [65]
+[68] [69 <./pics/stat_robustness_best_mean_frac_neutral_offspring.png>]
+[70] [71]
 
-LaTeX Warning: Reference `fig:mean_fitness_plot' on page 66 undefined on input 
-line 691.
+LaTeX Warning: Reference `fig:mean_fitness_plot' on page 72 undefined on input 
+line 760.
 
-[66] [67]) (Chapter5.tex [68]
+[72]) (Chapter5.tex [73]
 Chapter 5.
-[69
+[74
 
-] [70]) [71] [72] [73] [74] (Thesis.bbl
+] [75]) [76] [77] [78] [79] (Thesis.bbl
 Underfull \hbox (badness 1067) in paragraph at lines 41--49
 []\OT1/cmr/m/n/10.95 Quentin Carde, Marco Fo-ley, Ca-r-ole Knibbe, David P Par-
 sons,
  []
 
-[75
+[80
 
-] [76] [77] [78]) 
+] [81] [82] [83]) 
 AED: lastpage setting LastPage
-[79]
+[84]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 66.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 66.
  (Thesis.aux)
@@ -995,10 +1070,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 66.
  ) 
 Here is how much of TeX's memory you used:
- 9587 strings out of 492895
- 140010 string characters out of 3133459
- 257901 words of memory out of 3000000
- 12986 multiletter control sequences out of 15000+200000
+ 9650 strings out of 492895
+ 142447 string characters out of 3133459
+ 258414 words of memory out of 3000000
+ 13027 multiletter control sequences out of 15000+200000
  20131 words of font info for 69 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
  30i,14n,43p,2068b,601s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1025,9 +1100,9 @@ onts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
 rw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8
 a.pfb>
-Output written on Thesis.pdf (88 pages, 6727241 bytes).
+Output written on Thesis.pdf (93 pages, 8100530 bytes).
 PDF statistics:
- 1289 PDF objects out of 1440 (max. 8388607)
- 256 named destinations out of 1000 (max. 500000)
- 619 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1351 PDF objects out of 1440 (max. 8388607)
+ 270 named destinations out of 1000 (max. 500000)
+ 659 words of extra memory for PDF output out of 10000 (max. 10000000)
 

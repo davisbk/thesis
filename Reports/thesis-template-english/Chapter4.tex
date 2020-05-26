@@ -82,10 +82,10 @@ Figures~\ref{fig:control_robustness} and Figure~\ref{fig:control_evolvability} s
 	\label{fig:control_evolvability}
 \end{figure}
 
-This shows that both robustness and evolvability are 
+This shows that both mutational robustness and evolvability are low, which is to be expected after 10.5 million generations in a static environment. 
 % MUTATION UP
 \subsection{Mutation Up}
-The genome size for the $\mu_+$ condition is shown in Figure~\ref{fig:mut_up_genome_size}. The $\mu_+$ population mean genome size fluctuated between being above and below the control condition, and Table~\ref{table:genome_size_mean_and_std_dev} (pg. \pageref{table:genome_size_mean_and_std_dev}) makes it clear that, when considered over the whole run of 500,000 generations, the increased mutation rate lead to a slightly larger mean genome size (0.157661\%). 
+The genome size for the $\mu_+$ condition is shown in Figure~\ref{fig:mut_up_genome_size}. The $\mu_+$ population mean genome size fluctuated between being above and below the control condition, and Table~\ref{table:genome_size_mean_and_std_dev} (pg. \pageref{table:genome_size_mean_and_std_dev}) makes it clear that, when considered over the whole run of 500,000 generations, the increased mutation rate lead to a slightly \textit{larger} mean genome size (0.157661\%). 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{mut_up_genome_size_b1-e500000}
@@ -93,7 +93,7 @@ The genome size for the $\mu_+$ condition is shown in Figure~\ref{fig:mut_up_gen
 	\label{fig:mut_up_genome_size}
 \end{figure}
 
-At first glance, this increase in genome size seems counter to the prediction based on Liard et al.~\cite{Liard.2018} as discussed in Section~\ref{related_work:reductive_evolution}. Based on their research, in the $\mu_+$ condition, an increased mutation rate is expected to boost mutational robustness by disrupting existing genes and introducing many non-coding bases, which in turn allows purifying selection to overcome the proposed complexity ratchet, finally reducing the genome. This does seem to be what happened in these experiments, as well, as the final genome size was below the control condition and seemingly on its way down. 
+At first glance, this increase in genome size over the whole run seems to counter the prediction based on Liard et al.~\cite{Liard.2018} as discussed in Section~\ref{related_work:reductive_evolution}. Based on their research, in the $\mu_+$ condition, an increased mutation rate is expected to boost mutational robustness by disrupting existing genes and introducing many non-coding bases, which in turn allows purifying selection to overcome the proposed complexity ratchet, finally reducing the genome. If one examines the general trends rather than just the final result, it becomes clear that this does seem to be what happened in these experiments, as well, as the final genome size was below the control condition and seemingly still on its way down. 
 
 Figure~\ref{fig:mut_up_robustness} confirms that, as time went on, the robustness greatly increased over the control condition (blue dashed line vs. black dashed line) and Figure~\ref{fig:mut_up_gene_density} indicates that purifying selection was at work, increasing the gene density. Similarly, Figure~\ref{fig:mut_up_percent_non-coding} shows the initial increase in the number of non-coding bases as genes were disrupted. 
 
@@ -103,8 +103,6 @@ Figure~\ref{fig:mut_up_robustness} confirms that, as time went on, the robustnes
 	\caption[Mutation up robustness]{Mutation up robustness, generations 1-500,000.}
 	\label{fig:mut_up_robustness}
 \end{figure}
-
-The robustness scores for the $\mu_+$ condition seen in Table~\ref{table:robustness_means_and_std_dev} (pg.~\pageref{table:robustness_means_and_std_dev}) indicate that increasing the mutation rate did not produce this effect on robustness, as mutational robustness actually went down from the control condition. Contrary to Liard et al., despite the increased mutation rate in this condition, the number of non-coding bases went down (see Figure~\ref{fig:mut_up_percent_non-coding} below) and Table~\ref{table:non-coding_DNA_mean_and_standard_deviation}, pg.~\pageref{table:non-coding_DNA_mean_and_standard_deviation}), the gene density went up (see Figure~\ref{fig:mut_up_gene_density}), and the number of genes overall nevertheless went down (see Table~\ref{table:number_of_genes_mean_std_dev}, pg.~\pageref{table:number_of_genes_mean_std_dev}).
 
 \begin{figure}[H]
 	\centering
@@ -122,7 +120,7 @@ The robustness scores for the $\mu_+$ condition seen in Table~\ref{table:robustn
 
 % MUTATION DOWN
 \subsection{Mutation Down}
-
+The results of decreasing the mutation rate to $2.5e-8$ from the usual $1e-7$ also had the unexpected result (according to the predictions from Section~\ref{sec:expected_results}) that the genome size decreased over the control condition, though it still did not end up being lower than at generation 1. Figure~\ref{fig:mut_down:genome_size} shows the data for the genome size of the $\mu_-$ condition.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{mut_down_genome_size_b1-e500000}
@@ -130,9 +128,47 @@ The robustness scores for the $\mu_+$ condition seen in Table~\ref{table:robustn
 	\label{fig:mut_down:genome_size}
 \end{figure}
 
+The well-accepted ``Drake's rule'' states that genome size is inversely proportional to mutation rate~\cite{drake1991constant}. Given the reduced mutation rate of the $\mu_-$ condition, it is expected then that the genome size should increase over the control condition, but this was not the case in these experiments. 
+
+Examining the fitness data in Figure~\ref{fig:mut_down_fitness} it is clear that overall fitness was also not negatively impacted, as one should expect given the lower likelihood of introducing deleterious mutations. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{mut_down_fitness_b1-e500000}
+	\caption[Mutation down fitness]{Mutation down population mean fitness, generations 1-500,000, all seeds.}
+	\label{fig:mut_down_fitness}
+\end{figure} 
+
+Figure~\ref{fig:mut_down_gene_density} shows that gene density significantly increased in the $\mu_-$ condition somewhere around generation 360,000, and this also corresponds to a big bump in fitness, as shown in Figure~\ref{fig:mut_down_fitness} above. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{mut_down_num_functional_genes_b1-e500000}
+	\caption[Mutation down number of functional genes]{Mutation down - population mean number of functional genes, generations 1-500,000, all seeds}
+	\label{fig:mut_down_num_functional_genes}
+\end{figure}
+
+Given the increase in fitness and gene density, and the fact that the number of functional genes increased (see Figure~\ref{fig:mut_down_num_functional_genes} above), it seems clear that, unlike in real populations where the rate of selection may vary dynamically according to several factors \cite{lynch2016genetic}, the steady selection rate of these experiments overcame the natural accumulation of deleterious mutations in favor of a denser genome. The loss of non-coding bases shown in Figure~\ref{fig:mut_down_perc_non-coding} confirm this.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{mut_down_gene_density_b1-e500000}
+	\caption[Mutation down gene density]{$\mu_-$ population mean gene density, generations 1-500,000, all seeds.}
+	\label{fig:mut_down_gene_density}
+\end{figure}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{mut_down_percent_non-coding_b1-e500000}
+	\caption[Mutation down percent non-coding]{$\mu_-$ population mean percent non-coding, generations 1-500,000, all seeds.}
+	\label{fig:mut_down_perc_non-coding}
+\end{figure}
+
+
 % SELECTION UP
 \subsection{Selection Up}
-
+Figure~\ref{fig:selection_up_genome_size} shows that the genome size increased under increased selection, confirming the expected results based on Batut et al.~\cite{Batut.2013}. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{selection_up_genome_size_b1-e500000}
@@ -140,14 +176,49 @@ The robustness scores for the $\mu_+$ condition seen in Table~\ref{table:robustn
 	\label{fig:selection_up_genome_size}
 \end{figure}
 
+As with the experiments of Batut et al., the primary gain seems to be in the number of genes, as Figure~\ref{fig:selection_up_num_functional_genes} illustrates. Figure~\ref{fig:selection_up_fitness} shows that fitness overall saw an upward trend, also confirming the results of Batut et al. The large disparity in the fitness scale between the $k_+$ and the control conditions is due to Aevol's \texttt{fitness\_proportionate} selection method. Recall that in the \texttt{fitness\_proportionate} selection method, the probability $p$ of reproduction for an organism with gap $g$ is given by:
+\begin{equation*}
+p = \frac{e^{-k*g}}{\sum_{i=1}^{N}e^{-k*g_i}}
+\end{equation*}
+where $g_i$ is the gap for the $i$th organism in the population. Thus, changing the selection parameter $k$, as in the $k_+$ and $k_-$ conditions, changes the scale of the fitness values. Their behavior over time is more important than the scale, but in order to not skew the visualization, the control condition is left off of the fitness plots.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{selection_up_num_functional_genes_b1-e500000}
+	\caption[Selection up number of functional genes]{$k_+$ population mean number of functional genes, generations 1-500,000, all seeds.}
+	\label{fig:selection_up_num_functional_genes}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{selection_up_fitness_b1-e500000}
+	\caption[Selection up fitness]{$k_+$ population mean fitness, generations 1-500,000, all seeds.}
+	\label{fig:selection_up_fitness}
+\end{figure}
+
+Lastly, Figure~\ref{fig:selection_up_perc_non-coding} shows that some of the increased genome size is due to addition of non-coding bases, too. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{selection_up_percent_non-coding_b1-e500000}
+	\caption[Selection up percent non-coding]{$k_+$ percent non-coding, generations 1-500,000, all seeds.}
+	\label{fig:selection_up_perc_non-coding}
+\end{figure}
 % SELECTION DOWN
 \subsection{Selection Down}
-
+Figure~\ref{fig:selection_down_genome_size} shows the genome size results for the $k_-$ condition. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{selection_down_genome_size_b1-e500000}
 	\caption[Selection down genome size]{$k_-$ genome size, generations 1-500,000.}
 	\label{fig:selection_down_genome_size}
+\end{figure}
+The slight increase in genome size is probably best explained by the gaining of non-coding bases, as shown in Figure~\ref{fig:selection_down_perc_non-coding}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{selection_down_percent_non-coding_b1-e500000}
+	\caption[Selection down percent non-coding]{$k_-$ percent non-coding, generations 1-500,000, all seeds.}
+	\label{fig:selection_down_perc_non-coding}
 \end{figure}
 
 % POPULATION UP
@@ -169,6 +240,10 @@ The robustness scores for the $\mu_+$ condition seen in Table~\ref{table:robustn
 	\caption[Population down genome size]{$N_-$ genome size, generations 1-500,000.}
 	\label{fig:pop_down_genome_size}
 \end{figure}
+
+The $N_-$ condition ending up with a genome over 20\% larger than the control condition perfectly illustrates the effects of genetic drift described by Batut et al. with regard to small effective population sizes ($N_e$) \cite{Batut.2014}. The efficacy of selection to remove deleterious mutations and accumulations of non-coding bases is predicted to go down in populations with a smaller effective population size, causing rapid expansion of the genome size. This appears to be exactly what happened here, as Table~\ref{table:non-coding_DNA_mean_and_standard_deviation} shows the amount of non-coding bases greatly expanding, reaching 17.7\% over the control condition. 
+
+Because the wild types began these experiments having evolved for 10 million generations in a static environment, their variability was low and the genome was relatively compact (thanks to the natural streamlining effects of bacterial genomes), and thus their mutational robustness was also low.
 
 \subsection{Genome Size}\label{sec:genome_size}
 
@@ -279,11 +354,7 @@ Lastly, a zoomed-in look at just the last 50,000 generations is provided in Figu
 
 
 \subsection{Metabolic Error and Fitness}\label{res:metabolic_error_and_fitness}
-Figure~\ref{fig:mean_fitness_all_seeds} shows three categories of information for each condition: 1) the mean population fitness for each seed (in various colors), 2) the mean fitness across all seeds for that condition (dashed line, black), 3) the control condition (dashed line, blue) for each condition. It is important to note that for the $k_+$ and $k_-$ conditions, the fitness is on a different scale because of the \texttt{fitness\_proportionate} selection method. Recall that in the \texttt{fitness\_proportionate} selection method, the probability $p$ of reproduction for an organism with gap $g$ is given by:
-\begin{equation*}
-p = \frac{e^{-k*g}}{\sum_{i=1}^{N}e^{-k*g_i}}
-\end{equation*}
-where $g_i$ is the gap for the $i$th organism in the population. Thus, changing the selection parameter $k$, as in the $k_+$ and $k_-$ conditions, changes the scale of the fitness values. Their behavior over time is more important than the scale, so they are nevertheless included in this set of plots. So as not to skew the scale of the other plots, however, the control condition is left off of these plots. 
+Figure~\ref{fig:mean_fitness_all_seeds} shows three categories of information for each condition: 1) the mean population fitness for each seed (in various colors), 2) the mean fitness across all seeds for that condition (dashed line, black), 3) the control condition (dashed line, blue) for each condition. It is important to note that for the $k_+$ and $k_-$ conditions, the fitness is on a different scale because of the  
 
 \begin{figure}[H]
 	\includegraphics[width=\linewidth]{global_fitness_all_seeds}
@@ -596,17 +667,17 @@ The mutation up condition clearly had the largest mean percentage of neutral mut
 		\hline
 		& \textbf{rank sum} & \textbf{p-value} \\
 		\hline
-		$\mu_+$ & 16756710.50 & 0.00000000 \\ 
+		$\mu_+$ & 6888635.50 & 0.00000000 \\ 
 		\hline
-		$\mu_-$ & 5741758.00 & 0.00000000 \\ 
+		$\mu_-$ & 3858925.50 & 0.00000000 \\ 
 		\hline
-		$N_+$ & 6106612.50 & 0.00000000 \\ 
+		$k_+$ & 13792971.00 & 0.04364015 \\ 
 		\hline
-		$N_-$ & 12493750.00 & 0.00000000 \\ 
+		$k_-$ & 14320878.00 & 0.28251799 \\ 
 		\hline
-		$k_+$ & 13580845.50 & 0.00135870 \\ 
+		$N_+$ & 9467109.50 & 0.00000000 \\ 
 		\hline
-		$k_-$ & 13925884.00 & 0.00127325 \\ 
+		$N_-$ & 15908963.00 & 0.00000000 \\ 
 		\hline
 	\end{tabular}
 	\caption[Robustness rank sum \& p-values]{Mean robustness rank sum and p-values for all conditions and all seeds.}
@@ -619,25 +690,25 @@ The mutation up condition clearly had the largest mean percentage of neutral mut
 		\hline
 		& \textbf{mean} & \textbf{std. dev.} & \textbf{mean's \% change from control} \\
 		\hline
-		control & 0.944925 & 0.00733438 & \textemdash \\ 
+		control & 0.001470 & 0.00121821 & \textemdash \\ 
 		\hline
-		$\mu_+$ & 0.936677 & 0.007907 & -0.872870 \\ 
+		$\mu_+$ & 0.004852 & 0.002302 & 230.026777 \\ 
 		\hline
-		$\mu_-$ & 0.947543 & 0.007066 & 0.276989 \\ 
+		$\mu_-$ & 0.000545 & 0.000753 & -62.935291 \\ 
 		\hline
-		$k_+$ & 0.944466 & 0.007372 & -0.048598 \\ 
+		$k_+$ & 0.001427 & 0.001196 & -2.906602 \\ 
 		\hline
-		$k_-$ & 0.944516 & 0.007424 & -0.043350 \\ 
+		$k_-$ & 0.001481 & 0.001215 & 0.725871 \\ 
 		\hline
-		$N_+$ & 0.946396 & 0.007143 & 0.155634 \\ 
+		$N_+$ & 0.001181 & 0.001106 & -19.645748 \\ 
 		\hline
-		$N_-$ & 0.937409 & 0.008846 & -0.795408 \\ 
+		$N_-$ & 0.002449 & 0.001702 & 66.563607 \\ 
 		\hline
 	\end{tabular}
 	\caption[Robustness means and standard deviations]{Robustness means and standard deviations for all conditions and all seeds.}
 	\label{table:robustness_means_and_std_dev}
 \end{table}
-
+Since the $k_-$ condition's p-value was $\geq0.5$, it must be rejected.
 
 \section{Discussion}\label{discussion}
 
@@ -673,18 +744,16 @@ Analogously to Table~\ref{table:experiment_predictions}, the results of the expe
 \end{table}
 \subsection{Genome Size}
 
-According to the predictions based on a survey of the literature (as summarized in Table~\ref{table:experiment_predictions}), only the $\mu_+$, $k_-$, and $N_+$ conditions were predicted to lead to a reduced genome. As shown in Figure~\ref{fig:genome_size}, however, although the $\mu_+$ and $k_-$ conditions did end up with a genome size which was noticeably smaller than the control condition, surprisingly $\mu_-$ also experienced a reduction in genome size. %TODO Explain why the u- condution also ended up below control 
+According to the predictions based on a survey of the literature (as summarized in Table~\ref{table:experiment_predictions}), only the $\mu_+$, $k_-$, and $N_+$ conditions were predicted to lead to a reduced genome. As shown in Figure~\ref{fig:genome_size}, however, although the $\mu_+$ and $k_-$ conditions did end up with a genome size which was noticeably smaller than the control condition, surprisingly $\mu_-$ also experienced a reduction in genome size. 
 
-Beginning with the $N_-$ condition, recall Table~\ref{table:genome_size_stats_last_50k}. The $N_-$ condition ending up with a genome over 20\% larger than the control condition perfectly illustrates the effects of genetic drift described by Batut et al. with regard to small effective population sizes ($N_e$) \cite{Batut.2014}. The efficacy of selection to remove deleterious mutations and accumulations of non-coding bases is predicted to go down in populations with a smaller effective population size, causing rapid expansion of the genome size. This appears to be exactly what happened here, as Table~\ref{table:non-coding_DNA_mean_and_standard_deviation} shows the amount of non-coding bases greatly expanding, reaching 17.7\% over the control condition. 
 
-Because the wild types began these experiments having evolved for 10 million generations in a static environment, their variability was low and the genome was relatively compact (thanks to the natural streamlining effects of bacterial genomes), and thus their mutational robustness was also low. 
 
 \subsection{Metabolic Error and Fitness}
 Examining Figure~\ref{fig:mean_fitness_all_seeds}, it quickly becomes apparent that, in the static environment in which the wild type evolved, adding another 500,000 generations on top of the previous 10 million does not much affect the average fitness of the control condition. Small fluctuations occurred due to mutations, insertions, etc. but overall the genotype was quite steady. However, for the $\mu_+$, $\mu_-$, $k_+$, and $N_+$ conditions, a clear trend towards improved fitness may be observed.
 
 More interesting are the $N_-$ and $k_+$ conditions, where by generation 500,000 the average fitness in the whole population declined to 2.76\% and 99.99\% below the control condition respectively (see Table~\ref{table:fitness_means_std_dev}). It seems that with the smaller population size, genetic drift may be more strongly at work in continually increasing the gap between the phenotype and environmental function, as the lack of variety inherent in a smaller population causes a cascade of increasingly deleterious consequences.
  
-It has been postulated that perhaps gene loss may be selected for in order to increase the overall fitness of an organism by removing the added cost of the superfluous genes~\cite{koskiniemi2012}. These results generally agree with this hypothesis, though the results show that, in addition to the general accumulation of non-coding DNA across all conditions (Figure~\ref{fig:mean_non-coding_DNA}), which would theoretically have a higher fitness cost, the number of genes actually \textit{increased} slightly for each condition, except for $k_-$. Likewise, fitness overall went \textit{up} as the number of genes increased (except for $N_-$). Lastly, decreasing the selection pressure resulted in the highest overall mean fitness by a wide margin (Table~\ref{table:fitness_means_std_dev}). In Aevol, non-coding DNA is not directly associated with a fitness cost, so this may not fully explain the circumstances.  
+xxx (Figure~\ref{fig:mean_non-coding_DNA}), which would theoretically have a higher fitness cost, the number of genes actually \textit{increased} slightly for each condition, except for $k_-$. Likewise, fitness overall went \textit{up} as the number of genes increased (except for $N_-$). Lastly, decreasing the selection pressure resulted in the highest overall mean fitness by a wide margin (Table~\ref{table:fitness_means_std_dev}). In Aevol, non-coding DNA is not directly associated with a fitness cost, so this may not fully explain the circumstances.  
 
 
 \subsection{Functional Genes}
@@ -700,9 +769,10 @@ Recall the work of Liard et al.\cite{Liard.2018} as discussed in Section~\ref{re
 %TODO Perform another experiment with a much higher mutation rate: 1e-3 for 100k generations?
 
 \section{Results Summary}
-Connecting it all together, there is, then, a natural link between the amount of non-coding DNA, coding DNA, genome size, evolvability, robustness, and selection. As the amount of non-coding bases (and therefore overall genome size) increases through natural mutational processes, these non-coding bases can nevertheless play a crucial role in increasing evolvability by being the fodder for new potentially beneficial mutations~\cite{Knibbe2007}. However, a trade-off exists because the increased \textit{mutational load} (i.e. the increasing cost of recurrent harmful mutations, as most mutations are) also carries a fitness cost. In a population whose effective population size is too small, these deleterious mutations accumulate, a phenomenon known as Muller's ratchet~\cite{MullersRatchet}. Liard et al.~\cite{Liard.2018} demonstrated, however, that this ``complexity ratchet'' (i.e. the tendency of genomes to become larger and more complex) is not impossible to overcome, and selecting for robustness is an effective strategy for overcoming the ratchet. 
+Connecting it all together, there is, then, a natural link between the amount of non-coding DNA, coding DNA, genome size, evolvability, robustness, and selection. As the amount of non-coding bases (and therefore overall genome size) increases through natural mutational processes, these non-coding bases can nevertheless play a crucial role in increasing evolvability by being the fodder for new potentially beneficial mutations~\cite{Knibbe2007}. However, a trade-off exists because the increased \textit{mutational load} (i.e. the increasing cost of recurrent harmful mutations, as most mutations are) also carries a fitness cost. In a population whose effective population size is too small, these deleterious mutations accumulate, a phenomenon known as Muller's ratchet~\cite{MullersRatchet}. 
+
+Liard et al.~\cite{Liard.2018} demonstrated, however, that this ``complexity ratchet'' (i.e. the tendency of genomes to become larger and more complex) is not impossible to overcome, and selecting for robustness is an effective strategy for overcoming the ratchet. 
 
 %TODO Fix this next paragraph. Does it really follow from the previous one? What's the connection?
-Similarly, Koskiniemi et al. showed via in vivo experiments that gene loss may be partially driven by selection~\cite{koskiniemi2012}, however. In their experiments with real-world bacteria, a high percentage of random deletions introduced into \textit{Salmonella} do in fact result in increased fitness (as measured by exponential growth rates). There seems to be a race between the gene-preserving force of selection and the natural tendency of bacterial genomes towards deletion and streamlining. 
+Similarly, Koskiniemi et al. showed via in vivo experiments that gene loss may be partially driven by selection~\cite{koskiniemi2012}. In their experiments with real-world bacteria, a high percentage of random deletions introduced into \textit{Salmonella} do in fact result in increased fitness (as measured by exponential growth rates). There seems to be a race between the gene-preserving force of selection and the natural tendency of bacterial genomes towards deletion and streamlining. 
 
-In these experiments, these natural processes were not  
