@@ -42,7 +42,7 @@ Factors such as the mutation rates or selection pressure are then parameters for
 
 Although there are certainly limitations to using in silico evolution (see Section~\ref{limitations}), overall in silico experimental evolution is a valuable tool for studying the underlying mechanisms of evolution when real-world experiments would be prohibitively time-consuming or expensive.
 
-Many silico evolution tools have been used to test various aspects of evolution, and several formalisms exist to represent the process. In a ``sequence-of-nucleotides'' model, genomes are represented by a string of characters representing base pairs. Other formalisms include the ``gene network model'' in which genes are nodes in a connected graph, as well as the ``digital organisms'' model, in which software programs representing organisms fight for CPU time. Examples of the latter type include Tierra~\cite{Tierra-Ray} and Avida~\cite{Avida-Ofria}, which were some of the first in silico evolution tools. DOSE, an ecology-conscious method of checking for heterozygosity (variation within a population)~\cite{Castillo-DOSE} is a more recent example of in silico experimental evolution;  For a more comprehensive review, please see~\cite{Mozhayskiy-In-Silico-Review}. 
+Many silico evolution tools have been used to test various aspects of evolution, and several formalisms exist to represent the process. In a ``sequence-of-nucleotides'' model, genomes are represented by a string of characters representing base pairs. Other formalisms include the ``gene network model'' in which genes are nodes in a connected graph, as well as the ``digital organisms'' model, in which software programs representing organisms fight for CPU time. Examples of the latter type include Tierra~\cite{Tierra-Ray} and Avida~\cite{Avida-Ofria}, which were some of the first in silico evolution tools. DOSE, an ecology-conscious method of checking for heterozygosity (variation within a population)~\cite{Castillo-DOSE} is a more recent example of in silico experimental evolution. For a more comprehensive review, see~\cite{Mozhayskiy-In-Silico-Review}. 
  
 \section{Aevol}
 Aevol follows a ``sequence-of-nucleotides'' model~\cite{Batut.2013} in which organisms are simulated with a binary genome which can either be generated at random or input as a previously-generated sequence. Aevol essentially consists of a repeated iteration of three main steps: 1) decoding the genome of these organisms to produce artificial proteins, 2) selecting the most fit individuals and 3) reproduction of these fittest individuals with possible variations (mutations, rearrangements, etc.). The sections below examine each of these steps in greater detail.
@@ -61,7 +61,7 @@ Aevol's three main steps\textemdash decoding the genome, selection, and reproduc
 \begin{figure}[H]
 	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{aevol_overview01}
 	\centering
-	\caption[Overview of Aevol's architecture.]{Overview of Aevol's architecture, from \cite{Batut.2013}. In step 1, the binary genome of the organisms is decoded and the resulting phenotype (bottom, in green) is matched up against an environmental target function (red line). In step 2, the probability of reproduction is calculated for each organism, based on its fitness (gap between the environment $f_E$ and its phenotype). In step 3, the next generation is created based on the probabilities from step 2, along with random mutations, rearrangements, etc.}
+	\caption[Overview of Aevol's architecture.]{Overview of Aevol's architecture, from~\cite{Batut.2013}. In step 1, the binary genome of the organisms is decoded and the resulting phenotype (bottom, in green) is matched up against an environmental target function (red line). In step 2, the probability of reproduction is calculated for each organism, based on its fitness (gap between the environment $f_E$ and its phenotype). In step 3, the next generation is created based on the probabilities from step 2, along with random mutations, rearrangements, etc.}
 	\label{fig:aevol_overview01}
 \end{figure}
 \subsubsection{Decoding the Genome}\label{subsec:aevol_decoding}
@@ -116,7 +116,7 @@ One of the key features of Aevol is the ability to look back in time at the ''ar
 
 \section{Related Work}\label{related_work}
 
-%TODO Add population aspect of in silico experimental evolution - waiting on clarification from berenice 5/20/2020
+%TODO Add population aspect of in silico experimental evolution - waiting on clarification from Berenice 5/20/2020 - Update 5/26/2020 never got a response. Turning it in as is. 
 
 Much work has already been done in the field of reductive evolution and in silico experimentation, and this section will look at the current state of the literature. 
 

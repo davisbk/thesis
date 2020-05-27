@@ -140,9 +140,6 @@ In Aevol, evolvability is calculated by generating a large set of offspring for 
 \text{evolvability} = \frac{|\text{positive offspring of }i|}{|\text{total offspring of }i|}*\sum \Delta^{\text{positive offspring}}_{fitness}
 \end{equation*}  where $\sum \Delta^{\text{positive offspring}}_{fitness}$ is the cumulative sum of the fitness increase for the positive offspring. Thus, evolvability in Aevol accounts for both the likelihood of a positive mutation and the average improvement provided by said mutation. Practically speaking, to find an organisms evolvability in Aevol one must give the post-treatment \texttt{misc\_ancestor\_robustness} a lineage file and then multiply the fraction of the number of positive offspring (column 2) by the cumulative total of the fitness gap $g$ of the positive offspring (column 10).
 
-%\subsubsection{Time to Coalescence}
-
- 
 \subsection{Structure}\label{methods:structure}
 Another strength of Aevol is its ability to analyze changes in the structure of DNA and RNA. As with fitness, Aevol produces statistics about individuals and the population at large for many aspects of genome structure, including: the number of coding vs. non-coding bases (i.e. they respectively do or do not code for at least one protein), the average size of coding and non-coding DNAs, the number of genes, the number of ``essential'' base pairs (i.e. those that are part of a functional coding sequence), etc. Tables~\ref{table:aevol_stats_genes_and_bp} and Table~\ref{table:aevol_stats_fitness_and_mutation} summarize the different statistics and where they are to be found Aevol's output files. 
 

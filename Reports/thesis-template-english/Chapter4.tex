@@ -1,6 +1,6 @@
 \chapter{Results and Discussion}\label{ch:04results_discussion}
 
-This chapter presents the results of the experiments as performed according to the plan described in Chapter~\ref{ch:03methods}. Section~\ref{results} provides the data and these results are discussed in more detail in Section~\ref{discussion}. 
+This chapter presents the results of the experiments as performed according to the plan described in Chapter~\ref{ch:03methods}. Section~\ref{results} provides the data and discussion for the individual conditions and the results are discussed in more detail in Section~\ref{discussion}. 
 
 \section{Results}\label{results}
 In this section, the results of the experiments are presented. For each tested condition (e.g. $\mu_+$, $N_-$, etc.), both a graphical representation of the data and some of the statistics are given. It should be noted that in many of the figures throughout this chapter, a rolling window of the mean (either of the control or non-control conditions) or of the individual seeds was used to smooth the plots, resulting in many of the plots only showing data starting after a certain number of generations (usually 10,000). This is simply an artifact of the graphing process, and simulations were indeed carried out for 500,000 generations. Lastly, although Aevol provides statistics for both the best individual at a particular generation as well as for the population at large, since this thesis is primarily concerned with general trends, the values given in the tables and graphs are for the population at large unless specified as being for the best individual. 
@@ -92,10 +92,6 @@ The genome size for the $\mu_+$ condition is shown in Figure~\ref{fig:mut_up_gen
 	\label{fig:mut_up_genome_size}
 \end{figure}
 
-At first glance, this increase in genome size over the whole run seems to counter the prediction based on Liard et al.~\cite{Liard.2018} as discussed in Section~\ref{related_work:reductive_evolution}. Based on their research, in the $\mu_+$ condition, an increased mutation rate is expected to boost mutational robustness by disrupting existing genes and introducing many non-coding bases, which in turn allows purifying selection to overcome the proposed complexity ratchet, finally reducing the genome. If one examines the general trends rather than just the final result, it becomes clear that this does seem to be what happened in these experiments, as well, as the final genome size was below the control condition and seemingly still on its way down. 
-
-Figure~\ref{fig:mut_up_robustness} confirms that, as time went on, the robustness greatly increased over the control condition (blue dashed line vs. black dashed line) and Figure~\ref{fig:mut_up_gene_density} indicates that purifying selection was at work, increasing the gene density. Similarly, Figure~\ref{fig:mut_up_percent_non-coding} shows the initial increase in the number of non-coding bases as genes were disrupted. 
-
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{mut_up_frac_neutral_mutants_b1-e500000}
@@ -146,8 +142,6 @@ Figure~\ref{fig:mut_down_gene_density} shows that gene density significantly inc
 	\caption[Mutation down number of functional genes]{Mutation down - population mean number of functional genes, generations 1-500,000, all seeds}
 	\label{fig:mut_down_num_functional_genes}
 \end{figure}
-
-Given the increase in fitness and gene density, and the fact that the number of functional genes increased (see Figure~\ref{fig:mut_down_num_functional_genes} above), it seems clear that, unlike in real populations where the rate of selection may vary dynamically according to several factors \cite{lynch2016genetic}, the steady selection rate of these experiments overcame the natural accumulation of deleterious mutations in favor of a denser genome. The loss of non-coding bases shown in Figure~\ref{fig:mut_down_perc_non-coding} confirm this.
 
 \begin{figure}[h]
 	\centering
@@ -268,7 +262,7 @@ The $N_-$ condition ending up with a genome over 20\% larger than the control co
 	\label{fig:pop_down_perc_non-coding}
 \end{figure}
 
-\subsection{Statistics}
+\subsection{Statistics and Combined Conditions}\label{statistics}
 In this section, statistics are given for the above conditions and the results are combined into single tables and graphs for ease of comparison. As above, the result are, unless specified otherwise, the mean across all seeds for all 500,000 generations.
 \subsubsection{Genome Size}\label{sec:genome_size}
 
@@ -767,20 +761,19 @@ Analogously to Table~\ref{table:experiment_predictions}, the results of the expe
 	\label{table:experiment_results_summary}
 \end{table}
 
-The largest driver of reductive evolution in these experiments, as summarized by Table~\ref{table:genome_size_mean_and_std_dev}, was clearly increasing the population size. The efficacy of selection to overcome genetic drift was greatly increased by the availability of greater genetic variance in the larger population. 
-
-\subsection{Genome Size}
 
 According to the predictions based on a survey of the literature (as summarized in Table~\ref{table:experiment_predictions}), only the $\mu_+$, $k_-$, and $N_+$ conditions were predicted to lead to a reduced genome. As shown in Figure~\ref{fig:genome_size}, however, although the $\mu_+$ and $k_-$ conditions did end up with a genome size which was noticeably smaller than the control condition, surprisingly $\mu_-$ also experienced a reduction in genome size. 
 
+The largest driver of reductive evolution in these experiments, as summarized by Table~\ref{table:genome_size_mean_and_std_dev}, was clearly increasing the population size. The efficacy of selection to overcome genetic drift was greatly increased by the availability of greater genetic variance in the larger population. This largely confirms the work of Batut et al.~\cite{Batut.2014}. 
 
+At first glance, the increase in genome size in the $\mu_+$ condition seems to counter the prediction based on Liard et al.~\cite{Liard.2018} as discussed in Section~\ref{related_work:reductive_evolution}. Based on their research, in the $\mu_+$ condition, an increased mutation rate is expected to boost mutational robustness by disrupting existing genes and introducing many non-coding bases, which in turn allows purifying selection to overcome the proposed complexity ratchet, finally reducing the genome. If one examines the general trends rather than just the final result, it becomes clear that this does seem to be what happened in these experiments, as well, as the final genome size was below the control condition and seemingly still on its way down. Figure~\ref{fig:mut_up_robustness} confirms that, as time went on, the robustness greatly increased over the control condition (blue dashed line vs. black dashed line) and Figure~\ref{fig:mut_up_gene_density} indicates that purifying selection was at work, increasing the gene density. Similarly, Figure~\ref{fig:mut_up_percent_non-coding} shows the initial increase in the number of non-coding bases as genes were disrupted. 
 
-\subsection{Metabolic Error and Fitness}
+Given the increase in fitness and gene density in the $\mu_-$ condition, and the fact that the number of functional genes increased (see Figure~\ref{fig:mut_down_num_functional_genes} above), it seems clear that, unlike in real populations where the rate of selection may vary dynamically according to several factors~\cite{lynch2016genetic}, the artificially-steady selection rate of these experiments overcame the natural accumulation of deleterious mutations in favor of a denser genome. The loss of non-coding bases shown in Figure~\ref{fig:mut_down_perc_non-coding} confirm this. 
+
 Examining Figure~\ref{fig:mean_fitness_all_seeds}, it quickly becomes apparent that, in the static environment in which the wild type evolved, adding another 500,000 generations on top of the previous 10 million does not much affect the average fitness of the control condition. Small fluctuations occurred due to mutations, insertions, etc. but overall the genotype was quite steady. However, for the $\mu_+$, $\mu_-$, $k_+$, and $N_+$ conditions, a clear trend towards improved fitness may be observed.
 
 More interesting are the $N_-$ and $k_+$ conditions, where by generation 500,000 the average fitness in the whole population declined to 2.76\% and 99.99\% below the control condition respectively (see Table~\ref{table:fitness_means_std_dev}). It seems that with the smaller population size, genetic drift may be more strongly at work in continually increasing the gap between the phenotype and environmental function, as the lack of variety inherent in a smaller population causes a cascade of increasingly deleterious consequences.
  
-\subsection{Functional Genes}
 Regarding the $N_-$ condition, comparing this with the results of Batut et al. and their work with \textit{Buchnera aphidicola} (see Section~\ref{related_work}), it may be possible that gene loss is occurring because of the smaller effective population size clicking down Muller's ratchet. This does not seem to be what is happening in these experiments either, however. Though mean fitness of the $N_-$ condition did greatly decline (see Figure~\ref{fig:mean_fitness_plot}), the $N_-$ condition also saw the largest accumulation of non-coding DNA (see Figure~\ref{fig:mean_non-coding_DNA}) and the second-highest level of evolvability (see Table~\ref{table:mean_std_dev_evolvability}), which should theoretically have lead to an easier time of overcoming the ratchet. On the other hand, the number of functional genes stayed more or less the same as all of the other conditions, and the accumulated number of non-functional genes (pseudogenes) of the $N_-$ condition was the largest (see Figure~\ref{fig:mean_num_non-functional_genes}). These two factors together suggest that there almost certainly was some loss of fitness through pseudogenization; perhaps with more time, the pseudogenes would also have been lost.
 
 Recall the work of Liard et al.\cite{Liard.2018} as discussed in Section~\ref{related_work}, in which the proposed ``complexity ratchet'' was overcome by increasing the mutation rate. Their work was quite successful in overcoming this ratchet, but in the experiments of this thesis, both the number of genes and the average size of the genes increased. One possible explanation for this is that, in their work, their increased mutation rate $\mu_+$ was set to $1e^{-3}$.  By contrast, even the elevated mutation rate used here, $\mu_+$, was just $4e^{-7}$, which is $\frac{1}{4}*e^4 \approx 13.65$ times lower than their highest mutation rate. Perhaps an even higher mutation rate would be sufficient to overcome the power of selection and reduce the genome further. 
