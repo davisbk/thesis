@@ -56,6 +56,5 @@
 \contentsline {section}{\numberline {5.1}Conclusions}{74}{section.5.1}% 
 \contentsline {section}{\numberline {5.2}Relation to Real-World Organisms}{75}{section.5.2}% 
 \contentsline {section}{\numberline {5.3}Limitations and Future work}{76}{section.5.3}% 
-\contentsline {subsection}{\numberline {5.3.1}Parameters}{76}{subsection.5.3.1}% 
-\contentsline {subsection}{\numberline {5.3.2}Environments}{76}{subsection.5.3.2}% 
-\contentsline {subsection}{\numberline {5.3.3}Limitations of the Aevol Model}{77}{subsection.5.3.3}% 
+\contentsline {subsection}{\numberline {5.3.1}Experimental Design Limitations}{76}{subsection.5.3.1}% 
+\contentsline {subsection}{\numberline {5.3.2}Limitations of the Aevol Model}{77}{subsection.5.3.2}% 
