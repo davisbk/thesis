@@ -60,7 +60,7 @@ def mean_format(condition, mean, std_dev, mean_perc_diff, precision=6, scientifi
 # This function will make sure that the colors of all seeds are consistent across all plots    
 def seed_color(seed_name):
     switch = {
-        'seed01' : 'orange',
+        'seed01' : 'teal',
         'seed02' : 'green',
         'seed03' : 'red',
         'seed04' : 'purple',
@@ -72,13 +72,13 @@ def seed_color(seed_name):
 # This function will make sure that the colors of all conditions are consistent across all plots
 def cond_color(cond_name):
     switch = {
-        'control' : 'blue',
+        'control' : 'black',
         'mut_up' : 'orange',
         'mut_down' : 'green',
         'selection_up' : 'red',
         'selection_down' : 'purple',
         'pop_up' : 'brown',
-        'pop_down' : 'cyan'
+        'pop_down' : 'cornflowerblue'
         }
     return switch.get(cond_name, 'ERROR_IN_COND_COLOR()')
 # This function returns a more verbose name for a given column header    
