@@ -1,109 +1,111 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.11)  27 MAY 2020 00:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.10.5)  5 OCT 2020 01:06
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
-LaTeX2e <2018-12-01>
-(config/model/layout.tex ("C:\Program Files\MiKTeX 2.9\tex/latex/base\report.cl
-s"
-Document Class: report 2018/09/03 v1.4i Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\size11.clo"
-File: size11.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+LaTeX2e <2020-10-01>
+L3 programming layer <2020-09-24> xparse <2020-03-03> (config/model/layout.tex
+("C:\Program Files\MiKTeX\tex/latex/base\report.cls"
+Document Class: report 2020/04/10 v1.4m Standard LaTeX document class
+("C:\Program Files\MiKTeX\tex/latex/base\size11.clo"
+File: size11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
-\c@part=\count80
-\c@chapter=\count81
-\c@section=\count82
-\c@subsection=\count83
-\c@subsubsection=\count84
-\c@paragraph=\count85
-\c@subparagraph=\count86
-\c@figure=\count87
-\c@table=\count88
-\abovecaptionskip=\skip41
-\belowcaptionskip=\skip42
-\bibindent=\dimen102
+\c@part=\count175
+\c@chapter=\count176
+\c@section=\count177
+\c@subsection=\count178
+\c@subsubsection=\count179
+\c@paragraph=\count180
+\c@subparagraph=\count181
+\c@figure=\count182
+\c@table=\count183
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/tocbibind\tocbibind.sty"
+("C:\Program Files\MiKTeX\tex/latex/tocbibind\tocbibind.sty"
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has chapter divisions on input line 50.
 
 
 Package tocbibind Note: Using chapter style headings, unless overridden.
 
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/appendix\appendix.sty"
-Package: appendix 2009/09/02 v1.2b extra appendix facilities
-\c@@pps=\count89
-\c@@ppsavesec=\count90
-\c@@ppsaveapp=\count91
+) ("C:\Program Files\MiKTeX\tex/latex/appendix\appendix.sty"
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count184
+\c@@ppsavesec=\count185
+\c@@ppsaveapp=\count186
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/tools\array.sty"
-Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
-\col@sep=\dimen103
-\ar@mcellbox=\box27
-\extrarowheight=\dimen104
-\NC@list=\toks14
-\extratabsurround=\skip43
-\backup@length=\skip44
-\ar@cellbox=\box28
+("C:\Program Files\MiKTeX\tex/latex/tools\array.sty"
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen139
+\ar@mcellbox=\box47
+\extrarowheight=\dimen140
+\NC@list=\toks15
+\extratabsurround=\skip49
+\backup@length=\skip50
+\ar@cellbox=\box48
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/multirow\multirow.sty"
+("C:\Program Files\MiKTeX\tex/latex/multirow\multirow.sty"
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
-\multirow@colwidth=\skip45
-\multirow@cntb=\count92
-\multirow@dima=\skip46
-\bigstrutjot=\dimen105
+\multirow@colwidth=\skip51
+\multirow@cntb=\count187
+\multirow@dima=\skip52
+\bigstrutjot=\dimen141
 )
-("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.sty"
-Package: babel 2019/06/03 3.32 The Babel package
+("C:\Program Files\MiKTeX\tex/generic/babel\babel.sty"
+Package: babel 2020/10/03 3.49 The Babel package
 
-("C:\Program Files\MiKTeX 2.9\tex/generic/babel\switch.def"
-File: switch.def 2019/06/03 3.32 Babel switching mechanism
+("C:\Program Files\MiKTeX\tex/generic/babel\babel.def"
+File: babel.def 2020/10/03 3.49 Babel common definitions
+\babel@savecnt=\count188
+\U@D=\dimen142
+\l@babelnohyphens=\language79
+
+("C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def")
+\bbl@readstream=\read2
 )
+\bbl@dirlevel=\count189
+
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Program Files\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg"
+("C:\Program Files\MiKTeX\tex/latex/arabi\bblopts.cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/babel-english\english.ldf"
+("C:\Program Files\MiKTeX\tex/latex/babel-english\english.ldf"
 Language: english 2017/06/06 v3.3r English support from the babel system
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.def"
-File: babel.def 2019/06/03 3.32 Babel common definitions
-\babel@savecnt=\count93
-\U@D=\dimen106
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/babel\txtbabel.def")
-\bbl@dirlevel=\count94
-)
-\l@canadian = a dialect from \language\l@american 
-\l@australian = a dialect from \language\l@british 
-\l@newzealand = a dialect from \language\l@british 
+Package babel Info: \l@canadian = using hyphenrules for english
+(babel)             (\language0) on input line 102.
+Package babel Info: \l@australian = using hyphenrules for ukenglish
+(babel)             (\language73) on input line 105.
+Package babel Info: \l@newzealand = using hyphenrules for ukenglish
+(babel)             (\language73) on input line 108.
 ))
-("C:\Program Files\MiKTeX 2.9\tex/latex/ucs\ucs.sty"
+("C:\Program Files\MiKTeX\tex/latex/ucs\ucs.sty"
 Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/ucs\uni-global.def"
+("C:\Program Files\MiKTeX\tex/latex/ucs\uni-global.def"
 File: uni-global.def 2013/05/13 UCS: Unicode global data
 )
-\uc@secondtry=\count95
-\uc@combtoks=\toks15
-\uc@combtoksb=\toks16
-\uc@temptokena=\toks17
+\uc@secondtry=\count190
+\uc@combtoks=\toks16
+\uc@combtoksb=\toks17
+\uc@temptokena=\toks18
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\inputenc.sty"
-Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks18
-\inpenc@posthook=\toks19
+("C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty"
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/ucs\utf8x.def"
+("C:\Program Files\MiKTeX\tex/latex/ucs\utf8x.def"
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 ))
-("C:\Program Files\MiKTeX 2.9\tex/latex/footmisc\footmisc.sty"
+("C:\Program Files\MiKTeX\tex/latex/footmisc\footmisc.sty"
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
-\FN@temptoken=\toks20
-\footnotemargin=\dimen107
-\c@pp@next@reset=\count96
+\FN@temptoken=\toks21
+\footnotemargin=\dimen143
+\c@pp@next@reset=\count191
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -113,232 +115,232 @@ Package footmisc Info: Declaring symbol style lamport* on input line 903.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 .
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/fancyhdr\fancyhdr.sty"
+("C:\Program Files\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty"
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip47
-\f@nch@O@elh=\skip48
-\f@nch@O@erh=\skip49
-\f@nch@O@olh=\skip50
-\f@nch@O@orh=\skip51
-\f@nch@O@elf=\skip52
-\f@nch@O@erf=\skip53
-\f@nch@O@olf=\skip54
-\f@nch@O@orf=\skip55
+\f@nch@headwidth=\skip53
+\f@nch@O@elh=\skip54
+\f@nch@O@erh=\skip55
+\f@nch@O@olh=\skip56
+\f@nch@O@orh=\skip57
+\f@nch@O@elf=\skip58
+\f@nch@O@erf=\skip59
+\f@nch@O@olf=\skip60
+\f@nch@O@orf=\skip61
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty"
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
+("C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks21
+\KV@toks@=\toks22
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty"
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+("C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
+("C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 105.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+("C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def"
+File: pdftex.def 2020/08/26 v1.2 Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen108
-\Gin@req@width=\dimen109
+\Gin@req@height=\dimen144
+\Gin@req@width=\dimen145
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\color.sty"
-Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+("C:\Program Files\MiKTeX\tex/latex/graphics\color.sty"
+Package: color 2020/02/24 v1.2b Standard LaTeX Color (DPC)
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
+("C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/subfigure\subfigure.sty"
+("C:\Program Files\MiKTeX\tex/latex/subfigure\subfigure.sty"
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
-\subfigtopskip=\skip56
-\subfigcapskip=\skip57
-\subfigcaptopadj=\dimen110
-\subfigbottomskip=\skip58
-\subfigcapmargin=\dimen111
-\subfiglabelskip=\skip59
-\c@subfigure=\count97
-\c@lofdepth=\count98
-\c@subtable=\count99
-\c@lotdepth=\count100
+\subfigtopskip=\skip62
+\subfigcapskip=\skip63
+\subfigcaptopadj=\dimen146
+\subfigbottomskip=\skip64
+\subfigcapmargin=\dimen147
+\subfiglabelskip=\skip65
+\c@subfigure=\count192
+\c@lofdepth=\count193
+\c@subtable=\count194
+\c@lotdepth=\count195
 
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-("C:\Program Files\MiKTeX 2.9\tex/latex/subfigure\subfigure.cfg")
-\subfig@top=\skip60
-\subfig@bottom=\skip61
+("C:\Program Files\MiKTeX\tex/latex/subfigure\subfigure.cfg")
+\subfig@top=\skip66
+\subfig@bottom=\skip67
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/supertabular\supertabular.sty"
-Package: supertabular 2004/02/20 v4.1e the supertabular environment
-\c@tracingst=\count101
-\ST@wd=\dimen112
-\ST@rightskip=\skip62
-\ST@leftskip=\skip63
-\ST@parfillskip=\skip64
-\ST@pageleft=\dimen113
-\ST@headht=\dimen114
-\ST@tailht=\dimen115
-\ST@pagesofar=\dimen116
-\ST@pboxht=\dimen117
-\ST@lineht=\dimen118
-\ST@stretchht=\dimen119
-\ST@prevht=\dimen120
-\ST@toadd=\dimen121
-\ST@dimen=\dimen122
-\ST@pbox=\box29
+("C:\Program Files\MiKTeX\tex/latex/supertabular\supertabular.sty"
+Package: supertabular 2020/02/02 v4.1g the supertabular environment
+\c@tracingst=\count196
+\ST@wd=\dimen148
+\ST@rightskip=\skip68
+\ST@leftskip=\skip69
+\ST@parfillskip=\skip70
+\ST@pageleft=\dimen149
+\ST@headht=\dimen150
+\ST@tailht=\dimen151
+\ST@pagesofar=\dimen152
+\ST@pboxht=\dimen153
+\ST@lineht=\dimen154
+\ST@prevht=\dimen155
+\ST@toadd=\dimen156
+\ST@dimen=\dimen157
+\ST@pbox=\box49
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/float\float.sty"
+("C:\Program Files\MiKTeX\tex/latex/float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count102
-\float@exts=\toks22
-\float@box=\box30
-\@float@everytoks=\toks23
-\@floatcapt=\box31
+\c@float@type=\count197
+\float@exts=\toks23
+\float@box=\box50
+\@float@everytoks=\toks24
+\@floatcapt=\box51
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/fncychap\fncychap.sty"
+("C:\Program Files\MiKTeX\tex/latex/fncychap\fncychap.sty"
 Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
-\RW=\skip65
-\mylen=\skip66
-\myhi=\skip67
-\px=\skip68
-\py=\skip69
-\pyy=\skip70
-\pxx=\skip71
+\RW=\skip71
+\mylen=\skip72
+\myhi=\skip73
+\px=\skip74
+\py=\skip75
+\pyy=\skip76
+\pxx=\skip77
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/tools\longtable.sty"
-Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
-\LTleft=\skip72
-\LTright=\skip73
-\LTpre=\skip74
-\LTpost=\skip75
-\LTchunksize=\count103
-\LTcapwidth=\dimen123
-\LT@head=\box32
-\LT@firsthead=\box33
-\LT@foot=\box34
-\LT@lastfoot=\box35
-\LT@cols=\count104
-\LT@rows=\count105
-\c@LT@tables=\count106
-\c@LT@chunks=\count107
-\LT@p@ftn=\toks24
+("C:\Program Files\MiKTeX\tex/latex/tools\longtable.sty"
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip78
+\LTright=\skip79
+\LTpre=\skip80
+\LTpost=\skip81
+\LTchunksize=\count198
+\LTcapwidth=\dimen158
+\LT@head=\box52
+\LT@firsthead=\box53
+\LT@foot=\box54
+\LT@lastfoot=\box55
+\LT@cols=\count199
+\LT@rows=\count266
+\c@LT@tables=\count267
+\c@LT@chunks=\count268
+\LT@p@ftn=\toks25
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/lastpage\lastpage.sty"
+("C:\Program Files\MiKTeX\tex/latex/lastpage\lastpage.sty"
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/url\url.sty"
-\Urlmuskip=\muskip10
+("C:\Program Files\MiKTeX\tex/latex/url\url.sty"
+\Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
-Package: amsmath 2018/12/01 v2.17b AMS math features
-\@mathmargin=\skip76
+("C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty"
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip82
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
+("C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
+("C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks25
-\ex@=\dimen124
+\@emptytoks=\toks26
+\ex@=\dimen159
 ))
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
+("C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen125
+\pmbraise@=\dimen160
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
+("C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count108
-LaTeX Info: Redefining \frac on input line 223.
-\uproot@=\count109
-\leftroot@=\count110
-LaTeX Info: Redefining \overline on input line 385.
-\classnum@=\count111
-\DOTSCASE@=\count112
-LaTeX Info: Redefining \ldots on input line 482.
-LaTeX Info: Redefining \dots on input line 485.
-LaTeX Info: Redefining \cdots on input line 606.
-\Mathstrutbox@=\box36
-\strutbox@=\box37
-\big@size=\dimen126
-LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
-\macc@depth=\count113
-\c@MaxMatrixCols=\count114
-\dotsspace@=\muskip11
-\c@parentequation=\count115
-\dspbrk@lvl=\count116
-\tag@help=\toks26
-\row@=\count117
-\column@=\count118
-\maxfields@=\count119
-\andhelp@=\toks27
-\eqnshift@=\dimen127
-\alignsep@=\dimen128
-\tagshift@=\dimen129
-\tagwidth@=\dimen130
-\totwidth@=\dimen131
-\lineht@=\dimen132
-\@envbody=\toks28
-\multlinegap=\skip77
-\multlinetaggap=\skip78
-\mathdisplay@stack=\toks29
-LaTeX Info: Redefining \[ on input line 2844.
-LaTeX Info: Redefining \] on input line 2845.
+\inf@bad=\count269
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count270
+\leftroot@=\count271
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count272
+\DOTSCASE@=\count273
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box56
+\strutbox@=\box57
+\big@size=\dimen161
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count274
+\c@MaxMatrixCols=\count275
+\dotsspace@=\muskip17
+\c@parentequation=\count276
+\dspbrk@lvl=\count277
+\tag@help=\toks27
+\row@=\count278
+\column@=\count279
+\maxfields@=\count280
+\andhelp@=\toks28
+\eqnshift@=\dimen162
+\alignsep@=\dimen163
+\tagshift@=\dimen164
+\tagwidth@=\dimen165
+\totwidth@=\dimen166
+\lineht@=\dimen167
+\@envbody=\toks29
+\multlinegap=\skip83
+\multlinetaggap=\skip84
+\mathdisplay@stack=\toks30
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amssymb.sty"
+("C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.sty"
+("C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Program Files\MiKTeX 2.9\tex/latex/comment\comment.sty"
+("C:\Program Files\MiKTeX\tex/latex/comment\comment.sty"
 \CommentStream=\write3
 
 Excluding comment 'comment')
-("C:\Program Files\MiKTeX 2.9\tex/latex/amscls\amsthm.sty"
-Package: amsthm 2017/10/31 v2.20.4
-\thm@style=\toks30
-\thm@bodyfont=\toks31
-\thm@headfont=\toks32
-\thm@notefont=\toks33
-\thm@headpunct=\toks34
-\thm@preskip=\skip79
-\thm@postskip=\skip80
-\thm@headsep=\skip81
-\dth@everypar=\toks35
+("C:\Program Files\MiKTeX\tex/latex/amscls\amsthm.sty"
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks31
+\thm@bodyfont=\toks32
+\thm@headfont=\toks33
+\thm@notefont=\toks34
+\thm@headpunct=\toks35
+\thm@preskip=\skip85
+\thm@postskip=\skip86
+\thm@headsep=\skip87
+\dth@everypar=\toks36
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty"
+("C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
+("C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/colortbl\colortbl.sty"
-Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
-\everycr=\toks36
-\minrowclearance=\skip82
+("C:\Program Files\MiKTeX\tex/latex/colortbl\colortbl.sty"
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+\everycr=\toks37
+\minrowclearance=\skip88
 )
 LaTeX Info: Redefining \color on input line 709.
-\rownum=\count120
+\rownum=\count281
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -349,116 +351,131 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hyperref.sty"
-Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
+("C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty"
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
 
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\hobsub-hyperref.sty"
-Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
-
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\hobsub-generic.sty"
-Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+("C:\Program Files\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty"
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-Package pdftexcmds Info: LuaTeX not detected.
+("C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty"
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+("C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty"
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files\MiKTeX\tex/generic/infwarerr\infwarerr.sty"
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
 )
-Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
-Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+("C:\Program Files\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.sty"
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )
-Package hobsub Info: Skipping package `hobsub' (already loaded).
-Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
-Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
-Package: xcolor-patch 2016/05/16 xcolor patch
-Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
-Package atveryend Info: \enddocument detected (standard20110627).
-Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
-Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
-Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+("C:\Program Files\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty"
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex/generic/ifxetex\ifxetex.sty"
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+("C:\Program Files\MiKTeX\tex/generic/pdfescape\pdfescape.sty"
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\auxhook.sty"
-Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+("C:\Program Files\MiKTeX\tex/latex/hycolor\hycolor.sty"
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\kvoptions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+("C:\Program Files\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty"
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-\@linkdim=\dimen133
-\Hy@linkcounter=\count121
-\Hy@pagecounter=\count122
+("C:\Program Files\MiKTeX\tex/latex/auxhook\auxhook.sty"
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+("C:\Program Files\MiKTeX\tex/latex/kvoptions\kvoptions.sty"
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen168
+\Hy@linkcounter=\count282
+\Hy@pagecounter=\count283
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\pd1enc.def"
-File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
+("C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def"
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count123
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/00miktex\hyperref.cfg"
-File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+("C:\Program Files\MiKTeX\tex/generic/intcalc\intcalc.sty"
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 4393.
-Package hyperref Info: Option `breaklinks' set `true' on input line 4393.
-Package hyperref Info: Hyper figures OFF on input line 4519.
-Package hyperref Info: Link nesting OFF on input line 4524.
-Package hyperref Info: Hyper index ON on input line 4527.
-Package hyperref Info: Plain pages OFF on input line 4534.
-Package hyperref Info: Backreferencing OFF on input line 4539.
+("C:\Program Files\MiKTeX\tex/generic/etexcmds\etexcmds.sty"
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count284
+Package hyperref Info: Option `colorlinks' set `true' on input line 4338.
+Package hyperref Info: Option `breaklinks' set `true' on input line 4338.
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4772.
-\c@Hy@tempcnt=\count124
-LaTeX Info: Redefining \url on input line 5125.
-\XeTeXLinkMargin=\dimen134
-\Fld@menulength=\count125
-\Field@Width=\dimen135
-\Fld@charsize=\dimen136
-Package hyperref Info: Hyper figures OFF on input line 6380.
-Package hyperref Info: Link nesting OFF on input line 6385.
-Package hyperref Info: Hyper index ON on input line 6388.
-Package hyperref Info: backreferencing OFF on input line 6395.
-Package hyperref Info: Link coloring ON on input line 6398.
-Package hyperref Info: Link coloring with OCG OFF on input line 6405.
-Package hyperref Info: PDF/A mode OFF on input line 6410.
-LaTeX Info: Redefining \ref on input line 6450.
-LaTeX Info: Redefining \pageref on input line 6454.
-\Hy@abspage=\count126
-\c@Item=\count127
-\c@Hfootnote=\count128
+Package hyperref Info: Bookmarks ON on input line 4717.
+\c@Hy@tempcnt=\count285
+LaTeX Info: Redefining \url on input line 5076.
+\XeTeXLinkMargin=\dimen169
+
+("C:\Program Files\MiKTeX\tex/generic/bitset\bitset.sty"
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+("C:\Program Files\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty"
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count286
+\Field@Width=\dimen170
+\Fld@charsize=\dimen171
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring ON on input line 6365.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
+
+("C:\Program Files\MiKTeX\tex/latex/base\atbegshi-ltx.sty"
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+)
+\Hy@abspage=\count287
+\c@Item=\count288
+\c@Hfootnote=\count289
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hpdftex.def"
-File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
-\Fld@listcount=\count129
-\c@bookmark@seq@number=\count130
+("C:\Program Files\MiKTeX\tex/latex/hyperref\hpdftex.def"
+File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\rerunfilecheck.sty"
-Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-82.
+("C:\Program Files\MiKTeX\tex/latex/base\atveryend-ltx.sty"
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
 )
-\Hy@SectionHShift=\skip83
+\Fld@listcount=\count290
+\c@bookmark@seq@number=\count291
+
+("C:\Program Files\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty"
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+("C:\Program Files\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty"
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip89
 )
 (config/model/colors.tex) (config/model/variables.tex)
 Package hyperref Info: Option `colorlinks' set `true' on input line 107.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\makeidx.sty"
+("C:\Program Files\MiKTeX\tex/latex/base\makeidx.sty"
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 )
 \@indexfile=\write4
@@ -466,16 +483,23 @@ Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 
 
 Writing index file Thesis.idx
-) (Thesis.aux)
+) ("C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def"
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count292
+\l__pdf_internal_box=\box58
+)
+(Thesis.aux)
 \openout1 = `Thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
@@ -483,48 +507,42 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/ucs\ucsencs.def"
+ ("C:\Program Files\MiKTeX\tex/latex/ucs\ucsencs.def"
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
-("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
+("C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count131
-\scratchdimen=\dimen137
-\scratchbox=\box38
-\nofMPsegments=\count132
-\nofMParguments=\count133
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count134
-\MPscratchDim=\dimen138
-\MPnumerator=\count135
-\makeMPintoPDFobject=\count136
-\everyMPtoPDFconversion=\toks38
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\grfext.sty"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-)
+\scratchcounter=\count293
+\scratchdimen=\dimen172
+\scratchbox=\box59
+\nofMPsegments=\count294
+\nofMParguments=\count295
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count296
+\MPscratchDim=\dimen173
+\MPnumerator=\count297
+\makeMPintoPDFobject=\count298
+\everyMPtoPDFconversion=\toks39
+) ("C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty"
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
+85.
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 3.
-\AtBeginShipoutBox=\box39
 Package hyperref Info: Link coloring ON on input line 3.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
-Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+("C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty"
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\gettitlestring.sty"
-Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+("C:\Program Files\MiKTeX\tex/latex/refcount\refcount.sty"
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-\c@section@level=\count137
+("C:\Program Files\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty"
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count299
 )
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
@@ -535,26 +553,28 @@ LaTeX Info: Redefining \nameref on input line 3.
 \openout5 = `Thesis.out'.
 
  (config/model/hyphenation.tex) (coverpage.tex
-<./pics/unifr-logo.jpg, id=203, 139.9629pt x 165.0165pt>
-File: ./pics/unifr-logo.jpg Graphic file (type jpg)
-<use ./pics/unifr-logo.jpg>
-Package pdftex.def Info: ./pics/unifr-logo.jpg  used on input line 17.
+<./pics//unifr-logo.jpg, id=203, 139.9629pt x 165.0165pt>
+File: ./pics//unifr-logo.jpg Graphic file (type jpg)
+<use ./pics//unifr-logo.jpg>
+Package pdftex.def Info: ./pics//unifr-logo.jpg  used on input line 17.
 (pdftex.def)             Requested size: 139.96255pt x 165.01607pt.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/ucs\uni-0.def"
+("C:\Program Files\MiKTeX\tex/latex/ucs\uni-0.def"
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 ) [1
 
-{C:/Users/Brian Davis/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./pic
-s/unifr-logo.jpg>])
-LaTeX Font Info:    Try loading font information for U+msa on input line 17.
+{C:/Users/davis/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./pics//unifr-l
+ogo.jpg>])
+LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+
+("C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 17.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+
+("C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has
  been already used, duplicate ignored
@@ -590,27 +610,29 @@ This may cause the page layout to be inconsistent, however.
 
 ] [7] (Chapter1-Intro.tex
 Chapter 1.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 2.
-("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1phv.fd"
-File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 2
+.
+("C:\Program Files\MiKTeX\tex/latex/psnfss\ot1phv.fd"
+File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 2.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
+.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1ptm.fd"
+("C:\Program Files\MiKTeX\tex/latex/psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) [1
 
 ] [2] [3]
-<./pics/phylogeny03.png, id=451, 316.18124pt x 239.89626pt>
-File: ./pics/phylogeny03.png Graphic file (type png)
-<use ./pics/phylogeny03.png>
-Package pdftex.def Info: ./pics/phylogeny03.png  used on input line 20.
+<./pics//phylogeny03.png, id=451, 316.18124pt x 239.89626pt>
+File: ./pics//phylogeny03.png Graphic file (type png)
+<use ./pics//phylogeny03.png>
+Package pdftex.def Info: ./pics//phylogeny03.png  used on input line 20.
 (pdftex.def)             Requested size: 237.13535pt x 179.92174pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[4]) (Chapter2.tex [5 <./pics/phylogeny03.png>]
+[4]) (Chapter2.tex [5 <./pics//phylogeny03.png>]
 Chapter 2.
 [6
 
@@ -627,22 +649,22 @@ f the ma-rine cyanobac-
  []
 
 [9] [10]
-<./pics/aevol_overview01.png, id=542, 684.30656pt x 717.43031pt>
-File: ./pics/aevol_overview01.png Graphic file (type png)
-<use ./pics/aevol_overview01.png>
-Package pdftex.def Info: ./pics/aevol_overview01.png  used on input line 62.
+<./pics//aevol_overview01.png, id=542, 684.30656pt x 717.43031pt>
+File: ./pics//aevol_overview01.png Graphic file (type png)
+<use ./pics//aevol_overview01.png>
+Package pdftex.def Info: ./pics//aevol_overview01.png  used on input line 62.
 (pdftex.def)             Requested size: 360.00768pt x 377.43379pt.
- [11] [12 <./pics/aevol_overview01.png>] [13]
+ [11] [12 <./pics//aevol_overview01.png>] [13]
 Overfull \hbox (1.8798pt too wide) in paragraph at lines 76--77
 []\OT1/cmr/m/n/10.95 Given the fact that there are likely mul-ti-ple cod-ing se
 -quences in a genome,
  []
 
-<./pics/aevol_fitness_description01.png, id=578, 377.91188pt x 294.34969pt>
-File: ./pics/aevol_fitness_description01.png Graphic file (type png)
-<use ./pics/aevol_fitness_description01.png>
-Package pdftex.def Info: ./pics/aevol_fitness_description01.png  used on input 
-line 85.
+<./pics//aevol_fitness_description01.png, id=578, 377.91188pt x 294.34969pt>
+File: ./pics//aevol_fitness_description01.png Graphic file (type png)
+<use ./pics//aevol_fitness_description01.png>
+Package pdftex.def Info: ./pics//aevol_fitness_description01.png  used on input
+ line 85.
 (pdftex.def)             Requested size: 188.95547pt x 147.17447pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -653,13 +675,13 @@ Overfull \hbox (51.07977pt too wide) in paragraph at lines 91--92
 y the \OT1/cmtt/m/n/10.95 fitness[]proportionate
  []
 
-[14] [15 <./pics/aevol_fitness_description01.png>]
-<./pics/lineage01.png, id=596, 660.96938pt x 195.73125pt>
-File: ./pics/lineage01.png Graphic file (type png)
-<use ./pics/lineage01.png>
-Package pdftex.def Info: ./pics/lineage01.png  used on input line 110.
+[14] [15 <./pics//aevol_fitness_description01.png>]
+<./pics//lineage01.png, id=596, 660.96938pt x 195.73125pt>
+File: ./pics//lineage01.png Graphic file (type png)
+<use ./pics//lineage01.png>
+Package pdftex.def Info: ./pics//lineage01.png  used on input line 110.
 (pdftex.def)             Requested size: 360.0pt x 106.61018pt.
- [16] [17 <./pics/lineage01.png>] [18] [19]) (Chapter3.tex [20]
+ [16] [17 <./pics//lineage01.png>] [18] [19]) (Chapter3.tex [20]
 Chapter 3.
 [21
 
@@ -669,13 +691,13 @@ Overfull \hbox (2.05186pt too wide) in paragraph at lines 12--13
  com-mand \OT1/cmtt/m/n/10.95 aevol[]run\OT1/cmr/m/n/10.95 )
  []
 
-<./pics/environmental_target_function01.png, id=640, 1204.5pt x 903.375pt>
-File: ./pics/environmental_target_function01.png Graphic file (type png)
-<use ./pics/environmental_target_function01.png>
-Package pdftex.def Info: ./pics/environmental_target_function01.png  used on in
-put line 23.
+<./pics//environmental_target_function01.png, id=640, 1204.5pt x 903.375pt>
+File: ./pics//environmental_target_function01.png Graphic file (type png)
+<use ./pics//environmental_target_function01.png>
+Package pdftex.def Info: ./pics//environmental_target_function01.png  used on i
+nput line 23.
 (pdftex.def)             Requested size: 360.0pt x 269.99455pt.
-[22] [23 <./pics/environmental_target_function01.png>] [24]
+[22] [23 <./pics//environmental_target_function01.png>] [24]
 Overfull \hbox (11.87302pt too wide) in paragraph at lines 88--89
 \OT1/cmr/m/n/10.95 In these ex-per-i-ments, the Python li-brary func-tion \OT1/
 cmtt/m/n/10.95 scipy.stats.mannwhitneyu
@@ -707,302 +729,308 @@ Chapter 4.
 [32
 
 ]
-<./pics/control_genome_size_b1-e500000.png, id=792, 1848.9075pt x 1233.60875pt>
-
-File: ./pics/control_genome_size_b1-e500000.png Graphic file (type png)
-<use ./pics/control_genome_size_b1-e500000.png>
-Package pdftex.def Info: ./pics/control_genome_size_b1-e500000.png  used on inp
-ut line 12.
+<./pics//control_genome_size_b1-e500000.png, id=792, 1848.9075pt x 1233.60875pt
+>
+File: ./pics//control_genome_size_b1-e500000.png Graphic file (type png)
+<use ./pics//control_genome_size_b1-e500000.png>
+Package pdftex.def Info: ./pics//control_genome_size_b1-e500000.png  used on in
+put line 12.
 (pdftex.def)             Requested size: 360.0pt x 240.18568pt.
-<./pics/control_percent_non-coding_b1-e500000.png, id=794, 1806.75pt x 1233.608
-75pt>
-File: ./pics/control_percent_non-coding_b1-e500000.png Graphic file (type png)
-<use ./pics/control_percent_non-coding_b1-e500000.png>
-Package pdftex.def Info: ./pics/control_percent_non-coding_b1-e500000.png  used
- on input line 21.
+<./pics//control_percent_non-coding_b1-e500000.png, id=794, 1806.75pt x 1233.60
+875pt>
+File: ./pics//control_percent_non-coding_b1-e500000.png Graphic file (type png)
+
+<use ./pics//control_percent_non-coding_b1-e500000.png>
+Package pdftex.def Info: ./pics//control_percent_non-coding_b1-e500000.png  use
+d on input line 21.
 (pdftex.def)             Requested size: 360.0pt x 245.79503pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./pics/control_fitness_b1-e500000.png, id=796, 1831.84375pt x 1233.60875pt>
-File: ./pics/control_fitness_b1-e500000.png Graphic file (type png)
-<use ./pics/control_fitness_b1-e500000.png>
-Package pdftex.def Info: ./pics/control_fitness_b1-e500000.png  used on input l
-ine 29.
+<./pics//control_fitness_b1-e500000.png, id=796, 1831.84375pt x 1233.60875pt>
+File: ./pics//control_fitness_b1-e500000.png Graphic file (type png)
+<use ./pics//control_fitness_b1-e500000.png>
+Package pdftex.def Info: ./pics//control_fitness_b1-e500000.png  used on input 
+line 29.
 (pdftex.def)             Requested size: 360.0pt x 242.42566pt.
-[33 <./pics/control_genome_size_b1-e500000.png>]
+[33 <./pics//control_genome_size_b1-e500000.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./pics/control_avg_size_of_functional_genes_b1-e500000.png, id=804, 1842.885pt
- x 1233.60875pt>
-File: ./pics/control_avg_size_of_functional_genes_b1-e500000.png Graphic file (
-type png)
-<use ./pics/control_avg_size_of_functional_genes_b1-e500000.png>
-Package pdftex.def Info: ./pics/control_avg_size_of_functional_genes_b1-e500000
-.png  used on input line 55.
+<./pics//control_avg_size_of_functional_genes_b1-e500000.png, id=804, 1842.885p
+t x 1233.60875pt>
+File: ./pics//control_avg_size_of_functional_genes_b1-e500000.png Graphic file 
+(type png)
+<use ./pics//control_avg_size_of_functional_genes_b1-e500000.png>
+Package pdftex.def Info: ./pics//control_avg_size_of_functional_genes_b1-e50000
+0.png  used on input line 55.
 (pdftex.def)             Requested size: 360.0pt x 240.97626pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[34 <./pics/control_percent_non-coding_b1-e500000.png>]
-<./pics/control_density_b1-e500000.png, id=811, 1832.8475pt x 1233.60875pt>
-File: ./pics/control_density_b1-e500000.png Graphic file (type png)
-<use ./pics/control_density_b1-e500000.png>
-Package pdftex.def Info: ./pics/control_density_b1-e500000.png  used on input l
-ine 64.
+[34 <./pics//control_percent_non-coding_b1-e500000.png>]
+<./pics//control_density_b1-e500000.png, id=811, 1832.8475pt x 1233.60875pt>
+File: ./pics//control_density_b1-e500000.png Graphic file (type png)
+<use ./pics//control_density_b1-e500000.png>
+Package pdftex.def Info: ./pics//control_density_b1-e500000.png  used on input 
+line 64.
 (pdftex.def)             Requested size: 360.0pt x 242.2939pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./pics/control_frac_neutral_mutants_b1-e500000.png, id=815, 1793.70125pt x 123
-3.60875pt>
-File: ./pics/control_frac_neutral_mutants_b1-e500000.png Graphic file (type png
-)
-<use ./pics/control_frac_neutral_mutants_b1-e500000.png>
-Package pdftex.def Info: ./pics/control_frac_neutral_mutants_b1-e500000.png  us
-ed on input line 73.
+<./pics//control_frac_neutral_mutants_b1-e500000.png, id=815, 1793.70125pt x 12
+33.60875pt>
+File: ./pics//control_frac_neutral_mutants_b1-e500000.png Graphic file (type pn
+g)
+<use ./pics//control_frac_neutral_mutants_b1-e500000.png>
+Package pdftex.def Info: ./pics//control_frac_neutral_mutants_b1-e500000.png  u
+sed on input line 73.
 (pdftex.def)             Requested size: 360.0pt x 247.58325pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./pics/control_evolvability_b1-e500000.png, id=816, 1758.57pt x 1233.60875pt>
-File: ./pics/control_evolvability_b1-e500000.png Graphic file (type png)
-<use ./pics/control_evolvability_b1-e500000.png>
-Package pdftex.def Info: ./pics/control_evolvability_b1-e500000.png  used on in
-put line 80.
+<./pics//control_evolvability_b1-e500000.png, id=816, 1758.57pt x 1233.60875pt>
+
+File: ./pics//control_evolvability_b1-e500000.png Graphic file (type png)
+<use ./pics//control_evolvability_b1-e500000.png>
+Package pdftex.def Info: ./pics//control_evolvability_b1-e500000.png  used on i
+nput line 80.
 (pdftex.def)             Requested size: 360.0pt x 252.53378pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./pics/mut_up_genome_size_b1-e500000.png, id=820, 1848.9075pt x 1233.60875pt>
-File: ./pics/mut_up_genome_size_b1-e500000.png Graphic file (type png)
-<use ./pics/mut_up_genome_size_b1-e500000.png>
-Package pdftex.def Info: ./pics/mut_up_genome_size_b1-e500000.png  used on inpu
-t line 90.
-(pdftex.def)             Requested size: 360.0pt x 240.18568pt.
-[35 <./pics/control_fitness_b1-e500000.png>] [36 <./pics/control_avg_size_of_fu
-nctional_genes_b1-e500000.png>]
-<./pics/mut_up_frac_neutral_mutants_b1-e500000.png, id=832, 1780.6525pt x 1233.
-60875pt>
-File: ./pics/mut_up_frac_neutral_mutants_b1-e500000.png Graphic file (type png)
+<./pics//mut_up_genome_size_b1-e500000.png, id=820, 1848.9075pt x 1233.60875pt>
 
-<use ./pics/mut_up_frac_neutral_mutants_b1-e500000.png>
-Package pdftex.def Info: ./pics/mut_up_frac_neutral_mutants_b1-e500000.png  use
-d on input line 97.
+File: ./pics//mut_up_genome_size_b1-e500000.png Graphic file (type png)
+<use ./pics//mut_up_genome_size_b1-e500000.png>
+Package pdftex.def Info: ./pics//mut_up_genome_size_b1-e500000.png  used on inp
+ut line 90.
+(pdftex.def)             Requested size: 360.0pt x 240.18568pt.
+[35 <./pics//control_fitness_b1-e500000.png>] [36 <./pics//control_avg_size_of_
+functional_genes_b1-e500000.png>]
+<./pics//mut_up_frac_neutral_mutants_b1-e500000.png, id=832, 1780.6525pt x 1233
+.60875pt>
+File: ./pics//mut_up_frac_neutral_mutants_b1-e500000.png Graphic file (type png
+)
+<use ./pics//mut_up_frac_neutral_mutants_b1-e500000.png>
+Package pdftex.def Info: ./pics//mut_up_frac_neutral_mutants_b1-e500000.png  us
+ed on input line 97.
 (pdftex.def)             Requested size: 360.0pt x 249.39029pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./pics/mut_up_gene_density_b1-e500000.png, id=833, 1832.8475pt x 1233.60875pt>
-
-File: ./pics/mut_up_gene_density_b1-e500000.png Graphic file (type png)
-<use ./pics/mut_up_gene_density_b1-e500000.png>
-Package pdftex.def Info: ./pics/mut_up_gene_density_b1-e500000.png  used on inp
-ut line 104.
+<./pics//mut_up_gene_density_b1-e500000.png, id=833, 1832.8475pt x 1233.60875pt
+>
+File: ./pics//mut_up_gene_density_b1-e500000.png Graphic file (type png)
+<use ./pics//mut_up_gene_density_b1-e500000.png>
+Package pdftex.def Info: ./pics//mut_up_gene_density_b1-e500000.png  used on in
+put line 104.
 (pdftex.def)             Requested size: 360.0pt x 242.2939pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./pics/mut_up_percent_non-coding_b1-e500000.png, id=834, 1787.67876pt x 1233.6
-0875pt>
-File: ./pics/mut_up_percent_non-coding_b1-e500000.png Graphic file (type png)
-<use ./pics/mut_up_percent_non-coding_b1-e500000.png>
-Package pdftex.def Info: ./pics/mut_up_percent_non-coding_b1-e500000.png  used 
-on input line 111.
+<./pics//mut_up_percent_non-coding_b1-e500000.png, id=834, 1787.67876pt x 1233.
+60875pt>
+File: ./pics//mut_up_percent_non-coding_b1-e500000.png Graphic file (type png)
+<use ./pics//mut_up_percent_non-coding_b1-e500000.png>
+Package pdftex.def Info: ./pics//mut_up_percent_non-coding_b1-e500000.png  used
+ on input line 111.
 (pdftex.def)             Requested size: 360.0pt x 248.41147pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./pics/mut_down_genome_size_b1-e500000.png, id=837, 1848.9075pt x 1233.60875pt
->
-File: ./pics/mut_down_genome_size_b1-e500000.png Graphic file (type png)
-<use ./pics/mut_down_genome_size_b1-e500000.png>
-Package pdftex.def Info: ./pics/mut_down_genome_size_b1-e500000.png  used on in
-put line 121.
+<./pics//mut_down_genome_size_b1-e500000.png, id=837, 1848.9075pt x 1233.60875p
+t>
+File: ./pics//mut_down_genome_size_b1-e500000.png Graphic file (type png)
+<use ./pics//mut_down_genome_size_b1-e500000.png>
+Package pdftex.def Info: ./pics//mut_down_genome_size_b1-e500000.png  used on i
+nput line 121.
 (pdftex.def)             Requested size: 360.0pt x 240.18568pt.
-[37 <./pics/control_density_b1-e500000.png> <./pics/mut_up_genome_size_b1-e5000
-00.png>] [38 <./pics/control_frac_neutral_mutants_b1-e500000.png>] [39 <./pics/
-control_evolvability_b1-e500000.png> <./pics/mut_down_genome_size_b1-e500000.pn
-g>]
-<./pics/mut_down_fitness_b1-e500000.png, id=857, 1831.84375pt x 1233.60875pt>
-File: ./pics/mut_down_fitness_b1-e500000.png Graphic file (type png)
-<use ./pics/mut_down_fitness_b1-e500000.png>
-Package pdftex.def Info: ./pics/mut_down_fitness_b1-e500000.png  used on input 
-line 132.
+[37 <./pics//control_density_b1-e500000.png> <./pics//mut_up_genome_size_b1-e50
+0000.png>] [38 <./pics//control_frac_neutral_mutants_b1-e500000.png>] [39 <./pi
+cs//control_evolvability_b1-e500000.png> <./pics//mut_down_genome_size_b1-e5000
+00.png>]
+<./pics//mut_down_fitness_b1-e500000.png, id=857, 1831.84375pt x 1233.60875pt>
+File: ./pics//mut_down_fitness_b1-e500000.png Graphic file (type png)
+<use ./pics//mut_down_fitness_b1-e500000.png>
+Package pdftex.def Info: ./pics//mut_down_fitness_b1-e500000.png  used on input
+ line 132.
 (pdftex.def)             Requested size: 360.0pt x 242.42566pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./pics/mut_down_num_functional_genes_b1-e500000.png, id=860, 1818.795pt x 1233
-.60875pt>
-File: ./pics/mut_down_num_functional_genes_b1-e500000.png Graphic file (type pn
-g)
-<use ./pics/mut_down_num_functional_genes_b1-e500000.png>
-Package pdftex.def Info: ./pics/mut_down_num_functional_genes_b1-e500000.png  u
-sed on input line 141.
+<./pics//mut_down_num_functional_genes_b1-e500000.png, id=860, 1818.795pt x 123
+3.60875pt>
+File: ./pics//mut_down_num_functional_genes_b1-e500000.png Graphic file (type p
+ng)
+<use ./pics//mut_down_num_functional_genes_b1-e500000.png>
+Package pdftex.def Info: ./pics//mut_down_num_functional_genes_b1-e500000.png  
+used on input line 141.
 (pdftex.def)             Requested size: 360.0pt x 244.15741pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./pics/mut_down_gene_density_b1-e500000.png, id=861, 1832.8475pt x 1233.60875p
-t>
-File: ./pics/mut_down_gene_density_b1-e500000.png Graphic file (type png)
-<use ./pics/mut_down_gene_density_b1-e500000.png>
-Package pdftex.def Info: ./pics/mut_down_gene_density_b1-e500000.png  used on i
-nput line 148.
+<./pics//mut_down_gene_density_b1-e500000.png, id=861, 1832.8475pt x 1233.60875
+pt>
+File: ./pics//mut_down_gene_density_b1-e500000.png Graphic file (type png)
+<use ./pics//mut_down_gene_density_b1-e500000.png>
+Package pdftex.def Info: ./pics//mut_down_gene_density_b1-e500000.png  used on 
+input line 148.
 (pdftex.def)             Requested size: 360.0pt x 242.2939pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./pics/mut_down_percent_non-coding_b1-e500000.png, id=862, 1787.67876pt x 1233
-.60875pt>
-File: ./pics/mut_down_percent_non-coding_b1-e500000.png Graphic file (type png)
-
-<use ./pics/mut_down_percent_non-coding_b1-e500000.png>
-Package pdftex.def Info: ./pics/mut_down_percent_non-coding_b1-e500000.png  use
-d on input line 156.
+<./pics//mut_down_percent_non-coding_b1-e500000.png, id=862, 1787.67876pt x 123
+3.60875pt>
+File: ./pics//mut_down_percent_non-coding_b1-e500000.png Graphic file (type png
+)
+<use ./pics//mut_down_percent_non-coding_b1-e500000.png>
+Package pdftex.def Info: ./pics//mut_down_percent_non-coding_b1-e500000.png  us
+ed on input line 156.
 (pdftex.def)             Requested size: 360.0pt x 248.41147pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./pics/selection_up_genome_size_b1-e500000.png, id=865, 1848.9075pt x 1233.608
-75pt>
-File: ./pics/selection_up_genome_size_b1-e500000.png Graphic file (type png)
-<use ./pics/selection_up_genome_size_b1-e500000.png>
-Package pdftex.def Info: ./pics/selection_up_genome_size_b1-e500000.png  used o
-n input line 167.
+<./pics//selection_up_genome_size_b1-e500000.png, id=865, 1848.9075pt x 1233.60
+875pt>
+File: ./pics//selection_up_genome_size_b1-e500000.png Graphic file (type png)
+<use ./pics//selection_up_genome_size_b1-e500000.png>
+Package pdftex.def Info: ./pics//selection_up_genome_size_b1-e500000.png  used 
+on input line 167.
 (pdftex.def)             Requested size: 360.0pt x 240.18568pt.
-[40 <./pics/mut_up_frac_neutral_mutants_b1-e500000.png>] [41 <./pics/mut_up_gen
-e_density_b1-e500000.png> <./pics/selection_up_genome_size_b1-e500000.png>]
-<./pics/selection_up_num_functional_genes_b1-e500000.png, id=880, 1818.795pt x 
-1233.60875pt>
-File: ./pics/selection_up_num_functional_genes_b1-e500000.png Graphic file (typ
-e png)
-<use ./pics/selection_up_num_functional_genes_b1-e500000.png>
-Package pdftex.def Info: ./pics/selection_up_num_functional_genes_b1-e500000.pn
-g  used on input line 180.
+[40 <./pics//mut_up_frac_neutral_mutants_b1-e500000.png>] [41 <./pics//mut_up_g
+ene_density_b1-e500000.png> <./pics//selection_up_genome_size_b1-e500000.png>]
+<./pics//selection_up_num_functional_genes_b1-e500000.png, id=880, 1818.795pt x
+ 1233.60875pt>
+File: ./pics//selection_up_num_functional_genes_b1-e500000.png Graphic file (ty
+pe png)
+<use ./pics//selection_up_num_functional_genes_b1-e500000.png>
+Package pdftex.def Info: ./pics//selection_up_num_functional_genes_b1-e500000.p
+ng  used on input line 180.
 (pdftex.def)             Requested size: 360.0pt x 244.15741pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./pics/selection_up_fitness_b1-e500000.png, id=881, 1806.75pt x 1233.60875pt>
-File: ./pics/selection_up_fitness_b1-e500000.png Graphic file (type png)
-<use ./pics/selection_up_fitness_b1-e500000.png>
-Package pdftex.def Info: ./pics/selection_up_fitness_b1-e500000.png  used on in
-put line 187.
+<./pics//selection_up_fitness_b1-e500000.png, id=881, 1806.75pt x 1233.60875pt>
+
+File: ./pics//selection_up_fitness_b1-e500000.png Graphic file (type png)
+<use ./pics//selection_up_fitness_b1-e500000.png>
+Package pdftex.def Info: ./pics//selection_up_fitness_b1-e500000.png  used on i
+nput line 187.
 (pdftex.def)             Requested size: 360.0pt x 245.79503pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./pics/selection_up_percent_non-coding_b1-e500000.png, id=883, 1787.67876pt x 
-1233.60875pt>
-File: ./pics/selection_up_percent_non-coding_b1-e500000.png Graphic file (type 
-png)
-<use ./pics/selection_up_percent_non-coding_b1-e500000.png>
-Package pdftex.def Info: ./pics/selection_up_percent_non-coding_b1-e500000.png 
- used on input line 196.
+<./pics//selection_up_percent_non-coding_b1-e500000.png, id=883, 1787.67876pt x
+ 1233.60875pt>
+File: ./pics//selection_up_percent_non-coding_b1-e500000.png Graphic file (type
+ png)
+<use ./pics//selection_up_percent_non-coding_b1-e500000.png>
+Package pdftex.def Info: ./pics//selection_up_percent_non-coding_b1-e500000.png
+  used on input line 196.
 (pdftex.def)             Requested size: 360.0pt x 248.41147pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./pics/selection_down_genome_size_b1-e500000.png, id=885, 1848.9075pt x 1233.6
-0875pt>
-File: ./pics/selection_down_genome_size_b1-e500000.png Graphic file (type png)
-<use ./pics/selection_down_genome_size_b1-e500000.png>
-Package pdftex.def Info: ./pics/selection_down_genome_size_b1-e500000.png  used
- on input line 205.
+<./pics//selection_down_genome_size_b1-e500000.png, id=885, 1848.9075pt x 1233.
+60875pt>
+File: ./pics//selection_down_genome_size_b1-e500000.png Graphic file (type png)
+
+<use ./pics//selection_down_genome_size_b1-e500000.png>
+Package pdftex.def Info: ./pics//selection_down_genome_size_b1-e500000.png  use
+d on input line 205.
 (pdftex.def)             Requested size: 360.0pt x 240.18568pt.
-[42 <./pics/mut_up_percent_non-coding_b1-e500000.png>] [43 <./pics/mut_down_fit
-ness_b1-e500000.png>]
-<./pics/selection_down_percent_non-coding_b1-e500000.png, id=898, 1787.67876pt 
-x 1233.60875pt>
-File: ./pics/selection_down_percent_non-coding_b1-e500000.png Graphic file (typ
-e png)
-<use ./pics/selection_down_percent_non-coding_b1-e500000.png>
-Package pdftex.def Info: ./pics/selection_down_percent_non-coding_b1-e500000.pn
-g  used on input line 212.
+[42 <./pics//mut_up_percent_non-coding_b1-e500000.png>] [43 <./pics//mut_down_f
+itness_b1-e500000.png>]
+<./pics//selection_down_percent_non-coding_b1-e500000.png, id=898, 1787.67876pt
+ x 1233.60875pt>
+File: ./pics//selection_down_percent_non-coding_b1-e500000.png Graphic file (ty
+pe png)
+<use ./pics//selection_down_percent_non-coding_b1-e500000.png>
+Package pdftex.def Info: ./pics//selection_down_percent_non-coding_b1-e500000.p
+ng  used on input line 212.
 (pdftex.def)             Requested size: 360.0pt x 248.41147pt.
- [44 <./pics/mut_down_num_functional_genes_b1-e500000.png> <./pics/selection_do
-wn_genome_size_b1-e500000.png>]
+ [44 <./pics//mut_down_num_functional_genes_b1-e500000.png> <./pics//selection_
+down_genome_size_b1-e500000.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./pics/selection_down_num_functional_genes_b1-e500000.png, id=905, 1818.795pt 
-x 1233.60875pt>
-File: ./pics/selection_down_num_functional_genes_b1-e500000.png Graphic file (t
-ype png)
-<use ./pics/selection_down_num_functional_genes_b1-e500000.png>
-Package pdftex.def Info: ./pics/selection_down_num_functional_genes_b1-e500000.
-png  used on input line 219.
+<./pics//selection_down_num_functional_genes_b1-e500000.png, id=905, 1818.795pt
+ x 1233.60875pt>
+File: ./pics//selection_down_num_functional_genes_b1-e500000.png Graphic file (
+type png)
+<use ./pics//selection_down_num_functional_genes_b1-e500000.png>
+Package pdftex.def Info: ./pics//selection_down_num_functional_genes_b1-e500000
+.png  used on input line 219.
 (pdftex.def)             Requested size: 360.0pt x 244.15741pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./pics/population_up_genome_size_b1-e500000.png, id=907, 1848.9075pt x 1233.60
-875pt>
-File: ./pics/population_up_genome_size_b1-e500000.png Graphic file (type png)
-<use ./pics/population_up_genome_size_b1-e500000.png>
-Package pdftex.def Info: ./pics/population_up_genome_size_b1-e500000.png  used 
-on input line 230.
+<./pics//population_up_genome_size_b1-e500000.png, id=907, 1848.9075pt x 1233.6
+0875pt>
+File: ./pics//population_up_genome_size_b1-e500000.png Graphic file (type png)
+<use ./pics//population_up_genome_size_b1-e500000.png>
+Package pdftex.def Info: ./pics//population_up_genome_size_b1-e500000.png  used
+ on input line 230.
 (pdftex.def)             Requested size: 360.0pt x 240.18568pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./pics/population_up_percent_non-coding_b1-e500000.png, id=910, 1787.67876pt x
- 1233.60875pt>
-File: ./pics/population_up_percent_non-coding_b1-e500000.png Graphic file (type
- png)
-<use ./pics/population_up_percent_non-coding_b1-e500000.png>
-Package pdftex.def Info: ./pics/population_up_percent_non-coding_b1-e500000.png
-  used on input line 239.
+<./pics//population_up_percent_non-coding_b1-e500000.png, id=910, 1787.67876pt 
+x 1233.60875pt>
+File: ./pics//population_up_percent_non-coding_b1-e500000.png Graphic file (typ
+e png)
+<use ./pics//population_up_percent_non-coding_b1-e500000.png>
+Package pdftex.def Info: ./pics//population_up_percent_non-coding_b1-e500000.pn
+g  used on input line 239.
 (pdftex.def)             Requested size: 360.0pt x 248.41147pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./pics/population_down_genome_size_b1-e500000.png, id=911, 1848.9075pt x 1233.
-60875pt>
-File: ./pics/population_down_genome_size_b1-e500000.png Graphic file (type png)
-
-<use ./pics/population_down_genome_size_b1-e500000.png>
-Package pdftex.def Info: ./pics/population_down_genome_size_b1-e500000.png  use
-d on input line 251.
+<./pics//population_down_genome_size_b1-e500000.png, id=911, 1848.9075pt x 1233
+.60875pt>
+File: ./pics//population_down_genome_size_b1-e500000.png Graphic file (type png
+)
+<use ./pics//population_down_genome_size_b1-e500000.png>
+Package pdftex.def Info: ./pics//population_down_genome_size_b1-e500000.png  us
+ed on input line 251.
 (pdftex.def)             Requested size: 360.0pt x 240.18568pt.
-[45 <./pics/mut_down_gene_density_b1-e500000.png>] [46 <./pics/mut_down_percent
-_non-coding_b1-e500000.png>]
+[45 <./pics//mut_down_gene_density_b1-e500000.png>] [46 <./pics//mut_down_perce
+nt_non-coding_b1-e500000.png>]
 Overfull \vbox (11.55302pt too high) has occurred while \output is active []
 
 
-[47 <./pics/selection_up_num_functional_genes_b1-e500000.png> <./pics/populatio
-n_down_genome_size_b1-e500000.png>]
-<./pics/population_down_percent_non-coding_b1-e500000.png, id=931, 1787.67876pt
- x 1233.60875pt>
-File: ./pics/population_down_percent_non-coding_b1-e500000.png Graphic file (ty
-pe png)
-<use ./pics/population_down_percent_non-coding_b1-e500000.png>
-Package pdftex.def Info: ./pics/population_down_percent_non-coding_b1-e500000.p
-ng  used on input line 260.
+[47 <./pics//selection_up_num_functional_genes_b1-e500000.png> <./pics//populat
+ion_down_genome_size_b1-e500000.png>]
+<./pics//population_down_percent_non-coding_b1-e500000.png, id=931, 1787.67876p
+t x 1233.60875pt>
+File: ./pics//population_down_percent_non-coding_b1-e500000.png Graphic file (t
+ype png)
+<use ./pics//population_down_percent_non-coding_b1-e500000.png>
+Package pdftex.def Info: ./pics//population_down_percent_non-coding_b1-e500000.
+png  used on input line 260.
 (pdftex.def)             Requested size: 360.0pt x 248.41147pt.
- [48 <./pics/selection_up_fitness_b1-e500000.png>]
+ [48 <./pics//selection_up_fitness_b1-e500000.png>]
 Overfull \vbox (7.15184pt too high) has occurred while \output is active []
 
 
-[49 <./pics/selection_up_percent_non-coding_b1-e500000.png> <./pics/population_
-down_percent_non-coding_b1-e500000.png>]
-<./pics/stat_fitness_global_mean_genome_size.png, id=945, 2168.1pt x 1445.4pt>
-File: ./pics/stat_fitness_global_mean_genome_size.png Graphic file (type png)
-<use ./pics/stat_fitness_global_mean_genome_size.png>
-Package pdftex.def Info: ./pics/stat_fitness_global_mean_genome_size.png  used 
-on input line 272.
+[49 <./pics//selection_up_percent_non-coding_b1-e500000.png> <./pics//populatio
+n_down_percent_non-coding_b1-e500000.png>]
+<./pics//stat_fitness_global_mean_genome_size.png, id=945, 2168.1pt x 1445.4pt>
+
+File: ./pics//stat_fitness_global_mean_genome_size.png Graphic file (type png)
+<use ./pics//stat_fitness_global_mean_genome_size.png>
+Package pdftex.def Info: ./pics//stat_fitness_global_mean_genome_size.png  used
+ on input line 272.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
- [50 <./pics/selection_down_percent_non-coding_b1-e500000.png>] [51 <./pics/sel
-ection_down_num_functional_genes_b1-e500000.png> <./pics/stat_fitness_global_me
-an_genome_size.png>]
+ [50 <./pics//selection_down_percent_non-coding_b1-e500000.png>] [51 <./pics//s
+election_down_num_functional_genes_b1-e500000.png> <./pics//stat_fitness_global
+_mean_genome_size.png>]
 Overfull \hbox (56.4461pt too wide) in paragraph at lines 279--300
 [][] 
  []
@@ -1013,86 +1041,89 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./pics/stat_fitness_perc_change_genome_size.png, id=961, 2168.1pt x 1445.4pt>
-File: ./pics/stat_fitness_perc_change_genome_size.png Graphic file (type png)
-<use ./pics/stat_fitness_perc_change_genome_size.png>
-Package pdftex.def Info: ./pics/stat_fitness_perc_change_genome_size.png  used 
-on input line 335.
+<./pics//stat_fitness_perc_change_genome_size.png, id=961, 2168.1pt x 1445.4pt>
+
+File: ./pics//stat_fitness_perc_change_genome_size.png Graphic file (type png)
+<use ./pics//stat_fitness_perc_change_genome_size.png>
+Package pdftex.def Info: ./pics//stat_fitness_perc_change_genome_size.png  used
+ on input line 335.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
-[52 <./pics/population_up_genome_size_b1-e500000.png>]
-<./pics/genome_size_last_50k_all_seeds.png, id=969, 1262.7175pt x 1804.7425pt>
-File: ./pics/genome_size_last_50k_all_seeds.png Graphic file (type png)
-<use ./pics/genome_size_last_50k_all_seeds.png>
-Package pdftex.def Info: ./pics/genome_size_last_50k_all_seeds.png  used on inp
-ut line 343.
+[52 <./pics//population_up_genome_size_b1-e500000.png>]
+<./pics//genome_size_last_50k_all_seeds.png, id=969, 1262.7175pt x 1804.7425pt>
+
+File: ./pics//genome_size_last_50k_all_seeds.png Graphic file (type png)
+<use ./pics//genome_size_last_50k_all_seeds.png>
+Package pdftex.def Info: ./pics//genome_size_last_50k_all_seeds.png  used on in
+put line 343.
 (pdftex.def)             Requested size: 360.0pt x 514.52219pt.
- [53 <./pics/population_up_percent_non-coding_b1-e500000.png> <./pics/stat_fitn
-ess_perc_change_genome_size.png>] [54] [55 <./pics/genome_size_last_50k_all_see
-ds.png>]
-<./pics/global_fitness_all_seeds.png, id=988, 1445.4pt x 2168.1pt>
-File: ./pics/global_fitness_all_seeds.png Graphic file (type png)
-<use ./pics/global_fitness_all_seeds.png>
-Package pdftex.def Info: ./pics/global_fitness_all_seeds.png  used on input lin
-e 379.
+ [53 <./pics//population_up_percent_non-coding_b1-e500000.png> <./pics//stat_fi
+tness_perc_change_genome_size.png>] [54] [55 <./pics//genome_size_last_50k_all_
+seeds.png>]
+<./pics//global_fitness_all_seeds.png, id=988, 1445.4pt x 2168.1pt>
+File: ./pics//global_fitness_all_seeds.png Graphic file (type png)
+<use ./pics//global_fitness_all_seeds.png>
+Package pdftex.def Info: ./pics//global_fitness_all_seeds.png  used on input li
+ne 379.
 (pdftex.def)             Requested size: 360.0pt x 540.00565pt.
  [56]
 Overfull \vbox (5.20538pt too high) has occurred while \output is active []
 
 
-[57 <./pics/global_fitness_all_seeds.png>]
-<./pics/population_mean_fitness_histogram.png, id=999, 1264.725pt x 1808.7575pt
->
-File: ./pics/population_mean_fitness_histogram.png Graphic file (type png)
-<use ./pics/population_mean_fitness_histogram.png>
-Package pdftex.def Info: ./pics/population_mean_fitness_histogram.png  used on 
-input line 385.
+[57 <./pics//global_fitness_all_seeds.png>]
+<./pics//population_mean_fitness_histogram.png, id=999, 1264.725pt x 1808.7575p
+t>
+File: ./pics//population_mean_fitness_histogram.png Graphic file (type png)
+<use ./pics//population_mean_fitness_histogram.png>
+Package pdftex.def Info: ./pics//population_mean_fitness_histogram.png  used on
+ input line 385.
 (pdftex.def)             Requested size: 360.0pt x 514.83887pt.
- [58 <./pics/population_mean_fitness_histogram.png>]
-<./pics/stat_fitness_global_mean_metabolic_error.png, id=1009, 2168.1pt x 1445.
-4pt>
-File: ./pics/stat_fitness_global_mean_metabolic_error.png Graphic file (type pn
-g)
-<use ./pics/stat_fitness_global_mean_metabolic_error.png>
-Package pdftex.def Info: ./pics/stat_fitness_global_mean_metabolic_error.png  u
-sed on input line 393.
+ [58 <./pics//population_mean_fitness_histogram.png>]
+<./pics//stat_fitness_global_mean_metabolic_error.png, id=1009, 2168.1pt x 1445
+.4pt>
+File: ./pics//stat_fitness_global_mean_metabolic_error.png Graphic file (type p
+ng)
+<use ./pics//stat_fitness_global_mean_metabolic_error.png>
+Package pdftex.def Info: ./pics//stat_fitness_global_mean_metabolic_error.png  
+used on input line 393.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
 
 Overfull \hbox (56.41275pt too wide) in paragraph at lines 401--422
  [][] 
  []
 
-[59 <./pics/stat_fitness_global_mean_metabolic_error.png>]
-<./pics/percent_noncoding.png, id=1021, 2168.1pt x 1445.4pt>
-File: ./pics/percent_noncoding.png Graphic file (type png)
-<use ./pics/percent_noncoding.png>
-Package pdftex.def Info: ./pics/percent_noncoding.png  used on input line 433.
+[59 <./pics//stat_fitness_global_mean_metabolic_error.png>]
+<./pics//percent_noncoding.png, id=1021, 2168.1pt x 1445.4pt>
+File: ./pics//percent_noncoding.png Graphic file (type png)
+<use ./pics//percent_noncoding.png>
+Package pdftex.def Info: ./pics//percent_noncoding.png  used on input line 433.
+
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
  [60]
 Overfull \hbox (40.02109pt too wide) in paragraph at lines 441--462
 [][] 
  []
 
-<./pics/stat_genes_global_mean_num_functional_genes.png, id=1030, 2168.1pt x 14
-45.4pt>
-File: ./pics/stat_genes_global_mean_num_functional_genes.png Graphic file (type
- png)
-<use ./pics/stat_genes_global_mean_num_functional_genes.png>
-Package pdftex.def Info: ./pics/stat_genes_global_mean_num_functional_genes.png
-  used on input line 470.
+<./pics//stat_genes_global_mean_num_functional_genes.png, id=1030, 2168.1pt x 1
+445.4pt>
+File: ./pics//stat_genes_global_mean_num_functional_genes.png Graphic file (typ
+e png)
+<use ./pics//stat_genes_global_mean_num_functional_genes.png>
+Package pdftex.def Info: ./pics//stat_genes_global_mean_num_functional_genes.pn
+g  used on input line 470.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
-[61 <./pics/percent_noncoding.png>]
+[61 <./pics//percent_noncoding.png>]
 Overfull \hbox (3.45142pt too wide) in paragraph at lines 480--501
  [][] 
  []
 
-[62 <./pics/stat_genes_global_mean_num_functional_genes.png>]
-<./pics/stat_genes_global_mean_num_non-functional_genes.png, id=1048, 2168.1pt 
-x 1445.4pt>
-File: ./pics/stat_genes_global_mean_num_non-functional_genes.png Graphic file (
-type png)
-<use ./pics/stat_genes_global_mean_num_non-functional_genes.png>
-Package pdftex.def Info: ./pics/stat_genes_global_mean_num_non-functional_genes
-.png  used on input line 509.
+[62 <./pics//stat_genes_global_mean_num_functional_genes.png>]
+<./pics//stat_genes_global_mean_num_non-functional_genes.png, id=1048, 2168.1pt
+ x 1445.4pt>
+File: ./pics//stat_genes_global_mean_num_non-functional_genes.png Graphic file 
+(type png)
+<use ./pics//stat_genes_global_mean_num_non-functional_genes.png>
+Package pdftex.def Info: ./pics//stat_genes_global_mean_num_non-functional_gene
+s.png  used on input line 509.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
 
 Overfull \hbox (8.90297pt too wide) in paragraph at lines 517--539
@@ -1102,44 +1133,44 @@ Overfull \hbox (8.90297pt too wide) in paragraph at lines 517--539
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./pics/stat_genes_global_mean_avg_size_of_functional_genes.png, id=1050, 2168.
-1pt x 1445.4pt>
-File: ./pics/stat_genes_global_mean_avg_size_of_functional_genes.png Graphic fi
-le (type png)
-<use ./pics/stat_genes_global_mean_avg_size_of_functional_genes.png>
-Package pdftex.def Info: ./pics/stat_genes_global_mean_avg_size_of_functional_g
-enes.png  used on input line 547.
+<./pics//stat_genes_global_mean_avg_size_of_functional_genes.png, id=1050, 2168
+.1pt x 1445.4pt>
+File: ./pics//stat_genes_global_mean_avg_size_of_functional_genes.png Graphic f
+ile (type png)
+<use ./pics//stat_genes_global_mean_avg_size_of_functional_genes.png>
+Package pdftex.def Info: ./pics//stat_genes_global_mean_avg_size_of_functional_
+genes.png  used on input line 547.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
-[63 <./pics/stat_genes_global_mean_num_non-functional_genes.png>] [64]
+[63 <./pics//stat_genes_global_mean_num_non-functional_genes.png>] [64]
 Overfull \hbox (35.28624pt too wide) in paragraph at lines 581--602
 [][] 
  []
 
-[65 <./pics/stat_genes_global_mean_avg_size_of_functional_genes.png>]
-<./pics/evolvability_plot_all_seeds01.png, id=1071, 1445.4pt x 2168.1pt>
-File: ./pics/evolvability_plot_all_seeds01.png Graphic file (type png)
-<use ./pics/evolvability_plot_all_seeds01.png>
-Package pdftex.def Info: ./pics/evolvability_plot_all_seeds01.png  used on inpu
-t line 611.
+[65 <./pics//stat_genes_global_mean_avg_size_of_functional_genes.png>]
+<./pics//evolvability_plot_all_seeds01.png, id=1071, 1445.4pt x 2168.1pt>
+File: ./pics//evolvability_plot_all_seeds01.png Graphic file (type png)
+<use ./pics//evolvability_plot_all_seeds01.png>
+Package pdftex.def Info: ./pics//evolvability_plot_all_seeds01.png  used on inp
+ut line 611.
 (pdftex.def)             Requested size: 360.0pt x 540.00565pt.
  [66]
 Overfull \vbox (7.94287pt too high) has occurred while \output is active []
 
 
-[67 <./pics/evolvability_plot_all_seeds01.png>]
+[67 <./pics//evolvability_plot_all_seeds01.png>]
 Overfull \hbox (11.96808pt too wide) in paragraph at lines 644--666
  [][] 
  []
 
-<./pics/stat_robustness_best_mean_frac_neutral_mutants.png, id=1083, 2168.1pt x
- 1445.4pt>
-File: ./pics/stat_robustness_best_mean_frac_neutral_mutants.png Graphic file (t
-ype png)
-<use ./pics/stat_robustness_best_mean_frac_neutral_mutants.png>
-Package pdftex.def Info: ./pics/stat_robustness_best_mean_frac_neutral_mutants.
-png  used on input line 675.
+<./pics//stat_robustness_best_mean_frac_neutral_mutants.png, id=1083, 2168.1pt 
+x 1445.4pt>
+File: ./pics//stat_robustness_best_mean_frac_neutral_mutants.png Graphic file (
+type png)
+<use ./pics//stat_robustness_best_mean_frac_neutral_mutants.png>
+Package pdftex.def Info: ./pics//stat_robustness_best_mean_frac_neutral_mutants
+.png  used on input line 675.
 (pdftex.def)             Requested size: 360.0pt x 239.98045pt.
-[68] [69 <./pics/stat_robustness_best_mean_frac_neutral_mutants.png>] [70]
+[68] [69 <./pics//stat_robustness_best_mean_frac_neutral_mutants.png>] [70]
 [71]
 
 LaTeX Warning: Reference `fig:mean_fitness_plot' on page 72 undefined on input 
@@ -1159,52 +1190,44 @@ sons,
 
 ] [82] [83] [84]) 
 AED: lastpage setting LastPage
-[85]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
- (Thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
+[85] (Thesis.aux)
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: D4E3B61EF024EA8232446E38FED71990;3306.
+(rerunfilecheck)             Checksum: 374A9362D8A33E18D64A457F9A33628B;3256.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
  ) 
 Here is how much of TeX's memory you used:
- 9662 strings out of 492895
- 143277 string characters out of 3133459
- 258663 words of memory out of 3000000
- 13037 multiletter control sequences out of 15000+200000
- 20131 words of font info for 69 fonts, out of 3000000 for 9000
+ 10406 strings out of 480236
+ 159303 string characters out of 2890435
+ 492616 words of memory out of 3000000
+ 26410 multiletter control sequences out of 15000+200000
+ 551579 words of font info for 84 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
- 30i,14n,43p,2068b,601s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cmextra/cmex8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
-i12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
-rw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8
-a.pfb>
-Output written on Thesis.pdf (93 pages, 8663551 bytes).
+ 64i,14n,68p,2068b,614s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cme
+x10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb>
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program 
+Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.p
+fb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Progra
+m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pf
+b><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program
+ Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
+onts/symbols/msbm10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8
+a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
+Output written on Thesis.pdf (93 pages, 8663434 bytes).
 PDF statistics:
  1341 PDF objects out of 1440 (max. 8388607)
  269 named destinations out of 1000 (max. 500000)
