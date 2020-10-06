@@ -81,7 +81,7 @@ f_P = max\left(min\left(\sum_{i}^{}f_i(x),1 \right) - min\left(\sum_{j}^{}f_j(x)
 \subsubsection{Selection}\label{subsec:aevol_selection}
 After the genome is decoded, the organisms are tested for their fitness. Fitness in Aevol is related to the gap between the phenotype of a sequence $f_P$ and the environmental  target function $f_E$, as illustrated in Figure \ref{fig:aevol_overview01}. This environmental target function $f_E$ is a user-defined set of Gaussians which are specified in a parameter file, with each Gaussian being identified by three parameters: its height, its location along the axis, and its width. The difference between the phenotype (as calculated above) and the environmental function is the ``metabolic error'', labeled $g$ in the figure and is more formally defined as:  $g = \int_{a}^{b} f_E(x) - f_P(x) dx$. The idea is illustrated in Figure~\ref{fig:aevol_fitness01}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\includegraphics[scale=0.5]{aevol_fitness_description01}
 	\centering
 	\caption[Overview of Aevol's concept of fitness.]{Overview of Aevol's conception of fitness, from \cite{knibbe:tel-00482375}}
