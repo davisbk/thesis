@@ -17,7 +17,7 @@ The results of the control condition are presented first to provide a baseline f
 Examining the figure, over the course of 500,000 generations the mean genome size in the control condition tended towards \textit{gaining} base pairs, averaging just under approximately 500 new base pairs across all seeds. As can be seen in Figure~\ref{fig:control_perc_non-coding}, the averaging out to a modest gain in overall genome size was partially the result of the accumulation of non-coding bases.
 
 % CONTROL PERCENT NON-CODING
-\begin{figure}[h]
+\begin{figure}[H]
 	\includegraphics[width=\linewidth]{control_percent_non-coding_b1-e500000}
 	\caption[Control condition percent non-coding]{Percent non-coding for the control condition, generation 1-500,000.}
 	\label{fig:control_perc_non-coding}
@@ -25,7 +25,7 @@ Examining the figure, over the course of 500,000 generations the mean genome siz
 Despite the slight increase in non-coding bases, however, overall population fitness continued to improve even though the wild types had already evolved for 500,000 generations in the same environment, as seen in Figure~\ref{fig:control_fitness}.
 
 % CONTROL FITNESS
-\begin{figure}[h]
+\begin{figure}[H]
 	\includegraphics[width=\linewidth]{control_fitness_b1-e500000}
 	\caption[Control condition fitness]{Control condition fitness, seeds and mean, generations 1-500,000. The five seeds are in various colors and the mean of these seeds is shown in black, dashed.}
 	\label{fig:control_fitness}
@@ -51,7 +51,7 @@ Table~\ref{table:control_mean_fitness_change} below illustrates, however, that a
 
 Figure~\ref{fig:control_avg_size_of_functional_genes_b1-e500000} shows the change in the average size of functional genes observed in the control condition for all seeds for all 500,000 generations.  
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\includegraphics[width=\linewidth]{control_avg_size_of_functional_genes_b1-e500000}
 	\caption[Control avg. size of functional genes]{Figure showing the population mean size of the functional genes in the control condition, generations 1-500,000.}
 	\label{fig:control_avg_size_of_functional_genes_b1-e500000}
@@ -59,7 +59,7 @@ Figure~\ref{fig:control_avg_size_of_functional_genes_b1-e500000} shows the chang
 
 Figure~\ref{fig:control_gene_density} shows gene density (the number of genes per total number of base pairs). Though this is usually given per million base pairs (Mb), here it is simply the straight number of genes divided by the genome size, and is given as a convenient measure for comparison which takes into account both the number of genes and the genome size. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{control_density_b1-e500000}
 	\caption[Control gene density]{Control condition gene density, generations 1 to 500,000, all seeds}
@@ -68,14 +68,14 @@ Figure~\ref{fig:control_gene_density} shows gene density (the number of genes pe
 
 Figures~\ref{fig:control_robustness} and Figure~\ref{fig:control_evolvability} show the control condition's robustness and evolvability, respectively. As a reminder, in Aevol, mutational robustness is calculated by finding the fraction of neutral offspring of an individual. In these figures, both robustness and evolvability are calculated based on the best individual at generation 500,000. Please note the scale of Figure~\ref{fig:control_evolvability}, which is $1*e^{-8}$.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{control_frac_neutral_mutants_b1-e500000}
 	\caption[Control robustness]{Control robustness for generations 1-500,000, all seeds.}
 	\label{fig:control_robustness}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{control_evolvability_b1-e500000}
 	\caption[Control evolvability]{Control evolvability, all seeds.}
@@ -92,21 +92,21 @@ The genome size for the $\mu_+$ condition is shown in Figure~\ref{fig:mut_up_gen
 	\label{fig:mut_up_genome_size}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{mut_up_frac_neutral_mutants_b1-e500000}
 	\caption[Mutation up robustness]{Mutation up robustness, generations 1-500,000.}
 	\label{fig:mut_up_robustness}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{mut_up_gene_density_b1-e500000}
 	\caption[Mutation up gene density]{Mutation up gene density for generations 1-500,000, all seeds.}
 	\label{fig:mut_up_gene_density}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{mut_up_percent_non-coding_b1-e500000}
 	\caption[Mutation up - percent non-coding]{$\mu_+$ percent non-coding}
@@ -127,7 +127,7 @@ The well-accepted ``Drake's rule'' states that genome size is inversely proporti
 
 Examining the fitness data in Figure~\ref{fig:mut_down_fitness} it is clear that overall fitness was also not negatively impacted, as one should expect given the lower likelihood of introducing deleterious mutations. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{mut_down_fitness_b1-e500000}
 	\caption[Mutation down fitness]{Mutation down population mean fitness, generations 1-500,000, all seeds.}
@@ -136,14 +136,14 @@ Examining the fitness data in Figure~\ref{fig:mut_down_fitness} it is clear that
 
 Figure~\ref{fig:mut_down_gene_density} shows that gene density significantly increased in the $\mu_-$ condition somewhere around generation 360,000, and this also corresponds to a big bump in fitness, as shown in Figure~\ref{fig:mut_down_fitness} above. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{mut_down_num_functional_genes_b1-e500000}
 	\caption[Mutation down number of functional genes]{Mutation down - population mean number of functional genes, generations 1-500,000, all seeds}
 	\label{fig:mut_down_num_functional_genes}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{mut_down_gene_density_b1-e500000}
 	\caption[Mutation down gene density]{$\mu_-$ population mean gene density, generations 1-500,000, all seeds.}
@@ -151,7 +151,7 @@ Figure~\ref{fig:mut_down_gene_density} shows that gene density significantly inc
 \end{figure}
 
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{mut_down_percent_non-coding_b1-e500000}
 	\caption[Mutation down percent non-coding]{$\mu_-$ population mean percent non-coding, generations 1-500,000, all seeds.}
@@ -175,14 +175,14 @@ p = \frac{e^{-k*g}}{\sum_{i=1}^{N}e^{-k*g_i}}
 \end{equation*}
 where $g_i$ is the gap for the $i$th organism in the population. Thus, changing the selection parameter $k$, as in the $k_+$ and $k_-$ conditions, changes the scale of the fitness values. Their behavior over time is more important than the scale, but in order to not skew the visualization, the control condition is left off of the fitness plots.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{selection_up_num_functional_genes_b1-e500000}
 	\caption[Selection up number of functional genes]{$k_+$ population mean number of functional genes, generations 1-500,000, all seeds.}
 	\label{fig:selection_up_num_functional_genes}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{selection_up_fitness_b1-e500000}
 	\caption[Selection up fitness]{$k_+$ population mean fitness, generations 1-500,000, all seeds.}
@@ -191,7 +191,7 @@ where $g_i$ is the gap for the $i$th organism in the population. Thus, changing 
 
 Lastly, Figure~\ref{fig:selection_up_perc_non-coding} shows that some of the increased genome size is due to addition of non-coding bases, too. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{selection_up_percent_non-coding_b1-e500000}
 	\caption[Selection up percent non-coding]{$k_+$ population mean percent non-coding, generations 1-500,000, all seeds.}
@@ -207,14 +207,14 @@ Figure~\ref{fig:selection_down_genome_size} shows the genome size results for th
 	\label{fig:selection_down_genome_size}
 \end{figure}
 The slight increase in genome size is probably best explained by the gaining of some non-coding bases, as shown in Figure~\ref{fig:selection_down_perc_non-coding}, as the decreased selection caused an overall loss in the number of functional genes for most seeds for most of the generations (see Figure~\ref{fig:selection_down_num_functional_genes}).  
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{selection_down_percent_non-coding_b1-e500000}
 	\caption[Selection down percent non-coding]{$k_-$ percent non-coding, generations 1-500,000, all seeds.}
 	\label{fig:selection_down_perc_non-coding}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{selection_down_num_functional_genes_b1-e500000}
 	\caption[Selection down number of functional genes.]{$k_-$ mean population number of functional genes, generations 1-500,000, all seeds.}
@@ -225,7 +225,7 @@ The slight increase in genome size is probably best explained by the gaining of 
 % POPULATION UP
 \subsection{Population Up}
 Figure~\ref{fig:pop_up_genome_size} shows the mean population genome size for the $N_+$ condition, and it is clearly the condition which experienced the largest amount of reductive evolution over the course of the 500,000 generations. 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{population_up_genome_size_b1-e500000}
 	\caption[Population up genome size]{$N_+$ genome size, generations 1-500,000.}
@@ -234,7 +234,7 @@ Figure~\ref{fig:pop_up_genome_size} shows the mean population genome size for th
 
 Confirming the work of Batut et al.~\cite{Batut.2014}, the increased $N_e$ allowed the efficacy of selection to increase, removing deleterious mutations from the genome, removing non-coding DNA (Figure~\ref{fig:pop_up_perc_non-coding}). 
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{population_up_percent_non-coding_b1-e500000}
 	\caption[Population up percent non-coding]{$N_+$ population mean percent non-coding, generations 1-500,000, all seeds.}
@@ -275,7 +275,7 @@ Figure~\ref{fig:genome_size} presents the main findings regarding genome size fo
 \end{figure}
 In fact, the $N_-$ condition had a runaway increase in the number of bases, reaching over 16,500 bases at one time, a 25\% increase over the original wild type's roughly 13,200 bp. Even after 500,000 generations, it seems that the upper size limit may still not have been reached. The statistical results are given below in Tables~\ref{table:genome_size_stats} and \ref{table:genome_size_mean_and_std_dev}, which show the mean and standard deviation for all seeds across all 500,000 generations. 
 
-\begin{table}[h]
+\begin{table}[H]
 	\begin{tabular}{|c|c|c|c|}
 		\hline
 		\multicolumn{4}{c}{\Large \textbf{Genome Size - 500k Gen. Mean \& Std. Dev. (in bp)}} \\
@@ -301,7 +301,7 @@ In fact, the $N_-$ condition had a runaway increase in the number of bases, reac
 	\label{table:genome_size_mean_and_std_dev}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[H]
 	\centering
 	\begin{tabular}{|c|c|c|}
 		\hline
@@ -512,7 +512,7 @@ The average number of non-functional genes across all seeds for each condition i
 \end{figure}
 
 
-\begin{table}[h]
+\begin{table}[H]
 	\centering
 	\begin{tabular}{|c|c|c|c|}
 		\hline
